@@ -5,7 +5,7 @@ window.INDEX_DATA = {
   "methodology": "community_text_four_channel_grassroots_three_trading_day_v3",
   "scoringModel": "four_channels_equal_then_units_equal_grassroots_50_30_20_v3",
   "marketDate": "2026-11-24",
-  "updatedAt": "2026-11-24T23:11:11.857160+08:00",
+  "updatedAt": "2026-11-24T23:21:21.792750+08:00",
   "confidence": 94,
   "scores": {
     "baoma": 54,
@@ -884,9 +884,9 @@ window.INDEX_DATA = {
       }
     ],
     "coverage": 96.1,
-    "archiveAddedPosts": 996,
-    "archiveExistingPosts": 21002,
-    "sqliteArchiveAddedPosts": 1041,
+    "archiveAddedPosts": 60,
+    "archiveExistingPosts": 21938,
+    "sqliteArchiveAddedPosts": 0,
     "sqliteArchiveTotalPosts": 23395,
     "sectorHeatModel": {
       "version": "sector_community_heat_v4_company_equal",
@@ -951,8 +951,8 @@ window.INDEX_DATA = {
             "2026-09-11"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 608,
           "coverageStatus": "page_cap_reached_before_third_trading_day",
           "paginationMode": "page"
         }
@@ -988,8 +988,8 @@ window.INDEX_DATA = {
             "2026-10-21"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 608,
           "coverageStatus": "page_cap_reached_before_third_trading_day",
           "paginationMode": "page"
         }
@@ -1021,8 +1021,8 @@ window.INDEX_DATA = {
             "2026-09-28"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 608,
           "coverageStatus": "page_cap_reached_before_third_trading_day",
           "paginationMode": "page"
         }
@@ -1045,8 +1045,8 @@ window.INDEX_DATA = {
             "2026-11-24"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 608,
           "coverageStatus": "non_chronological_hot_feed",
           "paginationMode": "last_score_cursor_bounded"
         }
@@ -2150,8 +2150,8 @@ window.INDEX_DATA = {
               "2026-11-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -2180,8 +2180,8 @@ window.INDEX_DATA = {
               "2026-11-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -2215,8 +2215,8 @@ window.INDEX_DATA = {
               "2026-10-27"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -2240,8 +2240,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 604,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -2271,8 +2271,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -2299,8 +2299,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -2323,8 +2323,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -2347,8 +2347,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 609,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -2371,8 +2371,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -3473,8 +3473,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -3501,8 +3501,8 @@ window.INDEX_DATA = {
               "2026-10-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -3532,8 +3532,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -3561,8 +3561,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -3590,8 +3590,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -3629,8 +3629,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -3653,8 +3653,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -3677,8 +3677,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 609,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -3701,8 +3701,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -3726,8 +3726,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 609,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -4829,8 +4829,8 @@ window.INDEX_DATA = {
               "2026-09-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -4861,8 +4861,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -4888,8 +4888,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -4917,8 +4917,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -4949,8 +4949,8 @@ window.INDEX_DATA = {
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -4973,8 +4973,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -4998,8 +4998,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 604,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -5023,8 +5023,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -5048,8 +5048,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -5072,8 +5072,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -6177,8 +6177,8 @@ window.INDEX_DATA = {
               "2026-10-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 592,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -6215,8 +6215,8 @@ window.INDEX_DATA = {
               "2026-09-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 591,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -6246,8 +6246,8 @@ window.INDEX_DATA = {
               "2026-10-14"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 591,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -6282,8 +6282,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 591,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -6315,8 +6315,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 591,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -6348,8 +6348,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 591,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -6372,8 +6372,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 578,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -6404,8 +6404,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 592,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -6432,8 +6432,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 592,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -6467,25 +6467,14 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 591,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
         }
       ],
       "samplePosts": [
-        {
-          "title": "明天很大概率一字板了。而且可能连板。可以挂涨停试试能不能买进去了",
-          "label": "看多",
-          "score": 6,
-          "comments": 4,
-          "clicks": 213,
-          "source": "赤峰黄金吧",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "publishTime": "2026-11-23T23:21:01+08:00"
-        },
         {
           "title": "现货黄金大涨，中金黄金明天涨停，然后上演一波上涨行情！",
           "label": "看多",
@@ -6518,6 +6507,17 @@ window.INDEX_DATA = {
           "platform": "eastmoney",
           "platformName": "东方财富股吧",
           "publishTime": "2026-11-24T09:19:57+08:00"
+        },
+        {
+          "title": "明天很大概率一字板了。而且可能连板。可以挂涨停试试能不能买进去了",
+          "label": "看多",
+          "score": 6,
+          "comments": 4,
+          "clicks": 213,
+          "source": "赤峰黄金吧",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "publishTime": "2026-11-23T23:21:01+08:00"
         },
         {
           "title": "垃圾透顶清仓妈的",
@@ -7585,8 +7585,8 @@ window.INDEX_DATA = {
               "2026-08-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 591,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -7620,8 +7620,8 @@ window.INDEX_DATA = {
               "2026-10-09"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -7650,8 +7650,8 @@ window.INDEX_DATA = {
               "2026-10-19"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -7674,8 +7674,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -7703,8 +7703,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -7738,8 +7738,8 @@ window.INDEX_DATA = {
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -7771,8 +7771,8 @@ window.INDEX_DATA = {
               "2026-10-26"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 576,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -7801,8 +7801,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 576,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -7828,8 +7828,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -7863,8 +7863,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -8964,8 +8964,8 @@ window.INDEX_DATA = {
               "2026-09-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -8993,8 +8993,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 604,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -9025,8 +9025,8 @@ window.INDEX_DATA = {
               "2026-09-01"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 604,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -9066,8 +9066,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 604,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -9113,8 +9113,8 @@ window.INDEX_DATA = {
               "2026-10-14"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 604,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -9142,8 +9142,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -9170,8 +9170,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -9201,8 +9201,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 604,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -9235,8 +9235,8 @@ window.INDEX_DATA = {
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 604,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -9259,8 +9259,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 604,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -10359,8 +10359,8 @@ window.INDEX_DATA = {
               "2026-10-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -10397,8 +10397,8 @@ window.INDEX_DATA = {
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -10436,8 +10436,8 @@ window.INDEX_DATA = {
               "2026-09-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -10472,8 +10472,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -10515,8 +10515,8 @@ window.INDEX_DATA = {
               "2026-10-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -10559,8 +10559,8 @@ window.INDEX_DATA = {
               "2026-10-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -10583,8 +10583,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 596,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -10608,8 +10608,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 604,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -10637,8 +10637,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -10667,8 +10667,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -11769,8 +11769,8 @@ window.INDEX_DATA = {
               "2026-08-31"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -11805,8 +11805,8 @@ window.INDEX_DATA = {
               "2026-09-14"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -11837,8 +11837,8 @@ window.INDEX_DATA = {
               "2026-10-14"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -11866,8 +11866,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -11897,8 +11897,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -11925,8 +11925,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -11949,8 +11949,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -11976,8 +11976,8 @@ window.INDEX_DATA = {
               "2026-11-21"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -12000,8 +12000,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -12024,8 +12024,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -13125,8 +13125,8 @@ window.INDEX_DATA = {
               "2026-10-17"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -13160,8 +13160,8 @@ window.INDEX_DATA = {
               "2026-09-08"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -13191,8 +13191,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -13227,8 +13227,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -13258,8 +13258,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -13282,8 +13282,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -13307,8 +13307,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -13334,8 +13334,8 @@ window.INDEX_DATA = {
               "2026-11-21"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 606,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -13368,8 +13368,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -14474,8 +14474,8 @@ window.INDEX_DATA = {
               "2026-10-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 588,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -14511,8 +14511,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -14542,8 +14542,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -14572,8 +14572,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 586,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -14608,8 +14608,8 @@ window.INDEX_DATA = {
               "2026-11-09"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -14656,8 +14656,8 @@ window.INDEX_DATA = {
               "2026-10-03"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 586,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -14680,8 +14680,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 568,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -14711,8 +14711,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -14748,8 +14748,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -14783,8 +14783,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -15891,8 +15891,8 @@ window.INDEX_DATA = {
               "2026-09-04"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -15925,8 +15925,8 @@ window.INDEX_DATA = {
               "2026-10-15"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -15961,8 +15961,8 @@ window.INDEX_DATA = {
               "2026-09-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -15986,8 +15986,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -16019,8 +16019,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -16043,8 +16043,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 594,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -16071,8 +16071,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -17173,8 +17173,8 @@ window.INDEX_DATA = {
               "2026-08-24"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -17206,8 +17206,8 @@ window.INDEX_DATA = {
               "2026-09-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 596,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -17245,8 +17245,8 @@ window.INDEX_DATA = {
               "2026-09-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -17293,8 +17293,8 @@ window.INDEX_DATA = {
               "2026-10-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 594,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -17346,8 +17346,8 @@ window.INDEX_DATA = {
               "2026-05-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 595,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -17371,8 +17371,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -17403,8 +17403,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 596,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -17428,8 +17428,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 596,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -18536,8 +18536,8 @@ window.INDEX_DATA = {
               "2026-09-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 595,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -18572,8 +18572,8 @@ window.INDEX_DATA = {
               "2026-09-10"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 595,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -18617,8 +18617,8 @@ window.INDEX_DATA = {
               "2026-09-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 596,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -18649,8 +18649,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 595,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -18674,8 +18674,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 592,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -18699,8 +18699,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 583,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -18734,8 +18734,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 595,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -18759,8 +18759,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 595,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -19868,8 +19868,8 @@ window.INDEX_DATA = {
               "2026-09-07"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 595,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -19899,8 +19899,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 594,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -19929,8 +19929,8 @@ window.INDEX_DATA = {
               "2026-11-01"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 594,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -19954,8 +19954,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 594,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -19979,8 +19979,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 593,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -20010,8 +20010,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 593,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -20034,8 +20034,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 568,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -20059,8 +20059,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 582,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -20088,8 +20088,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 594,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -20113,8 +20113,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 594,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -20142,8 +20142,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 594,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -21253,8 +21253,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -21286,8 +21286,8 @@ window.INDEX_DATA = {
               "2026-09-08"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -21322,8 +21322,8 @@ window.INDEX_DATA = {
               "2026-09-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -21358,8 +21358,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -21396,8 +21396,8 @@ window.INDEX_DATA = {
               "2026-11-03"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -21421,8 +21421,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 593,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -21448,8 +21448,8 @@ window.INDEX_DATA = {
               "2026-11-21"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -21477,8 +21477,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -21510,8 +21510,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -22577,8 +22577,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 593,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -22619,8 +22619,8 @@ window.INDEX_DATA = {
               "2026-09-08"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 593,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -22656,8 +22656,8 @@ window.INDEX_DATA = {
               "2026-10-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 593,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -22697,8 +22697,8 @@ window.INDEX_DATA = {
               "2026-10-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 592,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -22733,8 +22733,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 591,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -22784,8 +22784,8 @@ window.INDEX_DATA = {
               "2026-09-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 592,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -22815,8 +22815,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 580,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -23920,8 +23920,8 @@ window.INDEX_DATA = {
               "2026-09-15"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -23952,8 +23952,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -23988,8 +23988,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -24019,8 +24019,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -24061,8 +24061,8 @@ window.INDEX_DATA = {
               "2026-10-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -24087,8 +24087,8 @@ window.INDEX_DATA = {
               "2026-11-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -24116,8 +24116,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -24156,8 +24156,8 @@ window.INDEX_DATA = {
               "2026-10-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -24196,8 +24196,8 @@ window.INDEX_DATA = {
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -25307,8 +25307,8 @@ window.INDEX_DATA = {
               "2026-09-04"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -25342,8 +25342,8 @@ window.INDEX_DATA = {
               "2026-10-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -25370,8 +25370,8 @@ window.INDEX_DATA = {
               "2026-10-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -25397,8 +25397,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -25455,8 +25455,8 @@ window.INDEX_DATA = {
               "2026-06-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -25486,8 +25486,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -25510,8 +25510,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -25541,8 +25541,8 @@ window.INDEX_DATA = {
               "2026-11-09"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -25565,8 +25565,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -26664,8 +26664,8 @@ window.INDEX_DATA = {
               "2026-10-14"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -26698,8 +26698,8 @@ window.INDEX_DATA = {
               "2026-09-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -26736,8 +26736,8 @@ window.INDEX_DATA = {
               "2026-09-09"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -26760,8 +26760,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 596,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -26791,8 +26791,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 595,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -26824,8 +26824,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 596,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -26849,8 +26849,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 586,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -26874,8 +26874,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -26906,8 +26906,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -28010,8 +28010,8 @@ window.INDEX_DATA = {
               "2026-10-29"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 589,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -28046,8 +28046,8 @@ window.INDEX_DATA = {
               "2026-10-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 589,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -28081,8 +28081,8 @@ window.INDEX_DATA = {
               "2026-10-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -28110,8 +28110,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 588,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -28155,8 +28155,8 @@ window.INDEX_DATA = {
               "2026-10-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 588,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -28180,8 +28180,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 572,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -28206,8 +28206,8 @@ window.INDEX_DATA = {
               "2026-11-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 589,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -28237,8 +28237,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 589,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -29310,8 +29310,8 @@ window.INDEX_DATA = {
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -29346,8 +29346,8 @@ window.INDEX_DATA = {
               "2026-10-07"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -29377,8 +29377,8 @@ window.INDEX_DATA = {
               "2026-10-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -29431,8 +29431,8 @@ window.INDEX_DATA = {
               "2026-08-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 586,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -29482,8 +29482,8 @@ window.INDEX_DATA = {
               "2026-09-22"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 586,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -29515,8 +29515,8 @@ window.INDEX_DATA = {
               "2026-11-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 583,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -29547,8 +29547,8 @@ window.INDEX_DATA = {
               "2026-11-09"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 566,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -30655,8 +30655,8 @@ window.INDEX_DATA = {
               "2026-09-16"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -30688,8 +30688,8 @@ window.INDEX_DATA = {
               "2026-09-16"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -30725,8 +30725,8 @@ window.INDEX_DATA = {
               "2026-09-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 599,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -30753,8 +30753,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 596,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -30791,8 +30791,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -30832,8 +30832,8 @@ window.INDEX_DATA = {
               "2026-10-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 596,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -30856,8 +30856,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 589,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -30883,8 +30883,8 @@ window.INDEX_DATA = {
               "2026-11-21"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -30913,8 +30913,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -30947,8 +30947,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -32020,8 +32020,8 @@ window.INDEX_DATA = {
               "2026-09-30"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 593,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -32058,8 +32058,8 @@ window.INDEX_DATA = {
               "2026-09-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 593,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -32097,8 +32097,8 @@ window.INDEX_DATA = {
               "2026-09-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 594,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -32134,8 +32134,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 593,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -32169,8 +32169,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 593,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -32201,8 +32201,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 591,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -32227,8 +32227,8 @@ window.INDEX_DATA = {
               "2026-11-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 580,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -33328,8 +33328,8 @@ window.INDEX_DATA = {
               "2026-09-18"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -33361,8 +33361,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -33392,8 +33392,8 @@ window.INDEX_DATA = {
               "2026-10-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 608,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -33430,8 +33430,8 @@ window.INDEX_DATA = {
               "2026-11-09"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 605,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -33457,8 +33457,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -33487,8 +33487,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -33516,8 +33516,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -33549,8 +33549,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 607,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -34656,8 +34656,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -34689,8 +34689,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -34725,8 +34725,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -34777,8 +34777,8 @@ window.INDEX_DATA = {
               "2026-08-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -34830,8 +34830,8 @@ window.INDEX_DATA = {
               "2026-08-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -34873,8 +34873,8 @@ window.INDEX_DATA = {
               "2026-10-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -34898,8 +34898,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -34932,8 +34932,8 @@ window.INDEX_DATA = {
               "2026-10-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 603,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -34964,8 +34964,8 @@ window.INDEX_DATA = {
               "2026-10-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 602,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -36072,8 +36072,8 @@ window.INDEX_DATA = {
               "2026-09-03"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -36112,8 +36112,8 @@ window.INDEX_DATA = {
               "2026-08-24"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -36143,8 +36143,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -36173,8 +36173,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 598,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -36197,8 +36197,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 591,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -36228,8 +36228,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -36263,8 +36263,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -36290,8 +36290,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 599,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -37408,8 +37408,8 @@ window.INDEX_DATA = {
               "2026-09-24"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -37438,8 +37438,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -37476,8 +37476,8 @@ window.INDEX_DATA = {
               "2026-09-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -37520,8 +37520,8 @@ window.INDEX_DATA = {
               "2026-10-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 589,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -37569,8 +37569,8 @@ window.INDEX_DATA = {
               "2026-08-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -37610,8 +37610,8 @@ window.INDEX_DATA = {
               "2026-10-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -37635,8 +37635,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 574,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -37662,8 +37662,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 572,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -37693,8 +37693,8 @@ window.INDEX_DATA = {
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 590,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -37728,8 +37728,8 @@ window.INDEX_DATA = {
               "2026-11-08"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 589,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -38835,8 +38835,8 @@ window.INDEX_DATA = {
               "2026-10-05"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -38874,8 +38874,8 @@ window.INDEX_DATA = {
               "2026-10-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -38910,8 +38910,8 @@ window.INDEX_DATA = {
               "2026-10-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -38942,8 +38942,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 597,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -38975,8 +38975,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 601,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -39016,8 +39016,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -39042,8 +39042,8 @@ window.INDEX_DATA = {
               "2026-11-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 594,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -39071,8 +39071,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -39102,8 +39102,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -39137,8 +39137,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -40246,8 +40246,8 @@ window.INDEX_DATA = {
               "2026-10-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 599,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -40280,8 +40280,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 600,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -40311,8 +40311,8 @@ window.INDEX_DATA = {
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 599,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -40348,8 +40348,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 599,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -40373,8 +40373,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 596,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -40403,8 +40403,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 599,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -40443,8 +40443,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 599,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -40483,8 +40483,8 @@ window.INDEX_DATA = {
               "2026-11-03"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 599,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -41587,8 +41587,8 @@ window.INDEX_DATA = {
               "2026-09-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 588,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -41620,8 +41620,8 @@ window.INDEX_DATA = {
               "2026-11-07"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 589,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -41650,8 +41650,8 @@ window.INDEX_DATA = {
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 589,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -41694,8 +41694,8 @@ window.INDEX_DATA = {
               "2026-10-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -41748,8 +41748,8 @@ window.INDEX_DATA = {
               "2026-06-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 587,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -41776,8 +41776,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 570,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -41811,8 +41811,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 588,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -41845,8 +41845,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 588,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -41881,8 +41881,8 @@ window.INDEX_DATA = {
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 588,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -45128,7 +45128,7 @@ window.INDEX_DATA = {
         "freshSourceRatio": 88.6
       },
       "asOf": "2026-11-24T23:59:59.999999+08:00",
-      "capturedAt": "2026-11-24T23:11:11.857160+08:00",
+      "capturedAt": "2026-11-24T23:21:21.792750+08:00",
       "methodology": "community_text_four_channel_grassroots_three_trading_day_v3",
       "tradingDay": true,
       "calendarMode": "official_sse",
@@ -45137,7 +45137,7 @@ window.INDEX_DATA = {
   ],
   "historyMeta": {
     "schemaVersion": 5,
-    "updatedAt": "2026-11-24T23:11:11.857160+08:00",
+    "updatedAt": "2026-11-24T23:21:21.792750+08:00",
     "startDate": "2026-11-24",
     "endDate": "2026-11-24",
     "count": 1,
