@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+data/forum_cache/
+data/community_archive/
