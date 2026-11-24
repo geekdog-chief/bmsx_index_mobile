@@ -114,7 +114,9 @@ def chat(user, retries=3):
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": user}],
         "stream": False, "format": "json", "think": False,
-        "options": {"temperature": 0, "num_predict": 16384}}
+        # num_ctx 显式设 32K：Ollama 服务端默认仅 4096，超出部分整帖静默丢弃，
+        # 表现为"id 缺失"级联重试（2026-11-25 修复）。num_predict=16384 为冻结参数，勿动。
+        "options": {"temperature": 0, "num_predict": 16384, "num_ctx": 32768}}
     last = None
     for attempt in range(retries):
         try:
