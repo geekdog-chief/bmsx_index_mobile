@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "sina:274846",
+    "id": "sina:274846",
+    "title": "涨幅很大",
+    "publishTime": "2026-07-09T11:41:25+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 8779,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:002142",
+    "sourceKeys": [
+      "sina:002142"
+    ],
+    "sourceCode": "002142",
+    "source": "宁波银行新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "6113214801",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:714",
+    "id": "sina:714",
+    "title": "这种退市吧",
+    "publishTime": "2026-07-09T20:24:53+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:688223",
+    "sourceKeys": [
+      "sina:688223"
+    ],
+    "sourceCode": "688223",
+    "source": "晶科能源新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "2652776993",
+    "kind": "post"
+  }
+]

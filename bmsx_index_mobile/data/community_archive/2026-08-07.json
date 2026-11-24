@@ -1,0 +1,90 @@
+[
+  {
+    "archiveKey": "sina:284511",
+    "id": "sina:284511",
+    "title": "坑服恶庄",
+    "publishTime": "2026-08-07T09:58:18+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:600312",
+    "sourceKeys": [
+      "sina:600312"
+    ],
+    "sourceCode": "600312",
+    "source": "平高电气新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "5852812217",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:284512",
+    "id": "sina:284512",
+    "title": "少见的坑股",
+    "publishTime": "2026-08-07T10:44:53+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:600312",
+    "sourceKeys": [
+      "sina:600312"
+    ],
+    "sourceCode": "600312",
+    "source": "平高电气新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "5852812217",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:199940",
+    "id": "sina:199940",
+    "title": "许继电气：336.44万股限售股8月4日解禁，占总股本0.33%",
+    "publishTime": "2026-08-07T17:45:02+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:000400",
+    "sourceKeys": [
+      "sina:000400"
+    ],
+    "sourceCode": "000400",
+    "source": "许继电气新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7541061048",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:240657",
+    "id": "sina:240657",
+    "title": "此时此刻敲打一下科伦药业也好， 毕竟一年快200亿销售额了 毕竟一年30多亿的销售费用 毕竟马上12批集采你家品种最多 这个时候不出来收割你一波 怎么",
+    "publishTime": "2026-08-07T23:25:02+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 890,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:002422",
+    "sourceKeys": [
+      "sina:002422"
+    ],
+    "sourceCode": "002422",
+    "source": "科伦药业新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7540927801",
+    "kind": "post"
+  }
+]

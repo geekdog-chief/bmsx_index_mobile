@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "sina:195086",
+    "id": "sina:195086",
+    "title": "跌透了再说",
+    "publishTime": "2026-06-01T09:35:47+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:002223",
+    "sourceKeys": [
+      "sina:002223"
+    ],
+    "sourceCode": "002223",
+    "source": "鱼跃医疗新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "1416928514",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:502",
+    "id": "sina:502",
+    "title": "垃圾股，看业绩还行，就是天天跌",
+    "publishTime": "2026-06-01T13:59:06+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 281,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:688271",
+    "sourceKeys": [
+      "sina:688271"
+    ],
+    "sourceCode": "688271",
+    "source": "联影医疗新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7986726678",
+    "kind": "post"
+  }
+]

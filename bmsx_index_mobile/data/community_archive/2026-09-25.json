@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "taoguba:8777214",
+    "id": "taoguba:8777214",
+    "title": "立贴为证 式，没有固定系统，更偏向于主观逻辑，做过 国电电力 ，博纳影业和湖南白银，在这三只票上，我真正",
+    "publishTime": "2026-09-25T13:45:05+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 7,
+    "clicksAtCollection": 782,
+    "likesAtCollection": 8,
+    "sourceKey": "taoguba:600795",
+    "sourceKeys": [
+      "taoguba:600795"
+    ],
+    "sourceCode": "600795",
+    "source": "淘股吧国电电力讨论",
+    "platform": "taoguba",
+    "platformName": "淘股吧",
+    "authorKey": "14310085",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "taoguba:103332994",
+    "id": "taoguba:103332994",
+    "title": "居首的仍是生益科技，上一期金额最大的同样是 华域汽车 。 ［图片］ 免责声明：数据仅供参考，不",
+    "publishTime": "2026-09-25T16:16:14+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "taoguba:600741",
+    "sourceKeys": [
+      "taoguba:600741"
+    ],
+    "sourceCode": "600741",
+    "source": "淘股吧华域汽车讨论",
+    "platform": "taoguba",
+    "platformName": "淘股吧",
+    "authorKey": "15294901",
+    "kind": "reply"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "archiveKey": "sina:728",
+    "id": "sina:728",
+    "title": "他的未来是什么？",
+    "publishTime": "2026-08-01T21:59:20+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:688223",
+    "sourceKeys": [
+      "sina:688223"
+    ],
+    "sourceCode": "688223",
+    "source": "晶科能源新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "6419658010",
+    "kind": "post"
+  }
+]

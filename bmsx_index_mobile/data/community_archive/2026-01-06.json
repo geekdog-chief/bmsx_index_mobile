@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "sina:132417",
+    "id": "sina:132417",
+    "title": "停牌是利好还是利空",
+    "publishTime": "2026-01-06T19:29:15+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 6946,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:300087",
+    "sourceKeys": [
+      "sina:300087"
+    ],
+    "sourceCode": "300087",
+    "source": "荃银高科新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "5831770861",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:132418",
+    "id": "sina:132418",
+    "title": "停牌是利好还是利空",
+    "publishTime": "2026-01-06T20:20:22+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:300087",
+    "sourceKeys": [
+      "sina:300087"
+    ],
+    "sourceCode": "300087",
+    "source": "荃银高科新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "5831770861",
+    "kind": "post"
+  }
+]

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>宝妈指数</title>
+<meta name="theme-color" content="#dc2626">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="宝妈指数">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="brand"><h1>宝妈指数</h1><small>A股社区普通用户情绪观察 · 不使用股价与成交量</small></header>
+
+  <div class="statusbar">
+    <span class="pill"><span class="lamp idle" id="lamp"></span><span class="statxt idle" id="statxt">等待首次更新</span></span>
+    <span class="pill" id="daypill">最近交易日 --</span>
+    <span class="pill" id="timepill">更新于 --:--</span>
+    <div class="progress" id="progwrap"><i id="prog"></i></div>
+    <div class="grow"></div>
+    <button class="btn" id="btnupd">立即更新</button>
+  </div>
+
+  <div class="tabs">
+    <button class="tab on" data-p="p-all">总览</button>
+    <button class="tab" data-p="p-trend">走势</button>
+    <button class="tab" data-p="p-ref">参考</button>
+  </div>
+
+  <div class="panel on" id="p-all">
+    <h2>宝妈指数</h2>
+    <p class="sub" id="gauge-sub">三渠道表达合成一个温度值：越高讨论越热、越乐观。35以下偏冷，80以上极热。</p>
+    <div class="card hero">
+      <svg width="170" height="170" viewBox="0 0 170 170" id="gauge-svg"></svg>
+      <div>
+        <div class="state" id="gauge-state">--</div>
+        <div class="desc" id="gauge-desc"></div>
+      </div>
+    </div>
+
+    <h2>贪婪恐惧</h2>
+    <p class="sub">同一量程0–100，0=完全没有。左贪婪右恐惧。</p>
+    <div class="card">
+      <div class="gfrow">
+        <span class="gflabel">贪婪</span>
+        <div class="bar gbar"><i id="gbar-i"></i></div>
+        <span class="num" id="gval">--</span>
+      </div>
+      <div class="gfrow" style="border-top:1px solid #f0f0ee">
+        <span class="gflabel">恐惧</span>
+        <div class="bar fbar"><i id="fbar-i"></i></div>
+        <span class="num" id="fval">--</span>
+      </div>
+      <div class="muted note">贪婪=热度/方向/强度/追涨/新手/关注六项均值经Sigmoid放大（中心50、坡度4）：略高于中性的活跃市即显示60上下，80以上才是亢奋。恐惧=恐慌原始分。两者同量程0–100、0为基准。仅显示端合成，评分口径不变。</div>
+    </div>
+
+    <h2>宝妈热度</h2>
+    <p class="sub">同日横截面校准，区分度不超过抽样噪声时不产生名次。最冷榜只列有正式名次的板块。</p>
+    <div class="card">
+      <div class="subtabs">
+        <button class="subtab on" data-t="hot">最热</button>
+        <button class="subtab" data-t="cold">最冷</button>
+      </div>
+      <div id="ranklist"></div>
+    </div>
+  </div>
+
+  <div class="panel" id="p-trend">
+    <h2>宝妈地图</h2>
+    <p class="sub">横轴看多空方向，纵轴看板块综合热度；先做渠道内同日校准，再让四个渠道各占25%。</p>
+    <div class="smap-summary" id="smap-summary"></div>
+    <div class="smap-shell" id="smap"></div>
+    <div class="muted note">圆点越大，最近三个交易日有效样本越多。纵轴以帖子数量和参与活跃为主；情绪方向与躁动度在点位旁小字显示。</div>
+  </div>
+
+  <div class="panel" id="p-ref">
+    <h2>原帖抽样</h2>
+    <p class="sub">营销号、认证号、重复文本已剔除；作者每日限3帖防刷屏刷分。此处仅抽样。</p>
+    <div class="card" id="posts"></div>
+
+    <h2>指数参考</h2>
+    <p class="sub">原三口径拆解，仅备查。三者同质化高，日常看宝妈指数即可。</p>
+    <div class="grid trio" id="trio"></div>
+
+    <h2>宝妈曲线</h2>
+    <p class="sub">历史综合温度走势，单日一点。</p>
+    <div class="card">
+      <svg class="chart" id="history-svg" viewBox="0 0 960 220" preserveAspectRatio="none"></svg>
+      <div class="muted small" id="history-range"></div>
+    </div>
+  </div>
+
+</div>
+<script src="data.js"></script>
+<script src="dashboard.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+  });
+}
+</script>
+</body>
+</html>

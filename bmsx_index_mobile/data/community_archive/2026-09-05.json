@@ -1,0 +1,68 @@
+[
+  {
+    "archiveKey": "sina:1906",
+    "id": "sina:1906",
+    "title": "公告减持",
+    "publishTime": "2026-09-05T02:40:31+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 420,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:688111",
+    "sourceKeys": [
+      "sina:688111"
+    ],
+    "sourceCode": "688111",
+    "source": "金山办公新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "5992851912",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:1907",
+    "id": "sina:1907",
+    "title": "$金山办公(SH688111)$ 最近测试了国内外几个ai的办公功能，目前看WPS的ai相关功能已经是非常领先了，特别是自带ai PPT 一",
+    "publishTime": "2026-09-05T11:47:02+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 206,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:688111",
+    "sourceKeys": [
+      "sina:688111"
+    ],
+    "sourceCode": "688111",
+    "source": "金山办公新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7541061193",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "taoguba:8717253",
+    "id": "taoguba:8717253",
+    "title": "减速器龙头高管薪酬对比：富奥股份、浙江世宝、东风科技、 华域汽车 高管薪酬 ［图片］ 高管平均薪酬最高的是富奥股份，为101.47 万元。和他相反，浙江世宝是2025年高管平均薪酬最少的的公司，为2.31元。高管薪酬变化 ［图片］ 对比2024年，富奥股份、东风科技、 华域汽车 高管平均薪酬有所增长。 ［图片］",
+    "publishTime": "2026-09-05T15:26:54+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 265,
+    "likesAtCollection": 0,
+    "sourceKey": "taoguba:600741",
+    "sourceKeys": [
+      "taoguba:600741"
+    ],
+    "sourceCode": "600741",
+    "source": "淘股吧华域汽车讨论",
+    "platform": "taoguba",
+    "platformName": "淘股吧",
+    "authorKey": "9391521",
+    "kind": "post"
+  }
+]

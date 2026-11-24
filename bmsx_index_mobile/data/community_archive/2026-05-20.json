@@ -1,0 +1,24 @@
+[
+  {
+    "archiveKey": "sina:132464",
+    "id": "sina:132464",
+    "title": "先正达借壳A股上市。后发H股",
+    "publishTime": "2026-05-20T16:03:49+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 1,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:300087",
+    "sourceKeys": [
+      "sina:300087"
+    ],
+    "sourceCode": "300087",
+    "source": "荃银高科新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "5140104670",
+    "kind": "post"
+  }
+]

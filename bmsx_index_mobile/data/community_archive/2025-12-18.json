@@ -1,0 +1,24 @@
+[
+  {
+    "archiveKey": "sina:195",
+    "id": "sina:195",
+    "title": "怎么这个样子，后期有没有希望？",
+    "publishTime": "2025-12-18T12:32:31+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 2423,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:600941",
+    "sourceKeys": [
+      "sina:600941"
+    ],
+    "sourceCode": "600941",
+    "source": "中国移动新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7469673712",
+    "kind": "post"
+  }
+]

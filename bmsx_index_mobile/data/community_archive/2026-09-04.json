@@ -1,0 +1,112 @@
+[
+  {
+    "archiveKey": "sina:1905",
+    "id": "sina:1905",
+    "title": "唉，加个油不行吗，",
+    "publishTime": "2026-09-04T11:15:08+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 252,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:688111",
+    "sourceKeys": [
+      "sina:688111"
+    ],
+    "sourceCode": "688111",
+    "source": "金山办公新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "5402248608",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:199954",
+    "id": "sina:199954",
+    "title": "连着跌了一个礼拜了，终于拉了一条像样的阳线，再接再厉吧伙计，让我回回血。",
+    "publishTime": "2026-09-04T13:19:32+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 2,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:000400",
+    "sourceKeys": [
+      "sina:000400"
+    ],
+    "sourceCode": "000400",
+    "source": "许继电气新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "9075980727",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:357845",
+    "id": "sina:357845",
+    "title": "依旧买的最少，表现最好这一块",
+    "publishTime": "2026-09-04T14:08:33+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:000768",
+    "sourceKeys": [
+      "sina:000768"
+    ],
+    "sourceCode": "000768",
+    "source": "中航西飞新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "6130867003",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:357846",
+    "id": "sina:357846",
+    "title": "回本了。卖不",
+    "publishTime": "2026-09-04T14:29:14+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 5,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:000768",
+    "sourceKeys": [
+      "sina:000768"
+    ],
+    "sourceCode": "000768",
+    "source": "中航西飞新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "6875384546",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:225798",
+    "id": "sina:225798",
+    "title": "《农业今天爆了，但下周我重点要盯的是这三只！》 这是一条非常炸裂的消息，白天我已经把话说在前面了，农业这条线我没看错，今天市场也给了回应。我想宝子们更关心的不是",
+    "publishTime": "2026-09-04T22:53:42+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 311,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:000998",
+    "sourceKeys": [
+      "sina:000998"
+    ],
+    "sourceCode": "000998",
+    "source": "隆平高科新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "2269920107",
+    "kind": "post"
+  }
+]

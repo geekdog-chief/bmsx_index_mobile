@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "sina:132459",
+    "id": "sina:132459",
+    "title": "尊敬的董秘： 公司2021年公告明确，中种集团承诺自取得控制权起5年内（2026年1月20日前）解决同业竞争，如今承诺已到期，仅以资产托管应付，并未真正解决同业竞",
+    "publishTime": "2026-03-25T23:00:58+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:300087",
+    "sourceKeys": [
+      "sina:300087"
+    ],
+    "sourceCode": "300087",
+    "source": "荃银高科新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "8407143576",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "taoguba:96995971",
+    "id": "taoguba:96995971",
+    "title": "000002免责声明：仅供学涨停版接力竞价分析，并不能作为您实盘操作的依据。切勿跟风实盘操作，否则风险自负。",
+    "publishTime": "2026-03-25T23:21:01+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 1,
+    "sourceKey": "taoguba:000002",
+    "sourceKeys": [
+      "taoguba:000002"
+    ],
+    "sourceCode": "000002",
+    "source": "淘股吧万科A讨论",
+    "platform": "taoguba",
+    "platformName": "淘股吧",
+    "authorKey": "12747242",
+    "kind": "reply"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "archiveKey": "sina:512",
+    "id": "sina:512",
+    "title": "狗屁龙头天天跌",
+    "publishTime": "2026-06-26T09:39:42+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:688271",
+    "sourceKeys": [
+      "sina:688271"
+    ],
+    "sourceCode": "688271",
+    "source": "联影医疗新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7419502099",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "taoguba:8493136",
+    "id": "taoguba:8493136",
+    "title": "上汽集团还在跌，汽车链这条消息别硬当利好炒 映射上，最直接的是上汽集团。供应链方向， 华域汽车 偏上汽体系零部件配套，均胜电子覆盖智能座",
+    "publishTime": "2026-06-26T13:29:49+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 166,
+    "likesAtCollection": 0,
+    "sourceKey": "taoguba:600741",
+    "sourceKeys": [
+      "taoguba:600741"
+    ],
+    "sourceCode": "600741",
+    "source": "淘股吧华域汽车讨论",
+    "platform": "taoguba",
+    "platformName": "淘股吧",
+    "authorKey": "14380568",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:284490",
+    "id": "sina:284490",
+    "title": "平高电气创造了历史，连收8连阴周K线。我就是看好你，将所有子弹都打向了你！不管你这是什么坑，我也跳进来了。如果你下周九连阴，我就借钱来加仓你。wb-1-4",
+    "publishTime": "2026-06-26T15:45:04+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 1,
+    "clicksAtCollection": 524,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:600312",
+    "sourceKeys": [
+      "sina:600312"
+    ],
+    "sourceCode": "600312",
+    "source": "平高电气新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "5676116199",
+    "kind": "post"
+  }
+]

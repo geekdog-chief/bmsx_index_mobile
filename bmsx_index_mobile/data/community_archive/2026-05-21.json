@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "sina:225754",
+    "id": "sina:225754",
+    "title": "有跌就有涨，静等",
+    "publishTime": "2026-05-21T11:10:08+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 1,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:600741",
+    "sourceKeys": [
+      "sina:600741"
+    ],
+    "sourceCode": "600741",
+    "source": "华域汽车新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7421115935",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:132465",
+    "id": "sina:132465",
+    "title": "老子就盼着你退市 吸血鬼",
+    "publishTime": "2026-05-21T13:51:11+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 1,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:300087",
+    "sourceKeys": [
+      "sina:300087"
+    ],
+    "sourceCode": "300087",
+    "source": "荃银高科新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7568394764",
+    "kind": "post"
+  }
+]

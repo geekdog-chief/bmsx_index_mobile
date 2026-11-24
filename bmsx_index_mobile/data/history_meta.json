@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 5,
+  "updatedAt": "2026-11-24T22:17:17.210751+08:00",
+  "startDate": "2026-11-24",
+  "endDate": "2026-11-24",
+  "count": 1,
+  "measuredCount": 1,
+  "estimatedCount": 0,
+  "usableEstimatedCount": 0,
+  "provisionalEstimatedCount": 0,
+  "segments": [
+    {
+      "type": "measured",
+      "methodology": "community_text_four_channel_grassroots_three_trading_day_v3",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
+      "count": 1
+    }
+  ],
+  "calendar": "A股交易日；2025/2026按上交所官方休市安排，其他年份按工作日回退。",
+  "methodologyBreakCount": 0,
+  "latestMethodology": "community_text_four_channel_grassroots_three_trading_day_v3",
+  "note": "实测与回溯分开展示；不同 methodology 段属于不同统计口径，只看各段内变化，不直接比较断点两侧绝对值。"
+}

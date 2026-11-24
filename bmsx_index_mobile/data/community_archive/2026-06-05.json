@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "sina:195089",
+    "id": "sina:195089",
+    "title": "可怜的，比2650时还低",
+    "publishTime": "2026-06-05T08:26:47+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 546,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:002223",
+    "sourceKeys": [
+      "sina:002223"
+    ],
+    "sourceCode": "002223",
+    "source": "鱼跃医疗新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7360595228",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:284481",
+    "id": "sina:284481",
+    "title": "SB一个",
+    "publishTime": "2026-06-05T14:35:18+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:600312",
+    "sourceKeys": [
+      "sina:600312"
+    ],
+    "sourceCode": "600312",
+    "source": "平高电气新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "1324919114",
+    "kind": "post"
+  }
+]

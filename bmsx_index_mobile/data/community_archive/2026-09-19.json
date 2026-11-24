@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "eastmoney:1775240076",
+    "id": "eastmoney:1775240076",
+    "title": "弱弱的问陈文建董事长：面对你家越来越多的财富、年年业绩下滑的公司以及赔惨的股民，",
+    "publishTime": "2026-09-19T08:20:42+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 5,
+    "clicksAtCollection": 1240,
+    "likesAtCollection": 0,
+    "sourceKey": "eastmoney:601390",
+    "sourceKeys": [
+      "eastmoney:601390"
+    ],
+    "sourceCode": "601390",
+    "source": "中国中铁吧",
+    "platform": "eastmoney",
+    "platformName": "东方财富股吧",
+    "authorKey": "2869645173703932",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "eastmoney:1775246873",
+    "id": "eastmoney:1775246873",
+    "title": "我100万资产买入隆基绿能，过两年是不是就变成一个亿了？",
+    "publishTime": "2026-09-19T09:46:37+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 7,
+    "clicksAtCollection": 279,
+    "likesAtCollection": 0,
+    "sourceKey": "eastmoney:601012",
+    "sourceKeys": [
+      "eastmoney:601012"
+    ],
+    "sourceCode": "601012",
+    "source": "隆基绿能吧",
+    "platform": "eastmoney",
+    "platformName": "东方财富股吧",
+    "authorKey": "1217007772978122",
+    "kind": "post"
+  }
+]

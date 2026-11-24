@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "taoguba:2080325429700431931",
+    "id": "taoguba:2080325429700431931",
+    "title": "林园十年前神预言 #财经#经济#价值投资#林园# 林园十年前神预言 #财经#经济#价值投资#林园#",
+    "publishTime": "2026-07-24T00:13:28+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 5,
+    "likesAtCollection": 1,
+    "sourceKey": "taoguba:000002",
+    "sourceKeys": [
+      "taoguba:000002"
+    ],
+    "sourceCode": "000002",
+    "source": "淘股吧万科A讨论",
+    "platform": "taoguba",
+    "platformName": "淘股吧",
+    "authorKey": "7473700",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:724",
+    "id": "sina:724",
+    "title": "跌到退市",
+    "publishTime": "2026-07-24T13:45:55+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 464,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:688223",
+    "sourceKeys": [
+      "sina:688223"
+    ],
+    "sourceCode": "688223",
+    "source": "晶科能源新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "2652776993",
+    "kind": "post"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "sina:199913",
+    "id": "sina:199913",
+    "title": "小散一起提议回购注销股票，重塑公司价值",
+    "publishTime": "2026-07-08T10:42:41+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 435,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:000400",
+    "sourceKeys": [
+      "sina:000400"
+    ],
+    "sourceCode": "000400",
+    "source": "许继电气新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "2812336942",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:711",
+    "id": "sina:711",
+    "title": "没有最低，只有更低！wb-2-12wb-2-12wb-2-12",
+    "publishTime": "2026-07-08T12:35:22+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 293,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:688223",
+    "sourceKeys": [
+      "sina:688223"
+    ],
+    "sourceCode": "688223",
+    "source": "晶科能源新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7241474405",
+    "kind": "post"
+  }
+]

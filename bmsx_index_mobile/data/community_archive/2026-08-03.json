@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "taoguba:8614176",
+    "id": "taoguba:8614176",
+    "title": "社保持有超过5年的34只票，有没有你的菜？ 323. 中旗股份24. 万邦达25. 华域汽车 26. 宇通客车27. 长城汽车28.",
+    "publishTime": "2026-08-03T13:55:07+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 670,
+    "likesAtCollection": 1,
+    "sourceKey": "taoguba:600741",
+    "sourceKeys": [
+      "taoguba:600741"
+    ],
+    "sourceCode": "600741",
+    "source": "淘股吧华域汽车讨论",
+    "platform": "taoguba",
+    "platformName": "淘股吧",
+    "authorKey": "15014547",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:284509",
+    "id": "sina:284509",
+    "title": "明天开盘封板",
+    "publishTime": "2026-08-03T21:40:19+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 385,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:600312",
+    "sourceKeys": [
+      "sina:600312"
+    ],
+    "sourceCode": "600312",
+    "source": "平高电气新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "6025552532",
+    "kind": "post"
+  }
+]

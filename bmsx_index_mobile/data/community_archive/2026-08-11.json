@@ -1,0 +1,90 @@
+[
+  {
+    "archiveKey": "sina:240671",
+    "id": "sina:240671",
+    "title": "全是老刘",
+    "publishTime": "2026-08-11T09:25:24+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 2,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:002422",
+    "sourceKeys": [
+      "sina:002422"
+    ],
+    "sourceCode": "002422",
+    "source": "科伦药业新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7796270364",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:240672",
+    "id": "sina:240672",
+    "title": "尾盘49.3",
+    "publishTime": "2026-08-11T10:18:39+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 2,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:002422",
+    "sourceKeys": [
+      "sina:002422"
+    ],
+    "sourceCode": "002422",
+    "source": "科伦药业新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7796270364",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:284520",
+    "id": "sina:284520",
+    "title": "太坑了，恶庄",
+    "publishTime": "2026-08-11T14:18:04+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 450,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:600312",
+    "sourceKeys": [
+      "sina:600312"
+    ],
+    "sourceCode": "600312",
+    "source": "平高电气新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "5852812217",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "sina:527",
+    "id": "sina:527",
+    "title": "崩盘了，散了，散了……",
+    "publishTime": "2026-08-11T14:39:21+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:688271",
+    "sourceKeys": [
+      "sina:688271"
+    ],
+    "sourceCode": "688271",
+    "source": "联影医疗新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "7671382942",
+    "kind": "post"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "archiveKey": "sina:225764",
+    "id": "sina:225764",
+    "title": "这死股 时间给它浪费了 还是什么行业小龙头 害死小散们 查男 查男 查男",
+    "publishTime": "2026-05-24T02:04:25+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 399,
+    "likesAtCollection": 0,
+    "sourceKey": "sina:600741",
+    "sourceKeys": [
+      "sina:600741"
+    ],
+    "sourceCode": "600741",
+    "source": "华域汽车新浪股吧",
+    "platform": "sina",
+    "platformName": "新浪股吧",
+    "authorKey": "5526942278",
+    "kind": "post"
+  },
+  {
+    "archiveKey": "taoguba:99030488",
+    "id": "taoguba:99030488",
+    "title": "@知微见著 知大， 中国中铁 这类股应该也会牛吧，毕竟调整10年多了",
+    "publishTime": "2026-05-24T18:34:28+08:00",
+    "collectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "firstCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "lastCollectedAt": "2026-11-24T22:17:17.210751+08:00",
+    "commentsAtCollection": 0,
+    "clicksAtCollection": 0,
+    "likesAtCollection": 0,
+    "sourceKey": "taoguba:601390",
+    "sourceKeys": [
+      "taoguba:601390"
+    ],
+    "sourceCode": "601390",
+    "source": "淘股吧中国中铁讨论",
+    "platform": "taoguba",
+    "platformName": "淘股吧",
+    "authorKey": "863505",
+    "kind": "reply"
+  }
+]
