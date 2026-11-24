@@ -69,9 +69,11 @@ class GuiBridge:
 
     def _run_update(self) -> None:
         try:
-            from update_index import build_snapshot
+            # 走 LLM 覆盖层统一入口：与 CLI 同一条评分链路（羊驼接管+词典兜底），
+            # 且构建完成后原子落盘 latest/history/meta/data.js
+            from update_index_llm import run_update
 
-            build_snapshot(progress_callback=self._pending.put)
+            run_update(progress_callback=self._pending.put)
         except Exception as exc:
             self._pending.put({
                 "type": "state", "state": "bad",

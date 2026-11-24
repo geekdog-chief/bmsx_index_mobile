@@ -26,8 +26,9 @@ for i, a in enumerate(sys.argv):
     if a == "--model" and i + 1 < len(sys.argv):
         MODEL = sys.argv[i + 1]
 
-OUT = os.path.join(BASE, f"llm_scores_ollama_{MODEL.replace(":", "_")}.json")
-MISSING = os.path.join(BASE, f"llm_scores_ollama_{MODEL.replace(":", "_")}_missing.txt")
+MODEL_SAFE = MODEL.replace(":", "_")  # 预计算：嵌套引号 f-string 需 Python 3.12+，这里兼容旧版
+OUT = os.path.join(BASE, f"llm_scores_ollama_{MODEL_SAFE}.json")
+MISSING = os.path.join(BASE, f"llm_scores_ollama_{MODEL_SAFE}_missing.txt")
 
 # 与发给Kimi的指令.md 完全相同的 prompt（一字不改）
 SYSTEM_PROMPT = """你是一名A股社区情绪标注员。接下来我会逐个上传 JSON 文件，每个文件里有若干条股民帖子（字段：id、day、平台、source、title）。请对每条帖子输出评分，严格按以下规则：

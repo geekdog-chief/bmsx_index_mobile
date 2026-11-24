@@ -86,13 +86,18 @@ def collect_posts():
             if not pid:
                 continue
             pub = str(p.get("publishTime") or "")[:10]
-            posts.append({
+            title = str(p["title"])
+            item = {
                 "id": pid,
                 "day": pub or day,
                 "platform": platform,
                 "source": str(p.get("source") or p.get("sourceCode") or key),
-                "title": str(p["title"])[:200],
-            })
+                "title": title,
+            }
+            if len(title) > 2000:  # P2-1: 常态传全文；仅超长帖截断并打标记
+                item["title"] = title[:2000]
+                item["truncated"] = 1
+            posts.append(item)
     return posts
 
 
@@ -169,12 +174,48 @@ def parse_scores(text):
     raise ValueError("不是帖子评分的JSON")
 
 
+PERSONA_CHOICES = ("baoma", "novice", "retail", "none")
+
+
 def norm(it):
-    return {"id": str(it["id"]), "direction": int(it["direction"]),
+    """归一化单条评分并做硬校验：direction 必须 -3..3、persona 必须四选一。
+
+    P2-2 修复：原实现只强转类型不校验范围，模型吐 9 分或乱写 persona 也会入库。
+    现在任何非法字段直接 raise ValueError，由 score_batch 重试/拆包，最终进失败
+    列表——宁可漏标不可错标，非法结果绝不进 STORE。"""
+    d = it["direction"]
+    if isinstance(d, bool):
+        raise ValueError(f"direction 是布尔值: {it.get('id')}")
+    d = int(d)
+    if not -3 <= d <= 3:
+        raise ValueError(f"direction 越界 {d}: {it.get('id')}")
+    persona = str(it.get("persona", "none")).strip().lower()
+    if persona not in PERSONA_CHOICES:
+        raise ValueError(f"persona 非法 {persona!r}: {it.get('id')}")
+    return {"id": str(it["id"]), "direction": d,
             "fomo": int(bool(it.get("fomo", 0))), "panic": int(bool(it.get("panic", 0))),
             "newcomer": int(bool(it.get("newcomer", 0))), "sarcasm": int(bool(it.get("sarcasm", 0))),
             "ai_marketing": int(bool(it.get("ai_marketing", 0))),
-            "persona": str(it.get("persona", "none")), "reason": str(it.get("reason", ""))[:30]}
+            "persona": persona, "reason": str(it.get("reason", ""))[:30]}
+
+
+def validate_batch(arr, batch):
+    """整包校验：每条 norm、id 不得重复、不得出现输入之外的 id、缺项即失败。
+
+    返回 {id: 条目}；任何违规 raise ValueError 交给上层重试。"""
+    valid_ids = {p["id"] for p in batch}
+    out = {}
+    for x in arr:
+        e = norm(x)  # 非法字段在此抛错
+        if e["id"] not in valid_ids:
+            raise ValueError(f"出现输入之外的 id: {e['id']}")
+        if e["id"] in out:
+            raise ValueError(f"id 重复: {e['id']}")
+        out[e["id"]] = e
+    missing = valid_ids - set(out)
+    if missing:
+        raise ValueError(f"id 缺失 {len(missing)} 条")
+    return out
 
 
 def main():
@@ -207,10 +248,7 @@ def main():
         for attempt in range(3):
             try:
                 arr = parse_scores(chat(user))
-                got = {str(x["id"]): norm(x) for x in arr}
-                missing = [p["id"] for p in batch if p["id"] not in got]
-                if missing:
-                    raise ValueError(f"id 缺失 {len(missing)} 条")
+                got = validate_batch(arr, batch)
                 results.update(got)
                 return []
             except Exception as e:

@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 data/forum_cache/
 data/community_archive/
+# P2-5: 缓存与日志属本地运行产物，不进仓库（data.js 与 history*.json 保留跟踪）
+data/forum_cache.json
+data/archive.sqlite3
+data/llm_overlay.log
+data/llm_scores_ollama.json
+data/update.log
