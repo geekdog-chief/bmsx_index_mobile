@@ -1,0 +1,3810 @@
+{
+ "version": 1,
+ "days": [
+  "2026-11-25",
+  "2026-11-24",
+  "2026-11-23"
+ ],
+ "posts": [
+  {
+   "id": "eastmoney:1799915892",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中科曙光吧",
+   "title": "别激动，现在是熊市管住手",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800023538",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "科伦药业吧",
+   "title": "周五赌科技，已卖出！买入业绩白马，加中药！3001810024226008876",
+   "dict": {
+    "direction": 1,
+    "label": "看多",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800053655",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "比亚迪吧",
+   "title": "补一点，继续建仓继续关注",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800054978",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "安井食品吧",
+   "title": "每年数以亿计的产品流向餐桌，安井的品控压力比想象中大，能保持稳定输出不容易。",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800089953",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "德赛西威吧",
+   "title": "Sb的一天",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800090356",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "华域汽车吧",
+   "title": "这股我研究的明明白白，第四季度财报出了，你们就知道了！",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800096791",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "隆平高科吧",
+   "title": "今天总算跟着种子板块涨一点，不过没量上涨，估计还是得跌",
+   "dict": {
+    "direction": -1,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -1,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800099265",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "上证指数吧",
+   "title": "今天最低3476.65点，理论上将是未来3个月的最低点或者次低，大家好好珍惜，过",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800103160",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "百济神州吧",
+   "title": "百济神州-U(SH688235)三地上市，全球布局！中国创新药标杆，实力摆在那里",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800107547",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "宁德时代吧",
+   "title": "宁德时代银行业是当升科技旗下的企业",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800107817",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "浪潮信息吧",
+   "title": "我把2027年浪潮信息净利润提高到150-250亿，股价200-300",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800108265",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "华鲁恒升吧",
+   "title": "今年盈利不错？？还有三季度分红？？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "baoma",
+    "personaReason": "cautious_household_style",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800111282",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "平高电气吧",
+   "title": "好像每次踩完20日线就会涨，明天该涨了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800112736",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "深证成指吧",
+   "title": "跌起来容易，涨起来很难，明天回调。",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800131161",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "登海种业吧",
+   "title": "抛弃科技，拥抱农业。",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800132511",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "紫金矿业吧",
+   "title": "先出来避避短线获利了结的压力，23以下再来",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800133327",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "荃银高科吧",
+   "title": "纪委应该介入了，11元多的邀约价，有没有利益输送",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800133429",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中信证券吧",
+   "title": "=拉高要会卖！涨多定调整！不会一直涨！低吸做差股！跑",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800135002",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "国轩高科吧",
+   "title": "亏快20点了，这票一辈子也回不来了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800135543",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "汇川技术吧",
+   "title": "汇川技术积累了那么多年是时候业绩逐渐兑现的时候了，坚持长期持有汇川技术一定不会让",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "baoma",
+    "personaReason": "cautious_household_style",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800136331",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "洛阳钼业吧",
+   "title": "大家能不能说下本是多少啊，现是14元的本啊，10%的亏啊！",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800141971",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "胜宏科技吧",
+   "title": "所有持仓胜宏的狂欢节——2026年11月24日，记住这个日子，狂欢，狂野飙盘，十五个打底，摸上二十个，机构一百亿明天开盘抢筹",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800144338",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "宁波银行吧",
+   "title": "明天要大跌了，是买进的好机会",
+   "dict": {
+    "direction": -1,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -1,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800145567",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "迈瑞医疗吧",
+   "title": "完了明天易中天要回来了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800146297",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "鱼跃医疗吧",
+   "title": "明天又是科技狂欢的一天了。。",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800146552",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中航西飞吧",
+   "title": "英伟达盘前30个点了，明天西飞又该蹿稀了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800149276",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "芒果超媒吧",
+   "title": "明天硬件大涨，会带动整个大盘大涨的。明天短剧也会涨，只是会弱于硬科技。大家放心持",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800150243",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "绿的谐波吧",
+   "title": "$绿的谐波(SH688017)$",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800150953",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "恒瑞医药吧",
+   "title": "$恒瑞医药(SH600276)$",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800151682",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "海光信息吧",
+   "title": "达子引爆行情明天能回口老血吗",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800152613",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "万兴科技吧",
+   "title": "果麦文化已经44，我感觉果麦这波会超过前高91，万兴我就5万块果麦牛逼",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800152708",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "国电电力吧",
+   "title": "$国电电力(SH600795)$",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800155219",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "牧原股份吧",
+   "title": "$牧原股份(SZ002714)$",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800157657",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "寒武纪吧",
+   "title": "明天半导体嗨起来",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800158908",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "兆易创新吧",
+   "title": "真的以为明天能开盘涨停？真的可悲可叹，即便涨停又要套一批韭菜",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": "novice",
+    "personaReason": "market_question",
+    "maskedDirection": 3,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800160289",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "东方财富吧",
+   "title": "如果明天早上科技股大幅高开，个人建议换股后有超过十点收益的一定要尽快换回东财来！",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800160743",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "许继电气吧",
+   "title": "明天科技大涨你会跟一点吗",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800166460",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "沪硅产业吧",
+   "title": "看看英伟达，世界就是个巨大的草台班子",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800166920",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中金黄金吧",
+   "title": "感谢老黄，让我们发财",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800168115",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "联影医疗吧",
+   "title": "明天资金去科技，联阴继续观察",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800169533",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "新希望吧",
+   "title": "要启动了!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800170153",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "温氏股份吧",
+   "title": "美股光通信爆涨，逆光的你可能要破17",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800171069",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "长江电力吧",
+   "title": "砸吧，砸到20左右我回来",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800171152",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "北方稀土吧",
+   "title": "底分型已定，明日上涨",
+   "dict": {
+    "direction": 1,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 1,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800171454",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "国电南瑞吧",
+   "title": "完了，明天瑟瑟发抖。科技要起飞了，这玩意要跌了",
+   "dict": {
+    "direction": 2,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 2,
+    "fomo": true,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800171998",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "五粮液吧",
+   "title": "明天能不能有根毛，估计毛都没有一根",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800172535",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "卫星化学吧",
+   "title": "卫星化学冷却液产品最近怎么没有消息了，不是说第四季度规模化生产了，现在已经11月",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800172925",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "埃斯顿吧",
+   "title": "完全踏空了怎么办？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": true,
+    "panic": false,
+    "newcomer": true,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800172947",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "伊利股份吧",
+   "title": "上周五老美科技大跌，这支票今天涨了吗？别把老美的行情幻想到大A，这是两码事，别忘",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800173009",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "山东黄金吧",
+   "title": "你也姓黄，山东黄",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800173210",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "保利发展吧",
+   "title": "明天等着被科技吸干吧，小绿子",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800173820",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中航沈飞吧",
+   "title": "12月上60",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800173865",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "拓普集团吧",
+   "title": "上午五十一卖了，以为下午可以接，唉！",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800173884",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "天孚通信吧",
+   "title": "老黄回来，跟易中天有什么关系？fcc解除了吗？估计老黄更加要谨慎了，不敢跟这边再",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800174289",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "赤峰黄金吧",
+   "title": "明天很大概率一字板了。而且可能连板。可以挂涨停试试能不能买进去了",
+   "dict": {
+    "direction": 6,
+    "label": "看多",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 6,
+    "fomo": true,
+    "panic": false,
+    "newcomer": true,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800174512",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "沪电股份吧",
+   "title": "明天应该开盘直接涨停，恭喜大家了！",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800174614",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "晶科能源吧",
+   "title": "明天能别装死吗",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800175043",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "山西汾酒吧",
+   "title": "$山西汾酒(SH600809)$$泸州老窖(SZ000568)$$酒ETF鹏华(",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800175306",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "格力电器吧",
+   "title": "纳斯达克大涨7.3%，不知道格力明天跌多少，明天红利股芭比Q了看谁跑的快",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800175504",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "招商银行吧",
+   "title": "明天能跌几个点",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800175853",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "三七互娱吧",
+   "title": "AI微短剧",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800175881",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中国核电吧",
+   "title": "明天9.40应该能吸上一口",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800176135",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "烽火通信吧",
+   "title": "这个烽火就是科技里面的老登股真特么垃圾",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800176457",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中国移动吧",
+   "title": "今天我居然没有买回来？忍住了忍住了，等待一个大T,即便没有成功，也还有三个账户的",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "market_question",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": true,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800176721",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "创业板指吧",
+   "title": "王者归来的霸气！",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800177036",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中兴通讯吧",
+   "title": "明天大涨0.1%，不信等着瞧！",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800177718",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中国交建吧",
+   "title": "明天科技大涨，这玩意要废了",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800177843",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中国建筑吧",
+   "title": "怎么不回购了？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800178185",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "隆基绿能吧",
+   "title": "$隆基绿能(SH601012)$",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800178517",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "新易盛吧",
+   "title": "兄弟们，明天高开10个点以上卖吗？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": true,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800179049",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "万华化学吧",
+   "title": "明天上73元",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800179147",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "万科A吧",
+   "title": "应该是二展。 如果债权人成立债委会，对万科是好事还是坏事？$万科企业(HK|02",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800179216",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "金山办公吧",
+   "title": "这会儿OpenAi有11个点，财捷3个多点，微软4个多点，meta5个点。明天金",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800179517",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中微公司吧",
+   "title": "完啦，今天低点被吓跑啦，给上车吗明天",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800180091",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "海尔智家吧",
+   "title": "明天老登怎么办",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": true,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800180163",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中际旭创吧",
+   "title": "明天集合竞价直接涨停！",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800180307",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "航发动力吧",
+   "title": "$航发动力(SH600893)$",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800180658",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "长城汽车吧",
+   "title": "英伟达涨33%了，长城智驾芯片是英伟达供应的，明天蹭一下热度，涨个28%也行啊？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800180811",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "赛力斯吧",
+   "title": "没得救了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800180888",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "海天味业吧",
+   "title": "科技起来了老登明天多半要砸盘补跌了",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800181219",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "招商蛇口吧",
+   "title": "明天涨停了，干吧",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800182293",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "恺英网络吧",
+   "title": "英子利好英子，双英齐飞",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800182580",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "工商银行吧",
+   "title": "老黄回归了，避险方向全完了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800183037",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "美的集团吧",
+   "title": "美的，我是真期盼大跌。",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800183211",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "深南电路吧",
+   "title": "顶点人气顶顶顶",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800183418",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "北方华创吧",
+   "title": "国产设备纯纯的垃J",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800183509",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "亿纬锂能吧",
+   "title": "美国把跌了3天的指数都涨回来了，亿纬在一片蒸蒸日上中顺利的股价腰斩，市值跌破千亿",
+   "dict": {
+    "direction": -5,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -5,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800183520",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "中国平安吧",
+   "title": "明天还能跌停不成？还能退市不成？有钱加仓！！",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": "novice",
+    "personaReason": "market_question",
+    "maskedDirection": -2,
+    "fomo": true,
+    "panic": false,
+    "newcomer": true,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800183620",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "科大讯飞吧",
+   "title": "明天涨两个点是稳的，抗跌的必抗涨，A股铁律",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800183736",
+   "day": "2026-11-23",
+   "platform": "东方财富股吧",
+   "source": "贵州茅台吧",
+   "title": "完蛋了，明天跑还是不跑",
+   "dict": {
+    "direction": -3,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -3,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800431894",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "德赛西威吧",
+   "title": "没我这个家都得散",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800545013",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "宁波银行吧",
+   "title": "原本以为今天银行大跌，开盘卖在最低点，无语了",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800737617",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "科伦药业吧",
+   "title": "第一次买它，家人们明天怎么看明天？尾盘以为要收红，结果还绿了！！",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": true,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800774201",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "海天味业吧",
+   "title": "最后这是抢筹？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800798020",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "金山办公吧",
+   "title": "业绩估计也是不好，要不然今天不能跌这样",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800810825",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中国建筑吧",
+   "title": "韭菜就是这样炼成的：今早割了中国建筑追了科技，明天再割科技回来买中国建筑……",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800819956",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "国轩高科吧",
+   "title": "明天跌5个点伺候",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800820465",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "绿的谐波吧",
+   "title": "这支票已经被机构游资抛弃了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800821588",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "招商银行吧",
+   "title": "看看你亲儿子招商证券吧",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800824825",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "海尔智家吧",
+   "title": "海尔品牌，值得信赖",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800827868",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中航沈飞吧",
+   "title": "中航沈飞公告：为管理近40亿定增募集资金，划出不超过9亿元闲置资金进行现金管理（",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800829470",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "山西汾酒吧",
+   "title": "$山西汾酒(SH600809)$$贵州茅台(SH600519)$$泸州老窖(SZ",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800830326",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "荃银高科吧",
+   "title": "$ST荃银(SZ300087)$",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800830997",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "许继电气吧",
+   "title": "明天准备好麻袋",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800834611",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "万兴科技吧",
+   "title": "幸好早上跑了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800835108",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "安井食品吧",
+   "title": "震荡盘升格局，算是主升进程。",
+   "dict": {
+    "direction": 4,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 4,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800838084",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "鱼跃医疗吧",
+   "title": "长期看好",
+   "dict": {
+    "direction": 1,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 1,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800838504",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "华鲁恒升吧",
+   "title": "按现在全球经济情况，原油最多维持在70美元，再加上美伊战争末期，所以华鲁恒升还得",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800843686",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "新希望吧",
+   "title": "我买了你们那么多牛奶，你可坚挺点啊",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800843760",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "三七互娱吧",
+   "title": "19的本，跌到10元最后再补仓一次不看了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800844419",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "科大讯飞吧",
+   "title": "每天讲故事月月讲，年年讲，没有业绩支撑啥也不是，10以下的票，不信拭目以待。",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800844558",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "埃斯顿吧",
+   "title": "今天这走势怎么跟宇树科技一个熊样？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": true,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800845439",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "汇川技术吧",
+   "title": "汇川一年后必上100",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800845443",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "烽火通信吧",
+   "title": "好想回到以前正常的生活，以前只是穷，不至于负债累累",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800845974",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "温氏股份吧",
+   "title": "还是伊利股份更稳",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800846479",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "保利发展吧",
+   "title": "明天看涨大涨3个点以上",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800846628",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "亿纬锂能吧",
+   "title": "大客户解决了产能问题，后续电池使用逐步起量了！",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800846819",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "联影医疗吧",
+   "title": "联影医疗看分析在这，哈哈",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800847087",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "国电南瑞吧",
+   "title": "国电南瑞看分析在这，哈哈",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800848447",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中国移动吧",
+   "title": "安心睡觉，明天又是中国移动创新高的一天",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800849460",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中国核电吧",
+   "title": "今天涨应该因为这笔大宗交易场外谈好的原因，所以这个价格是人为的，而非市场自身的原",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800849878",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "华域汽车吧",
+   "title": "按说今天账户应该翻红，因为你又是绿的一天",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800850150",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "恺英网络吧",
+   "title": "让5日线压死了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800850680",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "招商蛇口吧",
+   "title": "明天大跌5个点，跑不了",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800851125",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中国平安吧",
+   "title": "10月底以来保险或已走出趋势性上涨的苗头，大家再给保险板块点时间，毕竟这两个月保",
+   "dict": {
+    "direction": 1,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 1,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800851186",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "沪硅产业吧",
+   "title": "是不是明年有可能被St，大神谁清楚",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800851420",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "国电电力吧",
+   "title": "水军托出动了，忽悠什么涨不停，一直涨，简直就是，搞笑，拉黑牛忽悠上涨骗散户在",
+   "dict": {
+    "direction": 1,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 1,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800852250",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "赛力斯吧",
+   "title": "大哥，我求求你跌停我亏点钱无所谓，孤儿股",
+   "dict": {
+    "direction": -3,
+    "label": "看空",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800852683",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "万华化学吧",
+   "title": "良心公司",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800853327",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "百济神州吧",
+   "title": "百济神州看分析在这，哈哈",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800853747",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "伊利股份吧",
+   "title": "明天起飞！",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800853897",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "宁德时代吧",
+   "title": "实则利好，因为欧洲有厂，其他企业不见得有",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 3,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800854068",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "格力电器吧",
+   "title": "美的分红办事效率直杀格．．．．．",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "baoma",
+    "personaReason": "cautious_household_style",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800854365",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中国交建吧",
+   "title": "搞几个板行吗",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800854437",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "美的集团吧",
+   "title": "太高了，有人还幻想180元，疯了疯了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800854908",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "恒瑞医药吧",
+   "title": "今天焦点访谈报道了创新药进医保的情况，恒瑞有关负责人出境，相信对明天的股价有提振",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800855150",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "隆基绿能吧",
+   "title": "隆基绿能看分析在这，哈哈",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800855402",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "晶科能源吧",
+   "title": "美股晶科能源一样吗",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800855503",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "隆平高科吧",
+   "title": "黄仁勋不吃隆平高科的粮食，所以复出这个股还是跌",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800855641",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中信证券吧",
+   "title": "今日中金和东财都砸3.5%左右，中信死扛，明天可能要补爹了！",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800856373",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "登海种业吧",
+   "title": "当地时间11月23日，联合国世界粮食计划署警告称，霍尔木兹海峡、曼德海峡和黑海三",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800856553",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中国中铁吧",
+   "title": "学学国外铁路股票走势",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800856600",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中航西飞吧",
+   "title": "运15和你有关系吗",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800856649",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "平高电气吧",
+   "title": "慌啥子嘛，慢慢来，",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800856687",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "沪电股份吧",
+   "title": "昨晚说开盘一字板的韭菜为什么不出现了？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800857563",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "东方财富吧",
+   "title": "为什么同花顺做不到像东方财富这样的levels2？有什么技术难点@妙想",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800858101",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "浪潮信息吧",
+   "title": "兄弟们，都收手吧，今天被骗进来割了5千，明天不知道还要扣款多少，恶心明天还是继续",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800858179",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "航发动力吧",
+   "title": "航发动力看分析在这，哈哈",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800858355",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "阳光电源吧",
+   "title": "100见",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800858773",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "牧原股份吧",
+   "title": "秦总，年轻人要意气风发，冲冲冲！",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800858883",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "迈瑞医疗吧",
+   "title": "明天开盘继续暴跌",
+   "dict": {
+    "direction": -3,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -3,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800858899",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "卫星化学吧",
+   "title": "坚信卫星化学杰夫·贝佐斯说：“有一次我问巴菲特，你的投资理念非常简单，为什么大家",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800858991",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "深南电路吧",
+   "title": "接下来还得看国产算力链，还得看载板这块，你是升腾独家吧？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800859119",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "万科A吧",
+   "title": "太傻了，还在想着怎么还钱？直接全面逾期，破产从新开始，不然下半场没有你的机会。别",
+   "dict": {
+    "direction": -1,
+    "label": "看空",
+    "persona": "novice",
+    "personaReason": "explicit_question_or_learning",
+    "maskedDirection": -1,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800859134",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "深证成指吧",
+   "title": "到底要多少次高开低走才能阻止大家追高科技？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800859188",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "天孚通信吧",
+   "title": "天孚通信的",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800859327",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中科曙光吧",
+   "title": "明天国产链会雄起吗？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800859336",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "北方稀土吧",
+   "title": "美股又崩了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800859457",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中微公司吧",
+   "title": "明天高开，十点前涨停且行且珍惜",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800859464",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "长城汽车吧",
+   "title": "半固态电池出来一点水花都没有？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800859647",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中兴通讯吧",
+   "title": "35亿只涨3分，深圳垃圾桶。",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800859765",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "拓普集团吧",
+   "title": "有传闻老美要加关税，这对拓普冲击很大，汽车零部件和机器人部件都会因为加关税减少毛",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800859772",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "胜宏科技吧",
+   "title": "怕啥，这股有新能源特斯拉，PCB，人形机器人概念",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800860110",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "长江电力吧",
+   "title": "从年线图看，长江电力是A股为数不多的十几年站在5年线之上的。",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800860560",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "芒果超媒吧",
+   "title": "芒果和果M应该是同一个庄家，每天一个震荡一个上攻。芒果应该是重仓，一直在郭麦掩护",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800860563",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "比亚迪吧",
+   "title": "谁知道哪里是底",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800860663",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "五粮液吧",
+   "title": "快过年了，五粮液不给全体股东发酒吗？",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800860760",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "工商银行吧",
+   "title": "明天又是靠你拉大盘",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800860874",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "寒武纪吧",
+   "title": "明天20%",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800860985",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中金黄金吧",
+   "title": "买了之后每天睁眼就是扣钱",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800860993",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "工业富联吧",
+   "title": "死猪不怕开水烫，哈哈哈",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800860998",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "兆易创新吧",
+   "title": "明天低开没毛病",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861048",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "贵州茅台吧",
+   "title": "帝亚吉欧，布朗霍文都在高歌猛进中，明天茅台挑战1500",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861059",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "紫金矿业吧",
+   "title": "明天又废了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861068",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "新易盛吧",
+   "title": "底量远超顶量，严重底背离，macd水下金叉，明天给机会低开搞一点。",
+   "dict": {
+    "direction": 1,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 1,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861081",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "山东黄金吧",
+   "title": "明天又废了呀",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861086",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "北方华创吧",
+   "title": "周一没有跌停，明天会继续补跌，明天看好跌停",
+   "dict": {
+    "direction": 4,
+    "label": "看多",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 1,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861109",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "海光信息吧",
+   "title": "明天你再跟海外链走，找人弄你",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861119",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "上证指数吧",
+   "title": "我们预判了别人对我我们的预判，最后我们走出一个预判别人认为我的预判的预判。就问你",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861122",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "赤峰黄金吧",
+   "title": "完犊子，手欠尾盘买了点，明天别跌停了",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861124",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "创业板指吧",
+   "title": "创业板现在的浪型很清晰处于C-5-4，今天是4浪高点，就差最后一小浪，未来几日即",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861125",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "洛阳钼业吧",
+   "title": "真难受，从哪没有亏过这么多",
+   "dict": {
+    "direction": -1,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -1,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861136",
+   "day": "2026-11-24",
+   "platform": "东方财富股吧",
+   "source": "中际旭创吧",
+   "title": "五个月↓了1千块。",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800861584",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "万科A吧",
+   "title": "万科破产之日，深铁将获得更优质的资产，只属于深铁的资产，钱不能白花",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800862088",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "科伦药业吧",
+   "title": "美股大跌",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800862211",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "山东黄金吧",
+   "title": "不出意外，明天大跌！！！！",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800862318",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "中国交建吧",
+   "title": "恭喜今天买入和加仓的，恭喜发财，明天开启一连串式暴涨！！！",
+   "dict": {
+    "direction": 6,
+    "label": "看多",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 6,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800862557",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "中国建筑吧",
+   "title": "世界500强，值个5块钱总不过分吧",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800862836",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "赛力斯吧",
+   "title": "以前只知道有腰斩，炒了大A后才知道还有膝盖斩，脚踝斩，脚趾头斩",
+   "dict": {
+    "direction": -3,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -3,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800863013",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "招商蛇口吧",
+   "title": "$招商蛇口(SZ001979)$",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800863077",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "海光信息吧",
+   "title": "今天是不是要跟美股，大跌20%？",
+   "dict": {
+    "direction": -2,
+    "label": "看空",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": -2,
+    "fomo": false,
+    "panic": true,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800863109",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "科大讯飞吧",
+   "title": "回来看看你们",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800863245",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "金山办公吧",
+   "title": "当这个游戏你接盘了，主力就银行什么都来了，业绩也没了哈哈，你们全部过来买长亮不好",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800863336",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "沪硅产业吧",
+   "title": "今天亏了六点，十几万没了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800863657",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "中金黄金吧",
+   "title": "19满仓动都不敢动走了怕真没了又怕接着跌",
+   "dict": {
+    "direction": 3,
+    "label": "看多",
+    "persona": "retail",
+    "personaReason": "active_trading_language",
+    "maskedDirection": 0,
+    "fomo": true,
+    "panic": false,
+    "newcomer": false,
+    "intense": true
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800863658",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "联影医疗吧",
+   "title": "明天医疗器械该表现下了吧，看看人家板块走的趋势",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800863687",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "隆基绿能吧",
+   "title": "我愿意用24年9.24的价格位置换大盘回到24年9.24号的位置。",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800863749",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "万华化学吧",
+   "title": "避险股，但不是什么好股",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800863848",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "亿纬锂能吧",
+   "title": "明天看来得拉新能源稳指数了",
+   "dict": {
+    "direction": 0,
+    "label": "中性",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 0,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  },
+  {
+   "id": "eastmoney:1800864045",
+   "day": "2026-11-25",
+   "platform": "东方财富股吧",
+   "source": "中科曙光吧",
+   "title": "好多小作文，明天应该稳了",
+   "dict": {
+    "direction": 1,
+    "label": "看多",
+    "persona": null,
+    "personaReason": null,
+    "maskedDirection": 1,
+    "fomo": false,
+    "panic": false,
+    "newcomer": false,
+    "intense": false
+   },
+   "weight": 1.0
+  }
+ ]
+}

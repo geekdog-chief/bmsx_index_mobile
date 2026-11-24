@@ -225,6 +225,27 @@ def build_source_specs() -> Tuple[Dict[str, Dict[str, object]], List[str], Dict[
     }
     market_keys.append(ths_market_key)
 
+    # 大盘层补齐新浪/淘股吧固定席位（2026-11-24）：此前两渠道在大盘层无采集源，
+    # 证据恒为空并被中性化；现接入上证指数吧（新浪）与上证指数讨论（淘股吧）。
+    sina_market_key = "sina:sh000001"
+    specs[sina_market_key] = {
+        "key": sina_market_key,
+        "platform": "sina",
+        "code": "000001",
+        "symbol": "sh000001",
+        "name": "上证指数",
+    }
+    market_keys.append(sina_market_key)
+    taoguba_market_key = "taoguba:sh000001"
+    specs[taoguba_market_key] = {
+        "key": taoguba_market_key,
+        "platform": "taoguba",
+        "code": "000001",
+        "symbol": "sh000001",
+        "name": "上证指数",
+    }
+    market_keys.append(taoguba_market_key)
+
     for sector_key, definition in SECTORS.items():
         keys: List[str] = []
         source_stocks = stock_pairs(definition.get("sourceStocks") or definition.get("stocks"))
@@ -2252,10 +2273,7 @@ def score_results_as_of(
         "taoguba": {"mode": "sector", "expectedUnits": ["broad-market"], "allowAttention": True},
     }
     market_unit_for_source = {
-        key: str(
-            results[key].get("code")
-            or (key.split(":", 1)[-1] if key.startswith("eastmoney:") else key.rsplit(":", 1)[-1])
-        )
+        key: _market_unit_for_key(key, results)
         for key in formal_market_keys if key in results
     }
     market_unit_names = {
@@ -2516,6 +2534,16 @@ def _emit_progress(
         callback(payload)
     except Exception:
         pass
+
+
+def _market_unit_for_key(key: str, results) -> str:
+    """大盘层席位映射：新浪/淘股吧大盘源归入 broad-market 固定席位。"""
+    if key.startswith(("sina:", "taoguba:")):
+        return "broad-market"
+    return str(
+        results[key].get("code")
+        or (key.split(":", 1)[-1] if key.startswith("eastmoney:") else key.rsplit(":", 1)[-1])
+    )
 
 
 def build_snapshot(

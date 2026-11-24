@@ -344,12 +344,12 @@ def sina_symbol(code: str) -> str:
     return "sz" + code
 
 
-def discover_sina_bid(code: str) -> str:
+def discover_sina_bid(code: str, symbol: str = None) -> str:
     bids = load_sina_bids()
     cached = bids.get(code)
     if cached:
         return str(cached)
-    symbol = sina_symbol(code)
+    symbol = symbol or sina_symbol(code)
     page_url = f"https://guba.sina.cn/?s=bar&name={symbol}&from=redirect"
     page = request_text(page_url, "sina", attempts=1, timeout=12)
     for pattern in (r'["\']bid["\']\s*:\s*["\']?(\d+)', r"\bbid\s*[:=]\s*['\"]?(\d+)", r"data-bid=['\"](\d+)"):
@@ -370,9 +370,9 @@ def fetch_sina(spec: Mapping, as_of: datetime = None) -> Dict:
     stock_name = str(spec["name"])
     label = f"{stock_name}新浪股吧"
     source_key = str(spec["key"])
-    symbol = sina_symbol(code)
+    symbol = str(spec.get("symbol") or sina_symbol(code))
     page_url = f"https://guba.sina.cn/?s=bar&name={symbol}&from=redirect"
-    bid = discover_sina_bid(code)
+    bid = discover_sina_bid(code, symbol)
     all_rows: List[Dict] = []
     raw_times: List[datetime] = []
     raw_rows = 0
@@ -779,7 +779,7 @@ def fetch_taoguba(spec: Mapping, as_of: datetime = None) -> Dict:
     """匿名首页20行下限快照。认证用户剔除。续页需登录，显式标记为下限。"""
     code = str(spec["code"])
     prefix = "sh" if code.startswith(("5", "6", "9")) else "sz"
-    full_code = prefix + code
+    full_code = str(spec.get("symbol") or (prefix + code))
     source_key = str(spec["key"])
     source_name = f"淘股吧{spec.get('name') or code}讨论"
     url = f"https://www.tgb.cn/quotes/{full_code}"
