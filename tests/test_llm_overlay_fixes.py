@@ -901,18 +901,19 @@ class TestMonkeypatchContract(unittest.TestCase):
         self.assertEqual(len(patched), 4, f"猴补丁范围漂移：{patched}")
 
     def test_signature_parity(self):
-        """接口稳定：被替换函数的参数签名与原函数兼容（冻结层升级时本测试报警）。"""
+        """接口稳定：与模块加载时保存的原始函数比对——apply_overlays 会替换 ui.*，
+        直接拿 ui.sentiment_score 当基准是同义反复（独立验收指出）。本测试不调用
+        apply_overloads、不改全局状态，对其它用例零污染。"""
         import inspect as _inspect
-        def compat(fn_new, fn_orig, skip_last=0):
+        def compat(fn_new, fn_orig):
             a = _inspect.signature(fn_new).parameters
             b = _inspect.signature(fn_orig).parameters
-            b_names = [n for n, p in b.items()][: len(b) - skip_last]
-            for n in b_names:
+            for n in b:
                 self.assertIn(n, a, f"原参数 {n} 在补丁中缺失")
-        compat(uil.llm_sentiment_score, ui.sentiment_score)
-        compat(uil.llm_contains, ui.contains_nonnegated)
-        compat(uil.dedup_cache, ui.load_forum_cache)
-        compat(uil._fresh_fetch_source, ui.fetch_source)  # as_of 有默认值，原默认冻结值跳过
+        compat(uil.llm_sentiment_score, uil._orig_sentiment)
+        compat(uil.llm_contains, uil._orig_contains)
+        compat(uil.dedup_cache, uil._orig_load_cache)
+        compat(uil._fresh_fetch_source, uil._orig_fetch_source)
 
 
 class TestP12FreshNow(unittest.TestCase):
