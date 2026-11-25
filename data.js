@@ -5,7 +5,7 @@ window.INDEX_DATA = {
   "methodology": "community_text_four_channel_grassroots_three_trading_day_v3",
   "scoringModel": "four_channels_equal_then_units_equal_grassroots_50_30_20_v3",
   "marketDate": "2026-11-25",
-  "updatedAt": "2026-11-25T16:40:03.885501+08:00",
+  "updatedAt": "2026-11-25T17:06:07.887331+08:00",
   "confidence": 93,
   "scores": {
     "baoma": 55,
@@ -14,31 +14,31 @@ window.INDEX_DATA = {
     "composite": 56
   },
   "signals": {
-    "optimism": 49.6,
-    "fomo": 48.4,
+    "optimism": 49.5,
+    "fomo": 48.3,
     "newcomer": 50.2,
-    "intensity": 52.9,
+    "intensity": 53.0,
     "attention": 53.5,
-    "panic": 14.3,
+    "panic": 14.5,
     "breadth": 87.5,
     "heat": 55.0,
-    "llmFear": 29.1,
-    "llmGreed": 20.9
+    "llmFear": 30.0,
+    "llmGreed": 20.8
   },
   "heat": 55.0,
-  "direction": 49.6,
+  "direction": 49.5,
   "diagnostics": {
     "totalPosts": 771,
     "recentPosts": 754,
     "recent7Posts": 766,
     "samplePosts": 766,
-    "bullishPosts": 124,
-    "bearishPosts": 183,
-    "neutralPosts": 459,
-    "bullishRatio": 16.2,
-    "bearishRatio": 23.9,
-    "fomoRate": 7.6,
-    "panicRate": 6.8,
+    "bullishPosts": 147,
+    "bearishPosts": 263,
+    "neutralPosts": 356,
+    "bullishRatio": 19.2,
+    "bearishRatio": 34.3,
+    "fomoRate": 7.4,
+    "panicRate": 8.3,
     "newcomerRate": 1.7,
     "platformCount": 4,
     "sourceCount": 270,
@@ -127,7 +127,7 @@ window.INDEX_DATA = {
           "platformCount": 2,
           "maskedDirectionRaw": 45.9,
           "evidenceWeight": 0.632,
-          "candidateShrunkDirection": 46.0
+          "candidateShrunkDirection": 45.9
         },
         "novice": {
           "available": true,
@@ -136,7 +136,7 @@ window.INDEX_DATA = {
           "platformCount": 2,
           "maskedDirectionRaw": 48.9,
           "evidenceWeight": 0.65,
-          "candidateShrunkDirection": 48.0
+          "candidateShrunkDirection": 47.9
         },
         "retail": {
           "available": true,
@@ -145,7 +145,7 @@ window.INDEX_DATA = {
           "platformCount": 3,
           "maskedDirectionRaw": 48.5,
           "evidenceWeight": 0.65,
-          "candidateShrunkDirection": 47.7
+          "candidateShrunkDirection": 47.6
         }
       }
     },
@@ -507,11 +507,11 @@ window.INDEX_DATA = {
       },
       "channelSignals": {
         "eastmoney": {
-          "optimism": 49.1,
-          "fomo": 44.8,
-          "panic": 28.8,
+          "optimism": 47.9,
+          "fomo": 43.8,
+          "panic": 31.7,
           "newcomer": 51.5,
-          "intensity": 59.0,
+          "intensity": 59.6,
           "attention": 62.8
         },
         "sina": {
@@ -741,10 +741,10 @@ window.INDEX_DATA = {
           "optimism": 50.7,
           "fomo": 51.3,
           "newcomer": 52.1,
-          "intensity": 53.5,
+          "intensity": 53.7,
           "attention": 54.5,
-          "panic": 17.0,
-          "heat": 52.9
+          "panic": 16.9,
+          "heat": 53.0
         }
       },
       {
@@ -760,10 +760,10 @@ window.INDEX_DATA = {
           "optimism": 50.7,
           "fomo": 51.9,
           "newcomer": 48.2,
-          "intensity": 51.8,
+          "intensity": 51.7,
           "attention": 51.3,
           "panic": 11.4,
-          "heat": 51.2
+          "heat": 51.1
         }
       },
       {
@@ -833,7 +833,7 @@ window.INDEX_DATA = {
         "childWeight": 0.25,
         "missingChildrenNeutralised": 0,
         "signals": {
-          "optimism": 49.6,
+          "optimism": 49.7,
           "fomo": 48.9,
           "newcomer": 49.9,
           "intensity": 50.6,
@@ -858,7 +858,7 @@ window.INDEX_DATA = {
           "intensity": 51.8,
           "attention": 51.3,
           "panic": 11.7,
-          "heat": 51.1
+          "heat": 51.0
         }
       },
       {
@@ -882,9 +882,9 @@ window.INDEX_DATA = {
       }
     ],
     "coverage": 95.6,
-    "archiveAddedPosts": 1325,
-    "archiveExistingPosts": 21086,
-    "sqliteArchiveAddedPosts": 1594,
+    "archiveAddedPosts": 60,
+    "archiveExistingPosts": 22351,
+    "sqliteArchiveAddedPosts": 0,
     "sqliteArchiveTotalPosts": 47149,
     "sectorHeatModel": {
       "version": "sector_community_heat_v4_company_equal",
@@ -893,14 +893,14 @@ window.INDEX_DATA = {
       "rankEligibleSectorCount": 30,
       "rankedSectorCount": 30,
       "marketAnchor": 55.0,
-      "latentMedian": 51.96,
-      "absoluteMedian": 51.837,
-      "crossSectionMAD": 1.96,
+      "latentMedian": 51.953,
+      "absoluteMedian": 51.825,
+      "crossSectionMAD": 1.975,
       "crossSectionP90P10": 5.643,
       "noiseFloor": 1.732,
       "dispersionGate": 1.0,
-      "relativeRange": 25.5,
-      "finalRange": 18.2,
+      "relativeRange": 25.6,
+      "finalRange": 18.1,
       "usesMarketPrice": false,
       "formalPersonaScoresChanged": false,
       "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -954,8 +954,8 @@ window.INDEX_DATA = {
             "2026-10-09"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 1562,
           "coverageStatus": "page_cap_reached_before_third_trading_day",
           "paginationMode": "page"
         }
@@ -983,8 +983,8 @@ window.INDEX_DATA = {
             "2026-11-03"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 1562,
           "coverageStatus": "page_cap_reached_before_third_trading_day",
           "paginationMode": "page"
         }
@@ -1017,8 +1017,8 @@ window.INDEX_DATA = {
             "2026-10-16"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 1562,
           "coverageStatus": "page_cap_reached_before_third_trading_day",
           "paginationMode": "page"
         }
@@ -1042,8 +1042,8 @@ window.INDEX_DATA = {
             "2026-11-24"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 1562,
           "coverageStatus": "non_chronological_hot_feed",
           "paginationMode": "last_score_cursor_bounded"
         }
@@ -1066,8 +1066,8 @@ window.INDEX_DATA = {
             "2026-11-25"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 1562,
           "coverageStatus": "source_exhausted_before_third_trading_day",
           "paginationMode": "cursor"
         }
@@ -1127,6 +1127,17 @@ window.INDEX_DATA = {
         "publishTime": "2026-11-25T16:32:48+08:00"
       },
       {
+        "title": "2000？不似底1700？1500铁底：到1500我贷款梭哈",
+        "label": "看多",
+        "score": 6,
+        "comments": 0,
+        "clicks": 11,
+        "source": "创业板指吧",
+        "platform": "eastmoney",
+        "platformName": "东方财富股吧",
+        "publishTime": "2026-11-25T16:31:47+08:00"
+      },
+      {
         "title": "明天我来抄底",
         "label": "看多",
         "score": 3,
@@ -1158,17 +1169,6 @@ window.INDEX_DATA = {
         "platform": "sina",
         "platformName": "新浪股吧",
         "publishTime": "2026-11-25T15:53:12+08:00"
-      },
-      {
-        "title": "天天钝刀子割肉，收盘一看跌幅还忒大，也是！不钝刀子不然你们就不抄底，如果用锋利的",
-        "label": "看空",
-        "score": -6,
-        "comments": 0,
-        "clicks": 72,
-        "source": "创业板指吧",
-        "platform": "eastmoney",
-        "platformName": "东方财富股吧",
-        "publishTime": "2026-11-25T15:44:53+08:00"
       },
       {
         "title": "涨了二十年,终于涨到3400点了!又创出新高了!要大力发展量化资本!量化基金可以",
@@ -1204,6 +1204,28 @@ window.INDEX_DATA = {
         "publishTime": "2026-11-25T15:30:39+08:00"
       },
       {
+        "title": "明天稳了，妥妥的板板",
+        "label": "看多",
+        "score": 6,
+        "comments": 1,
+        "clicks": 23,
+        "source": "中际旭创吧",
+        "platform": "eastmoney",
+        "platformName": "东方财富股吧",
+        "publishTime": "2026-11-25T15:30:14+08:00"
+      },
+      {
+        "title": "停止做空！停止做空！停止做空！",
+        "label": "看多",
+        "score": 6,
+        "comments": 0,
+        "clicks": 10,
+        "source": "创业板指吧",
+        "platform": "eastmoney",
+        "platformName": "东方财富股吧",
+        "publishTime": "2026-11-25T15:28:14+08:00"
+      },
+      {
         "title": "需要两个涨停才能回本的我，想割又害怕起飞。人性啊",
         "label": "看多",
         "score": 6,
@@ -1224,28 +1246,6 @@ window.INDEX_DATA = {
         "platform": "ths",
         "platformName": "同花顺板块社区",
         "publishTime": "2026-11-25T15:16:22+08:00"
-      },
-      {
-        "title": "昨天放量头且盘面恶劣，今天缩量下杀，还缺一个放量下杀清割肉盘",
-        "label": "看空",
-        "score": -6,
-        "comments": 0,
-        "clicks": 15,
-        "source": "芒果超媒吧",
-        "platform": "eastmoney",
-        "platformName": "东方财富股吧",
-        "publishTime": "2026-11-25T15:04:41+08:00"
-      },
-      {
-        "title": "en哥，说178加仓成功，明天坐等吃肉！各位怎么看！",
-        "label": "看多",
-        "score": 6,
-        "comments": 1,
-        "clicks": 33,
-        "source": "新易盛吧",
-        "platform": "eastmoney",
-        "platformName": "东方财富股吧",
-        "publishTime": "2026-11-25T15:02:03+08:00"
       }
     ],
     "platforms": [
@@ -1313,14 +1313,14 @@ window.INDEX_DATA = {
         "attention": 56.5,
         "heat": 53.8
       },
-      "heat": 65.1,
+      "heat": 65.0,
       "direction": 50.7,
       "metrics": {
         "recentPosts": 541,
         "recent7Posts": 817,
         "samplePosts": 803,
         "bullishRatio": 13.0,
-        "bearishRatio": 14.3,
+        "bearishRatio": 14.4,
         "fomoRate": 6.4,
         "panicRate": 6.1,
         "newcomerRate": 2.2,
@@ -1829,9 +1829,9 @@ window.INDEX_DATA = {
             "eastmoney": {
               "optimism": 48.5,
               "fomo": 50.3,
-              "panic": 29.1,
+              "panic": 29.0,
               "newcomer": 50.5,
-              "intensity": 56.5,
+              "intensity": 56.4,
               "attention": 58.3
             },
             "sina": {
@@ -1853,7 +1853,7 @@ window.INDEX_DATA = {
             "taoguba": {
               "optimism": 52.8,
               "fomo": 52.6,
-              "panic": 6.3,
+              "panic": 6.4,
               "newcomer": 48.7,
               "intensity": 51.4,
               "attention": 58.6
@@ -2041,7 +2041,7 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 45.8,
+            "optimism": 45.7,
             "fomo": 51.2,
             "newcomer": 46.8,
             "intensity": 56.1,
@@ -2050,7 +2050,7 @@ window.INDEX_DATA = {
             "heat": 57.1
           },
           "raw": {
-            "net": -0.03351875923998156,
+            "net": -0.033871474200564786,
             "fomo": 0.05955932881794107,
             "panic": 0.07299367655294117,
             "newcomer": 0.015679399662962678,
@@ -2080,12 +2080,12 @@ window.INDEX_DATA = {
           "activityEligible": false,
           "signals": {
             "optimism": 59.5,
-            "fomo": 64.9,
+            "fomo": 65.1,
             "newcomer": 52.3,
-            "intensity": 57.8,
+            "intensity": 57.7,
             "attention": 60.2,
             "panic": 8.0,
-            "heat": 59.8
+            "heat": 59.9
           },
           "raw": {
             "net": 0.16536328245397888,
@@ -2219,8 +2219,8 @@ window.INDEX_DATA = {
               "2026-08-31"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -2262,8 +2262,8 @@ window.INDEX_DATA = {
               "2026-09-14"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -2290,8 +2290,8 @@ window.INDEX_DATA = {
               "2026-10-15"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -2319,8 +2319,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -2347,8 +2347,8 @@ window.INDEX_DATA = {
               "2026-11-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -2374,8 +2374,8 @@ window.INDEX_DATA = {
               "2026-11-22"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -2399,8 +2399,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1551,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -2426,8 +2426,8 @@ window.INDEX_DATA = {
               "2026-11-22"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -2451,8 +2451,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -2476,8 +2476,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -2597,7 +2597,7 @@ window.INDEX_DATA = {
       ],
       "legacyHeat": 53.8,
       "absoluteHeat": 55.8,
-      "relativeHeat": 64.3,
+      "relativeHeat": 64.2,
       "heatRank": 1,
       "heatTier": "明显升温",
       "heatModel": {
@@ -2609,15 +2609,15 @@ window.INDEX_DATA = {
         "activityIndex": 56.5,
         "volumeFactor": 56.5,
         "relativeLatent": 56.1,
-        "relativeHeat": 64.3,
+        "relativeHeat": 64.2,
         "heatTier": "明显升温",
         "percentile": 95.0,
-        "robustZ": 1.419,
+        "robustZ": 1.415,
         "reliability": 55.7,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -2632,8 +2632,8 @@ window.INDEX_DATA = {
           "finalRelative": 0.65,
           "finalAbsolute": 0.35
         },
-        "rawRelativeHeat": 64.3,
-        "rawFinalHeat": 65.1,
+        "rawRelativeHeat": 64.2,
+        "rawFinalHeat": 65.0,
         "rawAbsoluteHeat": 55.8,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
         "temporalAlpha": 1.0,
@@ -2644,7 +2644,7 @@ window.INDEX_DATA = {
         "previousRelativeHeat": 55.5,
         "previousFinalHeat": 56.4
       },
-      "activityHeat": 65.1,
+      "activityHeat": 65.0,
       "emotion": null,
       "emotionN": 0
     },
@@ -3212,7 +3212,7 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 50.5,
+              "optimism": 50.6,
               "fomo": 45.5,
               "panic": 25.1,
               "newcomer": 50.2,
@@ -3429,7 +3429,7 @@ window.INDEX_DATA = {
             "optimism": 53.4,
             "fomo": 46.6,
             "newcomer": 56.5,
-            "intensity": 54.1,
+            "intensity": 54.0,
             "attention": 72.5,
             "panic": 29.9,
             "heat": 57.7
@@ -3604,8 +3604,8 @@ window.INDEX_DATA = {
               "2026-09-07"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -3638,8 +3638,8 @@ window.INDEX_DATA = {
               "2026-11-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -3667,8 +3667,8 @@ window.INDEX_DATA = {
               "2026-10-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -3692,8 +3692,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -3717,8 +3717,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -3749,8 +3749,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -3774,8 +3774,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1536,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -3799,8 +3799,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1535,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -3828,8 +3828,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -3853,8 +3853,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -3882,8 +3882,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -4018,12 +4018,12 @@ window.INDEX_DATA = {
         "relativeHeat": 61.7,
         "heatTier": "明显升温",
         "percentile": 85.0,
-        "robustZ": 1.04,
+        "robustZ": 1.037,
         "reliability": 57.0,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -4088,23 +4088,23 @@ window.INDEX_DATA = {
       },
       "signals": {
         "optimism": 52.2,
-        "fomo": 52.8,
-        "panic": 21.9,
+        "fomo": 52.9,
+        "panic": 20.6,
         "newcomer": 54.0,
-        "intensity": 56.8,
+        "intensity": 57.7,
         "attention": 58.6,
-        "heat": 55.7
+        "heat": 56.0
       },
-      "heat": 62.9,
+      "heat": 62.8,
       "direction": 52.2,
       "metrics": {
         "recentPosts": 721,
         "recent7Posts": 888,
         "samplePosts": 873,
-        "bullishRatio": 21.8,
-        "bearishRatio": 18.9,
-        "fomoRate": 6.9,
-        "panicRate": 5.2,
+        "bullishRatio": 23.1,
+        "bearishRatio": 22.5,
+        "fomoRate": 6.8,
+        "panicRate": 5.0,
         "newcomerRate": 2.9,
         "activityIndex": 58.6,
         "estimatedDailyPosts": 450.356,
@@ -4200,9 +4200,9 @@ window.INDEX_DATA = {
               "evidencePosts": 51,
               "sourceCount": 9,
               "platformCount": 4,
-              "maskedDirectionRaw": 52.6,
+              "maskedDirectionRaw": 52.2,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 53.5
+              "candidateShrunkDirection": 53.2
             },
             "retail": {
               "available": true,
@@ -4609,11 +4609,11 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 48.9,
-              "fomo": 46.5,
-              "panic": 27.4,
+              "optimism": 48.7,
+              "fomo": 46.6,
+              "panic": 26.2,
               "newcomer": 52.5,
-              "intensity": 55.6,
+              "intensity": 59.2,
               "attention": 58.6
             },
             "sina": {
@@ -4633,9 +4633,9 @@ window.INDEX_DATA = {
               "attention": 50.0
             },
             "taoguba": {
-              "optimism": 56.6,
-              "fomo": 56.5,
-              "panic": 16.2,
+              "optimism": 56.9,
+              "fomo": 56.8,
+              "panic": 12.1,
               "newcomer": 53.3,
               "intensity": 62.6,
               "attention": 66.3
@@ -4823,20 +4823,20 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 48.1,
+            "optimism": 47.8,
             "fomo": 36.5,
             "newcomer": 56.6,
-            "intensity": 58.4,
+            "intensity": 62.6,
             "attention": 71.7,
-            "panic": 35.4,
-            "heat": 55.5
+            "panic": 34.1,
+            "heat": 56.6
           },
           "raw": {
-            "net": -0.012790180141600896,
+            "net": -0.017223299611916522,
             "fomo": 0.027714579786767536,
-            "panic": 0.055197921757401375,
+            "panic": 0.05202734471237917,
             "newcomer": 0.030013934533695837,
-            "intense": 0.26308272351359274
+            "intense": 0.2905610579037851
           },
           "sampleCount": 526,
           "sourceCount": 3,
@@ -4937,20 +4937,20 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 64.9,
-            "fomo": 64.1,
+            "optimism": 65.0,
+            "fomo": 62.7,
             "newcomer": 61.8,
             "intensity": 73.5,
             "attention": 72.4,
             "panic": 12.4,
-            "heat": 68.6
+            "heat": 68.2
           },
           "raw": {
-            "net": 0.27854389949105807,
-            "fomo": 0.10998989347805102,
+            "net": 0.27831276824799833,
+            "fomo": 0.09981945509906831,
             "panic": 0.016491354910897482,
             "newcomer": 0.029630695091586286,
-            "intense": 0.5556862475906162
+            "intense": 0.5578477554585048
           },
           "sampleCount": 126,
           "sourceCount": 3,
@@ -5002,8 +5002,8 @@ window.INDEX_DATA = {
               "2026-10-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -5040,8 +5040,8 @@ window.INDEX_DATA = {
               "2026-10-15"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -5072,8 +5072,8 @@ window.INDEX_DATA = {
               "2026-10-15"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -5098,8 +5098,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -5122,8 +5122,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -5150,8 +5150,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -5174,8 +5174,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1563,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -5198,8 +5198,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1563,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -5222,8 +5222,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1563,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -5240,6 +5240,17 @@ window.INDEX_DATA = {
           "platform": "eastmoney",
           "platformName": "东方财富股吧",
           "publishTime": "2026-11-25T10:38:28+08:00"
+        },
+        {
+          "title": "明天稳了，妥妥的板板",
+          "label": "看多",
+          "score": 6,
+          "comments": 1,
+          "clicks": 23,
+          "source": "中际旭创吧",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "publishTime": "2026-11-25T15:30:14+08:00"
         },
         {
           "title": "en哥，说178加仓成功，明天坐等吃肉！各位怎么看！",
@@ -5262,17 +5273,6 @@ window.INDEX_DATA = {
           "platform": "eastmoney",
           "platformName": "东方财富股吧",
           "publishTime": "2026-11-25T15:05:02+08:00"
-        },
-        {
-          "title": "冲入！明早跑！",
-          "label": "看多",
-          "score": 6,
-          "comments": 0,
-          "clicks": 13,
-          "source": "天孚通信吧",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "publishTime": "2026-11-25T14:51:04+08:00"
         },
         {
           "title": "跟着我 吃肉 梭哈",
@@ -5341,29 +5341,29 @@ window.INDEX_DATA = {
           "publishTime": "2026-11-25T13:22:39+08:00"
         }
       ],
-      "legacyHeat": 55.7,
-      "absoluteHeat": 57.9,
-      "relativeHeat": 66.2,
+      "legacyHeat": 56.0,
+      "absoluteHeat": 58.0,
+      "relativeHeat": 66.3,
       "heatRank": 3,
       "heatTier": "明显升温",
       "heatModel": {
         "version": "sector_community_heat_v4_company_equal",
         "status": "applied",
         "marketAnchor": 55.0,
-        "legacyEmotionHeat": 55.7,
-        "absoluteHeat": 57.9,
+        "legacyEmotionHeat": 56.0,
+        "absoluteHeat": 58.0,
         "activityIndex": 58.6,
         "volumeFactor": 58.6,
         "relativeLatent": 58.2,
-        "relativeHeat": 66.2,
+        "relativeHeat": 66.3,
         "heatTier": "明显升温",
         "percentile": 98.3,
-        "robustZ": 2.13,
+        "robustZ": 2.137,
         "reliability": 54.5,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -5378,9 +5378,9 @@ window.INDEX_DATA = {
           "finalRelative": 0.65,
           "finalAbsolute": 0.35
         },
-        "rawRelativeHeat": 66.2,
+        "rawRelativeHeat": 66.3,
         "rawFinalHeat": 66.7,
-        "rawAbsoluteHeat": 57.9,
+        "rawAbsoluteHeat": 58.0,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
         "temporalAlpha": 1.0,
         "temporalGapDays": 1,
@@ -5391,8 +5391,8 @@ window.INDEX_DATA = {
         "previousFinalHeat": 53.2
       },
       "activityHeat": 66.7,
-      "emotion": 47.8,
-      "emotionN": 150
+      "emotion": 47.0,
+      "emotionN": 250
     },
     {
       "key": "ai_compute",
@@ -5427,21 +5427,21 @@ window.INDEX_DATA = {
         "composite": 57
       },
       "signals": {
-        "optimism": 51.0,
+        "optimism": 51.1,
         "fomo": 52.6,
         "panic": 18.4,
         "newcomer": 54.8,
-        "intensity": 54.2,
+        "intensity": 54.3,
         "attention": 55.9,
         "heat": 54.3
       },
-      "heat": 62.4,
-      "direction": 51.0,
+      "heat": 62.7,
+      "direction": 51.1,
       "metrics": {
         "recentPosts": 576,
         "recent7Posts": 832,
         "samplePosts": 819,
-        "bullishRatio": 15.1,
+        "bullishRatio": 15.3,
         "bearishRatio": 13.4,
         "fomoRate": 6.5,
         "panicRate": 4.2,
@@ -5551,7 +5551,7 @@ window.INDEX_DATA = {
               "platformCount": 4,
               "maskedDirectionRaw": 51.1,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 51.7
+              "candidateShrunkDirection": 51.8
             }
           }
         },
@@ -5949,8 +5949,8 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 48.9,
-              "fomo": 50.9,
+              "optimism": 49.0,
+              "fomo": 51.0,
               "panic": 27.7,
               "newcomer": 57.7,
               "intensity": 57.6,
@@ -5973,11 +5973,11 @@ window.INDEX_DATA = {
               "attention": 50.0
             },
             "taoguba": {
-              "optimism": 52.7,
+              "optimism": 52.9,
               "fomo": 49.0,
-              "panic": 6.7,
+              "panic": 6.8,
               "newcomer": 48.1,
-              "intensity": 51.1,
+              "intensity": 51.6,
               "attention": 59.5
             }
           },
@@ -6163,10 +6163,10 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 46.4,
+            "optimism": 46.5,
             "fomo": 50.2,
             "newcomer": 57.2,
-            "intensity": 66.3,
+            "intensity": 66.1,
             "attention": 73.9,
             "panic": 29.6,
             "heat": 62.4
@@ -6239,20 +6239,20 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 58.9,
-            "fomo": 52.3,
+            "optimism": 59.3,
+            "fomo": 52.2,
             "newcomer": 58.3,
-            "intensity": 56.8,
+            "intensity": 57.9,
             "attention": 58.0,
             "panic": 6.1,
-            "heat": 56.0
+            "heat": 56.2
           },
           "raw": {
-            "net": 0.15217842873373577,
+            "net": 0.16198405717834247,
             "fomo": 0.08719051053001954,
             "panic": 0.007953799483332892,
             "newcomer": 0.026947472649531838,
-            "intense": 0.2322192816148555
+            "intense": 0.24582506468519855
           },
           "sampleCount": 63,
           "sourceCount": 3,
@@ -6340,8 +6340,8 @@ window.INDEX_DATA = {
               "2026-10-29"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -6376,8 +6376,8 @@ window.INDEX_DATA = {
               "2026-08-28"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -6407,8 +6407,8 @@ window.INDEX_DATA = {
               "2026-10-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -6437,8 +6437,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -6469,8 +6469,8 @@ window.INDEX_DATA = {
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -6494,8 +6494,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -6521,8 +6521,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -6546,8 +6546,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -6572,8 +6572,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -6596,8 +6596,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -6732,12 +6732,12 @@ window.INDEX_DATA = {
         "relativeHeat": 64.0,
         "heatTier": "明显升温",
         "percentile": 91.7,
-        "robustZ": 1.27,
+        "robustZ": 1.266,
         "reliability": 58.9,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -6765,8 +6765,8 @@ window.INDEX_DATA = {
         "previousFinalHeat": 56.4
       },
       "activityHeat": 64.9,
-      "emotion": 52.4,
-      "emotionN": 7
+      "emotion": 53.7,
+      "emotionN": 9
     },
     {
       "key": "pcb",
@@ -6801,24 +6801,24 @@ window.INDEX_DATA = {
         "composite": 57
       },
       "signals": {
-        "optimism": 51.9,
-        "fomo": 53.8,
-        "panic": 17.1,
+        "optimism": 51.6,
+        "fomo": 53.6,
+        "panic": 17.7,
         "newcomer": 52.3,
-        "intensity": 56.3,
+        "intensity": 56.7,
         "attention": 55.4,
         "heat": 54.7
       },
       "heat": 61.0,
-      "direction": 51.9,
+      "direction": 51.6,
       "metrics": {
         "recentPosts": 526,
         "recent7Posts": 775,
         "samplePosts": 759,
-        "bullishRatio": 20.3,
-        "bearishRatio": 19.2,
-        "fomoRate": 12.3,
-        "panicRate": 8.4,
+        "bullishRatio": 21.2,
+        "bearishRatio": 24.0,
+        "fomoRate": 11.9,
+        "panicRate": 8.9,
         "newcomerRate": 1.8,
         "activityIndex": 55.4,
         "estimatedDailyPosts": 338.647,
@@ -6907,7 +6907,7 @@ window.INDEX_DATA = {
               "platformCount": 3,
               "maskedDirectionRaw": 52.5,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 52.6
+              "candidateShrunkDirection": 52.5
             },
             "novice": {
               "available": true,
@@ -6916,7 +6916,7 @@ window.INDEX_DATA = {
               "platformCount": 4,
               "maskedDirectionRaw": 51.0,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 51.6
+              "candidateShrunkDirection": 51.5
             },
             "retail": {
               "available": true,
@@ -6925,7 +6925,7 @@ window.INDEX_DATA = {
               "platformCount": 4,
               "maskedDirectionRaw": 52.0,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 52.3
+              "candidateShrunkDirection": 52.1
             }
           }
         },
@@ -7323,11 +7323,11 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 49.0,
-              "fomo": 54.5,
-              "panic": 27.4,
+              "optimism": 48.0,
+              "fomo": 54.0,
+              "panic": 30.1,
               "newcomer": 47.4,
-              "intensity": 59.3,
+              "intensity": 60.6,
               "attention": 56.8
             },
             "sina": {
@@ -7347,9 +7347,9 @@ window.INDEX_DATA = {
               "attention": 50.0
             },
             "taoguba": {
-              "optimism": 55.1,
-              "fomo": 51.3,
-              "panic": 6.6,
+              "optimism": 54.8,
+              "fomo": 50.9,
+              "panic": 6.7,
               "newcomer": 49.6,
               "intensity": 56.2,
               "attention": 60.0
@@ -7537,20 +7537,20 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 46.2,
-            "fomo": 67.1,
+            "optimism": 45.5,
+            "fomo": 66.2,
             "newcomer": 40.0,
-            "intensity": 69.3,
+            "intensity": 70.3,
             "attention": 70.7,
-            "panic": 53.0,
-            "heat": 64.7
+            "panic": 55.0,
+            "heat": 64.6
           },
           "raw": {
-            "net": -0.03146345157804592,
-            "fomo": 0.13516363375667934,
-            "panic": 0.1037694895447746,
+            "net": -0.04189935955775508,
+            "fomo": 0.13285594144898705,
+            "panic": 0.10992333569862077,
             "newcomer": 0.009697659853367586,
-            "intense": 0.34288585412126876
+            "intense": 0.3644243156597303
           },
           "sampleCount": 572,
           "sourceCount": 3,
@@ -7613,20 +7613,20 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 61.9,
-            "fomo": 50.8,
+            "optimism": 60.9,
+            "fomo": 50.4,
             "newcomer": 47.0,
-            "intensity": 62.2,
+            "intensity": 62.3,
             "attention": 62.2,
             "panic": 5.2,
-            "heat": 56.5
+            "heat": 56.4
           },
           "raw": {
-            "net": 0.2506094128220384,
-            "fomo": 0.0833897452740137,
+            "net": 0.2306206212006096,
+            "fomo": 0.06998907909711227,
             "panic": 0.006710090038466534,
             "newcomer": 0.01080324496193112,
-            "intense": 0.4045831298524076
+            "intense": 0.41798379602930896
           },
           "sampleCount": 73,
           "sourceCount": 3,
@@ -7711,8 +7711,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -7747,8 +7747,8 @@ window.INDEX_DATA = {
               "2026-09-14"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -7780,8 +7780,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -7808,8 +7808,8 @@ window.INDEX_DATA = {
               "2026-11-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -7837,8 +7837,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -7875,8 +7875,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -7901,8 +7901,8 @@ window.INDEX_DATA = {
               "2026-11-21"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -7926,8 +7926,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1563,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -7950,8 +7950,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -7975,8 +7975,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -8111,12 +8111,12 @@ window.INDEX_DATA = {
         "relativeHeat": 62.6,
         "heatTier": "明显升温",
         "percentile": 88.3,
-        "robustZ": 1.145,
+        "robustZ": 1.142,
         "reliability": 57.1,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -8144,8 +8144,8 @@ window.INDEX_DATA = {
         "previousFinalHeat": 54.5
       },
       "activityHeat": 63.9,
-      "emotion": 49.4,
-      "emotionN": 90
+      "emotion": 49.3,
+      "emotionN": 95
     },
     {
       "key": "new_energy_vehicles",
@@ -8180,7 +8180,7 @@ window.INDEX_DATA = {
         "composite": 52
       },
       "signals": {
-        "optimism": 50.4,
+        "optimism": 50.5,
         "fomo": 45.2,
         "panic": 12.7,
         "newcomer": 52.6,
@@ -8189,7 +8189,7 @@ window.INDEX_DATA = {
         "heat": 50.2
       },
       "heat": 60.8,
-      "direction": 50.4,
+      "direction": 50.5,
       "metrics": {
         "recentPosts": 470,
         "recent7Posts": 716,
@@ -8702,11 +8702,11 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 49.8,
+              "optimism": 49.9,
               "fomo": 47.2,
               "panic": 22.4,
               "newcomer": 54.3,
-              "intensity": 52.5,
+              "intensity": 52.4,
               "attention": 55.7
             },
             "sina": {
@@ -8957,7 +8957,7 @@ window.INDEX_DATA = {
             "optimism": 51.7,
             "fomo": 49.3,
             "newcomer": 51.7,
-            "intensity": 50.6,
+            "intensity": 50.5,
             "attention": 65.5,
             "panic": 23.9,
             "heat": 54.8
@@ -9095,8 +9095,8 @@ window.INDEX_DATA = {
               "2026-09-01"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -9134,8 +9134,8 @@ window.INDEX_DATA = {
               "2026-09-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1552,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -9171,8 +9171,8 @@ window.INDEX_DATA = {
               "2026-09-01"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1552,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -9196,8 +9196,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1552,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -9227,8 +9227,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1552,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -9261,8 +9261,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1552,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -9287,8 +9287,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1540,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -9312,8 +9312,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1552,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -9448,12 +9448,12 @@ window.INDEX_DATA = {
         "relativeHeat": 58.4,
         "heatTier": "明显升温",
         "percentile": 78.3,
-        "robustZ": 0.68,
+        "robustZ": 0.679,
         "reliability": 55.5,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -9517,21 +9517,21 @@ window.INDEX_DATA = {
         "composite": 55
       },
       "signals": {
-        "optimism": 49.7,
+        "optimism": 49.8,
         "fomo": 50.3,
         "panic": 17.4,
         "newcomer": 49.4,
-        "intensity": 53.9,
+        "intensity": 54.0,
         "attention": 54.2,
-        "heat": 52.2
+        "heat": 52.3
       },
       "heat": 60.4,
-      "direction": 49.7,
+      "direction": 49.8,
       "metrics": {
         "recentPosts": 427,
         "recent7Posts": 727,
         "samplePosts": 715,
-        "bullishRatio": 14.8,
+        "bullishRatio": 15.0,
         "bearishRatio": 18.0,
         "fomoRate": 5.1,
         "panicRate": 8.7,
@@ -9622,7 +9622,7 @@ window.INDEX_DATA = {
               "platformCount": 2,
               "maskedDirectionRaw": 60.3,
               "evidenceWeight": 0.258,
-              "candidateShrunkDirection": 50.2
+              "candidateShrunkDirection": 50.8
             },
             "novice": {
               "available": true,
@@ -9631,7 +9631,7 @@ window.INDEX_DATA = {
               "platformCount": 4,
               "maskedDirectionRaw": 50.7,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 49.3
+              "candidateShrunkDirection": 49.6
             },
             "retail": {
               "available": true,
@@ -9640,7 +9640,7 @@ window.INDEX_DATA = {
               "platformCount": 4,
               "maskedDirectionRaw": 49.8,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 48.7
+              "candidateShrunkDirection": 49.0
             }
           }
         },
@@ -10038,9 +10038,9 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 48.7,
+              "optimism": 48.8,
               "fomo": 49.0,
-              "panic": 31.8,
+              "panic": 31.7,
               "newcomer": 47.8,
               "intensity": 51.6,
               "attention": 55.0
@@ -10062,11 +10062,11 @@ window.INDEX_DATA = {
               "attention": 50.0
             },
             "taoguba": {
-              "optimism": 51.1,
+              "optimism": 51.3,
               "fomo": 51.4,
-              "panic": 10.1,
+              "panic": 10.2,
               "newcomer": 47.0,
-              "intensity": 51.4,
+              "intensity": 52.1,
               "attention": 55.6
             }
           },
@@ -10252,7 +10252,7 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 47.7,
+            "optimism": 47.8,
             "fomo": 46.1,
             "newcomer": 43.6,
             "intensity": 47.8,
@@ -10290,20 +10290,20 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 51.2,
+            "optimism": 54.1,
             "fomo": 60.4,
             "newcomer": 38.2,
-            "intensity": 64.3,
+            "intensity": 67.6,
             "attention": 51.6,
             "panic": 55.0,
-            "heat": 55.4
+            "heat": 56.2
           },
           "raw": {
-            "net": 0.06731240274341971,
+            "net": 0.08741873090384983,
             "fomo": 0.10412434836414047,
             "panic": 0.13205789120751737,
             "newcomer": 0.0,
-            "intense": 0.34044676170876315
+            "intense": 0.3683452631497807
           },
           "sampleCount": 39,
           "sourceCount": 3,
@@ -10425,8 +10425,8 @@ window.INDEX_DATA = {
               "2026-10-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -10460,8 +10460,8 @@ window.INDEX_DATA = {
               "2026-09-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -10491,8 +10491,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -10522,8 +10522,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -10553,8 +10553,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -10606,8 +10606,8 @@ window.INDEX_DATA = {
               "2026-08-25"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -10631,8 +10631,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -10656,8 +10656,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -10683,8 +10683,8 @@ window.INDEX_DATA = {
               "2026-11-22"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1560,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -10714,8 +10714,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -10833,7 +10833,7 @@ window.INDEX_DATA = {
           "publishTime": "2026-11-25T12:02:54+08:00"
         }
       ],
-      "legacyHeat": 52.2,
+      "legacyHeat": 52.3,
       "absoluteHeat": 53.7,
       "relativeHeat": 57.8,
       "heatRank": 7,
@@ -10842,7 +10842,7 @@ window.INDEX_DATA = {
         "version": "sector_community_heat_v4_company_equal",
         "status": "applied",
         "marketAnchor": 55.0,
-        "legacyEmotionHeat": 52.2,
+        "legacyEmotionHeat": 52.3,
         "absoluteHeat": 53.7,
         "activityIndex": 54.2,
         "volumeFactor": 54.2,
@@ -10850,12 +10850,12 @@ window.INDEX_DATA = {
         "relativeHeat": 57.8,
         "heatTier": "市场中段",
         "percentile": 75.0,
-        "robustZ": 0.666,
+        "robustZ": 0.67,
         "reliability": 54.0,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -10920,7 +10920,7 @@ window.INDEX_DATA = {
       },
       "signals": {
         "optimism": 48.3,
-        "fomo": 49.7,
+        "fomo": 49.8,
         "panic": 18.3,
         "newcomer": 52.8,
         "intensity": 54.6,
@@ -11441,11 +11441,11 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 46.7,
+              "optimism": 46.9,
               "fomo": 42.2,
               "panic": 34.7,
               "newcomer": 57.2,
-              "intensity": 55.9,
+              "intensity": 55.8,
               "attention": 60.2
             },
             "sina": {
@@ -11655,7 +11655,7 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 44.6,
+            "optimism": 44.7,
             "fomo": 35.9,
             "newcomer": 67.9,
             "intensity": 55.5,
@@ -11827,8 +11827,8 @@ window.INDEX_DATA = {
               "2026-11-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -11860,8 +11860,8 @@ window.INDEX_DATA = {
               "2026-09-19"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -11898,8 +11898,8 @@ window.INDEX_DATA = {
               "2026-09-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -11922,8 +11922,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -11960,8 +11960,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -12001,8 +12001,8 @@ window.INDEX_DATA = {
               "2026-10-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -12025,8 +12025,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1541,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -12049,8 +12049,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -12079,8 +12079,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -12113,8 +12113,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -12249,12 +12249,12 @@ window.INDEX_DATA = {
         "relativeHeat": 56.6,
         "heatTier": "市场中段",
         "percentile": 81.7,
-        "robustZ": 0.755,
+        "robustZ": 0.754,
         "reliability": 39.5,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -12853,7 +12853,7 @@ window.INDEX_DATA = {
               "fomo": 48.5,
               "panic": 29.7,
               "newcomer": 51.0,
-              "intensity": 56.0,
+              "intensity": 55.9,
               "attention": 59.0
             },
             "sina": {
@@ -13177,13 +13177,13 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 60.9,
+            "optimism": 60.8,
             "fomo": 40.5,
             "newcomer": 38.2,
-            "intensity": 57.4,
+            "intensity": 57.3,
             "attention": 38.8,
             "panic": 41.3,
-            "heat": 43.9
+            "heat": 43.8
           },
           "raw": {
             "net": 0.24804105612443372,
@@ -13247,8 +13247,8 @@ window.INDEX_DATA = {
               "2026-09-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -13277,8 +13277,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -13309,8 +13309,8 @@ window.INDEX_DATA = {
               "2026-11-02"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -13334,8 +13334,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -13364,8 +13364,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -13399,8 +13399,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -13432,8 +13432,8 @@ window.INDEX_DATA = {
               "2026-10-28"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1528,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -13462,8 +13462,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1528,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -13489,8 +13489,8 @@ window.INDEX_DATA = {
               "2026-11-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1546,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -13524,8 +13524,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -13558,8 +13558,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1546,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -13694,12 +13694,12 @@ window.INDEX_DATA = {
         "relativeHeat": 56.6,
         "heatTier": "市场中段",
         "percentile": 71.7,
-        "robustZ": 0.63,
+        "robustZ": 0.629,
         "reliability": 49.7,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -14289,7 +14289,7 @@ window.INDEX_DATA = {
               "fomo": 50.2,
               "panic": 39.9,
               "newcomer": 48.0,
-              "intensity": 58.5,
+              "intensity": 58.4,
               "attention": 54.9
             },
             "sina": {
@@ -14500,7 +14500,7 @@ window.INDEX_DATA = {
           "activityEligible": true,
           "signals": {
             "optimism": 44.8,
-            "fomo": 47.4,
+            "fomo": 47.5,
             "newcomer": 44.7,
             "intensity": 55.5,
             "attention": 65.4,
@@ -14614,9 +14614,9 @@ window.INDEX_DATA = {
           "activityEligible": false,
           "signals": {
             "optimism": 41.3,
-            "fomo": 49.1,
+            "fomo": 49.2,
             "newcomer": 38.2,
-            "intensity": 55.0,
+            "intensity": 54.9,
             "attention": 51.9,
             "panic": 38.2,
             "heat": 49.8
@@ -14674,8 +14674,8 @@ window.INDEX_DATA = {
               "2026-09-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -14702,8 +14702,8 @@ window.INDEX_DATA = {
               "2026-11-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -14731,8 +14731,8 @@ window.INDEX_DATA = {
               "2026-11-02"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -14773,8 +14773,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -14821,8 +14821,8 @@ window.INDEX_DATA = {
               "2026-10-14"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -14850,8 +14850,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -14879,8 +14879,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -14911,8 +14911,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -14945,8 +14945,8 @@ window.INDEX_DATA = {
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -14970,8 +14970,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -15106,12 +15106,12 @@ window.INDEX_DATA = {
         "relativeHeat": 52.9,
         "heatTier": "市场中段",
         "percentile": 61.7,
-        "robustZ": 0.22,
+        "robustZ": 0.221,
         "reliability": 51.6,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -15697,11 +15697,11 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 48.9,
+              "optimism": 49.0,
               "fomo": 48.1,
               "panic": 32.5,
               "newcomer": 52.1,
-              "intensity": 52.9,
+              "intensity": 52.8,
               "attention": 56.8
             },
             "sina": {
@@ -15987,10 +15987,10 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 45.9,
-            "fomo": 38.7,
+            "optimism": 45.8,
+            "fomo": 38.8,
             "newcomer": 38.2,
-            "intensity": 44.4,
+            "intensity": 44.3,
             "attention": 53.1,
             "panic": 15.5,
             "heat": 44.4
@@ -16094,8 +16094,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -16124,8 +16124,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -16157,8 +16157,8 @@ window.INDEX_DATA = {
               "2026-09-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -16194,8 +16194,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -16232,8 +16232,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -16258,8 +16258,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1552,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -16282,8 +16282,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -16309,8 +16309,8 @@ window.INDEX_DATA = {
               "2026-11-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -16341,8 +16341,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1559,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -16477,12 +16477,12 @@ window.INDEX_DATA = {
         "relativeHeat": 54.8,
         "heatTier": "市场中段",
         "percentile": 68.3,
-        "robustZ": 0.362,
+        "robustZ": 0.363,
         "reliability": 53.8,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -16561,7 +16561,7 @@ window.INDEX_DATA = {
         "recent7Posts": 685,
         "samplePosts": 681,
         "bullishRatio": 15.6,
-        "bearishRatio": 17.0,
+        "bearishRatio": 17.2,
         "fomoRate": 8.9,
         "panicRate": 8.1,
         "newcomerRate": 3.0,
@@ -16652,7 +16652,7 @@ window.INDEX_DATA = {
               "platformCount": 2,
               "maskedDirectionRaw": 42.1,
               "evidenceWeight": 0.447,
-              "candidateShrunkDirection": 46.0
+              "candidateShrunkDirection": 45.9
             },
             "novice": {
               "available": true,
@@ -16661,7 +16661,7 @@ window.INDEX_DATA = {
               "platformCount": 3,
               "maskedDirectionRaw": 53.2,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 51.8
+              "candidateShrunkDirection": 51.7
             },
             "retail": {
               "available": true,
@@ -17068,9 +17068,9 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 49.5,
+              "optimism": 49.4,
               "fomo": 57.2,
-              "panic": 40.9,
+              "panic": 41.0,
               "newcomer": 54.1,
               "intensity": 59.8,
               "attention": 56.2
@@ -17282,16 +17282,16 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 49.8,
+            "optimism": 49.5,
             "fomo": 62.0,
             "newcomer": 57.1,
-            "intensity": 61.3,
+            "intensity": 61.2,
             "attention": 65.6,
             "panic": 49.1,
             "heat": 62.2
           },
           "raw": {
-            "net": -0.00018094145941543256,
+            "net": -0.001793169479244956,
             "fomo": 0.09203301523608762,
             "panic": 0.0820679365118046,
             "newcomer": 0.027692812054456013,
@@ -17358,7 +17358,7 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 47.2,
+            "optimism": 47.0,
             "fomo": 54.7,
             "newcomer": 38.2,
             "intensity": 62.3,
@@ -17461,8 +17461,8 @@ window.INDEX_DATA = {
               "2026-10-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1548,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -17497,8 +17497,8 @@ window.INDEX_DATA = {
               "2026-09-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -17529,8 +17529,8 @@ window.INDEX_DATA = {
               "2026-11-02"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -17564,8 +17564,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1548,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -17598,8 +17598,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1548,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -17632,8 +17632,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1548,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -17656,8 +17656,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1545,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -17688,8 +17688,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -17716,8 +17716,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1547,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -17751,8 +17751,8 @@ window.INDEX_DATA = {
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1546,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -17887,12 +17887,12 @@ window.INDEX_DATA = {
         "relativeHeat": 51.9,
         "heatTier": "市场中段",
         "percentile": 58.3,
-        "robustZ": 0.16,
+        "robustZ": 0.161,
         "reliability": 47.8,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -18478,9 +18478,9 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 53.7,
+              "optimism": 53.8,
               "fomo": 50.8,
-              "panic": 16.8,
+              "panic": 16.7,
               "newcomer": 46.1,
               "intensity": 51.2,
               "attention": 54.8
@@ -18695,7 +18695,7 @@ window.INDEX_DATA = {
             "optimism": 46.3,
             "fomo": 50.3,
             "newcomer": 41.8,
-            "intensity": 65.5,
+            "intensity": 65.3,
             "attention": 65.0,
             "panic": 37.6,
             "heat": 57.2
@@ -18871,8 +18871,8 @@ window.INDEX_DATA = {
               "2026-09-27"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -18905,8 +18905,8 @@ window.INDEX_DATA = {
               "2026-10-15"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -18939,8 +18939,8 @@ window.INDEX_DATA = {
               "2026-09-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -18965,8 +18965,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -18997,8 +18997,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -19022,8 +19022,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1536,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -19051,8 +19051,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -19187,12 +19187,12 @@ window.INDEX_DATA = {
         "relativeHeat": 53.3,
         "heatTier": "市场中段",
         "percentile": 65.0,
-        "robustZ": 0.251,
+        "robustZ": 0.252,
         "reliability": 49.4,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -19256,7 +19256,7 @@ window.INDEX_DATA = {
         "composite": 50
       },
       "signals": {
-        "optimism": 49.3,
+        "optimism": 49.4,
         "fomo": 48.3,
         "panic": 12.4,
         "newcomer": 48.2,
@@ -19265,7 +19265,7 @@ window.INDEX_DATA = {
         "heat": 50.1
       },
       "heat": 55.6,
-      "direction": 49.3,
+      "direction": 49.4,
       "metrics": {
         "recentPosts": 416,
         "recent7Posts": 487,
@@ -19780,7 +19780,7 @@ window.INDEX_DATA = {
             "eastmoney": {
               "optimism": 49.0,
               "fomo": 46.8,
-              "panic": 20.8,
+              "panic": 20.7,
               "newcomer": 45.9,
               "intensity": 51.2,
               "attention": 50.2
@@ -20106,8 +20106,8 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 46.1,
-            "fomo": 55.8,
+            "optimism": 46.0,
+            "fomo": 56.0,
             "newcomer": 54.1,
             "intensity": 59.2,
             "attention": 44.0,
@@ -20164,8 +20164,8 @@ window.INDEX_DATA = {
               "2026-09-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1551,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -20194,8 +20194,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -20239,8 +20239,8 @@ window.INDEX_DATA = {
               "2026-09-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1551,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -20270,8 +20270,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -20295,8 +20295,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -20320,8 +20320,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1548,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -20355,8 +20355,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1551,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -20381,8 +20381,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1551,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -20416,8 +20416,8 @@ window.INDEX_DATA = {
               "2026-10-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -20537,7 +20537,7 @@ window.INDEX_DATA = {
       ],
       "legacyHeat": 50.1,
       "absoluteHeat": 51.9,
-      "relativeHeat": 50.8,
+      "relativeHeat": 50.9,
       "heatRank": 14,
       "heatTier": "市场中段",
       "heatModel": {
@@ -20549,15 +20549,15 @@ window.INDEX_DATA = {
         "activityIndex": 52.5,
         "volumeFactor": 52.5,
         "relativeLatent": 52.1,
-        "relativeHeat": 50.8,
+        "relativeHeat": 50.9,
         "heatTier": "市场中段",
         "percentile": 55.0,
-        "robustZ": 0.062,
+        "robustZ": 0.064,
         "reliability": 45.5,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -20572,7 +20572,7 @@ window.INDEX_DATA = {
           "finalRelative": 0.65,
           "finalAbsolute": 0.35
         },
-        "rawRelativeHeat": 50.8,
+        "rawRelativeHeat": 50.9,
         "rawFinalHeat": 55.6,
         "rawAbsoluteHeat": 51.9,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -20621,7 +20621,7 @@ window.INDEX_DATA = {
         "composite": 54
       },
       "signals": {
-        "optimism": 48.8,
+        "optimism": 48.9,
         "fomo": 50.3,
         "panic": 15.4,
         "newcomer": 49.3,
@@ -20630,7 +20630,7 @@ window.INDEX_DATA = {
         "heat": 51.2
       },
       "heat": 55.4,
-      "direction": 48.8,
+      "direction": 48.9,
       "metrics": {
         "recentPosts": 406,
         "recent7Posts": 640,
@@ -21143,7 +21143,7 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 48.6,
+              "optimism": 48.7,
               "fomo": 48.9,
               "panic": 25.3,
               "newcomer": 47.1,
@@ -21360,7 +21360,7 @@ window.INDEX_DATA = {
             "optimism": 53.2,
             "fomo": 58.8,
             "newcomer": 40.5,
-            "intensity": 62.1,
+            "intensity": 61.9,
             "attention": 64.7,
             "panic": 29.6,
             "heat": 58.6
@@ -21535,8 +21535,8 @@ window.INDEX_DATA = {
               "2026-09-19"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -21564,8 +21564,8 @@ window.INDEX_DATA = {
               "2026-11-08"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -21591,8 +21591,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -21619,8 +21619,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -21651,8 +21651,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -21676,8 +21676,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1540,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -21701,8 +21701,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1552,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -21837,12 +21837,12 @@ window.INDEX_DATA = {
         "relativeHeat": 50.6,
         "heatTier": "市场中段",
         "percentile": 51.7,
-        "robustZ": 0.06,
+        "robustZ": 0.062,
         "reliability": 46.8,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -21910,9 +21910,9 @@ window.INDEX_DATA = {
         "fomo": 53.0,
         "panic": 13.1,
         "newcomer": 47.8,
-        "intensity": 52.2,
+        "intensity": 52.1,
         "attention": 51.8,
-        "heat": 51.7
+        "heat": 51.6
       },
       "heat": 54.6,
       "direction": 51.0,
@@ -22431,7 +22431,7 @@ window.INDEX_DATA = {
               "fomo": 55.9,
               "panic": 22.4,
               "newcomer": 45.8,
-              "intensity": 56.5,
+              "intensity": 56.4,
               "attention": 53.7
             },
             "sina": {
@@ -22644,7 +22644,7 @@ window.INDEX_DATA = {
             "optimism": 51.7,
             "fomo": 62.4,
             "newcomer": 42.6,
-            "intensity": 62.3,
+            "intensity": 62.1,
             "attention": 60.7,
             "panic": 32.4,
             "heat": 58.9
@@ -22814,8 +22814,8 @@ window.INDEX_DATA = {
               "2026-10-25"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -22848,8 +22848,8 @@ window.INDEX_DATA = {
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -22881,8 +22881,8 @@ window.INDEX_DATA = {
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -22917,8 +22917,8 @@ window.INDEX_DATA = {
               "2026-11-08"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -22960,8 +22960,8 @@ window.INDEX_DATA = {
               "2026-10-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -23004,8 +23004,8 @@ window.INDEX_DATA = {
               "2026-10-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -23029,8 +23029,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -23054,8 +23054,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -23083,8 +23083,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -23113,8 +23113,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -23232,8 +23232,8 @@ window.INDEX_DATA = {
           "publishTime": "2026-11-24T15:31:21+08:00"
         }
       ],
-      "legacyHeat": 51.7,
-      "absoluteHeat": 51.8,
+      "legacyHeat": 51.6,
+      "absoluteHeat": 51.7,
       "relativeHeat": 49.4,
       "heatRank": 16,
       "heatTier": "市场中段",
@@ -23241,20 +23241,20 @@ window.INDEX_DATA = {
         "version": "sector_community_heat_v4_company_equal",
         "status": "applied",
         "marketAnchor": 55.0,
-        "legacyEmotionHeat": 51.7,
-        "absoluteHeat": 51.8,
+        "legacyEmotionHeat": 51.6,
+        "absoluteHeat": 51.7,
         "activityIndex": 51.8,
         "volumeFactor": 51.8,
         "relativeLatent": 51.8,
         "relativeHeat": 49.4,
         "heatTier": "市场中段",
         "percentile": 48.3,
-        "robustZ": -0.06,
+        "robustZ": -0.062,
         "reliability": 50.3,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -23271,7 +23271,7 @@ window.INDEX_DATA = {
         },
         "rawRelativeHeat": 49.4,
         "rawFinalHeat": 54.6,
-        "rawAbsoluteHeat": 51.8,
+        "rawAbsoluteHeat": 51.7,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
         "temporalAlpha": 1.0,
         "temporalGapDays": 1,
@@ -23318,16 +23318,16 @@ window.INDEX_DATA = {
         "composite": 49
       },
       "signals": {
-        "optimism": 48.9,
+        "optimism": 49.0,
         "fomo": 47.3,
-        "panic": 13.9,
+        "panic": 13.8,
         "newcomer": 50.1,
         "intensity": 50.0,
         "attention": 51.6,
         "heat": 49.7
       },
-      "heat": 53.6,
-      "direction": 48.9,
+      "heat": 53.7,
+      "direction": 49.0,
       "metrics": {
         "recentPosts": 266,
         "recent7Posts": 616,
@@ -23840,11 +23840,11 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 46.6,
+              "optimism": 46.7,
               "fomo": 42.2,
               "panic": 34.2,
               "newcomer": 50.1,
-              "intensity": 57.4,
+              "intensity": 57.3,
               "attention": 55.1
             },
             "sina": {
@@ -24055,13 +24055,13 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 48.4,
+            "optimism": 48.5,
             "fomo": 38.8,
             "newcomer": 60.4,
-            "intensity": 65.0,
+            "intensity": 64.8,
             "attention": 63.4,
             "panic": 39.8,
-            "heat": 56.0
+            "heat": 55.9
           },
           "raw": {
             "net": -0.00961739063994462,
@@ -24199,8 +24199,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1549,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -24236,8 +24236,8 @@ window.INDEX_DATA = {
               "2026-09-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1549,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -24275,8 +24275,8 @@ window.INDEX_DATA = {
               "2026-09-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1549,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -24312,8 +24312,8 @@ window.INDEX_DATA = {
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1549,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -24348,8 +24348,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1549,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -24373,8 +24373,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1532,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -24509,12 +24509,12 @@ window.INDEX_DATA = {
         "relativeHeat": 48.1,
         "heatTier": "市场中段",
         "percentile": 45.0,
-        "robustZ": -0.221,
+        "robustZ": -0.218,
         "reliability": 44.1,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -24530,7 +24530,7 @@ window.INDEX_DATA = {
           "finalAbsolute": 0.35
         },
         "rawRelativeHeat": 48.1,
-        "rawFinalHeat": 53.6,
+        "rawFinalHeat": 53.7,
         "rawAbsoluteHeat": 51.1,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
         "temporalAlpha": 1.0,
@@ -24541,7 +24541,7 @@ window.INDEX_DATA = {
         "previousRelativeHeat": 47.6,
         "previousFinalHeat": 50.9
       },
-      "activityHeat": 53.6,
+      "activityHeat": 53.7,
       "emotion": null,
       "emotionN": 0
     },
@@ -24582,9 +24582,9 @@ window.INDEX_DATA = {
         "fomo": 52.3,
         "panic": 8.8,
         "newcomer": 52.2,
-        "intensity": 52.1,
+        "intensity": 52.0,
         "attention": 50.7,
-        "heat": 51.8
+        "heat": 51.7
       },
       "heat": 53.1,
       "direction": 50.4,
@@ -25103,7 +25103,7 @@ window.INDEX_DATA = {
               "fomo": 49.7,
               "panic": 26.5,
               "newcomer": 58.1,
-              "intensity": 53.8,
+              "intensity": 53.7,
               "attention": 50.1
             },
             "sina": {
@@ -25314,12 +25314,12 @@ window.INDEX_DATA = {
           "activityEligible": true,
           "signals": {
             "optimism": 52.9,
-            "fomo": 52.5,
+            "fomo": 52.6,
             "newcomer": 66.9,
-            "intensity": 63.5,
+            "intensity": 63.3,
             "attention": 55.8,
             "panic": 43.4,
-            "heat": 58.4
+            "heat": 58.3
           },
           "raw": {
             "net": 0.029961898861768692,
@@ -25427,7 +25427,7 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 57.3,
+            "optimism": 57.2,
             "fomo": 67.5,
             "newcomer": 38.2,
             "intensity": 53.3,
@@ -25490,8 +25490,8 @@ window.INDEX_DATA = {
               "2026-09-27"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1545,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -25520,8 +25520,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1545,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -25556,8 +25556,8 @@ window.INDEX_DATA = {
               "2026-10-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1545,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -25585,8 +25585,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1545,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -25631,8 +25631,8 @@ window.INDEX_DATA = {
               "2026-10-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1545,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -25655,8 +25655,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1524,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -25681,8 +25681,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1545,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -25712,8 +25712,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1544,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -25831,7 +25831,7 @@ window.INDEX_DATA = {
           "publishTime": "2026-11-25T15:27:43+08:00"
         }
       ],
-      "legacyHeat": 51.8,
+      "legacyHeat": 51.7,
       "absoluteHeat": 51.0,
       "relativeHeat": 47.2,
       "heatRank": 18,
@@ -25840,7 +25840,7 @@ window.INDEX_DATA = {
         "version": "sector_community_heat_v4_company_equal",
         "status": "applied",
         "marketAnchor": 55.0,
-        "legacyEmotionHeat": 51.8,
+        "legacyEmotionHeat": 51.7,
         "absoluteHeat": 51.0,
         "activityIndex": 50.7,
         "volumeFactor": 50.7,
@@ -25848,12 +25848,12 @@ window.INDEX_DATA = {
         "relativeHeat": 47.2,
         "heatTier": "市场中段",
         "percentile": 41.7,
-        "robustZ": -0.376,
+        "robustZ": -0.377,
         "reliability": 38.2,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -25921,7 +25921,7 @@ window.INDEX_DATA = {
         "fomo": 50.8,
         "panic": 9.7,
         "newcomer": 48.7,
-        "intensity": 51.4,
+        "intensity": 51.3,
         "attention": 50.8,
         "heat": 50.6
       },
@@ -25931,7 +25931,7 @@ window.INDEX_DATA = {
         "recentPosts": 225,
         "recent7Posts": 513,
         "samplePosts": 511,
-        "bullishRatio": 10.0,
+        "bullishRatio": 9.8,
         "bearishRatio": 12.5,
         "fomoRate": 4.4,
         "panicRate": 3.5,
@@ -26440,10 +26440,10 @@ window.INDEX_DATA = {
           "channelSignals": {
             "eastmoney": {
               "optimism": 47.8,
-              "fomo": 43.2,
+              "fomo": 43.3,
               "panic": 25.4,
               "newcomer": 46.5,
-              "intensity": 56.8,
+              "intensity": 56.4,
               "attention": 52.7
             },
             "sina": {
@@ -26656,17 +26656,17 @@ window.INDEX_DATA = {
             "optimism": 47.6,
             "fomo": 40.0,
             "newcomer": 46.1,
-            "intensity": 58.0,
+            "intensity": 57.5,
             "attention": 60.8,
             "panic": 27.4,
-            "heat": 51.6
+            "heat": 51.5
           },
           "raw": {
-            "net": -0.024276523115239736,
+            "net": -0.026069298322121532,
             "fomo": 0.03462358288085635,
             "panic": 0.03937152008398716,
             "newcomer": 0.015088336329556697,
-            "intense": 0.2579476768176247
+            "intense": 0.25546011462857
           },
           "sampleCount": 433,
           "sourceCount": 3,
@@ -26767,7 +26767,7 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 47.4,
+            "optimism": 47.2,
             "fomo": 31.1,
             "newcomer": 38.2,
             "intensity": 29.4,
@@ -26828,8 +26828,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -26861,8 +26861,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -26899,8 +26899,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -26951,8 +26951,8 @@ window.INDEX_DATA = {
               "2026-08-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -27003,8 +27003,8 @@ window.INDEX_DATA = {
               "2026-08-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -27028,8 +27028,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1548,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -27062,8 +27062,8 @@ window.INDEX_DATA = {
               "2026-10-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -27094,8 +27094,8 @@ window.INDEX_DATA = {
               "2026-10-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -27230,12 +27230,12 @@ window.INDEX_DATA = {
         "relativeHeat": 46.6,
         "heatTier": "市场中段",
         "percentile": 38.3,
-        "robustZ": -0.408,
+        "robustZ": -0.404,
         "reliability": 40.6,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -27821,7 +27821,7 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 55.1,
+              "optimism": 55.0,
               "fomo": 58.4,
               "panic": 23.4,
               "newcomer": 43.9,
@@ -28073,16 +28073,16 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 57.8,
+            "optimism": 57.9,
             "fomo": 63.5,
             "newcomer": 38.4,
-            "intensity": 59.9,
+            "intensity": 59.8,
             "attention": 56.4,
             "panic": 26.0,
             "heat": 56.7
           },
           "raw": {
-            "net": 0.08743766211125742,
+            "net": 0.08639407443108052,
             "fomo": 0.09336940836940837,
             "panic": 0.03757094757094757,
             "newcomer": 0.007803030303030302,
@@ -28111,10 +28111,10 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 61.6,
+            "optimism": 61.4,
             "fomo": 74.5,
             "newcomer": 38.2,
-            "intensity": 59.0,
+            "intensity": 58.8,
             "attention": 34.4,
             "panic": 0.0,
             "heat": 53.1
@@ -28216,8 +28216,8 @@ window.INDEX_DATA = {
               "2026-09-25"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -28249,8 +28249,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1544,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -28280,8 +28280,8 @@ window.INDEX_DATA = {
               "2026-08-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -28311,8 +28311,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1542,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -28347,8 +28347,8 @@ window.INDEX_DATA = {
               "2026-11-09"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -28395,8 +28395,8 @@ window.INDEX_DATA = {
               "2026-10-03"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -28420,8 +28420,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1520,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -28452,8 +28452,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -28489,8 +28489,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -28524,8 +28524,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -28660,12 +28660,12 @@ window.INDEX_DATA = {
         "relativeHeat": 45.2,
         "heatTier": "市场中段",
         "percentile": 35.0,
-        "robustZ": -0.513,
+        "robustZ": -0.508,
         "reliability": 45.7,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -28835,7 +28835,7 @@ window.INDEX_DATA = {
               "platformCount": 4,
               "maskedDirectionRaw": 50.8,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 53.0
+              "candidateShrunkDirection": 53.1
             },
             "novice": {
               "available": true,
@@ -28844,7 +28844,7 @@ window.INDEX_DATA = {
               "platformCount": 2,
               "maskedDirectionRaw": 51.7,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 53.6
+              "candidateShrunkDirection": 53.7
             },
             "retail": {
               "available": true,
@@ -29253,7 +29253,7 @@ window.INDEX_DATA = {
             "eastmoney": {
               "optimism": 53.3,
               "fomo": 48.3,
-              "panic": 17.5,
+              "panic": 17.4,
               "newcomer": 51.3,
               "intensity": 50.6,
               "attention": 48.4
@@ -29465,7 +29465,7 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 54.8,
+            "optimism": 54.9,
             "fomo": 45.9,
             "newcomer": 53.6,
             "intensity": 47.1,
@@ -29542,7 +29542,7 @@ window.INDEX_DATA = {
           "activityEligible": false,
           "signals": {
             "optimism": 66.4,
-            "fomo": 46.9,
+            "fomo": 46.8,
             "newcomer": 62.1,
             "intensity": 62.6,
             "attention": 39.3,
@@ -29644,8 +29644,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -29677,8 +29677,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -29711,8 +29711,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1557,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -29743,8 +29743,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -29785,8 +29785,8 @@ window.INDEX_DATA = {
               "2026-10-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -29809,8 +29809,8 @@ window.INDEX_DATA = {
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1548,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -29838,8 +29838,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -29878,8 +29878,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -29999,7 +29999,7 @@ window.INDEX_DATA = {
       ],
       "legacyHeat": 48.8,
       "absoluteHeat": 49.8,
-      "relativeHeat": 44.6,
+      "relativeHeat": 44.7,
       "heatRank": 21,
       "heatTier": "市场中段",
       "heatModel": {
@@ -30011,15 +30011,15 @@ window.INDEX_DATA = {
         "activityIndex": 50.1,
         "volumeFactor": 50.1,
         "relativeLatent": 49.9,
-        "relativeHeat": 44.6,
+        "relativeHeat": 44.7,
         "heatTier": "市场中段",
         "percentile": 25.0,
-        "robustZ": -0.705,
+        "robustZ": -0.699,
         "reliability": 35.9,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -30034,7 +30034,7 @@ window.INDEX_DATA = {
           "finalRelative": 0.65,
           "finalAbsolute": 0.35
         },
-        "rawRelativeHeat": 44.6,
+        "rawRelativeHeat": 44.7,
         "rawFinalHeat": 51.3,
         "rawAbsoluteHeat": 49.8,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -30047,1405 +30047,6 @@ window.INDEX_DATA = {
         "previousFinalHeat": 49.7
       },
       "activityHeat": 51.3,
-      "emotion": null,
-      "emotionN": 0
-    },
-    {
-      "key": "basic_chemicals",
-      "name": "基础化工",
-      "parentKey": "resources_utilities",
-      "parentName": "资源化工与公用",
-      "description": "观察聚氨酯、煤化工、烯烃及大宗化工材料；不包含锂电和半导体专用材料。",
-      "representativeCompanies": [
-        {
-          "code": "600309",
-          "name": "万华化学",
-          "role": "聚氨酯与新材料"
-        },
-        {
-          "code": "600426",
-          "name": "华鲁恒升",
-          "role": "煤化工与基础化工"
-        },
-        {
-          "code": "002648",
-          "name": "卫星化学",
-          "role": "烯烃与化工新材料"
-        }
-      ],
-      "catalogVersion": 3,
-      "available": true,
-      "expectedSourceCount": 11,
-      "scores": {
-        "baoma": 51,
-        "novice": 51,
-        "retail": 50,
-        "composite": 51
-      },
-      "signals": {
-        "optimism": 50.8,
-        "fomo": 49.2,
-        "panic": 8.5,
-        "newcomer": 52.4,
-        "intensity": 51.1,
-        "attention": 50.0,
-        "heat": 50.4
-      },
-      "heat": 51.0,
-      "direction": 50.8,
-      "metrics": {
-        "recentPosts": 198,
-        "recent7Posts": 493,
-        "samplePosts": 483,
-        "bullishRatio": 12.2,
-        "bearishRatio": 12.8,
-        "fomoRate": 5.2,
-        "panicRate": 2.8,
-        "newcomerRate": 3.1,
-        "activityIndex": 50.0,
-        "estimatedDailyPosts": 136.65,
-        "weightedDailyPosts3d": 136.65,
-        "weightedVolumeLowerBound": 136.65,
-        "volumeCoverage": 0.777778,
-        "effectiveSample": 169.622,
-        "tradingDays": [
-          "2026-11-25",
-          "2026-11-24",
-          "2026-11-23"
-        ],
-        "dailyPostCounts": [
-          {
-            "date": "2026-11-25",
-            "rawWeight": 0.5,
-            "effectiveWeight": 0.5,
-            "postCount": 198,
-            "equivalentPosts": 170.0,
-            "uniqueAuthors": 170,
-            "available": true
-          },
-          {
-            "date": "2026-11-24",
-            "rawWeight": 0.3,
-            "effectiveWeight": 0.3,
-            "postCount": 222,
-            "equivalentPosts": 216.7,
-            "uniqueAuthors": 178,
-            "available": true
-          },
-          {
-            "date": "2026-11-23",
-            "rawWeight": 0.2,
-            "effectiveWeight": 0.2,
-            "postCount": 73,
-            "equivalentPosts": 68.8,
-            "uniqueAuthors": 63,
-            "available": true
-          }
-        ],
-        "currentTradingDayPosts": 198,
-        "tradingWindowPosts": 493,
-        "uniqueAuthors24": 170,
-        "uniqueAuthors3d": 366,
-        "activityLowerBoundSourceCount": 0,
-        "sourceCount": 9,
-        "platformCount": 4,
-        "personaEvidence": {
-          "status": "experimental_not_used_in_formal_scores",
-          "formalScoresUnchanged": true,
-          "interpretation": {
-            "baoma": "家庭/生活资金或稳健长期型表达，不推断真实身份",
-            "novice": "明确提问、求教或首次入市型表达",
-            "retail": "明确买卖、仓位或主动交易型表达"
-          },
-          "exclusivePriority": [
-            "baoma",
-            "novice",
-            "retail"
-          ],
-          "maskedBeforeCandidateScoring": true,
-          "evidenceCounts": {
-            "baoma": 18,
-            "novice": 30,
-            "retail": 57
-          },
-          "reasonCounts": {
-            "baoma": {
-              "explicit_household": 1,
-              "cautious_household_style": 17
-            },
-            "novice": {
-              "explicit_question_or_learning": 22,
-              "market_question": 8
-            },
-            "retail": {
-              "active_trading_language": 57
-            }
-          },
-          "candidates": {
-            "baoma": {
-              "available": true,
-              "evidencePosts": 18,
-              "sourceCount": 4,
-              "platformCount": 2,
-              "maskedDirectionRaw": 46.0,
-              "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 49.2
-            },
-            "novice": {
-              "available": true,
-              "evidencePosts": 30,
-              "sourceCount": 5,
-              "platformCount": 2,
-              "maskedDirectionRaw": 53.7,
-              "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 54.2
-            },
-            "retail": {
-              "available": true,
-              "evidencePosts": 57,
-              "sourceCount": 5,
-              "platformCount": 2,
-              "maskedDirectionRaw": 50.6,
-              "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 52.2
-            }
-          }
-        },
-        "samplingPolicy": {
-          "mode": "measured",
-          "capPerSourcePublishedDay": null,
-          "postsBefore": 493,
-          "postsAfterAuthorLimit": 493,
-          "postsSelected": 493,
-          "activityPosts": 493,
-          "sourceDayBucketsCapped": 0,
-          "selectionUsesSentiment": false
-        },
-        "attentionBaseline": {
-          "mode": "measured",
-          "method": "three_trading_day_weighted_post_volume",
-          "sourceStatusCounts": {
-            "applied": 9
-          },
-          "fallbackReasons": {},
-          "missingDaysAssumedZero": false,
-          "tradingDayWeights": [
-            0.5,
-            0.3,
-            0.2
-          ],
-          "usesFutureDates": false,
-          "usesInteractions": false
-        },
-        "fairness": {
-          "method": "fixed_four_channels_then_fixed_units_then_fixed_50_30_20",
-          "channelWeights": [
-            {
-              "key": "eastmoney",
-              "channel": "eastmoney",
-              "targetWeight": 0.25,
-              "formalInfluence": 0.178653,
-              "neutralisedWeight": 0.071347,
-              "reliability": 0.714611,
-              "reliabilityPercent": 71.5,
-              "available": true
-            },
-            {
-              "key": "sina",
-              "channel": "sina",
-              "targetWeight": 0.25,
-              "formalInfluence": 0.008059,
-              "neutralisedWeight": 0.241941,
-              "reliability": 0.032234,
-              "reliabilityPercent": 3.2,
-              "available": true
-            },
-            {
-              "key": "ths",
-              "channel": "ths",
-              "targetWeight": 0.25,
-              "formalInfluence": 0.149881,
-              "neutralisedWeight": 0.100119,
-              "reliability": 0.499605,
-              "reliabilityPercent": 50.0,
-              "available": true
-            },
-            {
-              "key": "taoguba",
-              "channel": "taoguba",
-              "targetWeight": 0.25,
-              "formalInfluence": 0.013333,
-              "neutralisedWeight": 0.236667,
-              "reliability": 0.053333,
-              "reliabilityPercent": 5.3,
-              "available": true
-            }
-          ],
-          "unitWeights": {
-            "eastmoney": [
-              {
-                "key": "600309",
-                "mode": "company",
-                "targetWithinChannel": 0.333333,
-                "targetFinalWeight": 0.083333,
-                "formalInfluence": 0.070022,
-                "neutralisedWeight": 0.013312,
-                "name": "万华化学"
-              },
-              {
-                "key": "600426",
-                "mode": "company",
-                "targetWithinChannel": 0.333333,
-                "targetFinalWeight": 0.083333,
-                "formalInfluence": 0.055215,
-                "neutralisedWeight": 0.028118,
-                "name": "华鲁恒升"
-              },
-              {
-                "key": "002648",
-                "mode": "company",
-                "targetWithinChannel": 0.333333,
-                "targetFinalWeight": 0.083333,
-                "formalInfluence": 0.053416,
-                "neutralisedWeight": 0.029917,
-                "name": "卫星化学"
-              }
-            ],
-            "sina": [
-              {
-                "key": "600309",
-                "mode": "company",
-                "targetWithinChannel": 0.333333,
-                "targetFinalWeight": 0.083333,
-                "formalInfluence": 0.003571,
-                "neutralisedWeight": 0.079762,
-                "name": "万华化学"
-              },
-              {
-                "key": "600426",
-                "mode": "company",
-                "targetWithinChannel": 0.333333,
-                "targetFinalWeight": 0.083333,
-                "formalInfluence": 0.001282,
-                "neutralisedWeight": 0.082051,
-                "name": "华鲁恒升"
-              },
-              {
-                "key": "002648",
-                "mode": "company",
-                "targetWithinChannel": 0.333333,
-                "targetFinalWeight": 0.083333,
-                "formalInfluence": 0.003205,
-                "neutralisedWeight": 0.080128,
-                "name": "卫星化学"
-              }
-            ],
-            "ths": [
-              {
-                "key": "881108",
-                "mode": "sector",
-                "targetWithinChannel": 0.5,
-                "targetFinalWeight": 0.125,
-                "formalInfluence": 0.066937,
-                "neutralisedWeight": 0.058063,
-                "name": "化学原料"
-              },
-              {
-                "key": "881109",
-                "mode": "sector",
-                "targetWithinChannel": 0.5,
-                "targetFinalWeight": 0.125,
-                "formalInfluence": 0.082945,
-                "neutralisedWeight": 0.042055,
-                "name": "化学制品"
-              }
-            ],
-            "taoguba": [
-              {
-                "key": "600309",
-                "mode": "company",
-                "targetWithinChannel": 0.333333,
-                "targetFinalWeight": 0.083333,
-                "formalInfluence": 0.013333,
-                "neutralisedWeight": 0.07,
-                "name": "万华化学"
-              },
-              {
-                "key": "600426",
-                "mode": "company",
-                "targetWithinChannel": 0.333333,
-                "targetFinalWeight": 0.083333,
-                "formalInfluence": 0.0,
-                "neutralisedWeight": 0.083333,
-                "name": "华鲁恒升"
-              },
-              {
-                "key": "002648",
-                "mode": "company",
-                "targetWithinChannel": 0.333333,
-                "targetFinalWeight": 0.083333,
-                "formalInfluence": 0.0,
-                "neutralisedWeight": 0.083333,
-                "name": "卫星化学"
-              }
-            ]
-          },
-          "effectiveDayWeights": [
-            {
-              "date": "2026-11-25",
-              "weight": 0.5,
-              "channelTargetWeights": {
-                "eastmoney": 0.25,
-                "sina": 0.25,
-                "ths": 0.25,
-                "taoguba": 0.25
-              },
-              "channelFormalInfluence": {
-                "eastmoney": 0.091135,
-                "sina": 0.0,
-                "ths": 0.1008,
-                "taoguba": 0.008333
-              },
-              "channels": {
-                "eastmoney": {
-                  "status": "observed",
-                  "observedUnitCount": 3,
-                  "unitCoverage": 1.0,
-                  "signalReliability": {
-                    "optimism": 0.729077,
-                    "fomo": 0.729077,
-                    "panic": 0.729077,
-                    "newcomer": 0.729077,
-                    "intensity": 0.729077,
-                    "attention": 0.729077
-                  }
-                },
-                "sina": {
-                  "status": "verified_zero",
-                  "observedUnitCount": 0,
-                  "unitCoverage": 0.0,
-                  "signalReliability": {
-                    "optimism": 0.0,
-                    "fomo": 0.0,
-                    "panic": 0.0,
-                    "newcomer": 0.0,
-                    "intensity": 0.0,
-                    "attention": 0.0
-                  }
-                },
-                "ths": {
-                  "status": "observed",
-                  "observedUnitCount": 2,
-                  "unitCoverage": 1.0,
-                  "signalReliability": {
-                    "optimism": 0.806402,
-                    "fomo": 0.806402,
-                    "panic": 0.806402,
-                    "newcomer": 0.806402,
-                    "intensity": 0.806402,
-                    "attention": 0.0
-                  }
-                },
-                "taoguba": {
-                  "status": "observed",
-                  "observedUnitCount": 1,
-                  "unitCoverage": 0.333333,
-                  "signalReliability": {
-                    "optimism": 0.066667,
-                    "fomo": 0.066667,
-                    "panic": 0.066667,
-                    "newcomer": 0.066667,
-                    "intensity": 0.066667,
-                    "attention": 0.066667
-                  }
-                }
-              }
-            },
-            {
-              "date": "2026-11-24",
-              "weight": 0.3,
-              "channelTargetWeights": {
-                "eastmoney": 0.25,
-                "sina": 0.25,
-                "ths": 0.25,
-                "taoguba": 0.25
-              },
-              "channelFormalInfluence": {
-                "eastmoney": 0.062511,
-                "sina": 0.005495,
-                "ths": 0.035192,
-                "taoguba": 0.005
-              },
-              "channels": {
-                "eastmoney": {
-                  "status": "observed",
-                  "observedUnitCount": 3,
-                  "unitCoverage": 1.0,
-                  "signalReliability": {
-                    "optimism": 0.833478,
-                    "fomo": 0.833478,
-                    "panic": 0.833478,
-                    "newcomer": 0.833478,
-                    "intensity": 0.833478,
-                    "attention": 0.833478
-                  }
-                },
-                "sina": {
-                  "status": "observed",
-                  "observedUnitCount": 2,
-                  "unitCoverage": 0.666667,
-                  "signalReliability": {
-                    "optimism": 0.07326,
-                    "fomo": 0.07326,
-                    "panic": 0.07326,
-                    "newcomer": 0.07326,
-                    "intensity": 0.07326,
-                    "attention": 0.07326
-                  }
-                },
-                "ths": {
-                  "status": "observed",
-                  "observedUnitCount": 2,
-                  "unitCoverage": 1.0,
-                  "signalReliability": {
-                    "optimism": 0.469231,
-                    "fomo": 0.469231,
-                    "panic": 0.469231,
-                    "newcomer": 0.469231,
-                    "intensity": 0.469231,
-                    "attention": 0.0
-                  }
-                },
-                "taoguba": {
-                  "status": "observed",
-                  "observedUnitCount": 1,
-                  "unitCoverage": 0.333333,
-                  "signalReliability": {
-                    "optimism": 0.066667,
-                    "fomo": 0.066667,
-                    "panic": 0.066667,
-                    "newcomer": 0.066667,
-                    "intensity": 0.066667,
-                    "attention": 0.066667
-                  }
-                }
-              }
-            },
-            {
-              "date": "2026-11-23",
-              "weight": 0.2,
-              "channelTargetWeights": {
-                "eastmoney": 0.25,
-                "sina": 0.25,
-                "ths": 0.25,
-                "taoguba": 0.25
-              },
-              "channelFormalInfluence": {
-                "eastmoney": 0.025007,
-                "sina": 0.002564,
-                "ths": 0.013889,
-                "taoguba": 0.0
-              },
-              "channels": {
-                "eastmoney": {
-                  "status": "observed",
-                  "observedUnitCount": 3,
-                  "unitCoverage": 1.0,
-                  "signalReliability": {
-                    "optimism": 0.500147,
-                    "fomo": 0.500147,
-                    "panic": 0.500147,
-                    "newcomer": 0.500147,
-                    "intensity": 0.500147,
-                    "attention": 0.500147
-                  }
-                },
-                "sina": {
-                  "status": "observed",
-                  "observedUnitCount": 2,
-                  "unitCoverage": 0.666667,
-                  "signalReliability": {
-                    "optimism": 0.051282,
-                    "fomo": 0.051282,
-                    "panic": 0.051282,
-                    "newcomer": 0.051282,
-                    "intensity": 0.051282,
-                    "attention": 0.051282
-                  }
-                },
-                "ths": {
-                  "status": "observed",
-                  "observedUnitCount": 1,
-                  "unitCoverage": 0.5,
-                  "signalReliability": {
-                    "optimism": 0.277778,
-                    "fomo": 0.277778,
-                    "panic": 0.277778,
-                    "newcomer": 0.277778,
-                    "intensity": 0.277778,
-                    "attention": 0.0
-                  }
-                },
-                "taoguba": {
-                  "status": "verified_zero",
-                  "observedUnitCount": 0,
-                  "unitCoverage": 0.0,
-                  "signalReliability": {
-                    "optimism": 0.0,
-                    "fomo": 0.0,
-                    "panic": 0.0,
-                    "newcomer": 0.0,
-                    "intensity": 0.0,
-                    "attention": 0.0
-                  }
-                }
-              }
-            }
-          ],
-          "reliability": 0.324946,
-          "reliabilityPercent": 32.5,
-          "signalReliability": {
-            "optimism": 0.349926,
-            "fomo": 0.349926,
-            "panic": 0.349926,
-            "newcomer": 0.349926,
-            "intensity": 0.349926,
-            "attention": 0.200045
-          },
-          "channelSignals": {
-            "eastmoney": {
-              "optimism": 50.1,
-              "fomo": 49.3,
-              "panic": 21.7,
-              "newcomer": 52.3,
-              "intensity": 57.4,
-              "attention": 49.1
-            },
-            "sina": {
-              "optimism": 50.2,
-              "fomo": 49.4,
-              "panic": 0.4,
-              "newcomer": 49.7,
-              "intensity": 50.0,
-              "attention": 50.1
-            },
-            "ths": {
-              "optimism": 53.0,
-              "fomo": 49.0,
-              "panic": 11.4,
-              "newcomer": 58.2,
-              "intensity": 45.9,
-              "attention": 50.0
-            },
-            "taoguba": {
-              "optimism": 50.0,
-              "fomo": 49.1,
-              "panic": 0.6,
-              "newcomer": 49.4,
-              "intensity": 51.3,
-              "attention": 50.8
-            }
-          },
-          "channelPointCoverage": {
-            "eastmoney": {
-              "optimism": 1.0,
-              "fomo": 1.0,
-              "panic": 1.0,
-              "newcomer": 1.0,
-              "intensity": 1.0,
-              "attention": 1.0
-            },
-            "sina": {
-              "optimism": 0.333333,
-              "fomo": 0.333333,
-              "panic": 0.333333,
-              "newcomer": 0.333333,
-              "intensity": 0.333333,
-              "attention": 0.333333
-            },
-            "ths": {
-              "optimism": 0.9,
-              "fomo": 0.9,
-              "panic": 0.9,
-              "newcomer": 0.9,
-              "intensity": 0.9,
-              "attention": 0.0
-            },
-            "taoguba": {
-              "optimism": 0.266667,
-              "fomo": 0.266667,
-              "panic": 0.266667,
-              "newcomer": 0.266667,
-              "intensity": 0.266667,
-              "attention": 0.266667
-            }
-          },
-          "platformSummary": [
-            {
-              "key": "eastmoney",
-              "channel": "eastmoney",
-              "targetWeight": 0.25,
-              "formalInfluence": 0.178653,
-              "neutralisedWeight": 0.071347,
-              "reliability": 0.714611,
-              "reliabilityPercent": 71.5,
-              "available": true,
-              "mode": "company",
-              "expectedUnitCount": 3,
-              "observedUnitCount": 3,
-              "allowAttention": true,
-              "emotionWeight": 0.178653,
-              "attentionWeight": 0.178653,
-              "name": "东方财富股吧",
-              "volumeEligible": true,
-              "formalWeightMeaning": "目标席位固定25%；证据不足部分收缩到中性，不转给其他渠道"
-            },
-            {
-              "key": "sina",
-              "channel": "sina",
-              "targetWeight": 0.25,
-              "formalInfluence": 0.008059,
-              "neutralisedWeight": 0.241941,
-              "reliability": 0.032234,
-              "reliabilityPercent": 3.2,
-              "available": true,
-              "mode": "company",
-              "expectedUnitCount": 3,
-              "observedUnitCount": 3,
-              "allowAttention": true,
-              "emotionWeight": 0.008059,
-              "attentionWeight": 0.008059,
-              "name": "新浪股吧",
-              "volumeEligible": true,
-              "formalWeightMeaning": "目标席位固定25%；证据不足部分收缩到中性，不转给其他渠道"
-            },
-            {
-              "key": "ths",
-              "channel": "ths",
-              "targetWeight": 0.25,
-              "formalInfluence": 0.149881,
-              "neutralisedWeight": 0.100119,
-              "reliability": 0.499605,
-              "reliabilityPercent": 50.0,
-              "available": true,
-              "mode": "sector",
-              "expectedUnitCount": 2,
-              "observedUnitCount": 2,
-              "allowAttention": false,
-              "emotionWeight": 0.149881,
-              "attentionWeight": 0.0,
-              "name": "同花顺板块社区",
-              "volumeEligible": false,
-              "formalWeightMeaning": "目标席位固定25%；证据不足部分收缩到中性，不转给其他渠道"
-            },
-            {
-              "key": "taoguba",
-              "channel": "taoguba",
-              "targetWeight": 0.25,
-              "formalInfluence": 0.013333,
-              "neutralisedWeight": 0.236667,
-              "reliability": 0.053333,
-              "reliabilityPercent": 5.3,
-              "available": true,
-              "mode": "company",
-              "expectedUnitCount": 3,
-              "observedUnitCount": 1,
-              "allowAttention": true,
-              "emotionWeight": 0.013333,
-              "attentionWeight": 0.013333,
-              "name": "淘股吧",
-              "volumeEligible": true,
-              "formalWeightMeaning": "目标席位固定25%；证据不足部分收缩到中性，不转给其他渠道"
-            }
-          ],
-          "flags": [
-            "low_reliability",
-            "ths_attention_disabled"
-          ],
-          "concentration": {
-            "channelInfluenceCap": 0.25,
-            "maxTargetChannelWeight": 0.25,
-            "maxFormalChannelInfluence": 0.178653,
-            "targetChannelHHI": 0.25,
-            "capBreached": false
-          },
-          "samplePrior": 12.0,
-          "statusSemantics": {
-            "verified_zero": "collector verified a complete stream with zero qualifying posts",
-            "unobserved": "collector cannot determine whether qualifying posts existed"
-          },
-          "companyWeights": [
-            {
-              "key": "600309",
-              "name": "万华化学",
-              "targetWeight": 0.25,
-              "effectiveWeight": 0.086926,
-              "neutralisedWeight": 0.163074
-            },
-            {
-              "key": "600426",
-              "name": "华鲁恒升",
-              "targetWeight": 0.25,
-              "effectiveWeight": 0.056497,
-              "neutralisedWeight": 0.193503
-            },
-            {
-              "key": "002648",
-              "name": "卫星化学",
-              "targetWeight": 0.25,
-              "effectiveWeight": 0.056621,
-              "neutralisedWeight": 0.193379
-            }
-          ],
-          "expectedCompanyCount": 3,
-          "providedCompanyCount": 3,
-          "modelVersion": "channel_equal_four_seats_v1",
-          "formalPointEstimateNotSampleWeighted": true,
-          "formalPointEstimateNotSampleProportionWeighted": true,
-          "sampleCountAffectsOwnNeutralShrinkOnly": true,
-          "fixedChannelTargetWeight": 0.25,
-          "channelWeightsNeverRedistributed": true,
-          "weightedCompanyCoverage": 0.625,
-          "weightedChannelCoverage": 0.625,
-          "latestObservedCompanyCount": 3,
-          "latestObservedChannelCount": 3,
-          "observedChannelCount": 4,
-          "rankEligible": true,
-          "confidenceLabel": "中",
-          "stabilityBand": {
-            "type": "leave_one_channel_out",
-            "low": 50.0,
-            "high": 52.0,
-            "maxDelta": 1.0,
-            "isStatisticalConfidenceInterval": false
-          }
-        },
-        "heatReliability": 42.8
-      },
-      "platforms": [
-        {
-          "key": "ths",
-          "name": "同花顺板块社区",
-          "activityEligible": false,
-          "signals": {
-            "optimism": 59.8,
-            "fomo": 45.9,
-            "newcomer": 58.1,
-            "intensity": 47.0,
-            "attention": 50.0,
-            "panic": 5.2,
-            "heat": 49.2
-          },
-          "raw": {
-            "net": 0.11364798239550396,
-            "fomo": 0.049862714970339006,
-            "panic": 0.0066312474599074175,
-            "newcomer": 0.03203743666490145,
-            "intense": 0.16784504628919877
-          },
-          "sampleCount": 101,
-          "sourceCount": 2,
-          "recent24": 77,
-          "activity": {
-            "relativeScore": 39.8,
-            "postingVelocity": 36.694,
-            "weightedDailyPosts3d": 36.694,
-            "uniqueAuthors3d": 111,
-            "uniqueAuthors24": 77,
-            "lowerBoundSourceCount": 0
-          },
-          "weight": 15.0,
-          "attentionWeight": 0.0,
-          "targetWeight": 25.0,
-          "formalInfluence": 15.0,
-          "formalWeightMeaning": "正式情绪/关注影响；缺失部分保留中性席位",
-          "diagnosticOnlyLegacySignals": true
-        },
-        {
-          "key": "eastmoney",
-          "name": "东方财富股吧",
-          "activityEligible": true,
-          "signals": {
-            "optimism": 51.9,
-            "fomo": 47.2,
-            "newcomer": 53.2,
-            "intensity": 58.3,
-            "attention": 56.9,
-            "panic": 25.4,
-            "heat": 53.8
-          },
-          "raw": {
-            "net": 0.01638529350898016,
-            "fomo": 0.05067753275523887,
-            "panic": 0.03521863600977804,
-            "newcomer": 0.025135258345286265,
-            "intense": 0.26306232564374465
-          },
-          "sampleCount": 371,
-          "sourceCount": 3,
-          "recent24": 118,
-          "activity": {
-            "relativeScore": 39.8,
-            "postingVelocity": 129.15,
-            "weightedDailyPosts3d": 129.15,
-            "uniqueAuthors3d": 244,
-            "uniqueAuthors24": 90,
-            "lowerBoundSourceCount": 0
-          },
-          "weight": 17.9,
-          "attentionWeight": 17.9,
-          "targetWeight": 25.0,
-          "formalInfluence": 17.9,
-          "formalWeightMeaning": "正式情绪/关注影响；缺失部分保留中性席位",
-          "diagnosticOnlyLegacySignals": true
-        },
-        {
-          "key": "taoguba",
-          "name": "淘股吧",
-          "activityEligible": false,
-          "signals": {
-            "optimism": 50.6,
-            "fomo": 31.1,
-            "newcomer": 38.2,
-            "intensity": 74.9,
-            "attention": 43.8,
-            "panic": 0.0,
-            "heat": 46.9
-          },
-          "raw": {
-            "net": 0.01956726900331698,
-            "fomo": 0.0,
-            "panic": 0.0,
-            "newcomer": 0.0,
-            "intense": 0.6666666666666665
-          },
-          "sampleCount": 6,
-          "sourceCount": 1,
-          "recent24": 3,
-          "activity": {
-            "relativeScore": 53.9,
-            "postingVelocity": 3.0,
-            "weightedDailyPosts3d": 3.0,
-            "uniqueAuthors3d": 6,
-            "uniqueAuthors24": 3,
-            "lowerBoundSourceCount": 0
-          },
-          "weight": 1.3,
-          "attentionWeight": 1.3,
-          "targetWeight": 25.0,
-          "formalInfluence": 1.3,
-          "formalWeightMeaning": "正式情绪/关注影响；缺失部分保留中性席位",
-          "diagnosticOnlyLegacySignals": true
-        },
-        {
-          "key": "sina",
-          "name": "新浪股吧",
-          "activityEligible": true,
-          "signals": {
-            "optimism": 56.8,
-            "fomo": 30.5,
-            "newcomer": 38.6,
-            "intensity": 45.8,
-            "attention": 31.5,
-            "panic": 0.0,
-            "heat": 35.8
-          },
-          "raw": {
-            "net": 0.13311178527848702,
-            "fomo": 0.0,
-            "panic": 0.0,
-            "newcomer": 0.0,
-            "intense": 0.18469903125906464
-          },
-          "sampleCount": 5,
-          "sourceCount": 3,
-          "recent24": 0,
-          "activity": {
-            "relativeScore": 35.8,
-            "postingVelocity": 4.0,
-            "weightedDailyPosts3d": 4.0,
-            "uniqueAuthors3d": 5,
-            "uniqueAuthors24": 0,
-            "lowerBoundSourceCount": 0
-          },
-          "weight": 0.8,
-          "attentionWeight": 0.8,
-          "targetWeight": 25.0,
-          "formalInfluence": 0.8,
-          "formalWeightMeaning": "正式情绪/关注影响；缺失部分保留中性席位",
-          "diagnosticOnlyLegacySignals": true
-        }
-      ],
-      "forumSources": [
-        {
-          "code": "600309",
-          "name": "万华化学吧",
-          "url": "https://guba.eastmoney.com/list,600309.html",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "fresh": true,
-          "coverage": {
-            "rawRows": 300,
-            "pageCount": 3,
-            "oldestSeen": "2026-09-24T11:15:55+08:00",
-            "newestSeen": "2026-11-25T16:00:24+08:00",
-            "capHit": false,
-            "chronological": true,
-            "coverageDays": [
-              "2026-11-25",
-              "2026-11-24",
-              "2026-11-23",
-              "2026-11-22",
-              "2026-11-21",
-              "2026-11-16",
-              "2026-11-13",
-              "2026-11-03",
-              "2026-11-01",
-              "2026-10-31",
-              "2026-10-27",
-              "2026-09-24"
-            ],
-            "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
-            "coverageStatus": "third_trading_day_reached",
-            "paginationMode": "page"
-          }
-        },
-        {
-          "code": "600426",
-          "name": "华鲁恒升吧",
-          "url": "https://guba.eastmoney.com/list,600426.html",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "fresh": true,
-          "coverage": {
-            "rawRows": 100,
-            "pageCount": 1,
-            "oldestSeen": "2026-09-02T10:58:02+08:00",
-            "newestSeen": "2026-11-25T15:36:13+08:00",
-            "capHit": false,
-            "chronological": true,
-            "coverageDays": [
-              "2026-11-25",
-              "2026-11-24",
-              "2026-11-23",
-              "2026-09-02"
-            ],
-            "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
-            "coverageStatus": "third_trading_day_reached",
-            "paginationMode": "page"
-          }
-        },
-        {
-          "code": "002648",
-          "name": "卫星化学吧",
-          "url": "https://guba.eastmoney.com/list,002648.html",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "fresh": true,
-          "coverage": {
-            "rawRows": 100,
-            "pageCount": 1,
-            "oldestSeen": "2026-10-31T02:05:59+08:00",
-            "newestSeen": "2026-11-25T15:38:29+08:00",
-            "capHit": false,
-            "chronological": true,
-            "coverageDays": [
-              "2026-11-25",
-              "2026-11-24",
-              "2026-11-23",
-              "2026-10-31"
-            ],
-            "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
-            "coverageStatus": "third_trading_day_reached",
-            "paginationMode": "page"
-          }
-        },
-        {
-          "code": "600309",
-          "name": "万华化学新浪股吧",
-          "url": "https://guba.sina.cn/?s=bar&name=sh600309&from=redirect",
-          "platform": "sina",
-          "platformName": "新浪股吧",
-          "fresh": true,
-          "coverage": {
-            "rawRows": 50,
-            "pageCount": 1,
-            "oldestSeen": "2026-10-29T23:33:02+08:00",
-            "newestSeen": "2026-11-25T11:03:40+08:00",
-            "capHit": false,
-            "chronological": true,
-            "coverageDays": [
-              "2026-11-25",
-              "2026-11-24",
-              "2026-11-23",
-              "2026-11-22",
-              "2026-11-21",
-              "2026-11-20",
-              "2026-11-19",
-              "2026-11-18",
-              "2026-11-17",
-              "2026-11-14",
-              "2026-11-13",
-              "2026-11-12",
-              "2026-11-11",
-              "2026-11-10",
-              "2026-11-07",
-              "2026-11-06",
-              "2026-11-05",
-              "2026-11-04",
-              "2026-11-01",
-              "2026-10-31",
-              "2026-10-30",
-              "2026-10-29"
-            ],
-            "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
-            "coverageStatus": "third_trading_day_reached",
-            "paginationMode": "cursor"
-          }
-        },
-        {
-          "code": "600426",
-          "name": "华鲁恒升新浪股吧",
-          "url": "https://guba.sina.cn/?s=bar&name=sh600426&from=redirect",
-          "platform": "sina",
-          "platformName": "新浪股吧",
-          "fresh": true,
-          "coverage": {
-            "rawRows": 50,
-            "pageCount": 1,
-            "oldestSeen": "2026-08-28T13:12:01+08:00",
-            "newestSeen": "2026-11-23T13:18:06+08:00",
-            "capHit": false,
-            "chronological": true,
-            "coverageDays": [
-              "2026-11-23",
-              "2026-11-16",
-              "2026-11-12",
-              "2026-10-29",
-              "2026-10-16",
-              "2026-10-14",
-              "2026-10-13",
-              "2026-10-08",
-              "2026-10-06",
-              "2026-09-30",
-              "2026-09-29",
-              "2026-09-18",
-              "2026-09-17",
-              "2026-09-16",
-              "2026-09-15",
-              "2026-09-14",
-              "2026-09-12",
-              "2026-09-11",
-              "2026-09-08",
-              "2026-09-07",
-              "2026-09-02",
-              "2026-09-01",
-              "2026-08-31",
-              "2026-08-30",
-              "2026-08-29",
-              "2026-08-28"
-            ],
-            "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
-            "coverageStatus": "third_trading_day_reached",
-            "paginationMode": "cursor"
-          }
-        },
-        {
-          "code": "002648",
-          "name": "卫星化学新浪股吧",
-          "url": "https://guba.sina.cn/?s=bar&name=sz002648&from=redirect",
-          "platform": "sina",
-          "platformName": "新浪股吧",
-          "fresh": true,
-          "coverage": {
-            "rawRows": 49,
-            "pageCount": 1,
-            "oldestSeen": "2026-10-12T15:20:37+08:00",
-            "newestSeen": "2026-11-24T06:02:54+08:00",
-            "capHit": false,
-            "chronological": true,
-            "coverageDays": [
-              "2026-11-24",
-              "2026-11-23",
-              "2026-11-20",
-              "2026-11-19",
-              "2026-11-13",
-              "2026-11-12",
-              "2026-11-11",
-              "2026-11-10",
-              "2026-10-30",
-              "2026-10-26",
-              "2026-10-24",
-              "2026-10-23",
-              "2026-10-19",
-              "2026-10-18",
-              "2026-10-16",
-              "2026-10-15",
-              "2026-10-14",
-              "2026-10-12"
-            ],
-            "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
-            "coverageStatus": "third_trading_day_reached",
-            "paginationMode": "cursor"
-          }
-        },
-        {
-          "code": "881108",
-          "name": "同花顺化学原料",
-          "url": "https://c.10jqka.com.cn/lgt/post/open/api/forum/content/v1/hot_feed?code=881108&market_id=48&page=1&page_size=15",
-          "platform": "ths",
-          "platformName": "同花顺板块社区",
-          "fresh": true,
-          "coverage": {
-            "rawRows": 30,
-            "pageCount": 2,
-            "oldestSeen": "2026-11-24T11:01:55+08:00",
-            "newestSeen": "2026-11-25T16:18:15+08:00",
-            "capHit": true,
-            "chronological": false,
-            "coverageDays": [
-              "2026-11-25",
-              "2026-11-24"
-            ],
-            "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
-            "coverageStatus": "non_chronological_hot_feed",
-            "paginationMode": "last_score_cursor_bounded"
-          }
-        },
-        {
-          "code": "881109",
-          "name": "同花顺化学制品",
-          "url": "https://c.10jqka.com.cn/lgt/post/open/api/forum/content/v1/hot_feed?code=881109&market_id=48&page=1&page_size=15",
-          "platform": "ths",
-          "platformName": "同花顺板块社区",
-          "fresh": true,
-          "coverage": {
-            "rawRows": 30,
-            "pageCount": 2,
-            "oldestSeen": "2026-11-23T08:19:08+08:00",
-            "newestSeen": "2026-11-25T16:18:15+08:00",
-            "capHit": true,
-            "chronological": false,
-            "coverageDays": [
-              "2026-11-25",
-              "2026-11-24",
-              "2026-11-23"
-            ],
-            "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
-            "coverageStatus": "non_chronological_hot_feed",
-            "paginationMode": "last_score_cursor_bounded"
-          }
-        },
-        {
-          "code": "600309",
-          "name": "淘股吧万华化学讨论",
-          "url": "https://www.tgb.cn/quotes/sh600309",
-          "platform": "taoguba",
-          "platformName": "淘股吧",
-          "fresh": true,
-          "coverage": {
-            "rawRows": 20,
-            "pageCount": 1,
-            "oldestSeen": "2026-11-13T20:20:09+08:00",
-            "newestSeen": "2026-11-25T12:51:15+08:00",
-            "capHit": true,
-            "chronological": true,
-            "coverageDays": [
-              "2026-11-25",
-              "2026-11-24",
-              "2026-11-22",
-              "2026-11-17",
-              "2026-11-16",
-              "2026-11-15",
-              "2026-11-14",
-              "2026-11-13"
-            ],
-            "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
-            "coverageStatus": "third_day_reached",
-            "paginationMode": "anonymous_initial_page_only"
-          }
-        }
-      ],
-      "samplePosts": [
-        {
-          "title": "500W已完成 | 升级挑战：冲刺2000W｜第3天 $九阳股份(002242)$ 再次封板，继续拿着，逻辑依旧日没变。开板后会考虑把利润收下，不贪多。 $冰山冷热(000530)$ 昨天出了异动，高位兑现后关注度依然不减，早盘先继续观察。要是量能迟迟起不来，那就择机落袋。 金牛化工 前面参与过，兄弟们应该都不陌生，昨天涨停后关注度又起来了。今天分时半路小仓参与了一笔，先看上方压力附近的量能和承接。 $华胜天成(600410)$ 今天早盘又是碰到前期压力后回落，反复过不去，就得留意短期回调，暂时继续观察，不着急。",
-          "label": "看多",
-          "score": 6,
-          "comments": 116,
-          "clicks": 5,
-          "source": "同花顺化学原料",
-          "platform": "ths",
-          "platformName": "同花顺板块社区",
-          "publishTime": "2026-11-25T10:26:25+08:00"
-        },
-        {
-          "title": "挑战50w到300w 第五天❗️❗️ 一个涨停🌹🌹🌹一个大阳🌹🌹🌹。 九阳和冰山早盘，我重点提示，继续加仓，全面继续做多，趋势继续看高。 分歧是不是介入的机会需要结合盘面去判断验证，宇哥在这里陪着大家，兄弟们山顶见❗️❗️❗️ 说回盘面核心行情判断 核心判断：市场缩量，情绪温和、流动性不足。九阳等进入抱团加速，新主线要等本轮抱团退潮后才会出现；医药只是轮动，不宜追高。克莱标的强势、盛剑反包，行情进入流动性淘汰赛，唯有放量共振标的有望突围。 操作：规避监管异动标的，缩量轮动市多看少动，不追板块轮动。 $冰山冷热(00",
-          "label": "看多",
-          "score": 6,
-          "comments": 59,
-          "clicks": 5,
-          "source": "同花顺化学原料",
-          "platform": "ths",
-          "platformName": "同花顺板块社区",
-          "publishTime": "2026-11-25T12:48:10+08:00"
-        },
-        {
-          "title": "【记录第42天复盘】 本100，今日盈亏0.5个。 今天市场调整明显，短线资金正在重新选择方向，明天重点看化工能否延续强势。 $高争民爆(002827)$ $天龙股份(603266)$ $金牛化工(600722)$ 兄弟姐妹大家好，我是老蒋。 今天参与金牛化工、天龙股份，离场五洲新春，百洋股份。 金牛化工 今天走出两连板，在市场调整时还能保持强势，说明资金对化工方向仍有认可。明天重点看板块能否跟进，不能只靠个股独自走强。 天龙股份 早盘冲高后持续回落，汽车零部件方向也没有形成有效支撑。今天的走势低于预期，明天重点看",
-          "label": "看多",
-          "score": 6,
-          "comments": 15,
-          "clicks": 2,
-          "source": "同花顺化学原料",
-          "platform": "ths",
-          "platformName": "同花顺板块社区",
-          "publishTime": "2026-11-25T15:22:55+08:00"
-        },
-        {
-          "title": "今天只抓到一个涨停板，硬科技重创。早上看好的另外两个化工只是保本。英伟达大涨我们",
-          "label": "看多",
-          "score": 6,
-          "comments": 1,
-          "clicks": 108,
-          "source": "万华化学吧",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "publishTime": "2026-11-25T15:07:09+08:00"
-        },
-        {
-          "title": "慧姐午盘记录累计32个涨停：手里的持仓真的是两极分化，笑死我了，哈哈。不同节奏节奏，下午重点看承接！有的冲得起来，有的冲高就回落，还有的资金进来了，股价却没有跟上。 $金牛化工(600722)$ 昨天走出涨停，今天早盘继续保持强势，股价向上冲了一波，随后出现回落，又重新拉回到相对高位。 从近期日K来看，前期经历了较长时间调整，最近开始出现修复，短期均线逐渐向上，但中长期均线压力还没有完全消化。 上午最高冲到13元附近，回落后又重新获得承接，目前仍在分时均价线上方运行，这一点相对不错。 不过，盘中资金流入和流出都比较",
-          "label": "看多",
-          "score": 4,
-          "comments": 41,
-          "clicks": 9,
-          "source": "同花顺化学原料",
-          "platform": "ths",
-          "platformName": "同花顺板块社区",
-          "publishTime": "2026-11-25T11:38:40+08:00"
-        },
-        {
-          "title": "昨天全部清仓。12月再来，感觉会跌破60才能企稳。个人拙见。",
-          "label": "看空",
-          "score": -5,
-          "comments": 1,
-          "clicks": 96,
-          "source": "万华化学吧",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "publishTime": "2026-11-25T13:55:14+08:00"
-        },
-        {
-          "title": "科技爆锤利好老登稀土股外围上涨据说还要加关税",
-          "label": "看多",
-          "score": 4,
-          "comments": 1,
-          "clicks": 57,
-          "source": "万华化学吧",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "publishTime": "2026-11-25T09:00:21+08:00"
-        },
-        {
-          "title": "今天是统一的埋人行情，昨天的暴跌没来，这几天阴跌会持续，又是一轮逼迫多方融资盘暴",
-          "label": "看空",
-          "score": -5,
-          "comments": 0,
-          "clicks": 36,
-          "source": "万华化学吧",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "publishTime": "2026-11-24T16:04:31+08:00"
-        },
-        {
-          "title": "11月24日晚：股票利好消息汇总 能化学：拟以6亿至12亿元回购公司股份。 万华化学 ：董事长提议回购3亿-5亿元股份用于减少",
-          "label": "看多",
-          "score": 3,
-          "comments": 0,
-          "clicks": 119,
-          "source": "淘股吧万华化学讨论",
-          "platform": "taoguba",
-          "platformName": "淘股吧",
-          "publishTime": "2026-11-24T19:37:58+08:00"
-        },
-        {
-          "title": "2026年11月25日上市公司公告速览，建议收藏研究！1、ST东尼：公司股票于2026年11月25日停牌1天，2026年11月26日起撤销其他风险警示并复牌，简称变更为“东尼电子”。2、钛能化学：拟以 元/股，用于维护公司价值及股东权益。3、 万华化学 ：董事长廖增太提议以集中竞价方式回购股份",
-          "label": "看空",
-          "score": -2,
-          "comments": 0,
-          "clicks": 0,
-          "source": "淘股吧万华化学讨论",
-          "platform": "taoguba",
-          "platformName": "淘股吧",
-          "publishTime": "2026-11-25T08:32:04+08:00"
-        }
-      ],
-      "legacyHeat": 50.4,
-      "absoluteHeat": 50.1,
-      "relativeHeat": 44.2,
-      "heatRank": 22,
-      "heatTier": "市场中段",
-      "heatModel": {
-        "version": "sector_community_heat_v4_company_equal",
-        "status": "applied",
-        "marketAnchor": 55.0,
-        "legacyEmotionHeat": 50.4,
-        "absoluteHeat": 50.1,
-        "activityIndex": 50.0,
-        "volumeFactor": 50.0,
-        "relativeLatent": 50.1,
-        "relativeHeat": 44.2,
-        "heatTier": "市场中段",
-        "percentile": 28.3,
-        "robustZ": -0.652,
-        "reliability": 42.8,
-        "rankEligible": true,
-        "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
-        "crossSectionP90P10": 5.643,
-        "noiseFloor": 1.732,
-        "usesMarketPrice": false,
-        "formalPersonaScoresChanged": false,
-        "weights": {
-          "absoluteAttention": 0.75,
-          "absoluteEmotion": 0.25,
-          "volumeActivity": 0.75,
-          "volumeAttention": 0.25,
-          "relativeVolume": 0.85,
-          "relativeEmotion": 0.15,
-          "finalRelative": 0.65,
-          "finalAbsolute": 0.35
-        },
-        "rawRelativeHeat": 44.2,
-        "rawFinalHeat": 51.0,
-        "rawAbsoluteHeat": 50.1,
-        "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
-        "temporalAlpha": 1.0,
-        "temporalGapDays": 1,
-        "temporalEffectiveAlpha": 1.0,
-        "relativeDailyCap": 20.0,
-        "finalDailyCap": 25.0,
-        "previousRelativeHeat": 48.1,
-        "previousFinalHeat": 51.3
-      },
-      "activityHeat": 51.0,
       "emotion": null,
       "emotionN": 0
     },
@@ -31490,7 +30091,7 @@ window.INDEX_DATA = {
         "attention": 50.1,
         "heat": 50.3
       },
-      "heat": 51.0,
+      "heat": 51.1,
       "direction": 51.0,
       "metrics": {
         "recentPosts": 196,
@@ -32007,7 +30608,7 @@ window.INDEX_DATA = {
               "fomo": 47.5,
               "panic": 15.3,
               "newcomer": 45.7,
-              "intensity": 55.1,
+              "intensity": 55.0,
               "attention": 47.3
             },
             "sina": {
@@ -32217,10 +30818,10 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 51.4,
-            "fomo": 44.5,
+            "optimism": 51.5,
+            "fomo": 44.6,
             "newcomer": 50.4,
-            "intensity": 60.2,
+            "intensity": 60.0,
             "attention": 50.4,
             "panic": 24.6,
             "heat": 51.1
@@ -32258,7 +30859,7 @@ window.INDEX_DATA = {
             "optimism": 62.1,
             "fomo": 31.1,
             "newcomer": 38.2,
-            "intensity": 53.0,
+            "intensity": 52.9,
             "attention": 46.1,
             "panic": 0.0,
             "heat": 42.1
@@ -32398,8 +30999,8 @@ window.INDEX_DATA = {
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -32436,8 +31037,8 @@ window.INDEX_DATA = {
               "2026-08-24"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -32467,8 +31068,8 @@ window.INDEX_DATA = {
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -32499,8 +31100,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -32524,8 +31125,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1544,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -32556,8 +31157,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -32592,8 +31193,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -32619,8 +31220,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -32741,7 +31342,7 @@ window.INDEX_DATA = {
       "legacyHeat": 50.3,
       "absoluteHeat": 50.2,
       "relativeHeat": 44.3,
-      "heatRank": 23,
+      "heatRank": 22,
       "heatTier": "市场中段",
       "heatModel": {
         "version": "sector_community_heat_v4_company_equal",
@@ -32755,12 +31356,12 @@ window.INDEX_DATA = {
         "relativeHeat": 44.3,
         "heatTier": "市场中段",
         "percentile": 31.7,
-        "robustZ": -0.628,
+        "robustZ": -0.622,
         "reliability": 44.7,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -32776,7 +31377,7 @@ window.INDEX_DATA = {
           "finalAbsolute": 0.35
         },
         "rawRelativeHeat": 44.3,
-        "rawFinalHeat": 51.0,
+        "rawFinalHeat": 51.1,
         "rawAbsoluteHeat": 50.2,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
         "temporalAlpha": 1.0,
@@ -32786,6 +31387,1405 @@ window.INDEX_DATA = {
         "finalDailyCap": 25.0,
         "previousRelativeHeat": 46.8,
         "previousFinalHeat": 50.4
+      },
+      "activityHeat": 51.1,
+      "emotion": null,
+      "emotionN": 0
+    },
+    {
+      "key": "basic_chemicals",
+      "name": "基础化工",
+      "parentKey": "resources_utilities",
+      "parentName": "资源化工与公用",
+      "description": "观察聚氨酯、煤化工、烯烃及大宗化工材料；不包含锂电和半导体专用材料。",
+      "representativeCompanies": [
+        {
+          "code": "600309",
+          "name": "万华化学",
+          "role": "聚氨酯与新材料"
+        },
+        {
+          "code": "600426",
+          "name": "华鲁恒升",
+          "role": "煤化工与基础化工"
+        },
+        {
+          "code": "002648",
+          "name": "卫星化学",
+          "role": "烯烃与化工新材料"
+        }
+      ],
+      "catalogVersion": 3,
+      "available": true,
+      "expectedSourceCount": 11,
+      "scores": {
+        "baoma": 50,
+        "novice": 51,
+        "retail": 50,
+        "composite": 50
+      },
+      "signals": {
+        "optimism": 50.8,
+        "fomo": 49.0,
+        "panic": 8.5,
+        "newcomer": 52.4,
+        "intensity": 51.1,
+        "attention": 50.0,
+        "heat": 50.3
+      },
+      "heat": 51.0,
+      "direction": 50.8,
+      "metrics": {
+        "recentPosts": 198,
+        "recent7Posts": 493,
+        "samplePosts": 483,
+        "bullishRatio": 12.2,
+        "bearishRatio": 12.8,
+        "fomoRate": 4.9,
+        "panicRate": 2.8,
+        "newcomerRate": 3.1,
+        "activityIndex": 50.0,
+        "estimatedDailyPosts": 136.65,
+        "weightedDailyPosts3d": 136.65,
+        "weightedVolumeLowerBound": 136.65,
+        "volumeCoverage": 0.777778,
+        "effectiveSample": 169.622,
+        "tradingDays": [
+          "2026-11-25",
+          "2026-11-24",
+          "2026-11-23"
+        ],
+        "dailyPostCounts": [
+          {
+            "date": "2026-11-25",
+            "rawWeight": 0.5,
+            "effectiveWeight": 0.5,
+            "postCount": 198,
+            "equivalentPosts": 170.0,
+            "uniqueAuthors": 170,
+            "available": true
+          },
+          {
+            "date": "2026-11-24",
+            "rawWeight": 0.3,
+            "effectiveWeight": 0.3,
+            "postCount": 222,
+            "equivalentPosts": 216.7,
+            "uniqueAuthors": 178,
+            "available": true
+          },
+          {
+            "date": "2026-11-23",
+            "rawWeight": 0.2,
+            "effectiveWeight": 0.2,
+            "postCount": 73,
+            "equivalentPosts": 68.8,
+            "uniqueAuthors": 63,
+            "available": true
+          }
+        ],
+        "currentTradingDayPosts": 198,
+        "tradingWindowPosts": 493,
+        "uniqueAuthors24": 170,
+        "uniqueAuthors3d": 366,
+        "activityLowerBoundSourceCount": 0,
+        "sourceCount": 9,
+        "platformCount": 4,
+        "personaEvidence": {
+          "status": "experimental_not_used_in_formal_scores",
+          "formalScoresUnchanged": true,
+          "interpretation": {
+            "baoma": "家庭/生活资金或稳健长期型表达，不推断真实身份",
+            "novice": "明确提问、求教或首次入市型表达",
+            "retail": "明确买卖、仓位或主动交易型表达"
+          },
+          "exclusivePriority": [
+            "baoma",
+            "novice",
+            "retail"
+          ],
+          "maskedBeforeCandidateScoring": true,
+          "evidenceCounts": {
+            "baoma": 18,
+            "novice": 30,
+            "retail": 57
+          },
+          "reasonCounts": {
+            "baoma": {
+              "explicit_household": 1,
+              "cautious_household_style": 17
+            },
+            "novice": {
+              "explicit_question_or_learning": 22,
+              "market_question": 8
+            },
+            "retail": {
+              "active_trading_language": 57
+            }
+          },
+          "candidates": {
+            "baoma": {
+              "available": true,
+              "evidencePosts": 18,
+              "sourceCount": 4,
+              "platformCount": 2,
+              "maskedDirectionRaw": 46.0,
+              "evidenceWeight": 0.65,
+              "candidateShrunkDirection": 49.2
+            },
+            "novice": {
+              "available": true,
+              "evidencePosts": 30,
+              "sourceCount": 5,
+              "platformCount": 2,
+              "maskedDirectionRaw": 53.7,
+              "evidenceWeight": 0.65,
+              "candidateShrunkDirection": 54.2
+            },
+            "retail": {
+              "available": true,
+              "evidencePosts": 57,
+              "sourceCount": 5,
+              "platformCount": 2,
+              "maskedDirectionRaw": 50.6,
+              "evidenceWeight": 0.65,
+              "candidateShrunkDirection": 52.2
+            }
+          }
+        },
+        "samplingPolicy": {
+          "mode": "measured",
+          "capPerSourcePublishedDay": null,
+          "postsBefore": 493,
+          "postsAfterAuthorLimit": 493,
+          "postsSelected": 493,
+          "activityPosts": 493,
+          "sourceDayBucketsCapped": 0,
+          "selectionUsesSentiment": false
+        },
+        "attentionBaseline": {
+          "mode": "measured",
+          "method": "three_trading_day_weighted_post_volume",
+          "sourceStatusCounts": {
+            "applied": 9
+          },
+          "fallbackReasons": {},
+          "missingDaysAssumedZero": false,
+          "tradingDayWeights": [
+            0.5,
+            0.3,
+            0.2
+          ],
+          "usesFutureDates": false,
+          "usesInteractions": false
+        },
+        "fairness": {
+          "method": "fixed_four_channels_then_fixed_units_then_fixed_50_30_20",
+          "channelWeights": [
+            {
+              "key": "eastmoney",
+              "channel": "eastmoney",
+              "targetWeight": 0.25,
+              "formalInfluence": 0.178653,
+              "neutralisedWeight": 0.071347,
+              "reliability": 0.714611,
+              "reliabilityPercent": 71.5,
+              "available": true
+            },
+            {
+              "key": "sina",
+              "channel": "sina",
+              "targetWeight": 0.25,
+              "formalInfluence": 0.008059,
+              "neutralisedWeight": 0.241941,
+              "reliability": 0.032234,
+              "reliabilityPercent": 3.2,
+              "available": true
+            },
+            {
+              "key": "ths",
+              "channel": "ths",
+              "targetWeight": 0.25,
+              "formalInfluence": 0.149881,
+              "neutralisedWeight": 0.100119,
+              "reliability": 0.499605,
+              "reliabilityPercent": 50.0,
+              "available": true
+            },
+            {
+              "key": "taoguba",
+              "channel": "taoguba",
+              "targetWeight": 0.25,
+              "formalInfluence": 0.013333,
+              "neutralisedWeight": 0.236667,
+              "reliability": 0.053333,
+              "reliabilityPercent": 5.3,
+              "available": true
+            }
+          ],
+          "unitWeights": {
+            "eastmoney": [
+              {
+                "key": "600309",
+                "mode": "company",
+                "targetWithinChannel": 0.333333,
+                "targetFinalWeight": 0.083333,
+                "formalInfluence": 0.070022,
+                "neutralisedWeight": 0.013312,
+                "name": "万华化学"
+              },
+              {
+                "key": "600426",
+                "mode": "company",
+                "targetWithinChannel": 0.333333,
+                "targetFinalWeight": 0.083333,
+                "formalInfluence": 0.055215,
+                "neutralisedWeight": 0.028118,
+                "name": "华鲁恒升"
+              },
+              {
+                "key": "002648",
+                "mode": "company",
+                "targetWithinChannel": 0.333333,
+                "targetFinalWeight": 0.083333,
+                "formalInfluence": 0.053416,
+                "neutralisedWeight": 0.029917,
+                "name": "卫星化学"
+              }
+            ],
+            "sina": [
+              {
+                "key": "600309",
+                "mode": "company",
+                "targetWithinChannel": 0.333333,
+                "targetFinalWeight": 0.083333,
+                "formalInfluence": 0.003571,
+                "neutralisedWeight": 0.079762,
+                "name": "万华化学"
+              },
+              {
+                "key": "600426",
+                "mode": "company",
+                "targetWithinChannel": 0.333333,
+                "targetFinalWeight": 0.083333,
+                "formalInfluence": 0.001282,
+                "neutralisedWeight": 0.082051,
+                "name": "华鲁恒升"
+              },
+              {
+                "key": "002648",
+                "mode": "company",
+                "targetWithinChannel": 0.333333,
+                "targetFinalWeight": 0.083333,
+                "formalInfluence": 0.003205,
+                "neutralisedWeight": 0.080128,
+                "name": "卫星化学"
+              }
+            ],
+            "ths": [
+              {
+                "key": "881108",
+                "mode": "sector",
+                "targetWithinChannel": 0.5,
+                "targetFinalWeight": 0.125,
+                "formalInfluence": 0.066937,
+                "neutralisedWeight": 0.058063,
+                "name": "化学原料"
+              },
+              {
+                "key": "881109",
+                "mode": "sector",
+                "targetWithinChannel": 0.5,
+                "targetFinalWeight": 0.125,
+                "formalInfluence": 0.082945,
+                "neutralisedWeight": 0.042055,
+                "name": "化学制品"
+              }
+            ],
+            "taoguba": [
+              {
+                "key": "600309",
+                "mode": "company",
+                "targetWithinChannel": 0.333333,
+                "targetFinalWeight": 0.083333,
+                "formalInfluence": 0.013333,
+                "neutralisedWeight": 0.07,
+                "name": "万华化学"
+              },
+              {
+                "key": "600426",
+                "mode": "company",
+                "targetWithinChannel": 0.333333,
+                "targetFinalWeight": 0.083333,
+                "formalInfluence": 0.0,
+                "neutralisedWeight": 0.083333,
+                "name": "华鲁恒升"
+              },
+              {
+                "key": "002648",
+                "mode": "company",
+                "targetWithinChannel": 0.333333,
+                "targetFinalWeight": 0.083333,
+                "formalInfluence": 0.0,
+                "neutralisedWeight": 0.083333,
+                "name": "卫星化学"
+              }
+            ]
+          },
+          "effectiveDayWeights": [
+            {
+              "date": "2026-11-25",
+              "weight": 0.5,
+              "channelTargetWeights": {
+                "eastmoney": 0.25,
+                "sina": 0.25,
+                "ths": 0.25,
+                "taoguba": 0.25
+              },
+              "channelFormalInfluence": {
+                "eastmoney": 0.091135,
+                "sina": 0.0,
+                "ths": 0.1008,
+                "taoguba": 0.008333
+              },
+              "channels": {
+                "eastmoney": {
+                  "status": "observed",
+                  "observedUnitCount": 3,
+                  "unitCoverage": 1.0,
+                  "signalReliability": {
+                    "optimism": 0.729077,
+                    "fomo": 0.729077,
+                    "panic": 0.729077,
+                    "newcomer": 0.729077,
+                    "intensity": 0.729077,
+                    "attention": 0.729077
+                  }
+                },
+                "sina": {
+                  "status": "verified_zero",
+                  "observedUnitCount": 0,
+                  "unitCoverage": 0.0,
+                  "signalReliability": {
+                    "optimism": 0.0,
+                    "fomo": 0.0,
+                    "panic": 0.0,
+                    "newcomer": 0.0,
+                    "intensity": 0.0,
+                    "attention": 0.0
+                  }
+                },
+                "ths": {
+                  "status": "observed",
+                  "observedUnitCount": 2,
+                  "unitCoverage": 1.0,
+                  "signalReliability": {
+                    "optimism": 0.806402,
+                    "fomo": 0.806402,
+                    "panic": 0.806402,
+                    "newcomer": 0.806402,
+                    "intensity": 0.806402,
+                    "attention": 0.0
+                  }
+                },
+                "taoguba": {
+                  "status": "observed",
+                  "observedUnitCount": 1,
+                  "unitCoverage": 0.333333,
+                  "signalReliability": {
+                    "optimism": 0.066667,
+                    "fomo": 0.066667,
+                    "panic": 0.066667,
+                    "newcomer": 0.066667,
+                    "intensity": 0.066667,
+                    "attention": 0.066667
+                  }
+                }
+              }
+            },
+            {
+              "date": "2026-11-24",
+              "weight": 0.3,
+              "channelTargetWeights": {
+                "eastmoney": 0.25,
+                "sina": 0.25,
+                "ths": 0.25,
+                "taoguba": 0.25
+              },
+              "channelFormalInfluence": {
+                "eastmoney": 0.062511,
+                "sina": 0.005495,
+                "ths": 0.035192,
+                "taoguba": 0.005
+              },
+              "channels": {
+                "eastmoney": {
+                  "status": "observed",
+                  "observedUnitCount": 3,
+                  "unitCoverage": 1.0,
+                  "signalReliability": {
+                    "optimism": 0.833478,
+                    "fomo": 0.833478,
+                    "panic": 0.833478,
+                    "newcomer": 0.833478,
+                    "intensity": 0.833478,
+                    "attention": 0.833478
+                  }
+                },
+                "sina": {
+                  "status": "observed",
+                  "observedUnitCount": 2,
+                  "unitCoverage": 0.666667,
+                  "signalReliability": {
+                    "optimism": 0.07326,
+                    "fomo": 0.07326,
+                    "panic": 0.07326,
+                    "newcomer": 0.07326,
+                    "intensity": 0.07326,
+                    "attention": 0.07326
+                  }
+                },
+                "ths": {
+                  "status": "observed",
+                  "observedUnitCount": 2,
+                  "unitCoverage": 1.0,
+                  "signalReliability": {
+                    "optimism": 0.469231,
+                    "fomo": 0.469231,
+                    "panic": 0.469231,
+                    "newcomer": 0.469231,
+                    "intensity": 0.469231,
+                    "attention": 0.0
+                  }
+                },
+                "taoguba": {
+                  "status": "observed",
+                  "observedUnitCount": 1,
+                  "unitCoverage": 0.333333,
+                  "signalReliability": {
+                    "optimism": 0.066667,
+                    "fomo": 0.066667,
+                    "panic": 0.066667,
+                    "newcomer": 0.066667,
+                    "intensity": 0.066667,
+                    "attention": 0.066667
+                  }
+                }
+              }
+            },
+            {
+              "date": "2026-11-23",
+              "weight": 0.2,
+              "channelTargetWeights": {
+                "eastmoney": 0.25,
+                "sina": 0.25,
+                "ths": 0.25,
+                "taoguba": 0.25
+              },
+              "channelFormalInfluence": {
+                "eastmoney": 0.025007,
+                "sina": 0.002564,
+                "ths": 0.013889,
+                "taoguba": 0.0
+              },
+              "channels": {
+                "eastmoney": {
+                  "status": "observed",
+                  "observedUnitCount": 3,
+                  "unitCoverage": 1.0,
+                  "signalReliability": {
+                    "optimism": 0.500147,
+                    "fomo": 0.500147,
+                    "panic": 0.500147,
+                    "newcomer": 0.500147,
+                    "intensity": 0.500147,
+                    "attention": 0.500147
+                  }
+                },
+                "sina": {
+                  "status": "observed",
+                  "observedUnitCount": 2,
+                  "unitCoverage": 0.666667,
+                  "signalReliability": {
+                    "optimism": 0.051282,
+                    "fomo": 0.051282,
+                    "panic": 0.051282,
+                    "newcomer": 0.051282,
+                    "intensity": 0.051282,
+                    "attention": 0.051282
+                  }
+                },
+                "ths": {
+                  "status": "observed",
+                  "observedUnitCount": 1,
+                  "unitCoverage": 0.5,
+                  "signalReliability": {
+                    "optimism": 0.277778,
+                    "fomo": 0.277778,
+                    "panic": 0.277778,
+                    "newcomer": 0.277778,
+                    "intensity": 0.277778,
+                    "attention": 0.0
+                  }
+                },
+                "taoguba": {
+                  "status": "verified_zero",
+                  "observedUnitCount": 0,
+                  "unitCoverage": 0.0,
+                  "signalReliability": {
+                    "optimism": 0.0,
+                    "fomo": 0.0,
+                    "panic": 0.0,
+                    "newcomer": 0.0,
+                    "intensity": 0.0,
+                    "attention": 0.0
+                  }
+                }
+              }
+            }
+          ],
+          "reliability": 0.324946,
+          "reliabilityPercent": 32.5,
+          "signalReliability": {
+            "optimism": 0.349926,
+            "fomo": 0.349926,
+            "panic": 0.349926,
+            "newcomer": 0.349926,
+            "intensity": 0.349926,
+            "attention": 0.200045
+          },
+          "channelSignals": {
+            "eastmoney": {
+              "optimism": 50.1,
+              "fomo": 48.6,
+              "panic": 21.7,
+              "newcomer": 52.3,
+              "intensity": 57.3,
+              "attention": 49.1
+            },
+            "sina": {
+              "optimism": 50.2,
+              "fomo": 49.4,
+              "panic": 0.4,
+              "newcomer": 49.7,
+              "intensity": 50.0,
+              "attention": 50.1
+            },
+            "ths": {
+              "optimism": 53.0,
+              "fomo": 49.0,
+              "panic": 11.4,
+              "newcomer": 58.2,
+              "intensity": 45.9,
+              "attention": 50.0
+            },
+            "taoguba": {
+              "optimism": 50.0,
+              "fomo": 49.1,
+              "panic": 0.6,
+              "newcomer": 49.4,
+              "intensity": 51.3,
+              "attention": 50.8
+            }
+          },
+          "channelPointCoverage": {
+            "eastmoney": {
+              "optimism": 1.0,
+              "fomo": 1.0,
+              "panic": 1.0,
+              "newcomer": 1.0,
+              "intensity": 1.0,
+              "attention": 1.0
+            },
+            "sina": {
+              "optimism": 0.333333,
+              "fomo": 0.333333,
+              "panic": 0.333333,
+              "newcomer": 0.333333,
+              "intensity": 0.333333,
+              "attention": 0.333333
+            },
+            "ths": {
+              "optimism": 0.9,
+              "fomo": 0.9,
+              "panic": 0.9,
+              "newcomer": 0.9,
+              "intensity": 0.9,
+              "attention": 0.0
+            },
+            "taoguba": {
+              "optimism": 0.266667,
+              "fomo": 0.266667,
+              "panic": 0.266667,
+              "newcomer": 0.266667,
+              "intensity": 0.266667,
+              "attention": 0.266667
+            }
+          },
+          "platformSummary": [
+            {
+              "key": "eastmoney",
+              "channel": "eastmoney",
+              "targetWeight": 0.25,
+              "formalInfluence": 0.178653,
+              "neutralisedWeight": 0.071347,
+              "reliability": 0.714611,
+              "reliabilityPercent": 71.5,
+              "available": true,
+              "mode": "company",
+              "expectedUnitCount": 3,
+              "observedUnitCount": 3,
+              "allowAttention": true,
+              "emotionWeight": 0.178653,
+              "attentionWeight": 0.178653,
+              "name": "东方财富股吧",
+              "volumeEligible": true,
+              "formalWeightMeaning": "目标席位固定25%；证据不足部分收缩到中性，不转给其他渠道"
+            },
+            {
+              "key": "sina",
+              "channel": "sina",
+              "targetWeight": 0.25,
+              "formalInfluence": 0.008059,
+              "neutralisedWeight": 0.241941,
+              "reliability": 0.032234,
+              "reliabilityPercent": 3.2,
+              "available": true,
+              "mode": "company",
+              "expectedUnitCount": 3,
+              "observedUnitCount": 3,
+              "allowAttention": true,
+              "emotionWeight": 0.008059,
+              "attentionWeight": 0.008059,
+              "name": "新浪股吧",
+              "volumeEligible": true,
+              "formalWeightMeaning": "目标席位固定25%；证据不足部分收缩到中性，不转给其他渠道"
+            },
+            {
+              "key": "ths",
+              "channel": "ths",
+              "targetWeight": 0.25,
+              "formalInfluence": 0.149881,
+              "neutralisedWeight": 0.100119,
+              "reliability": 0.499605,
+              "reliabilityPercent": 50.0,
+              "available": true,
+              "mode": "sector",
+              "expectedUnitCount": 2,
+              "observedUnitCount": 2,
+              "allowAttention": false,
+              "emotionWeight": 0.149881,
+              "attentionWeight": 0.0,
+              "name": "同花顺板块社区",
+              "volumeEligible": false,
+              "formalWeightMeaning": "目标席位固定25%；证据不足部分收缩到中性，不转给其他渠道"
+            },
+            {
+              "key": "taoguba",
+              "channel": "taoguba",
+              "targetWeight": 0.25,
+              "formalInfluence": 0.013333,
+              "neutralisedWeight": 0.236667,
+              "reliability": 0.053333,
+              "reliabilityPercent": 5.3,
+              "available": true,
+              "mode": "company",
+              "expectedUnitCount": 3,
+              "observedUnitCount": 1,
+              "allowAttention": true,
+              "emotionWeight": 0.013333,
+              "attentionWeight": 0.013333,
+              "name": "淘股吧",
+              "volumeEligible": true,
+              "formalWeightMeaning": "目标席位固定25%；证据不足部分收缩到中性，不转给其他渠道"
+            }
+          ],
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ],
+          "concentration": {
+            "channelInfluenceCap": 0.25,
+            "maxTargetChannelWeight": 0.25,
+            "maxFormalChannelInfluence": 0.178653,
+            "targetChannelHHI": 0.25,
+            "capBreached": false
+          },
+          "samplePrior": 12.0,
+          "statusSemantics": {
+            "verified_zero": "collector verified a complete stream with zero qualifying posts",
+            "unobserved": "collector cannot determine whether qualifying posts existed"
+          },
+          "companyWeights": [
+            {
+              "key": "600309",
+              "name": "万华化学",
+              "targetWeight": 0.25,
+              "effectiveWeight": 0.086926,
+              "neutralisedWeight": 0.163074
+            },
+            {
+              "key": "600426",
+              "name": "华鲁恒升",
+              "targetWeight": 0.25,
+              "effectiveWeight": 0.056497,
+              "neutralisedWeight": 0.193503
+            },
+            {
+              "key": "002648",
+              "name": "卫星化学",
+              "targetWeight": 0.25,
+              "effectiveWeight": 0.056621,
+              "neutralisedWeight": 0.193379
+            }
+          ],
+          "expectedCompanyCount": 3,
+          "providedCompanyCount": 3,
+          "modelVersion": "channel_equal_four_seats_v1",
+          "formalPointEstimateNotSampleWeighted": true,
+          "formalPointEstimateNotSampleProportionWeighted": true,
+          "sampleCountAffectsOwnNeutralShrinkOnly": true,
+          "fixedChannelTargetWeight": 0.25,
+          "channelWeightsNeverRedistributed": true,
+          "weightedCompanyCoverage": 0.625,
+          "weightedChannelCoverage": 0.625,
+          "latestObservedCompanyCount": 3,
+          "latestObservedChannelCount": 3,
+          "observedChannelCount": 4,
+          "rankEligible": true,
+          "confidenceLabel": "中",
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 50.0,
+            "high": 51.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          }
+        },
+        "heatReliability": 42.8
+      },
+      "platforms": [
+        {
+          "key": "ths",
+          "name": "同花顺板块社区",
+          "activityEligible": false,
+          "signals": {
+            "optimism": 59.8,
+            "fomo": 45.9,
+            "newcomer": 58.1,
+            "intensity": 47.0,
+            "attention": 50.0,
+            "panic": 5.2,
+            "heat": 49.2
+          },
+          "raw": {
+            "net": 0.11364798239550396,
+            "fomo": 0.049862714970339006,
+            "panic": 0.0066312474599074175,
+            "newcomer": 0.03203743666490145,
+            "intense": 0.16784504628919877
+          },
+          "sampleCount": 101,
+          "sourceCount": 2,
+          "recent24": 77,
+          "activity": {
+            "relativeScore": 39.8,
+            "postingVelocity": 36.694,
+            "weightedDailyPosts3d": 36.694,
+            "uniqueAuthors3d": 111,
+            "uniqueAuthors24": 77,
+            "lowerBoundSourceCount": 0
+          },
+          "weight": 15.0,
+          "attentionWeight": 0.0,
+          "targetWeight": 25.0,
+          "formalInfluence": 15.0,
+          "formalWeightMeaning": "正式情绪/关注影响；缺失部分保留中性席位",
+          "diagnosticOnlyLegacySignals": true
+        },
+        {
+          "key": "eastmoney",
+          "name": "东方财富股吧",
+          "activityEligible": true,
+          "signals": {
+            "optimism": 51.9,
+            "fomo": 46.2,
+            "newcomer": 53.2,
+            "intensity": 58.2,
+            "attention": 56.9,
+            "panic": 25.4,
+            "heat": 53.5
+          },
+          "raw": {
+            "net": 0.016562962767953618,
+            "fomo": 0.04818997056618414,
+            "panic": 0.03521863600977804,
+            "newcomer": 0.025135258345286265,
+            "intense": 0.26306232564374465
+          },
+          "sampleCount": 371,
+          "sourceCount": 3,
+          "recent24": 118,
+          "activity": {
+            "relativeScore": 39.8,
+            "postingVelocity": 129.15,
+            "weightedDailyPosts3d": 129.15,
+            "uniqueAuthors3d": 244,
+            "uniqueAuthors24": 90,
+            "lowerBoundSourceCount": 0
+          },
+          "weight": 17.9,
+          "attentionWeight": 17.9,
+          "targetWeight": 25.0,
+          "formalInfluence": 17.9,
+          "formalWeightMeaning": "正式情绪/关注影响；缺失部分保留中性席位",
+          "diagnosticOnlyLegacySignals": true
+        },
+        {
+          "key": "taoguba",
+          "name": "淘股吧",
+          "activityEligible": false,
+          "signals": {
+            "optimism": 50.4,
+            "fomo": 31.1,
+            "newcomer": 38.2,
+            "intensity": 74.8,
+            "attention": 43.8,
+            "panic": 0.0,
+            "heat": 46.9
+          },
+          "raw": {
+            "net": 0.01956726900331698,
+            "fomo": 0.0,
+            "panic": 0.0,
+            "newcomer": 0.0,
+            "intense": 0.6666666666666665
+          },
+          "sampleCount": 6,
+          "sourceCount": 1,
+          "recent24": 3,
+          "activity": {
+            "relativeScore": 53.9,
+            "postingVelocity": 3.0,
+            "weightedDailyPosts3d": 3.0,
+            "uniqueAuthors3d": 6,
+            "uniqueAuthors24": 3,
+            "lowerBoundSourceCount": 0
+          },
+          "weight": 1.3,
+          "attentionWeight": 1.3,
+          "targetWeight": 25.0,
+          "formalInfluence": 1.3,
+          "formalWeightMeaning": "正式情绪/关注影响；缺失部分保留中性席位",
+          "diagnosticOnlyLegacySignals": true
+        },
+        {
+          "key": "sina",
+          "name": "新浪股吧",
+          "activityEligible": true,
+          "signals": {
+            "optimism": 56.8,
+            "fomo": 30.5,
+            "newcomer": 38.6,
+            "intensity": 45.8,
+            "attention": 31.5,
+            "panic": 0.0,
+            "heat": 35.8
+          },
+          "raw": {
+            "net": 0.13311178527848702,
+            "fomo": 0.0,
+            "panic": 0.0,
+            "newcomer": 0.0,
+            "intense": 0.18469903125906464
+          },
+          "sampleCount": 5,
+          "sourceCount": 3,
+          "recent24": 0,
+          "activity": {
+            "relativeScore": 35.8,
+            "postingVelocity": 4.0,
+            "weightedDailyPosts3d": 4.0,
+            "uniqueAuthors3d": 5,
+            "uniqueAuthors24": 0,
+            "lowerBoundSourceCount": 0
+          },
+          "weight": 0.8,
+          "attentionWeight": 0.8,
+          "targetWeight": 25.0,
+          "formalInfluence": 0.8,
+          "formalWeightMeaning": "正式情绪/关注影响；缺失部分保留中性席位",
+          "diagnosticOnlyLegacySignals": true
+        }
+      ],
+      "forumSources": [
+        {
+          "code": "600309",
+          "name": "万华化学吧",
+          "url": "https://guba.eastmoney.com/list,600309.html",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "fresh": true,
+          "coverage": {
+            "rawRows": 300,
+            "pageCount": 3,
+            "oldestSeen": "2026-09-24T11:15:55+08:00",
+            "newestSeen": "2026-11-25T16:00:24+08:00",
+            "capHit": false,
+            "chronological": true,
+            "coverageDays": [
+              "2026-11-25",
+              "2026-11-24",
+              "2026-11-23",
+              "2026-11-22",
+              "2026-11-21",
+              "2026-11-16",
+              "2026-11-13",
+              "2026-11-03",
+              "2026-11-01",
+              "2026-10-31",
+              "2026-10-27",
+              "2026-09-24"
+            ],
+            "thirdTradingDayReached": true,
+            "freshFetchedNow": false,
+            "cacheAge": 1546,
+            "coverageStatus": "third_trading_day_reached",
+            "paginationMode": "page"
+          }
+        },
+        {
+          "code": "600426",
+          "name": "华鲁恒升吧",
+          "url": "https://guba.eastmoney.com/list,600426.html",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "fresh": true,
+          "coverage": {
+            "rawRows": 100,
+            "pageCount": 1,
+            "oldestSeen": "2026-09-02T10:58:02+08:00",
+            "newestSeen": "2026-11-25T15:36:13+08:00",
+            "capHit": false,
+            "chronological": true,
+            "coverageDays": [
+              "2026-11-25",
+              "2026-11-24",
+              "2026-11-23",
+              "2026-09-02"
+            ],
+            "thirdTradingDayReached": true,
+            "freshFetchedNow": false,
+            "cacheAge": 1546,
+            "coverageStatus": "third_trading_day_reached",
+            "paginationMode": "page"
+          }
+        },
+        {
+          "code": "002648",
+          "name": "卫星化学吧",
+          "url": "https://guba.eastmoney.com/list,002648.html",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "fresh": true,
+          "coverage": {
+            "rawRows": 100,
+            "pageCount": 1,
+            "oldestSeen": "2026-10-31T02:05:59+08:00",
+            "newestSeen": "2026-11-25T15:38:29+08:00",
+            "capHit": false,
+            "chronological": true,
+            "coverageDays": [
+              "2026-11-25",
+              "2026-11-24",
+              "2026-11-23",
+              "2026-10-31"
+            ],
+            "thirdTradingDayReached": true,
+            "freshFetchedNow": false,
+            "cacheAge": 1546,
+            "coverageStatus": "third_trading_day_reached",
+            "paginationMode": "page"
+          }
+        },
+        {
+          "code": "600309",
+          "name": "万华化学新浪股吧",
+          "url": "https://guba.sina.cn/?s=bar&name=sh600309&from=redirect",
+          "platform": "sina",
+          "platformName": "新浪股吧",
+          "fresh": true,
+          "coverage": {
+            "rawRows": 50,
+            "pageCount": 1,
+            "oldestSeen": "2026-10-29T23:33:02+08:00",
+            "newestSeen": "2026-11-25T11:03:40+08:00",
+            "capHit": false,
+            "chronological": true,
+            "coverageDays": [
+              "2026-11-25",
+              "2026-11-24",
+              "2026-11-23",
+              "2026-11-22",
+              "2026-11-21",
+              "2026-11-20",
+              "2026-11-19",
+              "2026-11-18",
+              "2026-11-17",
+              "2026-11-14",
+              "2026-11-13",
+              "2026-11-12",
+              "2026-11-11",
+              "2026-11-10",
+              "2026-11-07",
+              "2026-11-06",
+              "2026-11-05",
+              "2026-11-04",
+              "2026-11-01",
+              "2026-10-31",
+              "2026-10-30",
+              "2026-10-29"
+            ],
+            "thirdTradingDayReached": true,
+            "freshFetchedNow": false,
+            "cacheAge": 1546,
+            "coverageStatus": "third_trading_day_reached",
+            "paginationMode": "cursor"
+          }
+        },
+        {
+          "code": "600426",
+          "name": "华鲁恒升新浪股吧",
+          "url": "https://guba.sina.cn/?s=bar&name=sh600426&from=redirect",
+          "platform": "sina",
+          "platformName": "新浪股吧",
+          "fresh": true,
+          "coverage": {
+            "rawRows": 50,
+            "pageCount": 1,
+            "oldestSeen": "2026-08-28T13:12:01+08:00",
+            "newestSeen": "2026-11-23T13:18:06+08:00",
+            "capHit": false,
+            "chronological": true,
+            "coverageDays": [
+              "2026-11-23",
+              "2026-11-16",
+              "2026-11-12",
+              "2026-10-29",
+              "2026-10-16",
+              "2026-10-14",
+              "2026-10-13",
+              "2026-10-08",
+              "2026-10-06",
+              "2026-09-30",
+              "2026-09-29",
+              "2026-09-18",
+              "2026-09-17",
+              "2026-09-16",
+              "2026-09-15",
+              "2026-09-14",
+              "2026-09-12",
+              "2026-09-11",
+              "2026-09-08",
+              "2026-09-07",
+              "2026-09-02",
+              "2026-09-01",
+              "2026-08-31",
+              "2026-08-30",
+              "2026-08-29",
+              "2026-08-28"
+            ],
+            "thirdTradingDayReached": true,
+            "freshFetchedNow": false,
+            "cacheAge": 1546,
+            "coverageStatus": "third_trading_day_reached",
+            "paginationMode": "cursor"
+          }
+        },
+        {
+          "code": "002648",
+          "name": "卫星化学新浪股吧",
+          "url": "https://guba.sina.cn/?s=bar&name=sz002648&from=redirect",
+          "platform": "sina",
+          "platformName": "新浪股吧",
+          "fresh": true,
+          "coverage": {
+            "rawRows": 49,
+            "pageCount": 1,
+            "oldestSeen": "2026-10-12T15:20:37+08:00",
+            "newestSeen": "2026-11-24T06:02:54+08:00",
+            "capHit": false,
+            "chronological": true,
+            "coverageDays": [
+              "2026-11-24",
+              "2026-11-23",
+              "2026-11-20",
+              "2026-11-19",
+              "2026-11-13",
+              "2026-11-12",
+              "2026-11-11",
+              "2026-11-10",
+              "2026-10-30",
+              "2026-10-26",
+              "2026-10-24",
+              "2026-10-23",
+              "2026-10-19",
+              "2026-10-18",
+              "2026-10-16",
+              "2026-10-15",
+              "2026-10-14",
+              "2026-10-12"
+            ],
+            "thirdTradingDayReached": true,
+            "freshFetchedNow": false,
+            "cacheAge": 1546,
+            "coverageStatus": "third_trading_day_reached",
+            "paginationMode": "cursor"
+          }
+        },
+        {
+          "code": "881108",
+          "name": "同花顺化学原料",
+          "url": "https://c.10jqka.com.cn/lgt/post/open/api/forum/content/v1/hot_feed?code=881108&market_id=48&page=1&page_size=15",
+          "platform": "ths",
+          "platformName": "同花顺板块社区",
+          "fresh": true,
+          "coverage": {
+            "rawRows": 30,
+            "pageCount": 2,
+            "oldestSeen": "2026-11-24T11:01:55+08:00",
+            "newestSeen": "2026-11-25T16:18:15+08:00",
+            "capHit": true,
+            "chronological": false,
+            "coverageDays": [
+              "2026-11-25",
+              "2026-11-24"
+            ],
+            "thirdTradingDayReached": false,
+            "freshFetchedNow": false,
+            "cacheAge": 1528,
+            "coverageStatus": "non_chronological_hot_feed",
+            "paginationMode": "last_score_cursor_bounded"
+          }
+        },
+        {
+          "code": "881109",
+          "name": "同花顺化学制品",
+          "url": "https://c.10jqka.com.cn/lgt/post/open/api/forum/content/v1/hot_feed?code=881109&market_id=48&page=1&page_size=15",
+          "platform": "ths",
+          "platformName": "同花顺板块社区",
+          "fresh": true,
+          "coverage": {
+            "rawRows": 30,
+            "pageCount": 2,
+            "oldestSeen": "2026-11-23T08:19:08+08:00",
+            "newestSeen": "2026-11-25T16:18:15+08:00",
+            "capHit": true,
+            "chronological": false,
+            "coverageDays": [
+              "2026-11-25",
+              "2026-11-24",
+              "2026-11-23"
+            ],
+            "thirdTradingDayReached": false,
+            "freshFetchedNow": false,
+            "cacheAge": 1524,
+            "coverageStatus": "non_chronological_hot_feed",
+            "paginationMode": "last_score_cursor_bounded"
+          }
+        },
+        {
+          "code": "600309",
+          "name": "淘股吧万华化学讨论",
+          "url": "https://www.tgb.cn/quotes/sh600309",
+          "platform": "taoguba",
+          "platformName": "淘股吧",
+          "fresh": true,
+          "coverage": {
+            "rawRows": 20,
+            "pageCount": 1,
+            "oldestSeen": "2026-11-13T20:20:09+08:00",
+            "newestSeen": "2026-11-25T12:51:15+08:00",
+            "capHit": true,
+            "chronological": true,
+            "coverageDays": [
+              "2026-11-25",
+              "2026-11-24",
+              "2026-11-22",
+              "2026-11-17",
+              "2026-11-16",
+              "2026-11-15",
+              "2026-11-14",
+              "2026-11-13"
+            ],
+            "thirdTradingDayReached": true,
+            "freshFetchedNow": false,
+            "cacheAge": 1546,
+            "coverageStatus": "third_day_reached",
+            "paginationMode": "anonymous_initial_page_only"
+          }
+        }
+      ],
+      "samplePosts": [
+        {
+          "title": "500W已完成 | 升级挑战：冲刺2000W｜第3天 $九阳股份(002242)$ 再次封板，继续拿着，逻辑依旧日没变。开板后会考虑把利润收下，不贪多。 $冰山冷热(000530)$ 昨天出了异动，高位兑现后关注度依然不减，早盘先继续观察。要是量能迟迟起不来，那就择机落袋。 金牛化工 前面参与过，兄弟们应该都不陌生，昨天涨停后关注度又起来了。今天分时半路小仓参与了一笔，先看上方压力附近的量能和承接。 $华胜天成(600410)$ 今天早盘又是碰到前期压力后回落，反复过不去，就得留意短期回调，暂时继续观察，不着急。",
+          "label": "看多",
+          "score": 6,
+          "comments": 116,
+          "clicks": 5,
+          "source": "同花顺化学原料",
+          "platform": "ths",
+          "platformName": "同花顺板块社区",
+          "publishTime": "2026-11-25T10:26:25+08:00"
+        },
+        {
+          "title": "挑战50w到300w 第五天❗️❗️ 一个涨停🌹🌹🌹一个大阳🌹🌹🌹。 九阳和冰山早盘，我重点提示，继续加仓，全面继续做多，趋势继续看高。 分歧是不是介入的机会需要结合盘面去判断验证，宇哥在这里陪着大家，兄弟们山顶见❗️❗️❗️ 说回盘面核心行情判断 核心判断：市场缩量，情绪温和、流动性不足。九阳等进入抱团加速，新主线要等本轮抱团退潮后才会出现；医药只是轮动，不宜追高。克莱标的强势、盛剑反包，行情进入流动性淘汰赛，唯有放量共振标的有望突围。 操作：规避监管异动标的，缩量轮动市多看少动，不追板块轮动。 $冰山冷热(00",
+          "label": "看多",
+          "score": 6,
+          "comments": 59,
+          "clicks": 5,
+          "source": "同花顺化学原料",
+          "platform": "ths",
+          "platformName": "同花顺板块社区",
+          "publishTime": "2026-11-25T12:48:10+08:00"
+        },
+        {
+          "title": "【记录第42天复盘】 本100，今日盈亏0.5个。 今天市场调整明显，短线资金正在重新选择方向，明天重点看化工能否延续强势。 $高争民爆(002827)$ $天龙股份(603266)$ $金牛化工(600722)$ 兄弟姐妹大家好，我是老蒋。 今天参与金牛化工、天龙股份，离场五洲新春，百洋股份。 金牛化工 今天走出两连板，在市场调整时还能保持强势，说明资金对化工方向仍有认可。明天重点看板块能否跟进，不能只靠个股独自走强。 天龙股份 早盘冲高后持续回落，汽车零部件方向也没有形成有效支撑。今天的走势低于预期，明天重点看",
+          "label": "看多",
+          "score": 6,
+          "comments": 15,
+          "clicks": 2,
+          "source": "同花顺化学原料",
+          "platform": "ths",
+          "platformName": "同花顺板块社区",
+          "publishTime": "2026-11-25T15:22:55+08:00"
+        },
+        {
+          "title": "今天只抓到一个涨停板，硬科技重创。早上看好的另外两个化工只是保本。英伟达大涨我们",
+          "label": "看多",
+          "score": 6,
+          "comments": 1,
+          "clicks": 108,
+          "source": "万华化学吧",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "publishTime": "2026-11-25T15:07:09+08:00"
+        },
+        {
+          "title": "慧姐午盘记录累计32个涨停：手里的持仓真的是两极分化，笑死我了，哈哈。不同节奏节奏，下午重点看承接！有的冲得起来，有的冲高就回落，还有的资金进来了，股价却没有跟上。 $金牛化工(600722)$ 昨天走出涨停，今天早盘继续保持强势，股价向上冲了一波，随后出现回落，又重新拉回到相对高位。 从近期日K来看，前期经历了较长时间调整，最近开始出现修复，短期均线逐渐向上，但中长期均线压力还没有完全消化。 上午最高冲到13元附近，回落后又重新获得承接，目前仍在分时均价线上方运行，这一点相对不错。 不过，盘中资金流入和流出都比较",
+          "label": "看多",
+          "score": 4,
+          "comments": 41,
+          "clicks": 9,
+          "source": "同花顺化学原料",
+          "platform": "ths",
+          "platformName": "同花顺板块社区",
+          "publishTime": "2026-11-25T11:38:40+08:00"
+        },
+        {
+          "title": "昨天全部清仓。12月再来，感觉会跌破60才能企稳。个人拙见。",
+          "label": "看空",
+          "score": -5,
+          "comments": 1,
+          "clicks": 96,
+          "source": "万华化学吧",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "publishTime": "2026-11-25T13:55:14+08:00"
+        },
+        {
+          "title": "下午涨停",
+          "label": "看多",
+          "score": 4,
+          "comments": 1,
+          "clicks": 25,
+          "source": "万华化学吧",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "publishTime": "2026-11-25T12:57:47+08:00"
+        },
+        {
+          "title": "科技爆锤利好老登稀土股外围上涨据说还要加关税",
+          "label": "看多",
+          "score": 4,
+          "comments": 1,
+          "clicks": 57,
+          "source": "万华化学吧",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "publishTime": "2026-11-25T09:00:21+08:00"
+        },
+        {
+          "title": "11月24日晚：股票利好消息汇总 能化学：拟以6亿至12亿元回购公司股份。 万华化学 ：董事长提议回购3亿-5亿元股份用于减少",
+          "label": "看多",
+          "score": 3,
+          "comments": 0,
+          "clicks": 119,
+          "source": "淘股吧万华化学讨论",
+          "platform": "taoguba",
+          "platformName": "淘股吧",
+          "publishTime": "2026-11-24T19:37:58+08:00"
+        },
+        {
+          "title": "2026年11月25日上市公司公告速览，建议收藏研究！1、ST东尼：公司股票于2026年11月25日停牌1天，2026年11月26日起撤销其他风险警示并复牌，简称变更为“东尼电子”。2、钛能化学：拟以 元/股，用于维护公司价值及股东权益。3、 万华化学 ：董事长廖增太提议以集中竞价方式回购股份",
+          "label": "看空",
+          "score": -2,
+          "comments": 0,
+          "clicks": 0,
+          "source": "淘股吧万华化学讨论",
+          "platform": "taoguba",
+          "platformName": "淘股吧",
+          "publishTime": "2026-11-25T08:32:04+08:00"
+        }
+      ],
+      "legacyHeat": 50.3,
+      "absoluteHeat": 50.1,
+      "relativeHeat": 44.2,
+      "heatRank": 23,
+      "heatTier": "市场中段",
+      "heatModel": {
+        "version": "sector_community_heat_v4_company_equal",
+        "status": "applied",
+        "marketAnchor": 55.0,
+        "legacyEmotionHeat": 50.3,
+        "absoluteHeat": 50.1,
+        "activityIndex": 50.0,
+        "volumeFactor": 50.0,
+        "relativeLatent": 50.0,
+        "relativeHeat": 44.2,
+        "heatTier": "市场中段",
+        "percentile": 28.3,
+        "robustZ": -0.651,
+        "reliability": 42.8,
+        "rankEligible": true,
+        "dispersionGate": 1.0,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
+        "crossSectionP90P10": 5.643,
+        "noiseFloor": 1.732,
+        "usesMarketPrice": false,
+        "formalPersonaScoresChanged": false,
+        "weights": {
+          "absoluteAttention": 0.75,
+          "absoluteEmotion": 0.25,
+          "volumeActivity": 0.75,
+          "volumeAttention": 0.25,
+          "relativeVolume": 0.85,
+          "relativeEmotion": 0.15,
+          "finalRelative": 0.65,
+          "finalAbsolute": 0.35
+        },
+        "rawRelativeHeat": 44.2,
+        "rawFinalHeat": 51.0,
+        "rawAbsoluteHeat": 50.1,
+        "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+        "temporalAlpha": 1.0,
+        "temporalGapDays": 1,
+        "temporalEffectiveAlpha": 1.0,
+        "relativeDailyCap": 20.0,
+        "finalDailyCap": 25.0,
+        "previousRelativeHeat": 48.1,
+        "previousFinalHeat": 51.3
       },
       "activityHeat": 51.0,
       "emotion": null,
@@ -32948,7 +32948,7 @@ window.INDEX_DATA = {
               "platformCount": 4,
               "maskedDirectionRaw": 49.9,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 48.7
+              "candidateShrunkDirection": 48.6
             }
           }
         },
@@ -33346,11 +33346,11 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 48.2,
+              "optimism": 48.3,
               "fomo": 47.7,
               "panic": 24.6,
               "newcomer": 52.8,
-              "intensity": 54.1,
+              "intensity": 54.0,
               "attention": 47.3
             },
             "sina": {
@@ -33560,7 +33560,7 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 39.8,
+            "optimism": 39.7,
             "fomo": 40.4,
             "newcomer": 59.9,
             "intensity": 63.8,
@@ -33639,7 +33639,7 @@ window.INDEX_DATA = {
             "optimism": 47.1,
             "fomo": 48.7,
             "newcomer": 62.4,
-            "intensity": 59.4,
+            "intensity": 59.3,
             "attention": 53.9,
             "panic": 30.1,
             "heat": 55.0
@@ -33735,8 +33735,8 @@ window.INDEX_DATA = {
               "2026-08-24"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1552,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -33764,8 +33764,8 @@ window.INDEX_DATA = {
               "2026-11-17"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1551,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -33794,8 +33794,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1552,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -33842,8 +33842,8 @@ window.INDEX_DATA = {
               "2026-10-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1551,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -33895,8 +33895,8 @@ window.INDEX_DATA = {
               "2026-05-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1551,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -33920,8 +33920,8 @@ window.INDEX_DATA = {
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1539,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -33953,8 +33953,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1551,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -33979,8 +33979,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1550,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -34018,8 +34018,8 @@ window.INDEX_DATA = {
               "2026-06-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1551,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -34139,7 +34139,7 @@ window.INDEX_DATA = {
       ],
       "legacyHeat": 48.9,
       "absoluteHeat": 49.7,
-      "relativeHeat": 43.2,
+      "relativeHeat": 43.3,
       "heatRank": 24,
       "heatTier": "市场中段",
       "heatModel": {
@@ -34151,15 +34151,15 @@ window.INDEX_DATA = {
         "activityIndex": 50.0,
         "volumeFactor": 50.0,
         "relativeLatent": 49.8,
-        "relativeHeat": 43.2,
+        "relativeHeat": 43.3,
         "heatTier": "市场中段",
         "percentile": 21.7,
-        "robustZ": -0.729,
+        "robustZ": -0.723,
         "reliability": 42.9,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -34174,7 +34174,7 @@ window.INDEX_DATA = {
           "finalRelative": 0.65,
           "finalAbsolute": 0.35
         },
-        "rawRelativeHeat": 43.2,
+        "rawRelativeHeat": 43.3,
         "rawFinalHeat": 50.3,
         "rawAbsoluteHeat": 49.7,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -34223,7 +34223,7 @@ window.INDEX_DATA = {
         "composite": 51
       },
       "signals": {
-        "optimism": 49.6,
+        "optimism": 49.7,
         "fomo": 50.6,
         "panic": 9.9,
         "newcomer": 50.0,
@@ -34232,7 +34232,7 @@ window.INDEX_DATA = {
         "heat": 50.1
       },
       "heat": 49.8,
-      "direction": 49.6,
+      "direction": 49.7,
       "metrics": {
         "recentPosts": 201,
         "recent7Posts": 336,
@@ -34745,11 +34745,11 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 48.8,
+              "optimism": 48.9,
               "fomo": 50.8,
               "panic": 16.0,
               "newcomer": 54.1,
-              "intensity": 55.8,
+              "intensity": 55.7,
               "attention": 47.0
             },
             "sina": {
@@ -34963,7 +34963,7 @@ window.INDEX_DATA = {
             "optimism": 46.6,
             "fomo": 47.4,
             "newcomer": 54.9,
-            "intensity": 64.6,
+            "intensity": 64.5,
             "attention": 55.6,
             "panic": 16.8,
             "heat": 55.3
@@ -35098,8 +35098,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1549,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -35147,8 +35147,8 @@ window.INDEX_DATA = {
               "2026-09-07"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1549,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -35179,8 +35179,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1549,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -35220,8 +35220,8 @@ window.INDEX_DATA = {
               "2026-10-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1549,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -35254,8 +35254,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1549,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -35305,8 +35305,8 @@ window.INDEX_DATA = {
               "2026-09-24"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1548,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -35336,8 +35336,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1532,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -35472,12 +35472,12 @@ window.INDEX_DATA = {
         "relativeHeat": 42.4,
         "heatTier": "市场中段",
         "percentile": 15.0,
-        "robustZ": -0.755,
+        "robustZ": -0.749,
         "reliability": 43.9,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -35549,7 +35549,7 @@ window.INDEX_DATA = {
         "attention": 48.2,
         "heat": 49.8
       },
-      "heat": 49.6,
+      "heat": 49.7,
       "direction": 51.3,
       "metrics": {
         "recentPosts": 93,
@@ -36072,7 +36072,7 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 51.2,
+              "optimism": 51.3,
               "fomo": 48.8,
               "panic": 15.0,
               "newcomer": 54.7,
@@ -36427,8 +36427,8 @@ window.INDEX_DATA = {
               "2026-09-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -36462,8 +36462,8 @@ window.INDEX_DATA = {
               "2026-10-07"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1542,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -36492,8 +36492,8 @@ window.INDEX_DATA = {
               "2026-10-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1542,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -36543,8 +36543,8 @@ window.INDEX_DATA = {
               "2026-09-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1542,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -36576,8 +36576,8 @@ window.INDEX_DATA = {
               "2026-11-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1521,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -36608,8 +36608,8 @@ window.INDEX_DATA = {
               "2026-11-09"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1520,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -36744,12 +36744,12 @@ window.INDEX_DATA = {
         "relativeHeat": 42.3,
         "heatTier": "市场中段",
         "percentile": 1.7,
-        "robustZ": -1.208,
+        "robustZ": -1.2,
         "reliability": 31.4,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -36765,7 +36765,7 @@ window.INDEX_DATA = {
           "finalAbsolute": 0.35
         },
         "rawRelativeHeat": 42.3,
-        "rawFinalHeat": 49.6,
+        "rawFinalHeat": 49.7,
         "rawAbsoluteHeat": 48.6,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
         "temporalAlpha": 1.0,
@@ -36776,7 +36776,7 @@ window.INDEX_DATA = {
         "previousRelativeHeat": 46.3,
         "previousFinalHeat": 50.0
       },
-      "activityHeat": 49.6,
+      "activityHeat": 49.7,
       "emotion": null,
       "emotionN": 0
     },
@@ -36813,7 +36813,7 @@ window.INDEX_DATA = {
         "composite": 46
       },
       "signals": {
-        "optimism": 50.5,
+        "optimism": 50.6,
         "fomo": 46.7,
         "panic": 6.2,
         "newcomer": 50.0,
@@ -36822,7 +36822,7 @@ window.INDEX_DATA = {
         "heat": 48.7
       },
       "heat": 49.4,
-      "direction": 50.5,
+      "direction": 50.6,
       "metrics": {
         "recentPosts": 160,
         "recent7Posts": 348,
@@ -37335,11 +37335,11 @@ window.INDEX_DATA = {
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 50.6,
+              "optimism": 50.7,
               "fomo": 45.2,
               "panic": 19.0,
               "newcomer": 56.0,
-              "intensity": 51.4,
+              "intensity": 51.3,
               "attention": 49.1
             },
             "sina": {
@@ -37549,13 +37549,13 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 54.8,
+            "optimism": 54.9,
             "fomo": 50.6,
             "newcomer": 61.8,
-            "intensity": 60.2,
+            "intensity": 60.0,
             "attention": 56.8,
             "panic": 30.1,
-            "heat": 56.6
+            "heat": 56.5
           },
           "raw": {
             "net": 0.06341960566146314,
@@ -37663,7 +37663,7 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 56.5,
+            "optimism": 56.4,
             "fomo": 31.1,
             "newcomer": 38.2,
             "intensity": 41.8,
@@ -37725,8 +37725,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -37761,8 +37761,8 @@ window.INDEX_DATA = {
               "2026-10-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1556,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -37797,8 +37797,8 @@ window.INDEX_DATA = {
               "2026-10-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -37830,8 +37830,8 @@ window.INDEX_DATA = {
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -37864,8 +37864,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -37905,8 +37905,8 @@ window.INDEX_DATA = {
               "2026-11-01"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1553,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -37931,8 +37931,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1533,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -37961,8 +37961,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -37992,8 +37992,8 @@ window.INDEX_DATA = {
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -38026,8 +38026,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -38147,9 +38147,9 @@ window.INDEX_DATA = {
       ],
       "legacyHeat": 48.7,
       "absoluteHeat": 49.7,
-      "relativeHeat": 41.9,
+      "relativeHeat": 42.0,
       "heatRank": 27,
-      "heatTier": "圈层偏窄",
+      "heatTier": "市场中段",
       "heatModel": {
         "version": "sector_community_heat_v4_company_equal",
         "status": "applied",
@@ -38159,15 +38159,15 @@ window.INDEX_DATA = {
         "activityIndex": 50.0,
         "volumeFactor": 50.0,
         "relativeLatent": 49.8,
-        "relativeHeat": 41.9,
-        "heatTier": "圈层偏窄",
+        "relativeHeat": 42.0,
+        "heatTier": "市场中段",
         "percentile": 18.3,
-        "robustZ": -0.74,
+        "robustZ": -0.733,
         "reliability": 48.9,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -38182,7 +38182,7 @@ window.INDEX_DATA = {
           "finalRelative": 0.65,
           "finalAbsolute": 0.35
         },
-        "rawRelativeHeat": 41.9,
+        "rawRelativeHeat": 42.0,
         "rawFinalHeat": 49.4,
         "rawAbsoluteHeat": 49.7,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -38346,7 +38346,7 @@ window.INDEX_DATA = {
               "platformCount": 2,
               "maskedDirectionRaw": 53.5,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 52.9
+              "candidateShrunkDirection": 53.0
             },
             "retail": {
               "available": true,
@@ -38967,7 +38967,7 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 55.8,
+            "optimism": 56.0,
             "fomo": 36.4,
             "newcomer": 55.0,
             "intensity": 46.7,
@@ -39046,7 +39046,7 @@ window.INDEX_DATA = {
             "optimism": 51.5,
             "fomo": 64.4,
             "newcomer": 38.2,
-            "intensity": 55.5,
+            "intensity": 55.4,
             "attention": 29.0,
             "panic": 0.0,
             "heat": 47.6
@@ -39144,8 +39144,8 @@ window.INDEX_DATA = {
               "2026-09-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1544,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -39178,8 +39178,8 @@ window.INDEX_DATA = {
               "2026-11-07"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1544,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -39208,8 +39208,8 @@ window.INDEX_DATA = {
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1544,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -39253,8 +39253,8 @@ window.INDEX_DATA = {
               "2026-10-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1544,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -39307,8 +39307,8 @@ window.INDEX_DATA = {
               "2026-06-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1544,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -39336,8 +39336,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1524,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -39372,8 +39372,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -39406,8 +39406,8 @@ window.INDEX_DATA = {
               "2026-11-09"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -39442,8 +39442,8 @@ window.INDEX_DATA = {
               "2026-10-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1543,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -39563,7 +39563,7 @@ window.INDEX_DATA = {
       ],
       "legacyHeat": 49.7,
       "absoluteHeat": 49.3,
-      "relativeHeat": 41.0,
+      "relativeHeat": 41.1,
       "heatRank": 28,
       "heatTier": "圈层偏窄",
       "heatModel": {
@@ -39575,15 +39575,15 @@ window.INDEX_DATA = {
         "activityIndex": 49.2,
         "volumeFactor": 49.2,
         "relativeLatent": 49.3,
-        "relativeHeat": 41.0,
+        "relativeHeat": 41.1,
         "heatTier": "圈层偏窄",
         "percentile": 8.3,
-        "robustZ": -0.922,
+        "robustZ": -0.914,
         "reliability": 44.0,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -39598,7 +39598,7 @@ window.INDEX_DATA = {
           "finalRelative": 0.65,
           "finalAbsolute": 0.35
         },
-        "rawRelativeHeat": 41.0,
+        "rawRelativeHeat": 41.1,
         "rawFinalHeat": 48.8,
         "rawAbsoluteHeat": 49.3,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -40383,7 +40383,7 @@ window.INDEX_DATA = {
           "activityEligible": true,
           "signals": {
             "optimism": 53.3,
-            "fomo": 47.1,
+            "fomo": 47.2,
             "newcomer": 43.2,
             "intensity": 50.2,
             "attention": 54.7,
@@ -40458,7 +40458,7 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 49.4,
+            "optimism": 49.3,
             "fomo": 40.0,
             "newcomer": 38.2,
             "intensity": 31.8,
@@ -40559,8 +40559,8 @@ window.INDEX_DATA = {
               "2026-09-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -40589,8 +40589,8 @@ window.INDEX_DATA = {
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -40621,8 +40621,8 @@ window.INDEX_DATA = {
               "2026-10-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1562,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -40665,8 +40665,8 @@ window.INDEX_DATA = {
               "2026-11-03"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -40692,8 +40692,8 @@ window.INDEX_DATA = {
               "2026-11-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1558,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -40722,8 +40722,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -40752,8 +40752,8 @@ window.INDEX_DATA = {
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -40786,8 +40786,8 @@ window.INDEX_DATA = {
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1561,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -40922,12 +40922,12 @@ window.INDEX_DATA = {
         "relativeHeat": 40.9,
         "heatTier": "圈层偏窄",
         "percentile": 11.7,
-        "robustZ": -0.764,
+        "robustZ": -0.757,
         "reliability": 50.7,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -40999,7 +40999,7 @@ window.INDEX_DATA = {
         "attention": 49.1,
         "heat": 50.0
       },
-      "heat": 48.5,
+      "heat": 48.6,
       "direction": 51.3,
       "metrics": {
         "recentPosts": 125,
@@ -41517,7 +41517,7 @@ window.INDEX_DATA = {
               "fomo": 48.6,
               "panic": 22.6,
               "newcomer": 47.9,
-              "intensity": 53.2,
+              "intensity": 53.1,
               "attention": 46.2
             },
             "sina": {
@@ -41765,7 +41765,7 @@ window.INDEX_DATA = {
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 51.5,
+            "optimism": 51.6,
             "fomo": 44.4,
             "newcomer": 48.7,
             "intensity": 56.2,
@@ -41803,7 +41803,7 @@ window.INDEX_DATA = {
           "name": "淘股吧",
           "activityEligible": false,
           "signals": {
-            "optimism": 47.4,
+            "optimism": 47.2,
             "fomo": 31.1,
             "newcomer": 38.2,
             "intensity": 29.4,
@@ -41909,8 +41909,8 @@ window.INDEX_DATA = {
               "2026-09-25"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -41943,8 +41943,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1555,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -41972,8 +41972,8 @@ window.INDEX_DATA = {
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -42009,8 +42009,8 @@ window.INDEX_DATA = {
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -42035,8 +42035,8 @@ window.INDEX_DATA = {
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1544,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -42065,8 +42065,8 @@ window.INDEX_DATA = {
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -42105,8 +42105,8 @@ window.INDEX_DATA = {
               "2026-11-08"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -42145,8 +42145,8 @@ window.INDEX_DATA = {
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1554,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -42281,12 +42281,12 @@ window.INDEX_DATA = {
         "relativeHeat": 40.7,
         "heatTier": "圈层偏窄",
         "percentile": 5.0,
-        "robustZ": -0.935,
+        "robustZ": -0.928,
         "reliability": 44.2,
         "rankEligible": true,
         "dispersionGate": 1.0,
-        "crossSectionMedian": 51.96,
-        "crossSectionMAD": 1.96,
+        "crossSectionMedian": 51.953,
+        "crossSectionMAD": 1.975,
         "crossSectionP90P10": 5.643,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
@@ -42302,7 +42302,7 @@ window.INDEX_DATA = {
           "finalAbsolute": 0.35
         },
         "rawRelativeHeat": 40.7,
-        "rawFinalHeat": 48.5,
+        "rawFinalHeat": 48.6,
         "rawAbsoluteHeat": 49.3,
         "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
         "temporalAlpha": 1.0,
@@ -42313,7 +42313,7 @@ window.INDEX_DATA = {
         "previousRelativeHeat": 44.5,
         "previousFinalHeat": 48.7
       },
-      "activityHeat": 48.5,
+      "activityHeat": 48.6,
       "emotion": null,
       "emotionN": 0
     }
@@ -45420,13 +45420,13 @@ window.INDEX_DATA = {
       "retail": 57,
       "composite": 56,
       "heat": 55.0,
-      "direction": 49.6,
+      "direction": 49.5,
       "signals": {
-        "optimism": 49.6,
-        "fomo": 48.4,
-        "panic": 14.3,
+        "optimism": 49.5,
+        "fomo": 48.3,
+        "panic": 14.5,
         "newcomer": 50.2,
-        "intensity": 52.9,
+        "intensity": 53.0,
         "attention": 53.5,
         "heat": 55.0,
         "breadth": 87.5
@@ -45464,17 +45464,17 @@ window.INDEX_DATA = {
           },
           "signals": {
             "optimism": 52.2,
-            "fomo": 52.8,
-            "panic": 21.9,
+            "fomo": 52.9,
+            "panic": 20.6,
             "newcomer": 54.0,
-            "intensity": 56.8,
+            "intensity": 57.7,
             "attention": 58.6,
-            "heat": 55.7
+            "heat": 56.0
           },
           "heat": 66.7,
-          "legacyHeat": 55.7,
-          "absoluteHeat": 57.9,
-          "relativeHeat": 66.2,
+          "legacyHeat": 56.0,
+          "absoluteHeat": 58.0,
+          "relativeHeat": 66.3,
           "heatRank": 1,
           "heatTier": "明显升温",
           "direction": 52.2,
@@ -45510,16 +45510,16 @@ window.INDEX_DATA = {
             "relativeLatent": 58.2,
             "heatTier": "明显升温",
             "percentile": 98.3,
-            "robustZ": 2.13,
+            "robustZ": 2.137,
             "reliability": 54.5,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
-            "rawRelativeHeat": 66.2,
+            "rawRelativeHeat": 66.3,
             "rawFinalHeat": 66.7,
-            "rawAbsoluteHeat": 57.9,
+            "rawAbsoluteHeat": 58.0,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
             "temporalAlpha": 1.0,
             "temporalGapDays": 1,
@@ -45575,11 +45575,11 @@ window.INDEX_DATA = {
             "composite": 57
           },
           "signals": {
-            "optimism": 51.9,
-            "fomo": 53.8,
-            "panic": 17.1,
+            "optimism": 51.6,
+            "fomo": 53.6,
+            "panic": 17.7,
             "newcomer": 52.3,
-            "intensity": 56.3,
+            "intensity": 56.7,
             "attention": 55.4,
             "heat": 54.7
           },
@@ -45589,7 +45589,7 @@ window.INDEX_DATA = {
           "relativeHeat": 62.6,
           "heatRank": 4,
           "heatTier": "明显升温",
-          "direction": 51.9,
+          "direction": 51.6,
           "coverage": 100.0,
           "confidence": 100,
           "samplePosts": 759,
@@ -45622,11 +45622,11 @@ window.INDEX_DATA = {
             "relativeLatent": 55.3,
             "heatTier": "明显升温",
             "percentile": 88.3,
-            "robustZ": 1.145,
+            "robustZ": 1.142,
             "reliability": 57.1,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 62.6,
@@ -45687,11 +45687,11 @@ window.INDEX_DATA = {
             "composite": 57
           },
           "signals": {
-            "optimism": 51.0,
+            "optimism": 51.1,
             "fomo": 52.6,
             "panic": 18.4,
             "newcomer": 54.8,
-            "intensity": 54.2,
+            "intensity": 54.3,
             "attention": 55.9,
             "heat": 54.3
           },
@@ -45701,7 +45701,7 @@ window.INDEX_DATA = {
           "relativeHeat": 64.0,
           "heatRank": 3,
           "heatTier": "明显升温",
-          "direction": 51.0,
+          "direction": 51.1,
           "coverage": 100.0,
           "confidence": 100,
           "samplePosts": 819,
@@ -45734,11 +45734,11 @@ window.INDEX_DATA = {
             "relativeLatent": 55.7,
             "heatTier": "明显升温",
             "percentile": 91.7,
-            "robustZ": 1.27,
+            "robustZ": 1.266,
             "reliability": 58.9,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 64.0,
@@ -45807,10 +45807,10 @@ window.INDEX_DATA = {
             "attention": 56.5,
             "heat": 53.8
           },
-          "heat": 65.1,
+          "heat": 65.0,
           "legacyHeat": 53.8,
           "absoluteHeat": 55.8,
-          "relativeHeat": 64.3,
+          "relativeHeat": 64.2,
           "heatRank": 2,
           "heatTier": "明显升温",
           "direction": 50.7,
@@ -45846,15 +45846,15 @@ window.INDEX_DATA = {
             "relativeLatent": 56.1,
             "heatTier": "明显升温",
             "percentile": 95.0,
-            "robustZ": 1.419,
+            "robustZ": 1.415,
             "reliability": 55.7,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
-            "rawRelativeHeat": 64.3,
-            "rawFinalHeat": 65.1,
+            "rawRelativeHeat": 64.2,
+            "rawFinalHeat": 65.0,
             "rawAbsoluteHeat": 55.8,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
             "temporalAlpha": 1.0,
@@ -45911,21 +45911,21 @@ window.INDEX_DATA = {
             "composite": 55
           },
           "signals": {
-            "optimism": 49.7,
+            "optimism": 49.8,
             "fomo": 50.3,
             "panic": 17.4,
             "newcomer": 49.4,
-            "intensity": 53.9,
+            "intensity": 54.0,
             "attention": 54.2,
-            "heat": 52.2
+            "heat": 52.3
           },
           "heat": 60.4,
-          "legacyHeat": 52.2,
+          "legacyHeat": 52.3,
           "absoluteHeat": 53.7,
           "relativeHeat": 57.8,
           "heatRank": 7,
           "heatTier": "市场中段",
-          "direction": 49.7,
+          "direction": 49.8,
           "coverage": 100.0,
           "confidence": 100,
           "samplePosts": 715,
@@ -45958,11 +45958,11 @@ window.INDEX_DATA = {
             "relativeLatent": 53.9,
             "heatTier": "市场中段",
             "percentile": 75.0,
-            "robustZ": 0.666,
+            "robustZ": 0.67,
             "reliability": 54.0,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 57.8,
@@ -46070,11 +46070,11 @@ window.INDEX_DATA = {
             "relativeLatent": 52.6,
             "heatTier": "市场中段",
             "percentile": 61.7,
-            "robustZ": 0.22,
+            "robustZ": 0.221,
             "reliability": 51.6,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 52.9,
@@ -46136,7 +46136,7 @@ window.INDEX_DATA = {
           },
           "signals": {
             "optimism": 48.3,
-            "fomo": 49.7,
+            "fomo": 49.8,
             "panic": 18.3,
             "newcomer": 52.8,
             "intensity": 54.6,
@@ -46182,11 +46182,11 @@ window.INDEX_DATA = {
             "relativeLatent": 54.2,
             "heatTier": "市场中段",
             "percentile": 81.7,
-            "robustZ": 0.755,
+            "robustZ": 0.754,
             "reliability": 39.5,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 56.6,
@@ -46294,11 +46294,11 @@ window.INDEX_DATA = {
             "relativeLatent": 55.0,
             "heatTier": "明显升温",
             "percentile": 85.0,
-            "robustZ": 1.04,
+            "robustZ": 1.037,
             "reliability": 57.0,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 61.7,
@@ -46363,12 +46363,12 @@ window.INDEX_DATA = {
             "fomo": 52.3,
             "panic": 8.8,
             "newcomer": 52.2,
-            "intensity": 52.1,
+            "intensity": 52.0,
             "attention": 50.7,
-            "heat": 51.8
+            "heat": 51.7
           },
           "heat": 53.1,
-          "legacyHeat": 51.8,
+          "legacyHeat": 51.7,
           "absoluteHeat": 51.0,
           "relativeHeat": 47.2,
           "heatRank": 18,
@@ -46406,11 +46406,11 @@ window.INDEX_DATA = {
             "relativeLatent": 50.9,
             "heatTier": "市场中段",
             "percentile": 41.7,
-            "robustZ": -0.376,
+            "robustZ": -0.377,
             "reliability": 38.2,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 47.2,
@@ -46471,7 +46471,7 @@ window.INDEX_DATA = {
             "composite": 54
           },
           "signals": {
-            "optimism": 48.8,
+            "optimism": 48.9,
             "fomo": 50.3,
             "panic": 15.4,
             "newcomer": 49.3,
@@ -46485,7 +46485,7 @@ window.INDEX_DATA = {
           "relativeHeat": 50.6,
           "heatRank": 15,
           "heatTier": "市场中段",
-          "direction": 48.8,
+          "direction": 48.9,
           "coverage": 89.8,
           "confidence": 90,
           "samplePosts": 634,
@@ -46518,11 +46518,11 @@ window.INDEX_DATA = {
             "relativeLatent": 52.1,
             "heatTier": "市场中段",
             "percentile": 51.7,
-            "robustZ": 0.06,
+            "robustZ": 0.062,
             "reliability": 46.8,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 50.6,
@@ -46630,11 +46630,11 @@ window.INDEX_DATA = {
             "relativeLatent": 53.0,
             "heatTier": "市场中段",
             "percentile": 68.3,
-            "robustZ": 0.362,
+            "robustZ": 0.363,
             "reliability": 53.8,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 54.8,
@@ -46699,13 +46699,13 @@ window.INDEX_DATA = {
             "fomo": 53.0,
             "panic": 13.1,
             "newcomer": 47.8,
-            "intensity": 52.2,
+            "intensity": 52.1,
             "attention": 51.8,
-            "heat": 51.7
+            "heat": 51.6
           },
           "heat": 54.6,
-          "legacyHeat": 51.7,
-          "absoluteHeat": 51.8,
+          "legacyHeat": 51.6,
+          "absoluteHeat": 51.7,
           "relativeHeat": 49.4,
           "heatRank": 16,
           "heatTier": "市场中段",
@@ -46742,16 +46742,16 @@ window.INDEX_DATA = {
             "relativeLatent": 51.8,
             "heatTier": "市场中段",
             "percentile": 48.3,
-            "robustZ": -0.06,
+            "robustZ": -0.062,
             "reliability": 50.3,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 49.4,
             "rawFinalHeat": 54.6,
-            "rawAbsoluteHeat": 51.8,
+            "rawAbsoluteHeat": 51.7,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
             "temporalAlpha": 1.0,
             "temporalGapDays": 1,
@@ -46854,11 +46854,11 @@ window.INDEX_DATA = {
             "relativeLatent": 52.4,
             "heatTier": "市场中段",
             "percentile": 58.3,
-            "robustZ": 0.16,
+            "robustZ": 0.161,
             "reliability": 47.8,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 51.9,
@@ -46919,7 +46919,7 @@ window.INDEX_DATA = {
             "composite": 52
           },
           "signals": {
-            "optimism": 50.4,
+            "optimism": 50.5,
             "fomo": 45.2,
             "panic": 12.7,
             "newcomer": 52.6,
@@ -46933,7 +46933,7 @@ window.INDEX_DATA = {
           "relativeHeat": 58.4,
           "heatRank": 6,
           "heatTier": "明显升温",
-          "direction": 50.4,
+          "direction": 50.5,
           "coverage": 93.2,
           "confidence": 93,
           "samplePosts": 708,
@@ -46966,11 +46966,11 @@ window.INDEX_DATA = {
             "relativeLatent": 53.9,
             "heatTier": "明显升温",
             "percentile": 78.3,
-            "robustZ": 0.68,
+            "robustZ": 0.679,
             "reliability": 55.5,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 58.4,
@@ -47078,11 +47078,11 @@ window.INDEX_DATA = {
             "relativeLatent": 53.8,
             "heatTier": "市场中段",
             "percentile": 71.7,
-            "robustZ": 0.63,
+            "robustZ": 0.629,
             "reliability": 49.7,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 56.6,
@@ -47190,11 +47190,11 @@ window.INDEX_DATA = {
             "relativeLatent": 50.5,
             "heatTier": "市场中段",
             "percentile": 35.0,
-            "robustZ": -0.513,
+            "robustZ": -0.508,
             "reliability": 45.7,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 45.2,
@@ -47255,7 +47255,7 @@ window.INDEX_DATA = {
             "composite": 51
           },
           "signals": {
-            "optimism": 49.6,
+            "optimism": 49.7,
             "fomo": 50.6,
             "panic": 9.9,
             "newcomer": 50.0,
@@ -47269,7 +47269,7 @@ window.INDEX_DATA = {
           "relativeHeat": 42.4,
           "heatRank": 25,
           "heatTier": "市场中段",
-          "direction": 49.6,
+          "direction": 49.7,
           "coverage": 89.8,
           "confidence": 90,
           "samplePosts": 330,
@@ -47303,11 +47303,11 @@ window.INDEX_DATA = {
             "relativeLatent": 49.8,
             "heatTier": "市场中段",
             "percentile": 15.0,
-            "robustZ": -0.755,
+            "robustZ": -0.749,
             "reliability": 43.9,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 42.4,
@@ -47331,118 +47331,6 @@ window.INDEX_DATA = {
             },
             "previousRelativeHeat": 50.5,
             "previousFinalHeat": 53.0,
-            "usesMarketPrice": false,
-            "formalPersonaScoresChanged": false,
-            "rankEligible": true
-          },
-          "catalogVersion": "3"
-        },
-        {
-          "key": "basic_chemicals",
-          "name": "基础化工",
-          "parentKey": "resources_utilities",
-          "parentName": "资源化工与公用",
-          "description": "观察聚氨酯、煤化工、烯烃及大宗化工材料；不包含锂电和半导体专用材料。",
-          "representativeCompanies": [
-            {
-              "code": "600309",
-              "name": "万华化学",
-              "role": "聚氨酯与新材料"
-            },
-            {
-              "code": "600426",
-              "name": "华鲁恒升",
-              "role": "煤化工与基础化工"
-            },
-            {
-              "code": "002648",
-              "name": "卫星化学",
-              "role": "烯烃与化工新材料"
-            }
-          ],
-          "available": true,
-          "scores": {
-            "baoma": 51,
-            "novice": 51,
-            "retail": 50,
-            "composite": 51
-          },
-          "signals": {
-            "optimism": 50.8,
-            "fomo": 49.2,
-            "panic": 8.5,
-            "newcomer": 52.4,
-            "intensity": 51.1,
-            "attention": 50.0,
-            "heat": 50.4
-          },
-          "heat": 51.0,
-          "legacyHeat": 50.4,
-          "absoluteHeat": 50.1,
-          "relativeHeat": 44.2,
-          "heatRank": 23,
-          "heatTier": "市场中段",
-          "direction": 50.8,
-          "coverage": 93.8,
-          "confidence": 94,
-          "samplePosts": 483,
-          "platformCount": 4,
-          "sourceCount": 9,
-          "fairness": {
-            "modelVersion": "channel_equal_four_seats_v1",
-            "reliabilityPercent": 32.5,
-            "confidenceLabel": "中",
-            "weightedCompanyCoverage": 0.625,
-            "rankEligible": true,
-            "stabilityBand": {
-              "type": "leave_one_channel_out",
-              "low": 50.0,
-              "high": 52.0,
-              "maxDelta": 1.0,
-              "isStatisticalConfidenceInterval": false
-            },
-            "flags": [
-              "low_reliability",
-              "ths_attention_disabled"
-            ]
-          },
-          "heatModel": {
-            "version": "sector_community_heat_v4_company_equal",
-            "status": "applied",
-            "marketAnchor": 55.0,
-            "activityIndex": 50.0,
-            "volumeFactor": 50.0,
-            "relativeLatent": 50.1,
-            "heatTier": "市场中段",
-            "percentile": 28.3,
-            "robustZ": -0.652,
-            "reliability": 42.8,
-            "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
-            "crossSectionP90P10": 5.643,
-            "noiseFloor": 1.732,
-            "rawRelativeHeat": 44.2,
-            "rawFinalHeat": 51.0,
-            "rawAbsoluteHeat": 50.1,
-            "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
-            "temporalAlpha": 1.0,
-            "temporalGapDays": 1,
-            "temporalEffectiveAlpha": 1.0,
-            "relativeDailyCap": 20.0,
-            "finalDailyCap": 25.0,
-            "weights": {
-              "absoluteAttention": 0.75,
-              "absoluteEmotion": 0.25,
-              "volumeActivity": 0.75,
-              "volumeAttention": 0.25,
-              "relativeVolume": 0.85,
-              "relativeEmotion": 0.15,
-              "finalRelative": 0.65,
-              "finalAbsolute": 0.35
-            },
-            "previousRelativeHeat": 48.1,
-            "previousFinalHeat": 51.3,
             "usesMarketPrice": false,
             "formalPersonaScoresChanged": false,
             "rankEligible": true
@@ -47491,7 +47379,7 @@ window.INDEX_DATA = {
           "heat": 48.8,
           "legacyHeat": 49.7,
           "absoluteHeat": 49.3,
-          "relativeHeat": 41.0,
+          "relativeHeat": 41.1,
           "heatRank": 28,
           "heatTier": "圈层偏窄",
           "direction": 50.5,
@@ -47527,14 +47415,14 @@ window.INDEX_DATA = {
             "relativeLatent": 49.3,
             "heatTier": "圈层偏窄",
             "percentile": 8.3,
-            "robustZ": -0.922,
+            "robustZ": -0.914,
             "reliability": 44.0,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
-            "rawRelativeHeat": 41.0,
+            "rawRelativeHeat": 41.1,
             "rawFinalHeat": 48.8,
             "rawAbsoluteHeat": 49.3,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -47639,11 +47527,11 @@ window.INDEX_DATA = {
             "relativeLatent": 52.7,
             "heatTier": "市场中段",
             "percentile": 65.0,
-            "robustZ": 0.251,
+            "robustZ": 0.252,
             "reliability": 49.4,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 53.3,
@@ -47712,7 +47600,7 @@ window.INDEX_DATA = {
             "attention": 50.1,
             "heat": 50.3
           },
-          "heat": 51.0,
+          "heat": 51.1,
           "legacyHeat": 50.3,
           "absoluteHeat": 50.2,
           "relativeHeat": 44.3,
@@ -47751,15 +47639,15 @@ window.INDEX_DATA = {
             "relativeLatent": 50.1,
             "heatTier": "市场中段",
             "percentile": 31.7,
-            "robustZ": -0.628,
+            "robustZ": -0.622,
             "reliability": 44.7,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 44.3,
-            "rawFinalHeat": 51.0,
+            "rawFinalHeat": 51.1,
             "rawAbsoluteHeat": 50.2,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
             "temporalAlpha": 1.0,
@@ -47816,7 +47704,7 @@ window.INDEX_DATA = {
             "composite": 50
           },
           "signals": {
-            "optimism": 49.3,
+            "optimism": 49.4,
             "fomo": 48.3,
             "panic": 12.4,
             "newcomer": 48.2,
@@ -47827,10 +47715,10 @@ window.INDEX_DATA = {
           "heat": 55.6,
           "legacyHeat": 50.1,
           "absoluteHeat": 51.9,
-          "relativeHeat": 50.8,
+          "relativeHeat": 50.9,
           "heatRank": 14,
           "heatTier": "市场中段",
-          "direction": 49.3,
+          "direction": 49.4,
           "coverage": 96.6,
           "confidence": 97,
           "samplePosts": 483,
@@ -47863,14 +47751,14 @@ window.INDEX_DATA = {
             "relativeLatent": 52.1,
             "heatTier": "市场中段",
             "percentile": 55.0,
-            "robustZ": 0.062,
+            "robustZ": 0.064,
             "reliability": 45.5,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
-            "rawRelativeHeat": 50.8,
+            "rawRelativeHeat": 50.9,
             "rawFinalHeat": 55.6,
             "rawAbsoluteHeat": 51.9,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -47891,6 +47779,118 @@ window.INDEX_DATA = {
             },
             "previousRelativeHeat": 49.4,
             "previousFinalHeat": 52.2,
+            "usesMarketPrice": false,
+            "formalPersonaScoresChanged": false,
+            "rankEligible": true
+          },
+          "catalogVersion": "3"
+        },
+        {
+          "key": "basic_chemicals",
+          "name": "基础化工",
+          "parentKey": "resources_utilities",
+          "parentName": "资源化工与公用",
+          "description": "观察聚氨酯、煤化工、烯烃及大宗化工材料；不包含锂电和半导体专用材料。",
+          "representativeCompanies": [
+            {
+              "code": "600309",
+              "name": "万华化学",
+              "role": "聚氨酯与新材料"
+            },
+            {
+              "code": "600426",
+              "name": "华鲁恒升",
+              "role": "煤化工与基础化工"
+            },
+            {
+              "code": "002648",
+              "name": "卫星化学",
+              "role": "烯烃与化工新材料"
+            }
+          ],
+          "available": true,
+          "scores": {
+            "baoma": 50,
+            "novice": 51,
+            "retail": 50,
+            "composite": 50
+          },
+          "signals": {
+            "optimism": 50.8,
+            "fomo": 49.0,
+            "panic": 8.5,
+            "newcomer": 52.4,
+            "intensity": 51.1,
+            "attention": 50.0,
+            "heat": 50.3
+          },
+          "heat": 51.0,
+          "legacyHeat": 50.3,
+          "absoluteHeat": 50.1,
+          "relativeHeat": 44.2,
+          "heatRank": 23,
+          "heatTier": "市场中段",
+          "direction": 50.8,
+          "coverage": 93.8,
+          "confidence": 94,
+          "samplePosts": 483,
+          "platformCount": 4,
+          "sourceCount": 9,
+          "fairness": {
+            "modelVersion": "channel_equal_four_seats_v1",
+            "reliabilityPercent": 32.5,
+            "confidenceLabel": "中",
+            "weightedCompanyCoverage": 0.625,
+            "rankEligible": true,
+            "stabilityBand": {
+              "type": "leave_one_channel_out",
+              "low": 50.0,
+              "high": 51.0,
+              "maxDelta": 1.0,
+              "isStatisticalConfidenceInterval": false
+            },
+            "flags": [
+              "low_reliability",
+              "ths_attention_disabled"
+            ]
+          },
+          "heatModel": {
+            "version": "sector_community_heat_v4_company_equal",
+            "status": "applied",
+            "marketAnchor": 55.0,
+            "activityIndex": 50.0,
+            "volumeFactor": 50.0,
+            "relativeLatent": 50.0,
+            "heatTier": "市场中段",
+            "percentile": 28.3,
+            "robustZ": -0.651,
+            "reliability": 42.8,
+            "dispersionGate": 1.0,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
+            "crossSectionP90P10": 5.643,
+            "noiseFloor": 1.732,
+            "rawRelativeHeat": 44.2,
+            "rawFinalHeat": 51.0,
+            "rawAbsoluteHeat": 50.1,
+            "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+            "temporalAlpha": 1.0,
+            "temporalGapDays": 1,
+            "temporalEffectiveAlpha": 1.0,
+            "relativeDailyCap": 20.0,
+            "finalDailyCap": 25.0,
+            "weights": {
+              "absoluteAttention": 0.75,
+              "absoluteEmotion": 0.25,
+              "volumeActivity": 0.75,
+              "volumeAttention": 0.25,
+              "relativeVolume": 0.85,
+              "relativeEmotion": 0.15,
+              "finalRelative": 0.65,
+              "finalAbsolute": 0.35
+            },
+            "previousRelativeHeat": 48.1,
+            "previousFinalHeat": 51.3,
             "usesMarketPrice": false,
             "formalPersonaScoresChanged": false,
             "rankEligible": true
@@ -47936,7 +47936,7 @@ window.INDEX_DATA = {
             "attention": 48.2,
             "heat": 49.8
           },
-          "heat": 49.6,
+          "heat": 49.7,
           "legacyHeat": 49.8,
           "absoluteHeat": 48.6,
           "relativeHeat": 42.3,
@@ -47976,15 +47976,15 @@ window.INDEX_DATA = {
             "relativeLatent": 48.4,
             "heatTier": "市场中段",
             "percentile": 1.7,
-            "robustZ": -1.208,
+            "robustZ": -1.2,
             "reliability": 31.4,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 42.3,
-            "rawFinalHeat": 49.6,
+            "rawFinalHeat": 49.7,
             "rawAbsoluteHeat": 48.6,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
             "temporalAlpha": 1.0,
@@ -48045,7 +48045,7 @@ window.INDEX_DATA = {
             "fomo": 50.8,
             "panic": 9.7,
             "newcomer": 48.7,
-            "intensity": 51.4,
+            "intensity": 51.3,
             "attention": 50.8,
             "heat": 50.6
           },
@@ -48088,11 +48088,11 @@ window.INDEX_DATA = {
             "relativeLatent": 50.8,
             "heatTier": "市场中段",
             "percentile": 38.3,
-            "robustZ": -0.408,
+            "robustZ": -0.404,
             "reliability": 40.6,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 46.6,
@@ -48153,21 +48153,21 @@ window.INDEX_DATA = {
             "composite": 49
           },
           "signals": {
-            "optimism": 48.9,
+            "optimism": 49.0,
             "fomo": 47.3,
-            "panic": 13.9,
+            "panic": 13.8,
             "newcomer": 50.1,
             "intensity": 50.0,
             "attention": 51.6,
             "heat": 49.7
           },
-          "heat": 53.6,
+          "heat": 53.7,
           "legacyHeat": 49.7,
           "absoluteHeat": 51.1,
           "relativeHeat": 48.1,
           "heatRank": 17,
           "heatTier": "市场中段",
-          "direction": 48.9,
+          "direction": 49.0,
           "coverage": 86.4,
           "confidence": 86,
           "samplePosts": 609,
@@ -48201,15 +48201,15 @@ window.INDEX_DATA = {
             "relativeLatent": 51.3,
             "heatTier": "市场中段",
             "percentile": 45.0,
-            "robustZ": -0.221,
+            "robustZ": -0.218,
             "reliability": 44.1,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 48.1,
-            "rawFinalHeat": 53.6,
+            "rawFinalHeat": 53.7,
             "rawAbsoluteHeat": 51.1,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
             "temporalAlpha": 1.0,
@@ -48277,7 +48277,7 @@ window.INDEX_DATA = {
           "heat": 51.3,
           "legacyHeat": 48.8,
           "absoluteHeat": 49.8,
-          "relativeHeat": 44.6,
+          "relativeHeat": 44.7,
           "heatRank": 21,
           "heatTier": "市场中段",
           "direction": 51.4,
@@ -48313,14 +48313,14 @@ window.INDEX_DATA = {
             "relativeLatent": 49.9,
             "heatTier": "市场中段",
             "percentile": 25.0,
-            "robustZ": -0.705,
+            "robustZ": -0.699,
             "reliability": 35.9,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
-            "rawRelativeHeat": 44.6,
+            "rawRelativeHeat": 44.7,
             "rawFinalHeat": 51.3,
             "rawAbsoluteHeat": 49.8,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -48386,7 +48386,7 @@ window.INDEX_DATA = {
             "attention": 49.1,
             "heat": 50.0
           },
-          "heat": 48.5,
+          "heat": 48.6,
           "legacyHeat": 50.0,
           "absoluteHeat": 49.3,
           "relativeHeat": 40.7,
@@ -48425,15 +48425,15 @@ window.INDEX_DATA = {
             "relativeLatent": 49.2,
             "heatTier": "圈层偏窄",
             "percentile": 5.0,
-            "robustZ": -0.935,
+            "robustZ": -0.928,
             "reliability": 44.2,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 40.7,
-            "rawFinalHeat": 48.5,
+            "rawFinalHeat": 48.6,
             "rawAbsoluteHeat": 49.3,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
             "temporalAlpha": 1.0,
@@ -48501,7 +48501,7 @@ window.INDEX_DATA = {
           "heat": 50.3,
           "legacyHeat": 48.9,
           "absoluteHeat": 49.7,
-          "relativeHeat": 43.2,
+          "relativeHeat": 43.3,
           "heatRank": 24,
           "heatTier": "市场中段",
           "direction": 49.3,
@@ -48537,14 +48537,14 @@ window.INDEX_DATA = {
             "relativeLatent": 49.8,
             "heatTier": "市场中段",
             "percentile": 21.7,
-            "robustZ": -0.729,
+            "robustZ": -0.723,
             "reliability": 42.9,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
-            "rawRelativeHeat": 43.2,
+            "rawRelativeHeat": 43.3,
             "rawFinalHeat": 50.3,
             "rawAbsoluteHeat": 49.7,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -48649,11 +48649,11 @@ window.INDEX_DATA = {
             "relativeLatent": 49.7,
             "heatTier": "圈层偏窄",
             "percentile": 11.7,
-            "robustZ": -0.764,
+            "robustZ": -0.757,
             "reliability": 50.7,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
             "rawRelativeHeat": 40.9,
@@ -48714,7 +48714,7 @@ window.INDEX_DATA = {
             "composite": 46
           },
           "signals": {
-            "optimism": 50.5,
+            "optimism": 50.6,
             "fomo": 46.7,
             "panic": 6.2,
             "newcomer": 50.0,
@@ -48725,10 +48725,10 @@ window.INDEX_DATA = {
           "heat": 49.4,
           "legacyHeat": 48.7,
           "absoluteHeat": 49.7,
-          "relativeHeat": 41.9,
+          "relativeHeat": 42.0,
           "heatRank": 27,
-          "heatTier": "圈层偏窄",
-          "direction": 50.5,
+          "heatTier": "市场中段",
+          "direction": 50.6,
           "coverage": 100.0,
           "confidence": 100,
           "samplePosts": 347,
@@ -48759,16 +48759,16 @@ window.INDEX_DATA = {
             "activityIndex": 50.0,
             "volumeFactor": 50.0,
             "relativeLatent": 49.8,
-            "heatTier": "圈层偏窄",
+            "heatTier": "市场中段",
             "percentile": 18.3,
-            "robustZ": -0.74,
+            "robustZ": -0.733,
             "reliability": 48.9,
             "dispersionGate": 1.0,
-            "crossSectionMedian": 51.96,
-            "crossSectionMAD": 1.96,
+            "crossSectionMedian": 51.953,
+            "crossSectionMAD": 1.975,
             "crossSectionP90P10": 5.643,
             "noiseFloor": 1.732,
-            "rawRelativeHeat": 41.9,
+            "rawRelativeHeat": 42.0,
             "rawFinalHeat": 49.4,
             "rawAbsoluteHeat": 49.7,
             "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
@@ -48829,7 +48829,7 @@ window.INDEX_DATA = {
         "freshSourceRatio": 87.1
       },
       "asOf": "2026-11-25T23:59:59.999999+08:00",
-      "capturedAt": "2026-11-25T16:40:03.885501+08:00",
+      "capturedAt": "2026-11-25T17:06:07.887331+08:00",
       "methodology": "community_text_four_channel_grassroots_three_trading_day_v3",
       "tradingDay": true,
       "calendarMode": "official_sse",
@@ -48838,7 +48838,7 @@ window.INDEX_DATA = {
   ],
   "historyMeta": {
     "schemaVersion": 5,
-    "updatedAt": "2026-11-25T16:40:03.885501+08:00",
+    "updatedAt": "2026-11-25T17:06:07.887331+08:00",
     "startDate": "2026-11-24",
     "endDate": "2026-11-25",
     "count": 2,
@@ -48902,64 +48902,64 @@ window.INDEX_DATA = {
       "reason": "跳水恐慌，强烈看空"
     },
     {
-      "title": "涨了二十年,终于涨到3400点了!又创出新高了!要大力发展量化资本!量化基金可以",
+      "title": "你最好别让我买到做空票，我踏马能怨气到梭哈五百倍做空",
+      "platform": "东方财富股吧",
+      "direction": -3,
+      "fear": 3,
+      "greed": 0,
+      "persona": "retail",
+      "marketing": 0,
+      "reason": "极端愤怒表达恐慌情绪"
+    },
+    {
+      "title": "2000？不似底1700？1500铁底：到1500我贷款梭哈",
       "platform": "东方财富股吧",
       "direction": 3,
       "fear": 0,
       "greed": 3,
       "persona": "retail",
       "marketing": 0,
-      "reason": "狂热看多，情绪激动"
+      "reason": "明确表达贷款梭哈的狂热意图"
     },
     {
-      "title": "能不能给条活路",
+      "title": "我去，瀑布",
       "platform": "东方财富股吧",
       "direction": -3,
       "fear": 3,
       "greed": 0,
       "persona": "retail",
       "marketing": 0,
-      "reason": "极度恐慌求活路"
+      "reason": "瀑布式下跌表达恐慌"
     },
     {
-      "title": "呼叫10086也没有用了，明天就呼叫10000了",
+      "title": "明天清仓不玩了这市场100万进去最后可能1万都没得出来",
       "platform": "东方财富股吧",
       "direction": -3,
       "fear": 3,
       "greed": 0,
       "persona": "retail",
       "marketing": 0,
-      "reason": "极端恐慌表达"
+      "reason": "极度恐慌并表达清仓意愿"
     },
     {
-      "title": "这一波指数必跌破10000点，立帖为证。",
+      "title": "正式腰斩，以后叫腰斩A了。。。",
+      "platform": "东方财富股吧",
+      "direction": -3,
+      "fear": 3,
+      "greed": 0,
+      "persona": "retail",
+      "marketing": 0,
+      "reason": "腰斩描述表达极度恐慌"
+    },
+    {
+      "title": "牛B，6个月指数腰斩！",
       "platform": "东方财富股吧",
       "direction": -3,
       "fear": 2,
       "greed": 0,
       "persona": "retail",
       "marketing": 0,
-      "reason": "立帖为证，强烈看空"
-    },
-    {
-      "title": "找不到任何涨的理由。大家能逃就逃",
-      "platform": "东方财富股吧",
-      "direction": -3,
-      "fear": 3,
-      "greed": 0,
-      "persona": "retail",
-      "marketing": 0,
-      "reason": "呼吁逃命，恐慌情绪"
-    },
-    {
-      "title": "明天跳空暴跌了，哦，",
-      "platform": "东方财富股吧",
-      "direction": -3,
-      "fear": 3,
-      "greed": 0,
-      "persona": "retail",
-      "marketing": 0,
-      "reason": "反语表达极度恐慌"
+      "reason": "讽刺语气表达强烈看空"
     },
     {
       "title": "全仓梭哈。明天反弹继续砸盘",
@@ -48982,64 +48982,64 @@ window.INDEX_DATA = {
       "reason": "追高被套，既贪婪又害怕"
     },
     {
-      "title": "明天破万了",
+      "title": "15年最高点到最低点70%，21年58%，这才4个月就腰斩，恐怖",
       "platform": "东方财富股吧",
       "direction": -3,
       "fear": 3,
       "greed": 0,
       "persona": "retail",
       "marketing": 0,
-      "reason": "恐慌式看空"
+      "reason": "用恐怖形容腰斩，极度恐慌"
     },
     {
-      "title": "再不限制做空与量化。大家都完球",
+      "title": "跌一半了，惨不忍睹啊",
       "platform": "东方财富股吧",
       "direction": -3,
       "fear": 3,
       "greed": 0,
       "persona": "retail",
       "marketing": 0,
-      "reason": "强烈恐慌表达，认为市场完蛋"
+      "reason": "描述跌幅巨大且极度惨烈"
     },
     {
-      "title": "10086",
+      "title": "正式腰斩",
       "platform": "东方财富股吧",
       "direction": -3,
       "fear": 3,
       "greed": 0,
       "persona": "retail",
       "marketing": 0,
-      "reason": "用10086暗指极端行情"
+      "reason": "描述腰斩，情绪极度恐慌"
     },
     {
-      "title": "10086，我该充值了",
+      "title": "11月25日：炒股的尽头是退市！",
       "platform": "东方财富股吧",
       "direction": -3,
       "fear": 3,
       "greed": 0,
       "persona": "retail",
       "marketing": 0,
-      "reason": "10086暗示极端恐慌"
+      "reason": "极端悲观的退市论调"
     },
     {
-      "title": "10086？？？？明天梭哈中国移动",
+      "title": "这一波下跌，泯灭了多少人的希望，多少人夜不能寐啊！",
       "platform": "东方财富股吧",
-      "direction": 3,
-      "fear": 0,
-      "greed": 3,
+      "direction": -2,
+      "fear": 3,
+      "greed": 0,
       "persona": "retail",
       "marketing": 0,
-      "reason": "表达梭哈意图，极度贪婪"
+      "reason": "强烈情绪表达恐慌"
     },
     {
-      "title": "就这大盘行情，明天还要吃跌停，完蛋玩意儿",
-      "platform": "新浪股吧",
+      "title": "必破1482！",
+      "platform": "东方财富股吧",
       "direction": -3,
       "fear": 3,
       "greed": 0,
       "persona": "retail",
       "marketing": 0,
-      "reason": "情绪崩溃，表达恐慌"
+      "reason": "强烈看空恐慌"
     },
     {
       "title": "力。一、最新ROE前列的是（如图1所示） 新易盛 （53.18%）天孚通信（36.64%）",
@@ -49062,24 +49062,24 @@ window.INDEX_DATA = {
       "reason": "营销引流且带有追涨情绪"
     },
     {
-      "title": "又是全球领先，像股市一样傲视全球",
-      "platform": "东方财富股吧",
-      "direction": 1,
-      "fear": 0,
-      "greed": 0,
-      "persona": "none",
-      "marketing": 1,
-      "reason": "典型的营销/宏观口号"
-    },
-    {
-      "title": "超前预测三峡新材未来公告：自筹划本次股权收购交易以来，公司及相关各方积极推进相关",
+      "title": "格隆汇11月25日丨博雅生物(300294.SZ)在投资者互动平台表示，截至20",
       "platform": "东方财富股吧",
       "direction": 0,
       "fear": 0,
       "greed": 0,
       "persona": "none",
       "marketing": 1,
-      "reason": "典型的研报式营销文"
+      "reason": "纯资讯搬运且有营销特征"
+    },
+    {
+      "title": "大盘持续下跌，中国股市需要升起来，300073当升科技概念即将横空出世，一炮而红",
+      "platform": "东方财富股吧",
+      "direction": 2,
+      "fear": 0,
+      "greed": 1,
+      "persona": "retail",
+      "marketing": 1,
+      "reason": "典型营销引流话术"
     },
     {
       "title": "的靠前，有的居中，也有靠后的。锐捷网络、 新易盛 偏靠前，顺网科技、中际旭创居中，中兴通讯",
