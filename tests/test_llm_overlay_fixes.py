@@ -402,6 +402,19 @@ class TestStudyLog(unittest.TestCase):
             self.assertEqual(len(lines), 2)  # 表头 + 1 行
             self.assertTrue(lines[1].startswith("2026-11-25,"))
             self.assertIn("白酒", lines[1])
+            # upsert：同日再写只留一行，日期更新为新值
+            snap2 = {"tradingDays": ["2026-11-25"], "signals": {"llmFear": 10.0, "llmGreed": 90.0},
+                     "sectorIndices": []}
+            uil.append_study_log(snap2)
+            lines2 = uil.STUDY_LOG.read_text(encoding="utf-8").strip().splitlines()
+            self.assertEqual(len(lines2), 2)
+            self.assertIn("10.0,90.0", lines2[1])
+            # 隔日追加成第二行
+            snap3 = {"tradingDays": ["2026-11-26"], "signals": {"llmFear": 20.0, "llmGreed": 30.0},
+                     "sectorIndices": []}
+            uil.append_study_log(snap3)
+            lines3 = uil.STUDY_LOG.read_text(encoding="utf-8").strip().splitlines()
+            self.assertEqual(len(lines3), 3)
         finally:
             uil.STUDY_LOG = old_log
 

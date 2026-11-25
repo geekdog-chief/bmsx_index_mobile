@@ -230,18 +230,26 @@ def compute_llm_emotion(snapshot):
             if isinstance(p0, dict):
                 post2plat[str(p0.get("id") or "")] = plat
     by_platform = {k: [] for k in PLATFORM_ORDER}
+    diag = []
     for days, posts in _recent_posts(cache).items():
         bp = {k: [] for k in PLATFORM_ORDER}
+        scored = 0
         for p0 in posts:
             e = LLM_BY_ID.get(str(p0.get("id") or ""))
-            if not e or e.get("ai_marketing") or "fear" not in e or "greed" not in e:
+            if not e:
+                continue
+            scored += 1
+            if e.get("ai_marketing") or "fear" not in e or "greed" not in e:
                 continue
             plat = post2plat.get(str(p0.get("id") or ""))
             if plat in bp:
                 bp[plat].append((int(e["fear"]), int(e["greed"])))
+        valid = sum(len(v) for v in bp.values())
+        diag.append(f"{days}天:总{len(posts)}/已评分{scored}/有效{valid}")
         by_platform = bp
-        if sum(len(v) for v in bp.values()) >= 30:
+        if valid >= 30:
             break
+    print("LLM 覆盖层[情绪诊断]: " + " | ".join(diag), flush=True)
     fear_acc = greed_acc = used = 0
     for plat in PLATFORM_ORDER:
         vals = by_platform[plat]
@@ -335,6 +343,7 @@ def compute_llm_sector_emotion(snapshot, weight=0.2, min_n=3):
                 code_of[str(p0.get("id") or "")] = str(p0.get("sourceCode") or "")
     by_sector = {}
     per_window = {}
+    print(f"LLM 覆盖层[板块诊断]: 评分池{len(LLM_BY_ID)}条，code映射{len(code_of)}条", flush=True)
     for days, posts in _recent_posts(cache).items():
         acc = {}
         for p0 in posts:
@@ -380,8 +389,11 @@ STUDY_LOG = ROOT / "data" / "study_emotion.csv"
 
 
 def append_study_log(snapshot):
-    """研究瘦日志：每轮更新追加一行到 data/study_emotion.csv（2026-11-25 立）。
+    """研究瘦日志：写入 data/study_emotion.csv（2026-11-25 立，深夜修订）。
 
+    修订（回应代码审计）：① 必须在 run_update 四份主文件全部保存成功后才调用——
+    主流程失败时研究日志不记录未发布快照；② 按交易日 upsert：同日多次更新只保留
+    最后一行，研究序列严格一日一点，防重复加权。
     与产品 history.json 解耦：history 存全量快照会随时间膨胀，研究只需要
     日期+情绪读数，一年 20KB。攒够 ~180 个交易日后跑事件研究（见 RESEARCH_PLAN.md）。
     """
@@ -391,12 +403,17 @@ def append_study_log(snapshot):
     day = snapshot.get("tradingDays", [""])[0] if snapshot.get("tradingDays") else datetime.now(ui.CN_TZ).date().isoformat()
     sectors = {str(x.get("name")): x.get("emotion") for x in (snapshot.get("sectorIndices") or [])
                if isinstance(x, dict) and x.get("emotion") is not None}
-    line = f"{day},{sig['llmFear']},{sig['llmGreed']},{json.dumps(sectors, ensure_ascii=False, separators=(',', ':'))}\n"
-    new_file = not STUDY_LOG.exists()
-    with STUDY_LOG.open("a", encoding="utf-8") as f:
-        if new_file:
-            f.write("date,fear,greed,sectors_json\n")
-        f.write(line)
+    new_line = f"{day},{sig['llmFear']},{sig['llmGreed']},{json.dumps(sectors, ensure_ascii=False, separators=(',', ':'))}"
+    rows = {}
+    if STUDY_LOG.exists():
+        for ln in STUDY_LOG.read_text(encoding="utf-8").splitlines()[1:]:
+            if ln.strip():
+                rows[ln.split(",", 1)[0]] = ln  # 按日期键控，后写覆盖
+    rows[day] = new_line
+    with STUDY_LOG.open("w", encoding="utf-8") as f:
+        f.write("date,fear,greed,sectors_json\n")
+        for d in sorted(rows):
+            f.write(rows[d] + "\n")
 
 
 def run_update(progress_callback=None):
@@ -422,12 +439,12 @@ def run_update(progress_callback=None):
     compute_llm_emotion(snapshot)  # 羊驼情绪接管（2026-11-25）
     collect_llm_sample(snapshot)   # 羊驼抽检样本
     compute_llm_sector_emotion(snapshot)  # 羊驼情绪注入板块榜（用户授权）
-    append_study_log(snapshot)             # 研究瘦日志（RESEARCH_PLAN.md）
     ui.save_json(ui.HISTORY_PATH, snapshot["history"])
     ui.save_json(ui.HISTORY_META_PATH, snapshot["historyMeta"])
     ui.save_json(ui.LATEST_PATH, snapshot)
     # data.js 是页面真正读取的提交点，最后替换；中途失败页面继续显示上一份完整快照
     ui.save_text(ui.DATA_JS_PATH, "window.INDEX_DATA = " + json.dumps(snapshot, ensure_ascii=False, indent=2) + ";\n")
+    append_study_log(snapshot)  # 研究日志只在四份主文件全部落盘成功后写（审计修订）
     if held_ok and progress_callback:
         progress_callback(held_ok)
     return snapshot
