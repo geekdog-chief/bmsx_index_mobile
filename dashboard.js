@@ -57,7 +57,11 @@
   function renderGreedFear() {
     const sig = (DATA.signals) || {};
     let greed, fear, src;
-    if (Number.isFinite(Number(sig.llmGreed)) && Number.isFinite(Number(sig.llmFear))) {
+    const gRaw = sig.llmGreed, fRaw = sig.llmFear;  // null/undefined/空串都不得冒充 0
+    const haveLlm = gRaw !== null && gRaw !== undefined && gRaw !== "" &&
+                    fRaw !== null && fRaw !== undefined && fRaw !== "" &&
+                    Number.isFinite(Number(gRaw)) && Number.isFinite(Number(fRaw));
+    if (haveLlm) {
       greed = Math.max(0, Math.min(100, num(sig.llmGreed)));
       fear = Math.max(0, Math.min(100, num(sig.llmFear)));
       src = "llm";
@@ -96,9 +100,12 @@
       const v = num(s.heat);
       const w = max > min ? ((v - min) / (max - min) * 70 + 30).toFixed(1) : 50;
       const [txt, cls] = heatTier(v);
-      const emo = Number(s.emotion);  // 板块羊驼情绪温度（50=中性），无样本时不显示
-      const emoChip = Number.isFinite(emo)
-        ? `<span class="tag ${emo <= 44 ? "cold" : emo >= 56 ? "warm" : ""}" title="板块情绪温度（羊驼，样本${num(s.emotionN)}）：低=恐慌 高=贪婪">情${fmt1(emo)}</span>` : "";
+      const emoRaw = s.emotion;  // 板块羊驼情绪温度；null=无数据，Number(null)===0 会伪装成0.0，必须先判空
+      const emoValid = emoRaw !== null && emoRaw !== undefined && emoRaw !== "";
+      const emo = emoValid ? Number(emoRaw) : NaN;
+      const emoChip = emoValid && Number.isFinite(emo)
+        ? `<span class="tag ${emo <= 44 ? "cold" : emo >= 56 ? "warm" : ""}" title="板块情绪温度（羊驼，样本${num(s.emotionN)}）：低=恐慌 高=贪婪">情${fmt1(emo)}</span>`
+        : `<span class="muted" style="font-size:12px;white-space:nowrap" title="板块情绪无数据（样本不足）">—</span>`;
       return `<div class="row"><span class="rank">${String(num(s.heatRank)).padStart(2, "0")}</span>` +
         `<span class="name" title="${esc(s.name)}">${esc(s.name)}</span>` +
         `<div class="bar"><i style="width:${w}%;background:#2563eb"></i></div>` +

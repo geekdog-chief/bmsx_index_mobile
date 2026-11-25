@@ -57,8 +57,13 @@ def load_llm_scores():
     _AMBIGUOUS.clear(); _LAST_BY_TEXT.clear(); _logged_ambiguous.clear()
     if not CACHE.exists() or not STORE.exists():
         return
-    scores = {str(x["id"]): x for x in json.loads(STORE.read_text(encoding="utf-8"))}
-    cache = json.loads(CACHE.read_text(encoding="utf-8"))
+    try:
+        scores = {str(x["id"]): x for x in json.loads(STORE.read_text(encoding="utf-8"))}
+        cache = json.loads(CACHE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, ValueError, OSError) as e:
+        # 评分文件损坏/不可读：明确告警并降级为纯词典，绝不把异常甩给上层崩掉 GUI
+        print(f"LLM 覆盖层：评分或缓存文件读取失败，本轮纯词典兜底：{e}", flush=True)
+        return
     title_ids = {}
     ts_ids = {}
     for src in cache.values():
@@ -193,17 +198,34 @@ EMOTION_WINDOW_DAYS = 15  # 情绪滑动窗口：只统计最近15个自然日�
 EMOTION_FALLBACK_DAYS = (15, 30, 60, None)  # 窗口样本不足时逐级放宽兜底
 
 
-def _recent_posts(cache):
-    """按发布日期过滤缓存帖子。返回 {窗口天数 or None: [post,...]}，None=全期。"""
+def _snapshot_as_of(snapshot):
+    """情绪窗口的日期基准：快照 tradingDays[0]（市场日）。缺失时退回当天。
+
+    审计修订 A2：原实现用 datetime.now() 切窗口，历史重跑时窗口随系统日期漂移、
+    结果不可复现。现在一律以快照自身日期为基准。"""
+    td = (snapshot or {}).get("tradingDays") or []
+    if td:
+        try:
+            from datetime import date
+            return date.fromisoformat(str(td[0])[:10])
+        except ValueError:
+            pass
+    return datetime.now(ui.CN_TZ).date()
+
+
+def _recent_posts(cache, as_of=None):
+    """按发布日期过滤缓存帖子。返回 {窗口天数 or None: [post,...]}，None=全期。
+
+    as_of：窗口截止日（含），传 None 用当天——仅供测试；生产路径必须传快照日期。"""
     from datetime import timedelta
-    today = datetime.now(ui.CN_TZ).date()
+    base = as_of or datetime.now(ui.CN_TZ).date()
     out = {}
     for days in EMOTION_FALLBACK_DAYS:
         if days is None:
             out[None] = [p for src in cache.values() if isinstance(src, dict)
                          for p in src.get("posts", []) if isinstance(p, dict)]
             continue
-        cutoff = (today - timedelta(days=days)).isoformat()
+        cutoff = (base - timedelta(days=days)).isoformat()
         out[days] = [p for src in cache.values() if isinstance(src, dict)
                      for p in src.get("posts", [])
                      if isinstance(p, dict) and str(p.get("publishTime") or "")[:10] >= cutoff]
@@ -231,7 +253,8 @@ def compute_llm_emotion(snapshot):
                 post2plat[str(p0.get("id") or "")] = plat
     by_platform = {k: [] for k in PLATFORM_ORDER}
     diag = []
-    for days, posts in _recent_posts(cache).items():
+    as_of = _snapshot_as_of(snapshot)
+    for days, posts in _recent_posts(cache, as_of).items():
         bp = {k: [] for k in PLATFORM_ORDER}
         scored = 0
         for p0 in posts:
@@ -279,7 +302,7 @@ def collect_llm_sample(snapshot, n_dir=8, n_emo=8, n_mkt=4, n_calm=4):
     from datetime import timedelta
     from llm_overlay import PLATFORM_NAMES
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
-    cutoff = (datetime.now(ui.CN_TZ).date() - timedelta(days=30)).isoformat()
+    cutoff = (_snapshot_as_of(snapshot) - timedelta(days=30)).isoformat()
     cands = []
     for src in cache.values():
         if not isinstance(src, dict):
@@ -343,8 +366,9 @@ def compute_llm_sector_emotion(snapshot, weight=0.2, min_n=3):
                 code_of[str(p0.get("id") or "")] = str(p0.get("sourceCode") or "")
     by_sector = {}
     per_window = {}
+    as_of = _snapshot_as_of(snapshot)
     print(f"LLM 覆盖层[板块诊断]: 评分池{len(LLM_BY_ID)}条，code映射{len(code_of)}条", flush=True)
-    for days, posts in _recent_posts(cache).items():
+    for days, posts in _recent_posts(cache, as_of).items():
         acc = {}
         for p0 in posts:
             e = LLM_BY_ID.get(str(p0.get("id") or ""))
@@ -403,17 +427,33 @@ def append_study_log(snapshot):
     day = snapshot.get("tradingDays", [""])[0] if snapshot.get("tradingDays") else datetime.now(ui.CN_TZ).date().isoformat()
     sectors = {str(x.get("name")): x.get("emotion") for x in (snapshot.get("sectorIndices") or [])
                if isinstance(x, dict) and x.get("emotion") is not None}
-    new_line = f"{day},{sig['llmFear']},{sig['llmGreed']},{json.dumps(sectors, ensure_ascii=False, separators=(',', ':'))}"
+    import csv
+    import os
+    import tempfile
     rows = {}
     if STUDY_LOG.exists():
-        for ln in STUDY_LOG.read_text(encoding="utf-8").splitlines()[1:]:
-            if ln.strip():
-                rows[ln.split(",", 1)[0]] = ln  # 按日期键控，后写覆盖
-    rows[day] = new_line
-    with STUDY_LOG.open("w", encoding="utf-8") as f:
-        f.write("date,fear,greed,sectors_json\n")
-        for d in sorted(rows):
-            f.write(rows[d] + "\n")
+        try:
+            with STUDY_LOG.open("r", encoding="utf-8", newline="") as f:
+                for r in csv.DictReader(f):
+                    if r.get("date"):
+                        rows[r["date"]] = r  # 按交易日 upsert，同日留最新
+        except (OSError, csv.Error) as e:
+            print(f"研究日志读取失败（沿用空表重写，原文件未动）：{e}", flush=True)
+            rows = {}
+    rows[day] = {"date": day, "fear": sig["llmFear"], "greed": sig["llmGreed"],
+                 "sectors_json": json.dumps(sectors, ensure_ascii=False, separators=(",", ":"))}
+    # 标准 csv.writer 保证 JSON 单元格含逗号/引号时被正确引用；临时文件+os.replace 原子替换
+    fd, tmpname = tempfile.mkstemp(dir=str(STUDY_LOG.parent), prefix=".study_", suffix=".csv")
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=["date", "fear", "greed", "sectors_json"])
+            w.writeheader()
+            for d in sorted(rows):
+                w.writerow(rows[d])
+        os.replace(tmpname, STUDY_LOG)
+    except OSError as e:
+        os.unlink(tmpname)
+        raise
 
 
 def run_update(progress_callback=None):
@@ -444,7 +484,10 @@ def run_update(progress_callback=None):
     ui.save_json(ui.LATEST_PATH, snapshot)
     # data.js 是页面真正读取的提交点，最后替换；中途失败页面继续显示上一份完整快照
     ui.save_text(ui.DATA_JS_PATH, "window.INDEX_DATA = " + json.dumps(snapshot, ensure_ascii=False, indent=2) + ";\n")
-    append_study_log(snapshot)  # 研究日志只在四份主文件全部落盘成功后写（审计修订）
+    try:
+        append_study_log(snapshot)  # 研究日志只在四份主文件全部落盘成功后写（审计修订）
+    except Exception as e:  # 状态分离：研究日志失败只告警，产品已发布的事实不被推翻
+        print(f"警告：研究日志写入失败（产品数据已正常发布）：{e}", flush=True)
     if held_ok and progress_callback:
         progress_callback(held_ok)
     return snapshot

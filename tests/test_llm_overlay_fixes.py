@@ -419,6 +419,65 @@ class TestStudyLog(unittest.TestCase):
             uil.STUDY_LOG = old_log
 
 
+class TestAuditBatch1(unittest.TestCase):
+    """任务书第一批：CSV 格式 / as_of 重跑确定性 / 坏文件防护。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_csv_special_chars_roundtrip(self):
+        """板块 JSON 含逗号引号中文，csv 读写后字段完整。"""
+        uil.STUDY_LOG = Path(self.tmp.name) / "study.csv"
+        try:
+            snap = {"tradingDays": ["2026-11-25"],
+                    "signals": {"llmFear": 11.1, "llmGreed": 22.2},
+                    "sectorIndices": [
+                        {"name": "白酒", "emotion": 50.0},
+                        {"name": "半导体设备材料", "emotion": None},
+                        {"name": "CPO/光模块", "emotion": 68.5},
+                    ]}
+            uil.append_study_log(snap)
+            import csv as _csv
+            with uil.STUDY_LOG.open("r", encoding="utf-8", newline="") as f:
+                rows = list(_csv.DictReader(f))
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0]["date"], "2026-11-25")
+            self.assertEqual(rows[0]["fear"], "11.1")
+            sec = json.loads(rows[0]["sectors_json"])
+            self.assertEqual(sec, {"白酒": 50.0, "CPO/光模块": 68.5})
+        finally:
+            uil.STUDY_LOG = Path(self.tmp.name) / "nope.csv"  # 还原为默认路径
+
+    def test_as_of_deterministic(self):
+        """同一快照在不同"系统时间"下窗口结果一致：as_of 由快照日期决定。"""
+        posts = [{"id": "w1", "title": "t", "sourceCode": "600519",
+                  "publishTime": "2026-11-09T10:00:00"}]  # 11-20 的 15 天窗口内、11-25 的在窗口外
+        scores = [{"id": "w1", "direction": 3, "fear": 0, "greed": 3}]
+        make_env(self.tmp.name, posts, scores)
+        uil.load_llm_scores()
+        cache = json.loads(uil.CACHE.read_text(encoding="utf-8"))
+        from datetime import date
+        w20 = uil._recent_posts(cache, date(2026, 11, 20))[15]   # cutoff=11-05
+        w25 = uil._recent_posts(cache, date(2026, 11, 25))[15]   # cutoff=11-10，11-09 在外
+        self.assertEqual(len(w20), 1)
+        self.assertEqual(len(w25), 0)
+
+    def test_corrupt_store_guard(self):
+        """评分文件损坏：load_llm_scores 不抛异常，索引为空。"""
+        Path(self.tmp.name, "forum_cache.json").write_text("{}", encoding="utf-8")
+        Path(self.tmp.name, "llm_scores_ollama.json").write_text("{坏掉的json", encoding="utf-8")
+        old_c, old_s = uil.CACHE, uil.STORE
+        uil.CACHE, uil.STORE = Path(self.tmp.name, "forum_cache.json"), Path(self.tmp.name, "llm_scores_ollama.json")
+        try:
+            uil.load_llm_scores()  # 不得抛异常
+            self.assertEqual(len(uil.LLM_BY_ID), 0)
+        finally:
+            uil.CACHE, uil.STORE = old_c, old_s
+
+
 class TestP12FreshNow(unittest.TestCase):
     """apply_overlays 每轮刷新 ui.NOW；fetch_source 包装层显式传当前时间。"""
 
