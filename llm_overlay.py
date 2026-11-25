@@ -281,6 +281,7 @@ def main():
     todo = fresh[:MAX]
     log(f"缓存去重后 {len(uniq)} 条，已评分 {len(done)} 条，本轮待打 {len(todo)} 条（模型 {MODEL}，未排上 {len(fresh)-len(todo)} 条下轮继续）")
     if not todo:
+        print("BACKFILL_DONE")  # 补跑脚本（补跑全量.cmd）的完成哨兵，勿删
         return 0
 
     results = dict(done)
