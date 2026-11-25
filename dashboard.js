@@ -70,8 +70,10 @@
     $("gbar-i").style.width = greed.toFixed(1) + "%"; $("gval").textContent = greed.toFixed(1);
     $("fbar-i").style.width = fear.toFixed(1) + "%"; $("fval").textContent = fear.toFixed(1);
     const gt = $("gval-tier"), ft = $("fval-tier");
-    if (gt) gt.textContent = emotionTier(greed, "greed");
-    if (ft) ft.textContent = emotionTier(fear, "fear");
+    // 档位标签颜色跟强度走，不跟柱子走：低位冷静(灰)→中位(素)→高位贪/恐(橙)→极端(红)
+    const tierClass = (v) => v <= 44 ? "tag cold" : v <= 55 ? "tag" : v <= 75 ? "tag warm" : "tag hot";
+    if (gt) { gt.textContent = emotionTier(greed, "greed"); gt.className = tierClass(greed); gt.style.marginLeft = "6px"; }
+    if (ft) { ft.textContent = emotionTier(fear, "fear"); ft.className = tierClass(fear); ft.style.marginLeft = "6px"; }
     const note = $("gf-note");
     if (note) note.textContent = src === "llm"
       ? "贪婪与恐惧由本地模型逐帖读取帖子情绪强度合成（0-3/帖，平台固定25%，营销文不计）。读数0-100，越高情绪越强。恐惧侧分档：≤24极度恐惧，25-44恐惧，45-55中性；贪婪侧：≤24极度冷静，56-75贪婪，≥76极度贪婪。"
