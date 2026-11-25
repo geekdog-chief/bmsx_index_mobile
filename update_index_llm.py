@@ -233,6 +233,52 @@ def compute_llm_emotion(snapshot):
     signals["llmGreed"] = round(greed_acc / 4 / 3 * 100, 1)
 
 
+def collect_llm_sample(snapshot, n_dir=8, n_emo=8, n_mkt=4, n_calm=4):
+    """抽羊驼评分样本进 data.js，供手机端人工抽检模型质量（2026-11-25）。
+
+    确定性选取（同输入必得同输出）：强方向8 + 强情绪8 + 营销文4 + 平静帖4，
+    类别间不重复。只取带 fear/greed 的新打分条目（旧存档字段不全不进抽检）。
+    注意：样本含公开帖子标题，随 data.js 公开。
+    """
+    from llm_overlay import PLATFORM_NAMES
+    cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
+    cands = []
+    for src in cache.values():
+        if not isinstance(src, dict):
+            continue
+        plat = str(src.get("platform") or "")
+        for p0 in src.get("posts", []):
+            if not isinstance(p0, dict) or not p0.get("title"):
+                continue
+            e = LLM_BY_ID.get(str(p0.get("id") or ""))
+            if e and "fear" in e and "greed" in e:
+                cands.append((e, str(p0["title"])[:46], PLATFORM_NAMES.get(plat, plat)))
+    used, picked = set(), []
+
+    def take(seq, k):
+        got = 0
+        for e, t, pl in seq:
+            if got >= k:
+                break
+            if id(e) in used:
+                continue
+            used.add(id(e))
+            got += 1
+            picked.append({"title": t, "platform": pl, "direction": int(e["direction"]),
+                           "fear": int(e["fear"]), "greed": int(e["greed"]),
+                           "persona": str(e.get("persona", "none")),
+                           "marketing": int(bool(e.get("ai_marketing"))),
+                           "reason": str(e.get("reason", ""))})
+
+    take(sorted(cands, key=lambda x: -abs(int(x[0]["direction"]))), n_dir)
+    take(sorted(cands, key=lambda x: -(int(x[0]["fear"]) + int(x[0]["greed"]))), n_emo)
+    take([c for c in cands if c[0].get("ai_marketing")], n_mkt)
+    take(sorted((c for c in cands if not c[0].get("ai_marketing")),
+                key=lambda x: int(x[0]["fear"]) + int(x[0]["greed"])), n_calm)
+    if picked:
+        snapshot["llmSample"] = picked
+
+
 def run_update(progress_callback=None):
     """CLI/GUI 统一入口：打补丁 → 构建快照 → 原子落盘（latest/history/meta/data.js）。
 
@@ -254,6 +300,7 @@ def run_update(progress_callback=None):
 
     snapshot = ui.build_snapshot(progress_callback=_cb)
     compute_llm_emotion(snapshot)  # 羊驼情绪接管（2026-11-25）
+    collect_llm_sample(snapshot)   # 羊驼抽检样本
     ui.save_json(ui.HISTORY_PATH, snapshot["history"])
     ui.save_json(ui.HISTORY_META_PATH, snapshot["historyMeta"])
     ui.save_json(ui.LATEST_PATH, snapshot)

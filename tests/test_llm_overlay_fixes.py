@@ -230,6 +230,44 @@ class TestEmotionFields(unittest.TestCase):
         self.assertNotIn("llmFear", snap["signals"])
 
 
+class TestLlmaudit(unittest.TestCase):
+    """羊驼抽检：确定性选取、类别覆盖、字段完整。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_sample_structure_and_determinism(self):
+        posts, scores = [], []
+        for i in range(30):
+            posts.append({"id": f"s{i}", "title": f"标题{i}号", "source": "东财"})
+            scores.append({"id": f"s{i}", "direction": (i % 7) - 3, "fear": i % 4,
+                           "greed": (i * 2) % 4, "ai_marketing": 1 if i % 9 == 0 else 0,
+                           "persona": "retail", "reason": "理由"})
+        make_env(self.tmp.name, posts, scores)
+        uil.load_llm_scores()
+        a, b = {"signals": {}}, {"signals": {}}
+        uil.collect_llm_sample(a)
+        uil.collect_llm_sample(b)
+        rows = a["llmSample"]
+        self.assertGreater(len(rows), 0)
+        self.assertLessEqual(len(rows), 24)
+        for r in rows:  # 字段齐全
+            for k in ("title", "platform", "direction", "fear", "greed", "persona", "marketing"):
+                self.assertIn(k, r)
+        self.assertEqual(a["llmSample"], b["llmSample"])  # 确定性
+        self.assertTrue(any(r["marketing"] for r in rows))  # 营销类别被覆盖
+
+    def test_no_candidates_no_key(self):
+        make_env(self.tmp.name, [], [])
+        uil.load_llm_scores()
+        snap = {"signals": {}}
+        uil.collect_llm_sample(snap)
+        self.assertNotIn("llmSample", snap)
+
+
 class TestP12FreshNow(unittest.TestCase):
     """apply_overlays 每轮刷新 ui.NOW；fetch_source 包装层显式传当前时间。"""
 

@@ -297,8 +297,26 @@
     }
   }
 
+  /* ---------- 羊驼抽检：人工核对模型读向/情绪质量 ---------- */
+  function renderLlmaudit() {
+    const box = $("llmaudit"); if (!box) return;
+    const rows = DATA.llmSample || [];
+    if (!rows.length) { box.innerHTML = '<div class="muted">暂无抽检样本（羊驼打分后下一轮更新自动生成）</div>'; return; }
+    const esc = (t) => String(t == null ? "" : t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[c]));
+    const dirLabel = (x) => x >= 3 ? "强看多" : x >= 1 ? "看多" : x <= -3 ? "强看空" : x <= -1 ? "看空" : "中性";
+    const dirCls = (x) => x >= 1 ? "tag warm" : x <= -1 ? "tag cold" : "tag";
+    box.innerHTML = rows.map((r) => `<div style="display:flex;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid #f1f3f5">
+      <div style="flex:1;min-width:0">
+        <div style="font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(r.title)}</div>
+        <div class="muted" style="font-size:12px">${esc(r.platform)} · ${esc(r.persona)}${r.marketing ? " · 营销文" : ""}${r.reason ? " · " + esc(r.reason) : ""}</div>
+      </div>
+      <span class="${dirCls(r.direction)}" style="white-space:nowrap">${dirLabel(r.direction)}</span>
+      <span style="white-space:nowrap;font-size:12px" title="恐惧/贪婪强度0-3">恐${r.fear}/贪${r.greed}</span>
+    </div>`).join("");
+  }
+
   /* ---------- 启动 ---------- */
-  renderGauge(); renderGreedFear(); renderRank("hot"); renderMap(); renderHistory(); renderPosts(); renderTrio();
+  renderGauge(); renderGreedFear(); renderRank("hot"); renderMap(); renderHistory(); renderPosts(); renderTrio(); renderLlmaudit();
   bindTabs(); bindUpdate();
   if (DATA.updatedAt) setState("ok", "数据已更新");
 })();
