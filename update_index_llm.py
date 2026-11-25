@@ -520,13 +520,19 @@ def _publish_snapshot(snapshot, paths=None):
         shutil.rmtree(tmpdir, ignore_errors=True)
 
 
+class UpdateSkipped(Exception):
+    """更新被跳过（通常=另一个更新进程持锁）。CLI 映射 exit 2，GUI 显示为可读提示。"""
+
+
 LOCK_PATH = ROOT / "data" / ".update.lock"
 
 
-def _acquire_lock(path=LOCK_PATH):
+def _acquire_lock(path=None):
     """进程锁（二轮验收修订）：O_EXCL 原子创建——检查+创建一步到位，杜绝双进程竞态同时拿锁。
 
-    锁文件存 PID；持有进程活着返回 False，死 PID / 损坏锁自动接管。"""
+    锁文件存 PID；持有进程活着返回 False，死 PID / 损坏锁自动接管。path=None 时取当前 LOCK_PATH（延迟绑定）。"""
+    if path is None:
+        path = LOCK_PATH
     path.parent.mkdir(parents=True, exist_ok=True)
     try:
         fd = os.open(str(path), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
@@ -545,7 +551,9 @@ def _acquire_lock(path=LOCK_PATH):
     return True
 
 
-def _release_lock(path=LOCK_PATH):
+def _release_lock(path=None):
+    if path is None:
+        path = LOCK_PATH
     try:
         path.unlink()
     except OSError:
@@ -560,8 +568,7 @@ def run_update(progress_callback=None):
     本函数让两条链路合一，并把"成功"状态推迟到全部文件写完之后再发。
     """
     if not _acquire_lock():
-        print("LLM 覆盖层：已有更新任务在运行（锁存在），本轮跳过，防并发互写", flush=True)
-        return None
+        raise UpdateSkipped("已有更新任务在运行（.update.lock），本轮跳过，防并发互写")
     try:
         return _run_update_inner(progress_callback)
     finally:
@@ -596,7 +603,12 @@ def _run_update_inner(progress_callback=None):
 
 
 def main():
-    run_update()
+    """CLI 返回码契约：0=更新成功发布；2=被跳过（锁冲突）；其他非零=失败。"""
+    try:
+        run_update()
+    except UpdateSkipped as e:
+        print(str(e), flush=True)
+        return 2
     return 0
 
 

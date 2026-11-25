@@ -640,6 +640,36 @@ class TestAuditRound2(unittest.TestCase):
         self.assertEqual(float(merged.loc[merged["日期"] == "2026-11-21", "收盘"].iloc[0]), 2.5)
 
 
+class TestP01ExitCode(unittest.TestCase):
+    """P0-1：退出码传递——评分/更新失败必须阻断推送，锁冲突必须可区分。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.lock = Path(self.tmp.name) / ".u.lock"
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_lock_conflict_raises_skipped(self):
+        self.lock.write_text(str(os.getpid()), encoding="utf-8")  # 活 PID 持锁
+        orig = uil.LOCK_PATH
+        uil.LOCK_PATH = self.lock
+        try:
+            with self.assertRaises(uil.UpdateSkipped):
+                uil.run_update()
+        finally:
+            uil.LOCK_PATH = orig
+
+    def test_main_returns_2_on_skip(self):
+        self.lock.write_text(str(os.getpid()), encoding="utf-8")
+        orig = uil.LOCK_PATH
+        uil.LOCK_PATH = self.lock
+        try:
+            self.assertEqual(uil.main(), 2)
+        finally:
+            uil.LOCK_PATH = orig
+
+
 class TestP12FreshNow(unittest.TestCase):
     """apply_overlays 每轮刷新 ui.NOW；fetch_source 包装层显式传当前时间。"""
 

@@ -17,6 +17,12 @@ echo.
 
 REM ---- 1. 先给缓存里的新帖打羊驼分（Ollama 不在会自动跳过）----
 %PY% llm_overlay.py
+if errorlevel 1 (
+    echo.
+    echo [错误] LLM 打分失败或评分进程冲突（退出码非0），中止本次更新与推送，旧数据不受影响。
+    pause >nul
+    exit /b 1
+)
 
 REM ---- 2. 生成指数：羊驼接管打分，词典兜底 ----
 %PY% update_index_llm.py
