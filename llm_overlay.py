@@ -261,7 +261,40 @@ def validate_batch(arr, batch):
     return out
 
 
+LOCK_FILE = Path(__file__).resolve().parent / "data" / ".score.lock"
+
+
+def _acquire_lock() -> bool:
+    """评分进程锁（审计 A9）：两个 llm_overlay 并发互写 STORE 会丢批次。"""
+    if LOCK_FILE.exists():
+        try:
+            os.kill(int(LOCK_FILE.read_text(encoding="utf-8").strip()), 0)
+            return False
+        except (ValueError, OSError):
+            pass
+    LOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
+    LOCK_FILE.write_text(str(os.getpid()), encoding="utf-8")
+    return True
+
+
+def _release_lock() -> None:
+    try:
+        LOCK_FILE.unlink()
+    except OSError:
+        pass
+
+
 def main():
+    if not _acquire_lock():
+        print("SCORE_BUSY 已有评分任务在运行，本轮退出（防并发互写 STORE）", flush=True)
+        return 2
+    try:
+        return _main_inner()
+    finally:
+        _release_lock()
+
+
+def _main_inner():
     if not ollama_ok():
         log("Ollama 未运行，跳过 LLM 覆盖层（不影响指数更新）")
         return 0

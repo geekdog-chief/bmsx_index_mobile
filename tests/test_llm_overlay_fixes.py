@@ -478,6 +478,48 @@ class TestAuditBatch1(unittest.TestCase):
             uil.CACHE, uil.STORE = old_c, old_s
 
 
+class TestAuditBatch2(unittest.TestCase):
+    """任务书第二批：四文件发布原子性 / 进程锁。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.tdir = Path(self.tmp.name)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_publish_staged_all_or_nothing(self):
+        paths = {k: self.tdir / f"{k}.out" for k in ("history", "historyMeta", "latest", "datajs")}
+        snap = {"history": [{"date": "2026-11-25"}], "historyMeta": {"updatedAt": "x"},
+                "signals": {}, "sectorIndices": [], "tradingDays": ["2026-11-25"]}
+        uil._publish_snapshot(snap, paths=paths)
+        self.assertTrue(all(p.exists() for p in paths.values()))
+        import json as _json
+        latest = _json.loads(paths["latest"].read_text(encoding="utf-8"))
+        self.assertIn("snapshotVersion", latest)  # 版本标识就位
+        js = paths["datajs"].read_text(encoding="utf-8")
+        self.assertTrue(js.startswith("window.INDEX_DATA = "))
+
+    def test_publish_bad_payload_rejected(self):
+        """载荷损坏（不可 JSON 序列化）时不得产出任何目标文件。"""
+        paths = {k: self.tdir / f"{k}.out" for k in ("history", "historyMeta", "latest", "datajs")}
+        class Unserializable:
+            pass
+        snap = {"history": [{"bad": Unserializable()}], "historyMeta": {}, "signals": {}}
+        with self.assertRaises(Exception):
+            uil._publish_snapshot(snap, paths=paths)
+        self.assertFalse(any(p.exists() for p in paths.values()))  # 整体未发布
+
+    def test_lock_blocks_and_takeover(self):
+        lock = self.tdir / ".test.lock"
+        self.assertTrue(uil._acquire_lock(lock))           # 首次获得
+        self.assertFalse(uil._acquire_lock(lock))          # 自己持锁，二次被拒
+        uil._release_lock(lock)
+        lock.write_text("999999999", encoding="utf-8")     # 死 PID
+        self.assertTrue(uil._acquire_lock(lock))           # 接管死锁
+        uil._release_lock(lock)
+
+
 class TestP12FreshNow(unittest.TestCase):
     """apply_overlays 每轮刷新 ui.NOW；fetch_source 包装层显式传当前时间。"""
 

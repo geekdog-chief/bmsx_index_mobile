@@ -16,6 +16,7 @@ GUI（gui.py）改调本文件 run_update()，与 CLI 同一条评分链路。
 """
 
 import json
+import os
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -456,6 +457,67 @@ def append_study_log(snapshot):
         raise
 
 
+def _publish_snapshot(snapshot, paths=None):
+    """四文件整体发布（审计修订 A5）：暂存目录先生成全部内容→完整性校验→依序原子替换。
+
+    data.js 最后替换（页面唯一读取点）；任一校验失败则整体不发布，线上保持上一份完整数据。
+    paths 可注入供测试；默认 product 真实路径。"""
+    import shutil
+    import tempfile
+    if paths is None:
+        paths = {
+            "history": ui.HISTORY_PATH, "historyMeta": ui.HISTORY_META_PATH,
+            "latest": ui.LATEST_PATH, "datajs": ui.DATA_JS_PATH,
+        }
+    snapshot = dict(snapshot)
+    snapshot["snapshotVersion"] = ui.NOW.strftime("%Y%m%d-%H%M%S")  # 统一版本标识
+    tmpdir = Path(tempfile.mkdtemp(dir=str(paths["datajs"].parent), prefix=".publish_"))  # 与目标同目录，保证 os.replace 同设备
+    try:
+        ui.save_json(tmpdir / "history.json", snapshot["history"])
+        ui.save_json(tmpdir / "history_meta.json", snapshot["historyMeta"])
+        ui.save_json(tmpdir / "latest.json", snapshot)
+        ui.save_text(tmpdir / "data.js", "window.INDEX_DATA = " + json.dumps(snapshot, ensure_ascii=False, indent=2) + ";\n")
+        # 完整性校验：JSON 可解析 + data.js 前缀与载荷可解析
+        for name in ("history.json", "history_meta.json", "latest.json"):
+            json.loads((tmpdir / name).read_text(encoding="utf-8"))
+        js = (tmpdir / "data.js").read_text(encoding="utf-8")
+        prefix = "window.INDEX_DATA = "
+        if not js.startswith(prefix) or not js.rstrip().endswith(";"):
+            raise ValueError("data.js 包装格式异常，拒绝发布")
+        json.loads(js[len(prefix):].rstrip().rstrip(";"))
+        # 依序替换：data.js 永远最后
+        for name, target in (("history.json", paths["history"]),
+                             ("history_meta.json", paths["historyMeta"]),
+                             ("latest.json", paths["latest"]),
+                             ("data.js", paths["datajs"])):
+            os.replace(tmpdir / name, target)
+    finally:
+        shutil.rmtree(tmpdir, ignore_errors=True)
+
+
+LOCK_PATH = ROOT / "data" / ".update.lock"
+
+
+def _acquire_lock(path=LOCK_PATH):
+    """进程锁（审计修订 A9）：锁文件存 PID，活进程持锁则跳过，死 PID 自动接管。"""
+    if path.exists():
+        try:
+            os.kill(int(path.read_text(encoding="utf-8").strip()), 0)
+            return False  # 持锁进程还活着
+        except (ValueError, OSError):
+            pass  # 锁损坏或进程已死：接管
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(str(os.getpid()), encoding="utf-8")
+    return True
+
+
+def _release_lock(path=LOCK_PATH):
+    try:
+        path.unlink()
+    except OSError:
+        pass
+
+
 def run_update(progress_callback=None):
     """CLI/GUI 统一入口：打补丁 → 构建快照 → 原子落盘（latest/history/meta/data.js）。
 
@@ -463,6 +525,9 @@ def run_update(progress_callback=None):
     且 build_snapshot 不落盘（写文件在 main() 里），GUI 更新纯属白算。
     本函数让两条链路合一，并把"成功"状态推迟到全部文件写完之后再发。
     """
+    if not _acquire_lock():
+        print("LLM 覆盖层：已有更新任务在运行（锁存在），本轮跳过，防并发互写", flush=True)
+        return None
     apply_overlays()
     held_ok = {}
 
@@ -479,11 +544,10 @@ def run_update(progress_callback=None):
     compute_llm_emotion(snapshot)  # 羊驼情绪接管（2026-11-25）
     collect_llm_sample(snapshot)   # 羊驼抽检样本
     compute_llm_sector_emotion(snapshot)  # 羊驼情绪注入板块榜（用户授权）
-    ui.save_json(ui.HISTORY_PATH, snapshot["history"])
-    ui.save_json(ui.HISTORY_META_PATH, snapshot["historyMeta"])
-    ui.save_json(ui.LATEST_PATH, snapshot)
-    # data.js 是页面真正读取的提交点，最后替换；中途失败页面继续显示上一份完整快照
-    ui.save_text(ui.DATA_JS_PATH, "window.INDEX_DATA = " + json.dumps(snapshot, ensure_ascii=False, indent=2) + ";\n")
+    try:
+        _publish_snapshot(snapshot)  # 四文件暂存校验后整体发布，data.js 最后（审计修订 A5）
+    finally:
+        _release_lock()  # 无论发布成败都放锁，防死锁
     try:
         append_study_log(snapshot)  # 研究日志只在四份主文件全部落盘成功后写（审计修订）
     except Exception as e:  # 状态分离：研究日志失败只告警，产品已发布的事实不被推翻
