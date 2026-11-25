@@ -264,11 +264,14 @@ def collect_llm_sample(snapshot, n_dir=8, n_emo=8, n_mkt=4, n_calm=4):
     """抽羊驼评分样本进 data.js，供手机端人工抽检模型质量（2026-11-25）。
 
     确定性选取（同输入必得同输出）：强方向8 + 强情绪8 + 营销文4 + 平静帖4，
-    类别间不重复。只取带 fear/greed 的新打分条目（旧存档字段不全不进抽检）。
+    类别间不重复。只取近30自然日内发布、带 fear/greed 的条目——全 corpus 抽样
+    会被历史极端帖占据，失去"质检当天打分"的意义。
     注意：样本含公开帖子标题，随 data.js 公开。
     """
+    from datetime import timedelta
     from llm_overlay import PLATFORM_NAMES
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
+    cutoff = (datetime.now(ui.CN_TZ).date() - timedelta(days=30)).isoformat()
     cands = []
     for src in cache.values():
         if not isinstance(src, dict):
@@ -277,6 +280,8 @@ def collect_llm_sample(snapshot, n_dir=8, n_emo=8, n_mkt=4, n_calm=4):
         for p0 in src.get("posts", []):
             if not isinstance(p0, dict) or not p0.get("title"):
                 continue
+            if str(p0.get("publishTime") or "")[:10] < cutoff:
+                continue  # 30天窗口外：老帖不进抽检
             e = LLM_BY_ID.get(str(p0.get("id") or ""))
             if e and "fear" in e and "greed" in e:
                 cands.append((e, str(p0["title"])[:46], PLATFORM_NAMES.get(plat, plat)))
@@ -371,6 +376,29 @@ def compute_llm_sector_emotion(snapshot, weight=0.2, min_n=3):
         snapshot["sectorIndices"] = elig + rest
 
 
+STUDY_LOG = ROOT / "data" / "study_emotion.csv"
+
+
+def append_study_log(snapshot):
+    """研究瘦日志：每轮更新追加一行到 data/study_emotion.csv（2026-11-25 立）。
+
+    与产品 history.json 解耦：history 存全量快照会随时间膨胀，研究只需要
+    日期+情绪读数，一年 20KB。攒够 ~180 个交易日后跑事件研究（见 RESEARCH_PLAN.md）。
+    """
+    sig = snapshot.get("signals") or {}
+    if "llmFear" not in sig or "llmGreed" not in sig:
+        return
+    day = snapshot.get("tradingDays", [""])[0] if snapshot.get("tradingDays") else datetime.now(ui.CN_TZ).date().isoformat()
+    sectors = {str(x.get("name")): x.get("emotion") for x in (snapshot.get("sectorIndices") or [])
+               if isinstance(x, dict) and x.get("emotion") is not None}
+    line = f"{day},{sig['llmFear']},{sig['llmGreed']},{json.dumps(sectors, ensure_ascii=False, separators=(',', ':'))}\n"
+    new_file = not STUDY_LOG.exists()
+    with STUDY_LOG.open("a", encoding="utf-8") as f:
+        if new_file:
+            f.write("date,fear,greed,sectors_json\n")
+        f.write(line)
+
+
 def run_update(progress_callback=None):
     """CLI/GUI 统一入口：打补丁 → 构建快照 → 原子落盘（latest/history/meta/data.js）。
 
@@ -394,6 +422,7 @@ def run_update(progress_callback=None):
     compute_llm_emotion(snapshot)  # 羊驼情绪接管（2026-11-25）
     collect_llm_sample(snapshot)   # 羊驼抽检样本
     compute_llm_sector_emotion(snapshot)  # 羊驼情绪注入板块榜（用户授权）
+    append_study_log(snapshot)             # 研究瘦日志（RESEARCH_PLAN.md）
     ui.save_json(ui.HISTORY_PATH, snapshot["history"])
     ui.save_json(ui.HISTORY_META_PATH, snapshot["historyMeta"])
     ui.save_json(ui.LATEST_PATH, snapshot)

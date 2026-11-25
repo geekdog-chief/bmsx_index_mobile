@@ -240,9 +240,12 @@ class TestLlmaudit(unittest.TestCase):
         self.tmp.cleanup()
 
     def test_sample_structure_and_determinism(self):
+        import datetime as _dt
+        today = _dt.date.today().isoformat()
         posts, scores = [], []
         for i in range(30):
-            posts.append({"id": f"s{i}", "title": f"标题{i}号", "source": "东财"})
+            posts.append({"id": f"s{i}", "title": f"标题{i}号", "source": "东财",
+                          "publishTime": f"{today}T10:00:00"})
             scores.append({"id": f"s{i}", "direction": (i % 7) - 3, "fear": i % 4,
                            "greed": (i * 2) % 4, "ai_marketing": 1 if i % 9 == 0 else 0,
                            "persona": "retail", "reason": "理由"})
@@ -365,6 +368,42 @@ class TestSectorEmotion(unittest.TestCase):
         self.assertIsNone(secs["新能源整车"]["emotion"])
         self.assertEqual(secs["新能源整车"]["heat"], 55.0)
         self.assertEqual(secs["新能源整车"]["heat"], 55.0)
+
+
+class TestStudyLog(unittest.TestCase):
+    """研究瘦日志：日期、恐惧/贪婪、板块情绪写入 CSV 行。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_append_line(self):
+        import datetime as _dt
+        today = _dt.date.today().isoformat()
+        posts, scores = [], []
+        for i in range(3):  # 白酒满3条样本，板块情绪有值
+            posts.append({"id": f"x{i}", "title": "t", "source": "s", "sourceCode": "600519",
+                          "publishTime": f"{today}T10:00:00"})
+            scores.append({"id": f"x{i}", "direction": 3, "fear": 0, "greed": 3})
+        make_env(self.tmp.name, posts, scores)
+        uil.load_llm_scores()
+        old_log = uil.STUDY_LOG
+        uil.STUDY_LOG = Path(self.tmp.name) / "study_emotion.csv"
+        try:
+            snap = {"tradingDays": ["2026-11-25"], "signals": {},
+                    "sectorIndices": [{"name": "白酒", "heat": 50.0, "heatRank": 1}]}
+            uil.compute_llm_sector_emotion(snap)
+            uil.compute_llm_emotion(snap)
+            uil.append_study_log(snap)
+            text = uil.STUDY_LOG.read_text(encoding="utf-8")
+            lines = text.strip().splitlines()
+            self.assertEqual(len(lines), 2)  # 表头 + 1 行
+            self.assertTrue(lines[1].startswith("2026-11-25,"))
+            self.assertIn("白酒", lines[1])
+        finally:
+            uil.STUDY_LOG = old_log
 
 
 class TestP12FreshNow(unittest.TestCase):
