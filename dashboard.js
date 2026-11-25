@@ -46,6 +46,13 @@
 
   /* ---------- 宝妈情绪（贪婪/恐惧）：羊驼直读优先，旧合成兜底（2026-11-25 接管） ---------- */
   function sigmoid(x, c, s) { return 100 / (1 + Math.exp(-(x - c) / s)); }
+  function coverageNote(sig) {  // 覆盖质量（审计 A6）：窗口档位+有效平台数+样本量，覆盖不足必须可见
+    const win = sig.llmWindowDays, pc = num(sig.llmPlatformCount), vc = num(sig.llmValidPostCount);
+    if (!win && !pc && !vc) return "";
+    let t = ` ｜ 数据覆盖：${win === "all" ? "全期" : win + "天"}窗口·${pc}/4平台·${vc}帖`;
+    if (pc > 0 && pc < 4) t += "（部分平台缺失按中性占位，权重未转）";
+    return t;
+  }
   function emotionTier(v, kind) {  // 分档借 CNN 恐惧贪婪指数的刻度，两侧各自命名
     if (kind === "greed") {  // 贪婪条：低=市场冷淡，高=狂热（禁用恐惧字眼）
       if (v <= 24) return "极度冷静"; if (v <= 44) return "偏冷";
@@ -82,7 +89,7 @@
     if (ft) { ft.textContent = emotionTier(fear, "fear"); const c = chipColor(fear); ft.style.background = c[0]; ft.style.color = c[1]; }
     const note = $("gf-note");
     if (note) note.textContent = src === "llm"
-      ? "贪婪与恐惧是两个独立的情绪强度指标，读数0-100，越高该情绪越强，两者可同时高企、不互相抵消。贪婪侧分档：≤24极度冷静，25-44偏冷，45-55中性，56-75贪婪，≥76极度贪婪；恐惧侧分档：≤24平静，25-44轻度恐慌，45-55中度恐慌，56-75恐慌，≥76极度恐慌。由本地模型逐帖读取（0-3/帖，四平台固定25%，营销文不计）。"
+      ? ("贪婪与恐惧是两个独立的情绪强度指标，读数0-100，越高该情绪越强，两者可同时高企、不互相抵消。贪婪侧分档：≤24极度冷静，25-44偏冷，45-55中性，56-75贪婪，≥76极度贪婪；恐惧侧分档：≤24平静，25-44轻度恐慌，45-55中度恐慌，56-75恐慌，≥76极度恐慌。由本地模型逐帖读取（0-3/帖，四平台固定25%，营销文不计）。" + coverageNote(sig))
       : "贪婪与恐惧由六项讨论信号合成（旧数据）。读数0-100，越高越强。";
   }
 

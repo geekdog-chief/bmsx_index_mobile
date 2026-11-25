@@ -255,6 +255,7 @@ def compute_llm_emotion(snapshot):
     by_platform = {k: [] for k in PLATFORM_ORDER}
     diag = []
     as_of = _snapshot_as_of(snapshot)
+    chosen_window = "all"
     for days, posts in _recent_posts(cache, as_of).items():
         bp = {k: [] for k in PLATFORM_ORDER}
         scored = 0
@@ -271,6 +272,7 @@ def compute_llm_emotion(snapshot):
         valid = sum(len(v) for v in bp.values())
         diag.append(f"{days}天:总{len(posts)}/已评分{scored}/有效{valid}")
         by_platform = bp
+        chosen_window = "all" if days is None else str(days)
         if valid >= 30:
             break
     print("LLM 覆盖层[情绪诊断]: " + " | ".join(diag), flush=True)
@@ -290,6 +292,12 @@ def compute_llm_emotion(snapshot):
     signals = snapshot.setdefault("signals", {})
     signals["llmFear"] = round(fear_acc / 4 / 3 * 100, 1)
     signals["llmGreed"] = round(greed_acc / 4 / 3 * 100, 1)
+    # 覆盖质量字段（审计 A6）：权重不变，但覆盖必须可见，防"单平台30帖"伪装成"四平台覆盖"
+    platform_n = {plat: len(by_platform[plat]) for plat in PLATFORM_ORDER}
+    signals["llmValidPostCount"] = sum(platform_n.values())
+    signals["llmPlatformCount"] = sum(1 for n in platform_n.values() if n > 0)
+    signals["llmPlatformSamples"] = platform_n
+    signals["llmWindowDays"] = chosen_window
 
 
 def collect_llm_sample(snapshot, n_dir=8, n_emo=8, n_mkt=4, n_calm=4):
@@ -442,12 +450,14 @@ def append_study_log(snapshot):
             print(f"研究日志读取失败（沿用空表重写，原文件未动）：{e}", flush=True)
             rows = {}
     rows[day] = {"date": day, "fear": sig["llmFear"], "greed": sig["llmGreed"],
-                 "sectors_json": json.dumps(sectors, ensure_ascii=False, separators=(",", ":"))}
+                 "sectors_json": json.dumps(sectors, ensure_ascii=False, separators=(",", ":")),
+                 "valid": sig.get("llmValidPostCount", ""), "platforms": sig.get("llmPlatformCount", ""),
+                 "window": sig.get("llmWindowDays", "")}
     # 标准 csv.writer 保证 JSON 单元格含逗号/引号时被正确引用；临时文件+os.replace 原子替换
     fd, tmpname = tempfile.mkstemp(dir=str(STUDY_LOG.parent), prefix=".study_", suffix=".csv")
     try:
         with os.fdopen(fd, "w", encoding="utf-8", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=["date", "fear", "greed", "sectors_json"])
+            w = csv.DictWriter(f, fieldnames=["date", "fear", "greed", "sectors_json", "valid", "platforms", "window"])
             w.writeheader()
             for d in sorted(rows):
                 w.writerow(rows[d])
