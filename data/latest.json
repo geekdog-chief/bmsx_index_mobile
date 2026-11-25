@@ -5,11 +5,11 @@
   "methodology": "community_text_four_channel_grassroots_three_trading_day_v3",
   "scoringModel": "four_channels_equal_then_units_equal_grassroots_50_30_20_v3",
   "marketDate": "2026-11-24",
-  "updatedAt": "2026-11-25T13:54:01.000099+08:00",
+  "updatedAt": "2026-11-25T14:17:38.706400+08:00",
   "confidence": 93,
   "scores": {
     "baoma": 53,
-    "novice": 53,
+    "novice": 52,
     "retail": 53,
     "composite": 53
   },
@@ -17,11 +17,13 @@
     "optimism": 50.0,
     "fomo": 49.4,
     "newcomer": 49.5,
-    "intensity": 51.0,
+    "intensity": 50.8,
     "attention": 50.9,
     "panic": 6.0,
     "breadth": 75.0,
-    "heat": 52.7
+    "heat": 52.7,
+    "llmFear": 31.3,
+    "llmGreed": 21.3
   },
   "heat": 52.7,
   "direction": 50.0,
@@ -123,7 +125,7 @@
           "platformCount": 1,
           "maskedDirectionRaw": 89.5,
           "evidenceWeight": 0.091,
-          "candidateShrunkDirection": 38.6
+          "candidateShrunkDirection": 39.2
         },
         "novice": {
           "available": true,
@@ -132,7 +134,7 @@
           "platformCount": 1,
           "maskedDirectionRaw": 50.0,
           "evidenceWeight": 0.158,
-          "candidateShrunkDirection": 36.1
+          "candidateShrunkDirection": 36.7
         },
         "retail": {
           "available": true,
@@ -141,7 +143,7 @@
           "platformCount": 2,
           "maskedDirectionRaw": 49.3,
           "evidenceWeight": 0.5,
-          "candidateShrunkDirection": 41.4
+          "candidateShrunkDirection": 41.8
         }
       }
     },
@@ -503,11 +505,11 @@
       },
       "channelSignals": {
         "eastmoney": {
-          "optimism": 50.1,
+          "optimism": 50.2,
           "fomo": 51.2,
           "panic": 1.3,
           "newcomer": 49.3,
-          "intensity": 52.1,
+          "intensity": 51.0,
           "attention": 46.7
         },
         "sina": {
@@ -870,7 +872,7 @@
           "optimism": 51.0,
           "fomo": 49.9,
           "newcomer": 49.3,
-          "intensity": 50.1,
+          "intensity": 50.2,
           "attention": 50.7,
           "panic": 6.2,
           "heat": 50.1
@@ -878,9 +880,9 @@
       }
     ],
     "coverage": 95.3,
-    "archiveAddedPosts": 3128,
-    "archiveExistingPosts": 20391,
-    "sqliteArchiveAddedPosts": 3356,
+    "archiveAddedPosts": 60,
+    "archiveExistingPosts": 23459,
+    "sqliteArchiveAddedPosts": 0,
     "sqliteArchiveTotalPosts": 38915,
     "sectorHeatModel": {
       "version": "sector_community_heat_v4_company_equal",
@@ -892,11 +894,11 @@
       "latentMedian": 52.45,
       "absoluteMedian": 52.15,
       "crossSectionMAD": 1.185,
-      "crossSectionP90P10": 3.51,
+      "crossSectionP90P10": 3.517,
       "noiseFloor": 1.732,
-      "dispersionGate": 0.684,
-      "relativeRange": 13.9,
-      "finalRange": 9.7,
+      "dispersionGate": 0.687,
+      "relativeRange": 14.0,
+      "finalRange": 9.8,
       "usesMarketPrice": false,
       "formalPersonaScoresChanged": false
     },
@@ -939,8 +941,8 @@
             "2026-11-16"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 1415,
           "coverageStatus": "page_cap_reached_before_third_trading_day",
           "paginationMode": "page"
         }
@@ -970,8 +972,8 @@
             "2026-10-20"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 1416,
           "coverageStatus": "page_cap_reached_before_third_trading_day",
           "paginationMode": "page"
         }
@@ -999,8 +1001,8 @@
             "2026-11-16"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 1416,
           "coverageStatus": "page_cap_reached_before_third_trading_day",
           "paginationMode": "page"
         }
@@ -1024,8 +1026,8 @@
             "2026-11-24"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 1415,
           "coverageStatus": "non_chronological_hot_feed",
           "paginationMode": "last_score_cursor_bounded"
         }
@@ -1048,8 +1050,8 @@
             "2026-11-25"
           ],
           "thirdTradingDayReached": false,
-          "freshFetchedNow": true,
-          "cacheAge": 0,
+          "freshFetchedNow": false,
+          "cacheAge": 1415,
           "coverageStatus": "page_cap_reached_before_third_trading_day",
           "paginationMode": "cursor"
         }
@@ -2179,8 +2181,8 @@
               "2026-11-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -2212,8 +2214,8 @@
               "2026-11-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -2241,8 +2243,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -2270,8 +2272,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -2308,8 +2310,8 @@
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -2334,8 +2336,8 @@
               "2026-11-21"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -2359,8 +2361,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -2384,8 +2386,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -2410,8 +2412,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -2549,10 +2551,10 @@
         "robustZ": 0.703,
         "reliability": 38.6,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -3127,7 +3129,7 @@
               "fomo": 53.5,
               "panic": 32.1,
               "newcomer": 58.2,
-              "intensity": 59.2,
+              "intensity": 59.3,
               "attention": 61.2
             },
             "sina": {
@@ -3517,8 +3519,8 @@
               "2026-10-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1401,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -3552,8 +3554,8 @@
               "2026-09-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -3585,8 +3587,8 @@
               "2026-11-02"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -3621,8 +3623,8 @@
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -3655,8 +3657,8 @@
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1401,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -3689,8 +3691,8 @@
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -3714,8 +3716,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1387,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -3746,8 +3748,8 @@
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -3774,8 +3776,8 @@
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -3809,8 +3811,8 @@
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -3895,17 +3897,6 @@
           "publishTime": "2026-11-24T15:39:36+08:00"
         },
         {
-          "title": "为什么还跌呢？因为有散户抄底了。",
-          "label": "看多",
-          "score": 3,
-          "comments": 0,
-          "clicks": 69,
-          "source": "中金黄金新浪股吧",
-          "platform": "sina",
-          "platformName": "新浪股吧",
-          "publishTime": "2026-11-24T13:56:03+08:00"
-        },
-        {
           "title": "搞笑，主力在死扛。正常都应该再来两个跌停了",
           "label": "看空",
           "score": -3,
@@ -3915,6 +3906,17 @@
           "platform": "sina",
           "platformName": "新浪股吧",
           "publishTime": "2026-11-20T11:06:13+08:00"
+        },
+        {
+          "title": "为什么还跌呢？因为有散户抄底了。",
+          "label": "看多",
+          "score": 3,
+          "comments": 0,
+          "clicks": 69,
+          "source": "中金黄金新浪股吧",
+          "platform": "sina",
+          "platformName": "新浪股吧",
+          "publishTime": "2026-11-24T13:56:03+08:00"
         },
         {
           "title": "扯一大堆，你在现在满仓，肯定是不对的，你拿什么赌现在就是最低呀，再来一根大阴线，你有招吗？钱是赚不完的但可以亏完",
@@ -3930,7 +3932,7 @@
       ],
       "legacyHeat": 53.3,
       "absoluteHeat": 54.2,
-      "relativeHeat": 57.1,
+      "relativeHeat": 57.2,
       "heatRank": 1,
       "heatTier": "市场中段",
       "heatModel": {
@@ -3942,16 +3944,16 @@
         "activityIndex": 54.5,
         "volumeFactor": 54.5,
         "relativeLatent": 54.3,
-        "relativeHeat": 57.1,
+        "relativeHeat": 57.2,
         "heatTier": "市场中段",
         "percentile": 98.1,
         "robustZ": 0.935,
         "reliability": 48.0,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -4000,16 +4002,16 @@
         "composite": 55
       },
       "signals": {
-        "optimism": 51.2,
+        "optimism": 51.1,
         "fomo": 51.6,
         "panic": 11.5,
         "newcomer": 50.4,
-        "intensity": 51.0,
+        "intensity": 51.1,
         "attention": 54.6,
         "heat": 52.2
       },
       "heat": 57.5,
-      "direction": 51.2,
+      "direction": 51.1,
       "metrics": {
         "recentPosts": 309,
         "recent7Posts": 361,
@@ -4106,7 +4108,7 @@
               "platformCount": 2,
               "maskedDirectionRaw": 50.0,
               "evidenceWeight": 0.316,
-              "candidateShrunkDirection": 51.1
+              "candidateShrunkDirection": 51.0
             },
             "novice": {
               "available": true,
@@ -4115,7 +4117,7 @@
               "platformCount": 2,
               "maskedDirectionRaw": 46.0,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 48.0
+              "candidateShrunkDirection": 47.9
             },
             "retail": {
               "available": true,
@@ -4124,7 +4126,7 @@
               "platformCount": 4,
               "maskedDirectionRaw": 52.0,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 51.9
+              "candidateShrunkDirection": 51.8
             }
           }
         },
@@ -4526,15 +4528,15 @@
               "fomo": 47.9,
               "panic": 9.6,
               "newcomer": 51.4,
-              "intensity": 55.2,
+              "intensity": 55.3,
               "attention": 54.8
             },
             "sina": {
-              "optimism": 51.5,
+              "optimism": 51.4,
               "fomo": 51.7,
               "panic": 8.4,
               "newcomer": 47.8,
-              "intensity": 48.5,
+              "intensity": 48.6,
               "attention": 56.5
             },
             "ths": {
@@ -4736,16 +4738,16 @@
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 47.0,
+            "optimism": 47.1,
             "fomo": 40.7,
             "newcomer": 47.6,
-            "intensity": 70.1,
+            "intensity": 70.2,
             "attention": 66.0,
             "panic": 15.7,
             "heat": 56.7
           },
           "raw": {
-            "net": -0.03468295504935791,
+            "net": -0.03301033556625481,
             "fomo": 0.03356407230065318,
             "panic": 0.022676686084126527,
             "newcomer": 0.017845005810520023,
@@ -4774,20 +4776,20 @@
           "name": "新浪股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 54.4,
+            "optimism": 53.9,
             "fomo": 60.1,
             "newcomer": 47.0,
-            "intensity": 45.2,
+            "intensity": 46.7,
             "attention": 58.7,
             "panic": 18.7,
-            "heat": 54.0
+            "heat": 54.4
           },
           "raw": {
-            "net": 0.06287093224817941,
+            "net": 0.05420093135967345,
             "fomo": 0.081683831495135,
             "panic": 0.02622369066813442,
             "newcomer": 0.00993555197720324,
-            "intense": 0.1455910520450758
+            "intense": 0.15762109703149133
           },
           "sampleCount": 49,
           "sourceCount": 3,
@@ -4914,8 +4916,8 @@
               "2026-09-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -4950,8 +4952,8 @@
               "2026-08-28"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -4978,8 +4980,8 @@
               "2026-10-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -5008,8 +5010,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -5040,8 +5042,8 @@
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -5065,8 +5067,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -5092,8 +5094,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -5118,8 +5120,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -5144,8 +5146,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -5169,8 +5171,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -5290,7 +5292,7 @@
       ],
       "legacyHeat": 52.2,
       "absoluteHeat": 54.0,
-      "relativeHeat": 56.8,
+      "relativeHeat": 56.9,
       "heatRank": 2,
       "heatTier": "市场中段",
       "heatModel": {
@@ -5302,16 +5304,16 @@
         "activityIndex": 54.6,
         "volumeFactor": 54.6,
         "relativeLatent": 54.2,
-        "relativeHeat": 56.8,
+        "relativeHeat": 56.9,
         "heatTier": "市场中段",
         "percentile": 90.4,
         "robustZ": 0.895,
         "reliability": 50.2,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -5364,9 +5366,9 @@
         "fomo": 49.9,
         "panic": 12.2,
         "newcomer": 50.4,
-        "intensity": 53.0,
+        "intensity": 53.1,
         "attention": 54.5,
-        "heat": 52.1
+        "heat": 52.2
       },
       "heat": 56.7,
       "direction": 50.9,
@@ -5892,10 +5894,10 @@
           "channelSignals": {
             "eastmoney": {
               "optimism": 51.4,
-              "fomo": 51.1,
+              "fomo": 51.0,
               "panic": 26.7,
               "newcomer": 53.6,
-              "intensity": 59.0,
+              "intensity": 59.1,
               "attention": 55.8
             },
             "sina": {
@@ -6105,13 +6107,13 @@
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 52.9,
+            "optimism": 52.8,
             "fomo": 58.5,
             "newcomer": 53.0,
-            "intensity": 65.7,
+            "intensity": 65.9,
             "attention": 64.0,
             "panic": 44.4,
-            "heat": 61.1
+            "heat": 61.2
           },
           "raw": {
             "net": 0.052309872059720014,
@@ -6143,7 +6145,7 @@
           "name": "新浪股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 45.5,
+            "optimism": 45.6,
             "fomo": 31.4,
             "newcomer": 48.1,
             "intensity": 58.5,
@@ -6284,8 +6286,8 @@
               "2026-09-07"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -6316,8 +6318,8 @@
               "2026-11-05"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -6347,8 +6349,8 @@
               "2026-10-29"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -6372,8 +6374,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -6397,8 +6399,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -6428,8 +6430,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -6453,8 +6455,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1391,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -6478,8 +6480,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1391,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -6507,8 +6509,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -6533,8 +6535,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -6562,8 +6564,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -6626,17 +6628,6 @@
           "publishTime": "2026-11-23T19:20:59+08:00"
         },
         {
-          "title": "这是有什么利空消息出来了吗？下跌这么多",
-          "label": "看空",
-          "score": -4,
-          "comments": 1,
-          "clicks": 64,
-          "source": "东方财富新浪股吧",
-          "platform": "sina",
-          "platformName": "新浪股吧",
-          "publishTime": "2026-11-24T14:12:15+08:00"
-        },
-        {
           "title": "我感觉股票几千家下跌的时候反而下跌的少，别的股票大涨的时候这个股票反而是下跌的，",
           "label": "看空",
           "score": -5,
@@ -6670,6 +6661,17 @@
           "publishTime": "2026-11-24T20:26:20+08:00"
         },
         {
+          "title": "这是有什么利空消息出来了吗？下跌这么多",
+          "label": "看空",
+          "score": -4,
+          "comments": 1,
+          "clicks": 64,
+          "source": "东方财富新浪股吧",
+          "platform": "sina",
+          "platformName": "新浪股吧",
+          "publishTime": "2026-11-24T14:12:15+08:00"
+        },
+        {
           "title": "江苏的票要起飞了",
           "label": "看多",
           "score": 3,
@@ -6681,30 +6683,30 @@
           "publishTime": "2026-11-24T21:14:09+08:00"
         }
       ],
-      "legacyHeat": 52.1,
+      "legacyHeat": 52.2,
       "absoluteHeat": 53.9,
-      "relativeHeat": 55.7,
+      "relativeHeat": 55.8,
       "heatRank": 4,
       "heatTier": "市场中段",
       "heatModel": {
         "version": "sector_community_heat_v4_company_equal",
         "status": "applied",
         "marketAnchor": 52.7,
-        "legacyEmotionHeat": 52.1,
+        "legacyEmotionHeat": 52.2,
         "absoluteHeat": 53.9,
         "activityIndex": 54.5,
         "volumeFactor": 54.5,
-        "relativeLatent": 54.1,
-        "relativeHeat": 55.7,
+        "relativeLatent": 54.2,
+        "relativeHeat": 55.8,
         "heatTier": "市场中段",
         "percentile": 86.5,
-        "robustZ": 0.845,
+        "robustZ": 0.853,
         "reliability": 44.9,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -6755,7 +6757,7 @@
       "signals": {
         "optimism": 50.1,
         "fomo": 50.7,
-        "panic": 9.2,
+        "panic": 9.3,
         "newcomer": 50.8,
         "intensity": 52.4,
         "attention": 54.0,
@@ -7500,7 +7502,7 @@
             "optimism": 52.3,
             "fomo": 50.5,
             "newcomer": 66.5,
-            "intensity": 52.5,
+            "intensity": 52.6,
             "attention": 66.8,
             "panic": 21.3,
             "heat": 58.3
@@ -7682,8 +7684,8 @@
               "2026-08-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -7714,8 +7716,8 @@
               "2026-11-06"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1399,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -7745,8 +7747,8 @@
               "2026-11-02"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1399,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -7770,8 +7772,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -7800,8 +7802,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -7835,8 +7837,8 @@
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1399,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -7869,8 +7871,8 @@
               "2026-10-26"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1385,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -7899,8 +7901,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1384,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -7926,8 +7928,8 @@
               "2026-11-21"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -7961,8 +7963,8 @@
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1400,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -8100,10 +8102,10 @@
         "robustZ": 0.633,
         "reliability": 40.1,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -8890,7 +8892,7 @@
             "optimism": 46.8,
             "fomo": 48.6,
             "newcomer": 62.6,
-            "intensity": 58.4,
+            "intensity": 58.5,
             "attention": 62.0,
             "panic": 48.9,
             "heat": 57.2
@@ -9062,8 +9064,8 @@
               "2026-09-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -9092,8 +9094,8 @@
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -9122,8 +9124,8 @@
               "2026-09-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -9164,8 +9166,8 @@
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -9212,8 +9214,8 @@
               "2026-10-14"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -9242,8 +9244,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -9271,8 +9273,8 @@
               "2026-11-18"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -9303,8 +9305,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -9337,8 +9339,8 @@
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -9362,8 +9364,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -9501,10 +9503,10 @@
         "robustZ": 0.448,
         "reliability": 48.2,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -9561,7 +9563,7 @@
         "attention": 54.1,
         "heat": 52.9
       },
-      "heat": 56.0,
+      "heat": 56.1,
       "direction": 51.4,
       "metrics": {
         "recentPosts": 314,
@@ -10078,7 +10080,7 @@
               "fomo": 61.1,
               "panic": 22.8,
               "newcomer": 54.1,
-              "intensity": 57.7,
+              "intensity": 57.8,
               "attention": 61.4
             },
             "sina": {
@@ -10291,7 +10293,7 @@
             "optimism": 58.7,
             "fomo": 73.6,
             "newcomer": 56.2,
-            "intensity": 64.6,
+            "intensity": 64.7,
             "attention": 70.9,
             "panic": 24.9,
             "heat": 67.9
@@ -10462,8 +10464,8 @@
               "2026-10-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -10497,8 +10499,8 @@
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -10534,8 +10536,8 @@
               "2026-09-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -10571,8 +10573,8 @@
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -10614,8 +10616,8 @@
               "2026-10-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -10658,8 +10660,8 @@
               "2026-10-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -10683,8 +10685,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -10708,8 +10710,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -10737,8 +10739,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -10767,8 +10769,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -10787,17 +10789,6 @@
           "publishTime": "2026-11-24T11:22:31+08:00"
         },
         {
-          "title": "过气龙头不如路边一条啊。机器人这么多反包的票都带不动绿的邪乎",
-          "label": "看多",
-          "score": 6,
-          "comments": 0,
-          "clicks": 21,
-          "source": "绿的谐波吧",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "publishTime": "2026-11-24T14:01:04+08:00"
-        },
-        {
           "title": "还有谁不服，我早上就说了要去追龙头下午几个龙头要涨停，没人信龙头全部20CM",
           "label": "看多",
           "score": 6,
@@ -10807,6 +10798,17 @@
           "platform": "eastmoney",
           "platformName": "东方财富股吧",
           "publishTime": "2026-11-23T13:48:00+08:00"
+        },
+        {
+          "title": "过气龙头不如路边一条啊。机器人这么多反包的票都带不动绿的邪乎",
+          "label": "看多",
+          "score": 6,
+          "comments": 0,
+          "clicks": 21,
+          "source": "绿的谐波吧",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "publishTime": "2026-11-24T14:01:04+08:00"
         },
         {
           "title": "上周低吸，今日温和放量突破上周小平台，明后观察小平台的回踩支撑，有支撑加仓，加仓",
@@ -10906,10 +10908,10 @@
         "robustZ": 0.735,
         "reliability": 42.0,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -10960,7 +10962,7 @@
       "signals": {
         "optimism": 50.2,
         "fomo": 50.0,
-        "panic": 10.8,
+        "panic": 10.5,
         "newcomer": 49.6,
         "intensity": 54.0,
         "attention": 52.8,
@@ -10973,9 +10975,9 @@
         "recent7Posts": 179,
         "samplePosts": 174,
         "bullishRatio": 20.7,
-        "bearishRatio": 20.7,
+        "bearishRatio": 20.1,
         "fomoRate": 9.9,
-        "panicRate": 4.2,
+        "panicRate": 3.8,
         "newcomerRate": 1.7,
         "activityIndex": 52.8,
         "estimatedDailyPosts": 131.146,
@@ -11064,7 +11066,7 @@
               "platformCount": 2,
               "maskedDirectionRaw": 50.0,
               "evidenceWeight": 0.316,
-              "candidateShrunkDirection": 51.6
+              "candidateShrunkDirection": 51.7
             },
             "novice": {
               "available": true,
@@ -11488,11 +11490,11 @@
               "attention": 46.2
             },
             "sina": {
-              "optimism": 49.8,
+              "optimism": 49.9,
               "fomo": 50.3,
-              "panic": 6.0,
+              "panic": 5.0,
               "newcomer": 51.1,
-              "intensity": 52.7,
+              "intensity": 52.5,
               "attention": 55.5
             },
             "ths": {
@@ -11732,20 +11734,20 @@
           "name": "新浪股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 54.1,
+            "optimism": 54.6,
             "fomo": 73.1,
             "newcomer": 54.8,
-            "intensity": 66.9,
+            "intensity": 66.2,
             "attention": 77.7,
-            "panic": 18.2,
-            "heat": 70.2
+            "panic": 12.5,
+            "heat": 70.0
           },
           "raw": {
-            "net": 0.03527078956627931,
+            "net": 0.04229990643481309,
             "fomo": 0.128525641025641,
-            "panic": 0.02403846153846154,
+            "panic": 0.016025641025641024,
             "newcomer": 0.016025641025641024,
-            "intense": 0.32628205128205123
+            "intense": 0.31826923076923075
           },
           "sampleCount": 88,
           "sourceCount": 1,
@@ -11876,8 +11878,8 @@
               "2026-10-22"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -11912,8 +11914,8 @@
               "2026-10-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -11944,8 +11946,8 @@
               "2026-11-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -11970,8 +11972,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -11996,8 +11998,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -12020,8 +12022,8 @@
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -12044,8 +12046,8 @@
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -12068,8 +12070,8 @@
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1416,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -12207,10 +12209,10 @@
         "robustZ": 0.1,
         "reliability": 35.9,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -13033,7 +13035,7 @@
             "optimism": 54.1,
             "fomo": 59.3,
             "newcomer": 38.4,
-            "intensity": 68.6,
+            "intensity": 68.7,
             "attention": 60.3,
             "panic": 30.6,
             "heat": 58.8
@@ -13163,8 +13165,8 @@
               "2026-11-05"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -13199,8 +13201,8 @@
               "2026-09-08"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -13230,8 +13232,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -13262,8 +13264,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -13293,8 +13295,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -13318,8 +13320,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -13343,8 +13345,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -13370,8 +13372,8 @@
               "2026-11-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -13403,8 +13405,8 @@
               "2026-11-14"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -13467,15 +13469,15 @@
           "publishTime": "2026-11-24T14:52:45+08:00"
         },
         {
-          "title": "昨天回踩20日是加仓点，今天再次回踩20线，就绝不是加仓点了，反复考验支撑，撑不",
+          "title": "明天高开，十点前涨停且行且珍惜",
           "label": "看多",
           "score": 3,
-          "comments": 2,
-          "clicks": 125,
-          "source": "沪硅产业吧",
+          "comments": 1,
+          "clicks": 42,
+          "source": "中微公司吧",
           "platform": "eastmoney",
           "platformName": "东方财富股吧",
-          "publishTime": "2026-11-24T14:11:55+08:00"
+          "publishTime": "2026-11-24T23:45:47+08:00"
         },
         {
           "title": "$中微公司 sh688012$ 基本面与预期差：中微是是国内刻蚀设备龙头，芯片制造离不开刻蚀机，国产替代空间很大。在半导体行业上市周期里，未来业绩应该是有所保证",
@@ -13542,10 +13544,10 @@
         "robustZ": 0.31,
         "reliability": 39.8,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -14333,7 +14335,7 @@
             "optimism": 44.9,
             "fomo": 50.6,
             "newcomer": 47.7,
-            "intensity": 64.4,
+            "intensity": 64.5,
             "attention": 63.4,
             "panic": 34.5,
             "heat": 57.5
@@ -14506,8 +14508,8 @@
               "2026-11-04"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -14540,8 +14542,8 @@
               "2026-10-15"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -14575,8 +14577,8 @@
               "2026-09-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -14601,8 +14603,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -14634,8 +14636,8 @@
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -14659,8 +14661,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1402,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -14688,8 +14690,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -14827,10 +14829,10 @@
         "robustZ": 0.195,
         "reliability": 37.9,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -15801,8 +15803,8 @@
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -15831,8 +15833,8 @@
               "2026-11-18"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -15866,8 +15868,8 @@
               "2026-09-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -15903,8 +15905,8 @@
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -15942,8 +15944,8 @@
               "2026-11-03"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -15968,8 +15970,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -15992,8 +15994,8 @@
               "2026-11-25"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -16020,8 +16022,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -16052,8 +16054,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -16173,7 +16175,7 @@
       ],
       "legacyHeat": 50.9,
       "absoluteHeat": 51.5,
-      "relativeHeat": 47.7,
+      "relativeHeat": 47.6,
       "heatRank": 16,
       "heatTier": "市场中段",
       "heatModel": {
@@ -16185,16 +16187,16 @@
         "activityIndex": 51.7,
         "volumeFactor": 51.7,
         "relativeLatent": 51.6,
-        "relativeHeat": 47.7,
+        "relativeHeat": 47.6,
         "heatTier": "市场中段",
         "percentile": 40.4,
         "robustZ": -0.435,
         "reliability": 40.5,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -16768,7 +16770,7 @@
               "fomo": 47.5,
               "panic": 14.6,
               "newcomer": 52.6,
-              "intensity": 50.4,
+              "intensity": 50.5,
               "attention": 52.2
             },
             "sina": {
@@ -17054,7 +17056,7 @@
           "name": "新浪股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 52.0,
+            "optimism": 52.1,
             "fomo": 49.6,
             "newcomer": 59.8,
             "intensity": 49.5,
@@ -17175,8 +17177,8 @@
               "2026-08-25"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -17212,8 +17214,8 @@
               "2026-09-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -17246,8 +17248,8 @@
               "2026-09-01"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -17271,8 +17273,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -17303,8 +17305,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -17337,8 +17339,8 @@
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -17363,8 +17365,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1394,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -17389,8 +17391,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -17421,8 +17423,8 @@
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -17560,10 +17562,10 @@
         "robustZ": 0.093,
         "reliability": 37.8,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -17616,7 +17618,7 @@
         "fomo": 50.1,
         "panic": 6.3,
         "newcomer": 48.2,
-        "intensity": 50.4,
+        "intensity": 50.5,
         "attention": 51.7,
         "heat": 50.4
       },
@@ -17718,7 +17720,7 @@
               "platformCount": 1,
               "maskedDirectionRaw": 33.8,
               "evidenceWeight": 0.129,
-              "candidateShrunkDirection": 53.1
+              "candidateShrunkDirection": 53.0
             },
             "novice": {
               "available": true,
@@ -17727,7 +17729,7 @@
               "platformCount": 1,
               "maskedDirectionRaw": 52.7,
               "evidenceWeight": 0.612,
-              "candidateShrunkDirection": 54.0
+              "candidateShrunkDirection": 53.9
             },
             "retail": {
               "available": true,
@@ -18134,7 +18136,7 @@
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 54.0,
+              "optimism": 53.9,
               "fomo": 55.9,
               "panic": 20.6,
               "newcomer": 48.1,
@@ -18351,7 +18353,7 @@
             "optimism": 54.7,
             "fomo": 56.6,
             "newcomer": 48.2,
-            "intensity": 58.8,
+            "intensity": 58.9,
             "attention": 61.2,
             "panic": 24.3,
             "heat": 57.3
@@ -18462,7 +18464,7 @@
           "name": "新浪股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 55.9,
+            "optimism": 55.8,
             "fomo": 31.4,
             "newcomer": 38.4,
             "intensity": 41.5,
@@ -18529,8 +18531,8 @@
               "2026-09-25"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -18567,8 +18569,8 @@
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -18600,8 +18602,8 @@
               "2026-08-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -18631,8 +18633,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -18667,8 +18669,8 @@
               "2026-11-09"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -18715,8 +18717,8 @@
               "2026-10-03"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1395,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -18740,8 +18742,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1377,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -18772,8 +18774,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -18809,8 +18811,8 @@
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -18844,8 +18846,8 @@
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -18983,10 +18985,10 @@
         "robustZ": -0.472,
         "reliability": 40.9,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -19806,7 +19808,7 @@
           "name": "新浪股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 48.1,
+            "optimism": 48.2,
             "fomo": 54.7,
             "newcomer": 44.0,
             "intensity": 51.1,
@@ -19946,8 +19948,8 @@
               "2026-08-31"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -19985,8 +19987,8 @@
               "2026-09-14"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -20014,8 +20016,8 @@
               "2026-09-11"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -20043,8 +20045,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -20075,8 +20077,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1413,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -20103,8 +20105,8 @@
               "2026-11-21"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -20128,8 +20130,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -20155,8 +20157,8 @@
               "2026-11-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -20180,8 +20182,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -20205,8 +20207,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -20326,7 +20328,7 @@
       ],
       "legacyHeat": 51.3,
       "absoluteHeat": 53.9,
-      "relativeHeat": 56.1,
+      "relativeHeat": 56.2,
       "heatRank": 3,
       "heatTier": "市场中段",
       "heatModel": {
@@ -20338,16 +20340,16 @@
         "activityIndex": 54.8,
         "volumeFactor": 54.8,
         "relativeLatent": 54.3,
-        "relativeHeat": 56.1,
+        "relativeHeat": 56.2,
         "heatTier": "市场中段",
         "percentile": 94.2,
         "robustZ": 0.913,
         "reliability": 43.2,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -21133,9 +21135,9 @@
           "activityEligible": true,
           "signals": {
             "optimism": 53.2,
-            "fomo": 59.9,
+            "fomo": 59.8,
             "newcomer": 53.8,
-            "intensity": 60.0,
+            "intensity": 60.1,
             "attention": 57.5,
             "panic": 34.2,
             "heat": 58.3
@@ -21312,8 +21314,8 @@
               "2026-09-15"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -21345,8 +21347,8 @@
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -21382,8 +21384,8 @@
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -21414,8 +21416,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -21456,8 +21458,8 @@
               "2026-10-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -21482,8 +21484,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -21511,8 +21513,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -21551,8 +21553,8 @@
               "2026-10-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -21591,8 +21593,8 @@
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -21712,7 +21714,7 @@
       ],
       "legacyHeat": 50.2,
       "absoluteHeat": 50.6,
-      "relativeHeat": 45.0,
+      "relativeHeat": 44.9,
       "heatRank": 22,
       "heatTier": "市场中段",
       "heatModel": {
@@ -21724,16 +21726,16 @@
         "activityIndex": 50.8,
         "volumeFactor": 50.8,
         "relativeLatent": 50.7,
-        "relativeHeat": 45.0,
+        "relativeHeat": 44.9,
         "heatTier": "市场中段",
         "percentile": 13.5,
         "robustZ": -0.87,
         "reliability": 38.9,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -21786,7 +21788,7 @@
         "fomo": 48.6,
         "panic": 6.7,
         "newcomer": 47.5,
-        "intensity": 49.5,
+        "intensity": 49.6,
         "attention": 53.0,
         "heat": 50.0
       },
@@ -21887,7 +21889,7 @@
               "platformCount": 1,
               "maskedDirectionRaw": 50.0,
               "evidenceWeight": 0.091,
-              "candidateShrunkDirection": 48.7
+              "candidateShrunkDirection": 48.8
             },
             "novice": {
               "available": true,
@@ -22307,7 +22309,7 @@
               "fomo": 52.9,
               "panic": 16.6,
               "newcomer": 48.5,
-              "intensity": 55.8,
+              "intensity": 55.9,
               "attention": 54.6
             },
             "sina": {
@@ -22520,10 +22522,10 @@
             "optimism": 46.3,
             "fomo": 51.2,
             "newcomer": 44.0,
-            "intensity": 67.3,
+            "intensity": 67.4,
             "attention": 66.8,
             "panic": 22.0,
-            "heat": 58.8
+            "heat": 58.9
           },
           "raw": {
             "net": -0.03894217442410845,
@@ -22631,7 +22633,7 @@
           "name": "新浪股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 46.8,
+            "optimism": 47.0,
             "fomo": 37.1,
             "newcomer": 38.4,
             "intensity": 35.8,
@@ -22695,8 +22697,8 @@
               "2026-09-17"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -22730,8 +22732,8 @@
               "2026-10-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -22757,8 +22759,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -22785,8 +22787,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -22843,8 +22845,8 @@
               "2026-06-23"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -22875,8 +22877,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -22900,8 +22902,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1395,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -22931,8 +22933,8 @@
               "2026-11-09"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -22956,8 +22958,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -23095,10 +23097,10 @@
         "robustZ": 0.05,
         "reliability": 36.3,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -23253,7 +23255,7 @@
               "platformCount": 2,
               "maskedDirectionRaw": 45.4,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 45.3
+              "candidateShrunkDirection": 45.4
             },
             "novice": {
               "available": true,
@@ -23262,7 +23264,7 @@
               "platformCount": 1,
               "maskedDirectionRaw": 51.7,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 49.4
+              "candidateShrunkDirection": 49.5
             },
             "retail": {
               "available": true,
@@ -23271,7 +23273,7 @@
               "platformCount": 2,
               "maskedDirectionRaw": 49.7,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 48.1
+              "candidateShrunkDirection": 48.2
             }
           }
         },
@@ -23673,7 +23675,7 @@
               "fomo": 42.5,
               "panic": 29.9,
               "newcomer": 50.0,
-              "intensity": 55.1,
+              "intensity": 55.2,
               "attention": 59.4
             },
             "sina": {
@@ -23890,7 +23892,7 @@
             "intensity": 53.7,
             "attention": 68.6,
             "panic": 32.8,
-            "heat": 52.4
+            "heat": 52.5
           },
           "raw": {
             "net": -0.028886835875545087,
@@ -23922,7 +23924,7 @@
           "name": "新浪股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 40.4,
+            "optimism": 40.5,
             "fomo": 46.8,
             "newcomer": 38.4,
             "intensity": 62.0,
@@ -24028,8 +24030,8 @@
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1402,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -24077,8 +24079,8 @@
               "2026-09-07"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1401,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -24116,8 +24118,8 @@
               "2026-10-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1401,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -24157,8 +24159,8 @@
               "2026-10-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1401,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -24191,8 +24193,8 @@
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1401,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -24242,8 +24244,8 @@
               "2026-09-24"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1401,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -24274,8 +24276,8 @@
               "2026-11-15"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1387,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -24413,10 +24415,10 @@
         "robustZ": -0.05,
         "reliability": 37.7,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -24997,10 +24999,10 @@
           "channelSignals": {
             "eastmoney": {
               "optimism": 48.4,
-              "fomo": 44.3,
+              "fomo": 44.2,
               "panic": 19.4,
               "newcomer": 52.5,
-              "intensity": 49.3,
+              "intensity": 49.4,
               "attention": 56.4
             },
             "sina": {
@@ -25389,8 +25391,8 @@
               "2026-09-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1399,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -25423,8 +25425,8 @@
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1399,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -25459,8 +25461,8 @@
               "2026-09-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1399,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -25504,8 +25506,8 @@
               "2026-10-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1399,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -25553,8 +25555,8 @@
               "2026-08-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -25594,8 +25596,8 @@
               "2026-10-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -25620,8 +25622,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1383,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -25646,8 +25648,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1381,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -25677,8 +25679,8 @@
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -25712,8 +25714,8 @@
               "2026-11-08"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -25851,10 +25853,10 @@
         "robustZ": -0.49,
         "reliability": 41.7,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -26026,7 +26028,7 @@
               "platformCount": 2,
               "maskedDirectionRaw": 55.0,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 53.4
+              "candidateShrunkDirection": 53.3
             }
           }
         },
@@ -26428,7 +26430,7 @@
               "fomo": 45.7,
               "panic": 27.4,
               "newcomer": 56.1,
-              "intensity": 49.9,
+              "intensity": 50.0,
               "attention": 54.2
             },
             "sina": {
@@ -26638,10 +26640,10 @@
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 54.3,
-            "fomo": 50.8,
+            "optimism": 54.2,
+            "fomo": 50.7,
             "newcomer": 63.6,
-            "intensity": 53.8,
+            "intensity": 53.9,
             "attention": 61.2,
             "panic": 36.3,
             "heat": 56.6
@@ -26816,8 +26818,8 @@
               "2026-10-29"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -26853,8 +26855,8 @@
               "2026-10-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -26889,8 +26891,8 @@
               "2026-10-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -26918,8 +26920,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -26964,8 +26966,8 @@
               "2026-10-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1397,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -26989,8 +26991,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1380,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -27016,8 +27018,8 @@
               "2026-11-22"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -27047,8 +27049,8 @@
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1397,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -27186,10 +27188,10 @@
         "robustZ": -0.497,
         "reliability": 39.0,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -27239,7 +27241,7 @@
       },
       "signals": {
         "optimism": 49.1,
-        "fomo": 47.0,
+        "fomo": 47.1,
         "panic": 10.0,
         "newcomer": 50.7,
         "intensity": 50.7,
@@ -27254,7 +27256,7 @@
         "samplePosts": 344,
         "bullishRatio": 12.2,
         "bearishRatio": 14.8,
-        "fomoRate": 14.7,
+        "fomoRate": 15.0,
         "panicRate": 6.0,
         "newcomerRate": 2.5,
         "activityIndex": 51.6,
@@ -27760,8 +27762,8 @@
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 49.3,
-              "fomo": 45.9,
+              "optimism": 49.4,
+              "fomo": 46.5,
               "panic": 25.0,
               "newcomer": 48.8,
               "intensity": 56.6,
@@ -27978,14 +27980,14 @@
             "optimism": 57.1,
             "fomo": 55.7,
             "newcomer": 58.1,
-            "intensity": 68.8,
+            "intensity": 69.0,
             "attention": 58.9,
             "panic": 30.2,
             "heat": 60.3
           },
           "raw": {
-            "net": 0.116069978571307,
-            "fomo": 0.10849221993876348,
+            "net": 0.11630089709739616,
+            "fomo": 0.10996737805900256,
             "panic": 0.04854098540147432,
             "newcomer": 0.06046868420331475,
             "intense": 0.3940136166109068
@@ -28115,8 +28117,8 @@
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1403,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -28152,8 +28154,8 @@
               "2026-09-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1402,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -28192,8 +28194,8 @@
               "2026-09-30"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1402,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -28229,8 +28231,8 @@
               "2026-11-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1402,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -28264,8 +28266,8 @@
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1402,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -28289,25 +28291,14 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1388,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
         }
       ],
       "samplePosts": [
-        {
-          "title": "别人大涨，你下跌别人回调，你下跌别人反弹，你下跌别人下跌，你还下跌合着无论如何都",
-          "label": "看空",
-          "score": -6,
-          "comments": 0,
-          "clicks": 22,
-          "source": "招商蛇口吧",
-          "platform": "eastmoney",
-          "platformName": "东方财富股吧",
-          "publishTime": "2026-11-24T14:15:55+08:00"
-        },
         {
           "title": "割肉清仓，亏了两套万科的房子以后都不要再买万科了",
           "label": "看空",
@@ -28318,6 +28309,17 @@
           "platform": "eastmoney",
           "platformName": "东方财富股吧",
           "publishTime": "2026-11-24T10:58:40+08:00"
+        },
+        {
+          "title": "别人大涨，你下跌别人回调，你下跌别人反弹，你下跌别人下跌，你还下跌合着无论如何都",
+          "label": "看空",
+          "score": -6,
+          "comments": 0,
+          "clicks": 22,
+          "source": "招商蛇口吧",
+          "platform": "eastmoney",
+          "platformName": "东方财富股吧",
+          "publishTime": "2026-11-24T14:15:55+08:00"
         },
         {
           "title": "割肉跑路亏了30多万垃圾",
@@ -28428,10 +28430,10 @@
         "robustZ": -0.552,
         "reliability": 34.3,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -29006,7 +29008,7 @@
               "fomo": 43.1,
               "panic": 25.5,
               "newcomer": 46.6,
-              "intensity": 53.1,
+              "intensity": 53.2,
               "attention": 58.8
             },
             "sina": {
@@ -29219,7 +29221,7 @@
             "optimism": 48.0,
             "fomo": 39.7,
             "newcomer": 46.7,
-            "intensity": 55.6,
+            "intensity": 55.7,
             "attention": 67.0,
             "panic": 27.2,
             "heat": 53.0
@@ -29396,8 +29398,8 @@
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -29431,8 +29433,8 @@
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -29468,8 +29470,8 @@
               "2026-09-02"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -29520,8 +29522,8 @@
               "2026-08-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -29574,8 +29576,8 @@
               "2026-08-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -29620,8 +29622,8 @@
               "2026-09-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -29645,8 +29647,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1402,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -29679,8 +29681,8 @@
               "2026-10-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1410,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -29711,8 +29713,8 @@
               "2026-10-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1411,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -29850,10 +29852,10 @@
         "robustZ": -0.27,
         "reliability": 38.2,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -30427,7 +30429,7 @@
               "fomo": 47.3,
               "panic": 18.1,
               "newcomer": 53.5,
-              "intensity": 52.5,
+              "intensity": 52.6,
               "attention": 52.1
             },
             "sina": {
@@ -30813,8 +30815,8 @@
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -30853,8 +30855,8 @@
               "2026-10-21"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -30890,8 +30892,8 @@
               "2026-10-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -30923,8 +30925,8 @@
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -30957,8 +30959,8 @@
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -30998,8 +31000,8 @@
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -31024,8 +31026,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1401,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -31054,8 +31056,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -31085,8 +31087,8 @@
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -31119,8 +31121,8 @@
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -31258,10 +31260,10 @@
         "robustZ": -0.795,
         "reliability": 45.9,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -31835,7 +31837,7 @@
               "fomo": 49.2,
               "panic": 25.5,
               "newcomer": 50.6,
-              "intensity": 56.2,
+              "intensity": 56.3,
               "attention": 48.8
             },
             "sina": {
@@ -32048,7 +32050,7 @@
             "optimism": 47.7,
             "fomo": 45.5,
             "newcomer": 52.9,
-            "intensity": 62.2,
+            "intensity": 62.3,
             "attention": 49.3,
             "panic": 50.5,
             "heat": 51.9
@@ -32225,8 +32227,8 @@
               "2026-09-25"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -32260,8 +32262,8 @@
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -32292,8 +32294,8 @@
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1407,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -32329,8 +32331,8 @@
               "2026-11-04"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -32355,8 +32357,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -32385,8 +32387,8 @@
               "2026-11-13"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1407,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -32425,8 +32427,8 @@
               "2026-11-08"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1407,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -32465,8 +32467,8 @@
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1407,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -32604,10 +32606,10 @@
         "robustZ": -1.397,
         "reliability": 38.0,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -32762,7 +32764,7 @@
               "platformCount": 1,
               "maskedDirectionRaw": 39.2,
               "evidenceWeight": 0.316,
-              "candidateShrunkDirection": 48.3
+              "candidateShrunkDirection": 48.2
             },
             "novice": {
               "available": true,
@@ -32771,7 +32773,7 @@
               "platformCount": 2,
               "maskedDirectionRaw": 57.2,
               "evidenceWeight": 0.65,
-              "candidateShrunkDirection": 55.6
+              "candidateShrunkDirection": 55.5
             },
             "retail": {
               "available": true,
@@ -33182,7 +33184,7 @@
               "fomo": 47.4,
               "panic": 9.9,
               "newcomer": 50.4,
-              "intensity": 51.9,
+              "intensity": 52.0,
               "attention": 50.3
             },
             "sina": {
@@ -33392,7 +33394,7 @@
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 47.1,
+            "optimism": 47.0,
             "fomo": 43.1,
             "newcomer": 67.1,
             "intensity": 55.4,
@@ -33567,8 +33569,8 @@
               "2026-08-24"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -33599,8 +33601,8 @@
               "2026-11-12"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -33629,8 +33631,8 @@
               "2026-11-18"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -33677,8 +33679,8 @@
               "2026-10-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -33730,8 +33732,8 @@
               "2026-05-21"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -33756,8 +33758,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -33789,8 +33791,8 @@
               "2026-11-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -33815,8 +33817,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -33954,10 +33956,10 @@
         "robustZ": -0.9,
         "reliability": 40.2,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -34531,7 +34533,7 @@
               "fomo": 45.8,
               "panic": 21.8,
               "newcomer": 50.9,
-              "intensity": 47.3,
+              "intensity": 47.4,
               "attention": 54.0
             },
             "sina": {
@@ -34919,8 +34921,8 @@
               "2026-09-18"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -34953,8 +34955,8 @@
               "2026-10-31"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -34985,8 +34987,8 @@
               "2026-10-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -35029,8 +35031,8 @@
               "2026-11-03"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -35057,8 +35059,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1412,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -35087,8 +35089,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -35117,8 +35119,8 @@
               "2026-11-19"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1415,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -35151,8 +35153,8 @@
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1414,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -35193,15 +35195,15 @@
           "publishTime": "2026-11-24T10:14:34+08:00"
         },
         {
-          "title": "$科创新材料ETF南方（588160）$连续两天大涨",
-          "label": "看多",
-          "score": 3,
-          "comments": 20,
-          "clicks": 85,
+          "title": "为啥是这个球样，别的涨停了，你两天还不涨三四块？太不给力了",
+          "label": "看空",
+          "score": -4,
+          "comments": 0,
+          "clicks": 26,
           "source": "科大讯飞吧",
           "platform": "eastmoney",
           "platformName": "东方财富股吧",
-          "publishTime": "2026-11-24T14:11:00+08:00"
+          "publishTime": "2026-11-24T15:12:42+08:00"
         },
         {
           "title": "机器人也到头了，今天清仓",
@@ -35290,10 +35292,10 @@
         "robustZ": -0.682,
         "reliability": 46.9,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -35350,7 +35352,7 @@
         "attention": 50.3,
         "heat": 49.0
       },
-      "heat": 48.0,
+      "heat": 47.9,
       "direction": 50.5,
       "metrics": {
         "recentPosts": 131,
@@ -35868,7 +35870,7 @@
               "fomo": 44.5,
               "panic": 17.8,
               "newcomer": 50.1,
-              "intensity": 53.8,
+              "intensity": 53.9,
               "attention": 51.2
             },
             "sina": {
@@ -36255,8 +36257,8 @@
               "2026-09-20"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1397,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -36289,8 +36291,8 @@
               "2026-11-07"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1397,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -36324,8 +36326,8 @@
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1397,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -36369,8 +36371,8 @@
               "2026-10-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -36423,8 +36425,8 @@
               "2026-06-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -36452,8 +36454,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1380,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -36487,8 +36489,8 @@
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1397,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -36521,8 +36523,8 @@
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1397,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -36557,8 +36559,8 @@
               "2026-10-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1397,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -36696,10 +36698,10 @@
         "robustZ": -1.172,
         "reliability": 42.4,
         "rankEligible": true,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -37273,13 +37275,13 @@
               "fomo": 52.1,
               "panic": 13.2,
               "newcomer": 48.2,
-              "intensity": 51.7,
+              "intensity": 51.8,
               "attention": 49.8
             },
             "sina": {
               "optimism": 50.5,
               "fomo": 48.6,
-              "panic": 4.5,
+              "panic": 4.6,
               "newcomer": 51.1,
               "intensity": 51.6,
               "attention": 54.5
@@ -37666,8 +37668,8 @@
               "2026-09-27"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -37695,8 +37697,8 @@
               "2026-11-20"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -37740,8 +37742,8 @@
               "2026-09-12"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1405,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -37771,8 +37773,8 @@
               "2026-11-17"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -37796,8 +37798,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1402,
             "coverageStatus": "source_exhausted_before_third_trading_day",
             "paginationMode": "cursor"
           }
@@ -37821,8 +37823,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1392,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -37856,8 +37858,8 @@
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -37882,8 +37884,8 @@
               "2026-11-23"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1404,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -38003,7 +38005,7 @@
       ],
       "legacyHeat": 50.9,
       "absoluteHeat": 51.5,
-      "relativeHeat": 48.2,
+      "relativeHeat": 48.1,
       "heatRank": null,
       "heatTier": "数据不足，暂不硬排名",
       "heatModel": {
@@ -38015,16 +38017,16 @@
         "activityIndex": 51.7,
         "volumeFactor": 51.7,
         "relativeLatent": 51.6,
-        "relativeHeat": 48.2,
+        "relativeHeat": 48.1,
         "heatTier": "数据不足，暂不硬排名",
         "percentile": 40.4,
         "robustZ": -0.435,
         "reliability": 31.9,
         "rankEligible": false,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -38597,7 +38599,7 @@
               "fomo": 46.9,
               "panic": 14.2,
               "newcomer": 48.5,
-              "intensity": 54.2,
+              "intensity": 54.3,
               "attention": 50.5
             },
             "sina": {
@@ -38953,8 +38955,8 @@
               "2026-09-02"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -38992,8 +38994,8 @@
               "2026-08-24"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -39024,8 +39026,8 @@
               "2026-11-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1409,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -39056,8 +39058,8 @@
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -39088,8 +39090,8 @@
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -39124,8 +39126,8 @@
               "2026-11-10"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -39151,8 +39153,8 @@
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1408,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -39290,10 +39292,10 @@
         "robustZ": -0.722,
         "reliability": 29.6,
         "rankEligible": false,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -39867,7 +39869,7 @@
               "fomo": 45.7,
               "panic": 9.9,
               "newcomer": 46.3,
-              "intensity": 51.2,
+              "intensity": 51.3,
               "attention": 55.6
             },
             "sina": {
@@ -40080,7 +40082,7 @@
             "optimism": 54.1,
             "fomo": 43.0,
             "newcomer": 52.9,
-            "intensity": 52.3,
+            "intensity": 52.4,
             "attention": 66.0,
             "panic": 12.2,
             "heat": 53.8
@@ -40250,8 +40252,8 @@
               "2026-09-29"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1407,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -40281,8 +40283,8 @@
               "2026-09-30"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1407,
             "coverageStatus": "page_cap_reached_before_third_trading_day",
             "paginationMode": "page"
           }
@@ -40321,8 +40323,8 @@
               "2026-09-15"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1407,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -40359,8 +40361,8 @@
               "2026-11-06"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -40400,8 +40402,8 @@
               "2026-10-29"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1406,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -40425,8 +40427,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1398,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -40450,8 +40452,8 @@
               "2026-11-24"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1407,
             "coverageStatus": "anonymous_page_cap_lower_bound",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -40480,8 +40482,8 @@
               "2026-11-16"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1407,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -40514,8 +40516,8 @@
               "2026-11-05"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1407,
             "coverageStatus": "third_day_reached",
             "paginationMode": "anonymous_initial_page_only"
           }
@@ -40653,10 +40655,10 @@
         "robustZ": -0.448,
         "reliability": 30.0,
         "rankEligible": false,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -40706,12 +40708,12 @@
       },
       "signals": {
         "optimism": 50.1,
-        "fomo": 49.6,
+        "fomo": 49.7,
         "panic": 6.0,
         "newcomer": 50.4,
-        "intensity": 49.9,
+        "intensity": 50.0,
         "attention": 49.7,
-        "heat": 49.8
+        "heat": 49.9
       },
       "heat": 49.6,
       "direction": 50.1,
@@ -40721,7 +40723,7 @@
         "samplePosts": 216,
         "bullishRatio": 16.7,
         "bearishRatio": 11.6,
-        "fomoRate": 8.2,
+        "fomoRate": 8.6,
         "panicRate": 6.0,
         "newcomerRate": 3.4,
         "activityIndex": 49.7,
@@ -41235,8 +41237,8 @@
           },
           "channelSignals": {
             "eastmoney": {
-              "optimism": 51.1,
-              "fomo": 50.6,
+              "optimism": 51.2,
+              "fomo": 50.9,
               "panic": 22.7,
               "newcomer": 53.2,
               "intensity": 51.6,
@@ -41450,17 +41452,17 @@
           "name": "东方财富股吧",
           "activityEligible": true,
           "signals": {
-            "optimism": 53.8,
-            "fomo": 61.7,
+            "optimism": 53.9,
+            "fomo": 63.8,
             "newcomer": 61.6,
             "intensity": 52.7,
             "attention": 54.5,
             "panic": 28.0,
-            "heat": 57.3
+            "heat": 57.9
           },
           "raw": {
-            "net": 0.049868185244568056,
-            "fomo": 0.09356421356421356,
+            "net": 0.05091177292474496,
+            "fomo": 0.10023088023088023,
             "panic": 0.04753787878787878,
             "newcomer": 0.03618506493506493,
             "intense": 0.22648268398268398
@@ -41588,8 +41590,8 @@
               "2026-10-26"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -41623,8 +41625,8 @@
               "2026-10-07"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1396,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -41662,8 +41664,8 @@
               "2026-10-11"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1395,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "page"
           }
@@ -41713,8 +41715,8 @@
               "2026-09-28"
             ],
             "thirdTradingDayReached": true,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1395,
             "coverageStatus": "third_trading_day_reached",
             "paginationMode": "cursor"
           }
@@ -41746,8 +41748,8 @@
               "2026-11-03"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1377,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -41778,8 +41780,8 @@
               "2026-11-09"
             ],
             "thirdTradingDayReached": false,
-            "freshFetchedNow": true,
-            "cacheAge": 0,
+            "freshFetchedNow": false,
+            "cacheAge": 1376,
             "coverageStatus": "non_chronological_hot_feed",
             "paginationMode": "last_score_cursor_bounded"
           }
@@ -41886,8 +41888,8 @@
           "publishTime": "2026-11-23T17:15:58+08:00"
         }
       ],
-      "legacyHeat": 49.8,
-      "absoluteHeat": 49.7,
+      "legacyHeat": 49.9,
+      "absoluteHeat": 49.8,
       "relativeHeat": 45.6,
       "heatRank": null,
       "heatTier": "数据不足，暂不硬排名",
@@ -41895,21 +41897,21 @@
         "version": "sector_community_heat_v4_company_equal",
         "status": "provisional_not_ranked",
         "marketAnchor": 52.7,
-        "legacyEmotionHeat": 49.8,
-        "absoluteHeat": 49.7,
+        "legacyEmotionHeat": 49.9,
+        "absoluteHeat": 49.8,
         "activityIndex": 49.7,
         "volumeFactor": 49.7,
         "relativeLatent": 49.7,
         "relativeHeat": 45.6,
         "heatTier": "数据不足，暂不硬排名",
         "percentile": 5.8,
-        "robustZ": -1.367,
+        "robustZ": -1.36,
         "reliability": 25.7,
         "rankEligible": false,
-        "dispersionGate": 0.684,
+        "dispersionGate": 0.687,
         "crossSectionMedian": 52.45,
         "crossSectionMAD": 1.185,
-        "crossSectionP90P10": 3.51,
+        "crossSectionP90P10": 3.517,
         "noiseFloor": 1.732,
         "usesMarketPrice": false,
         "formalPersonaScoresChanged": false,
@@ -41931,7 +41933,7 @@
       "schemaVersion": 5,
       "date": "2026-11-24",
       "baoma": 53,
-      "novice": 53,
+      "novice": 52,
       "retail": 53,
       "composite": 53,
       "heat": 52.7,
@@ -41941,7 +41943,7 @@
         "fomo": 49.4,
         "panic": 6.0,
         "newcomer": 49.5,
-        "intensity": 51.0,
+        "intensity": 50.8,
         "attention": 50.9,
         "heat": 52.7,
         "breadth": 75.0
@@ -42027,10 +42029,10 @@
             "percentile": 78.8,
             "robustZ": 0.703,
             "reliability": 38.6,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -42090,7 +42092,7 @@
           "heat": 57.7,
           "legacyHeat": 53.3,
           "absoluteHeat": 54.2,
-          "relativeHeat": 57.1,
+          "relativeHeat": 57.2,
           "heatRank": 1,
           "heatTier": "市场中段",
           "direction": 50.8,
@@ -42128,10 +42130,10 @@
             "percentile": 98.1,
             "robustZ": 0.935,
             "reliability": 48.0,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -42180,21 +42182,21 @@
             "composite": 55
           },
           "signals": {
-            "optimism": 51.2,
+            "optimism": 51.1,
             "fomo": 51.6,
             "panic": 11.5,
             "newcomer": 50.4,
-            "intensity": 51.0,
+            "intensity": 51.1,
             "attention": 54.6,
             "heat": 52.2
           },
           "heat": 57.5,
           "legacyHeat": 52.2,
           "absoluteHeat": 54.0,
-          "relativeHeat": 56.8,
+          "relativeHeat": 56.9,
           "heatRank": 2,
           "heatTier": "市场中段",
-          "direction": 51.2,
+          "direction": 51.1,
           "coverage": 100.0,
           "confidence": 100,
           "samplePosts": 357,
@@ -42229,10 +42231,10 @@
             "percentile": 90.4,
             "robustZ": 0.895,
             "reliability": 50.2,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -42285,14 +42287,14 @@
             "fomo": 49.9,
             "panic": 12.2,
             "newcomer": 50.4,
-            "intensity": 53.0,
+            "intensity": 53.1,
             "attention": 54.5,
-            "heat": 52.1
+            "heat": 52.2
           },
           "heat": 56.7,
-          "legacyHeat": 52.1,
+          "legacyHeat": 52.2,
           "absoluteHeat": 53.9,
-          "relativeHeat": 55.7,
+          "relativeHeat": 55.8,
           "heatRank": 4,
           "heatTier": "市场中段",
           "direction": 50.9,
@@ -42325,15 +42327,15 @@
             "marketAnchor": 52.7,
             "activityIndex": 54.5,
             "volumeFactor": 54.5,
-            "relativeLatent": 54.1,
+            "relativeLatent": 54.2,
             "heatTier": "市场中段",
             "percentile": 86.5,
-            "robustZ": 0.845,
+            "robustZ": 0.853,
             "reliability": 44.9,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -42384,7 +42386,7 @@
           "signals": {
             "optimism": 50.1,
             "fomo": 50.7,
-            "panic": 9.2,
+            "panic": 9.3,
             "newcomer": 50.8,
             "intensity": 52.4,
             "attention": 54.0,
@@ -42431,10 +42433,10 @@
             "percentile": 75.0,
             "robustZ": 0.633,
             "reliability": 40.1,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -42532,10 +42534,10 @@
             "percentile": 71.2,
             "robustZ": 0.448,
             "reliability": 48.2,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -42592,7 +42594,7 @@
             "attention": 54.1,
             "heat": 52.9
           },
-          "heat": 56.0,
+          "heat": 56.1,
           "legacyHeat": 52.9,
           "absoluteHeat": 53.8,
           "relativeHeat": 54.8,
@@ -42633,10 +42635,10 @@
             "percentile": 82.7,
             "robustZ": 0.735,
             "reliability": 42.0,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -42687,7 +42689,7 @@
           "signals": {
             "optimism": 50.2,
             "fomo": 50.0,
-            "panic": 10.8,
+            "panic": 10.5,
             "newcomer": 49.6,
             "intensity": 54.0,
             "attention": 52.8,
@@ -42734,10 +42736,10 @@
             "percentile": 59.6,
             "robustZ": 0.1,
             "reliability": 35.9,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -42835,10 +42837,10 @@
             "percentile": 67.3,
             "robustZ": 0.31,
             "reliability": 39.8,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -42936,10 +42938,10 @@
             "percentile": 63.5,
             "robustZ": 0.195,
             "reliability": 37.9,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -42999,7 +43001,7 @@
           "heat": 51.1,
           "legacyHeat": 50.9,
           "absoluteHeat": 51.5,
-          "relativeHeat": 47.7,
+          "relativeHeat": 47.6,
           "heatRank": 16,
           "heatTier": "市场中段",
           "direction": 51.6,
@@ -43037,10 +43039,10 @@
             "percentile": 40.4,
             "robustZ": -0.435,
             "reliability": 40.5,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -43138,10 +43140,10 @@
             "percentile": 55.8,
             "robustZ": 0.093,
             "reliability": 37.8,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -43194,7 +43196,7 @@
             "fomo": 50.1,
             "panic": 6.3,
             "newcomer": 48.2,
-            "intensity": 50.4,
+            "intensity": 50.5,
             "attention": 51.7,
             "heat": 50.4
           },
@@ -43239,10 +43241,10 @@
             "percentile": 36.5,
             "robustZ": -0.472,
             "reliability": 40.9,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -43302,7 +43304,7 @@
           "heat": 57.0,
           "legacyHeat": 51.3,
           "absoluteHeat": 53.9,
-          "relativeHeat": 56.1,
+          "relativeHeat": 56.2,
           "heatRank": 3,
           "heatTier": "市场中段",
           "direction": 50.3,
@@ -43340,10 +43342,10 @@
             "percentile": 94.2,
             "robustZ": 0.913,
             "reliability": 43.2,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -43403,7 +43405,7 @@
           "heat": 49.2,
           "legacyHeat": 50.2,
           "absoluteHeat": 50.6,
-          "relativeHeat": 45.0,
+          "relativeHeat": 44.9,
           "heatRank": 22,
           "heatTier": "市场中段",
           "direction": 51.1,
@@ -43441,10 +43443,10 @@
             "percentile": 13.5,
             "robustZ": -0.87,
             "reliability": 38.9,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -43497,7 +43499,7 @@
             "fomo": 48.6,
             "panic": 6.7,
             "newcomer": 47.5,
-            "intensity": 49.5,
+            "intensity": 49.6,
             "attention": 53.0,
             "heat": 50.0
           },
@@ -43542,10 +43544,10 @@
             "percentile": 51.9,
             "robustZ": 0.05,
             "reliability": 36.3,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -43644,10 +43646,10 @@
             "percentile": 48.1,
             "robustZ": -0.05,
             "reliability": 37.7,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -43745,10 +43747,10 @@
             "percentile": 32.7,
             "robustZ": -0.49,
             "reliability": 41.7,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -43846,10 +43848,10 @@
             "percentile": 28.8,
             "robustZ": -0.497,
             "reliability": 39.0,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -43899,7 +43901,7 @@
           },
           "signals": {
             "optimism": 49.1,
-            "fomo": 47.0,
+            "fomo": 47.1,
             "panic": 10.0,
             "newcomer": 50.7,
             "intensity": 50.7,
@@ -43948,10 +43950,10 @@
             "percentile": 25.0,
             "robustZ": -0.552,
             "reliability": 34.3,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -44049,10 +44051,10 @@
             "percentile": 44.2,
             "robustZ": -0.27,
             "reliability": 38.2,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -44150,10 +44152,10 @@
             "percentile": 17.3,
             "robustZ": -0.795,
             "reliability": 45.9,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -44251,10 +44253,10 @@
             "percentile": 1.9,
             "robustZ": -1.397,
             "reliability": 38.0,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -44352,10 +44354,10 @@
             "percentile": 9.6,
             "robustZ": -0.9,
             "reliability": 40.2,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -44453,10 +44455,10 @@
             "percentile": 21.2,
             "robustZ": -0.682,
             "reliability": 46.9,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -44513,7 +44515,7 @@
             "attention": 50.3,
             "heat": 49.0
           },
-          "heat": 48.0,
+          "heat": 47.9,
           "legacyHeat": 49.0,
           "absoluteHeat": 50.0,
           "relativeHeat": 43.2,
@@ -44554,10 +44556,10 @@
             "percentile": 5.8,
             "robustZ": -1.172,
             "reliability": 42.4,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -44617,7 +44619,7 @@
           "heat": 51.4,
           "legacyHeat": 50.9,
           "absoluteHeat": 51.5,
-          "relativeHeat": 48.2,
+          "relativeHeat": 48.1,
           "heatRank": null,
           "heatTier": "数据不足，暂不硬排名",
           "direction": 49.6,
@@ -44655,10 +44657,10 @@
             "percentile": 40.4,
             "robustZ": -0.435,
             "reliability": 31.9,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -44757,10 +44759,10 @@
             "percentile": 21.2,
             "robustZ": -0.722,
             "reliability": 29.6,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -44858,10 +44860,10 @@
             "percentile": 40.4,
             "robustZ": -0.448,
             "reliability": 30.0,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -44911,16 +44913,16 @@
           },
           "signals": {
             "optimism": 50.1,
-            "fomo": 49.6,
+            "fomo": 49.7,
             "panic": 6.0,
             "newcomer": 50.4,
-            "intensity": 49.9,
+            "intensity": 50.0,
             "attention": 49.7,
-            "heat": 49.8
+            "heat": 49.9
           },
           "heat": 49.6,
-          "legacyHeat": 49.8,
-          "absoluteHeat": 49.7,
+          "legacyHeat": 49.9,
+          "absoluteHeat": 49.8,
           "relativeHeat": 45.6,
           "heatRank": null,
           "heatTier": "数据不足，暂不硬排名",
@@ -44958,12 +44960,12 @@
             "relativeLatent": 49.7,
             "heatTier": "数据不足，暂不硬排名",
             "percentile": 5.8,
-            "robustZ": -1.367,
+            "robustZ": -1.36,
             "reliability": 25.7,
-            "dispersionGate": 0.684,
+            "dispersionGate": 0.687,
             "crossSectionMedian": 52.45,
             "crossSectionMAD": 1.185,
-            "crossSectionP90P10": 3.51,
+            "crossSectionP90P10": 3.517,
             "noiseFloor": 1.732,
             "weights": {
               "absoluteAttention": 0.75,
@@ -45015,7 +45017,7 @@
         "freshSourceRatio": 86.1
       },
       "asOf": "2026-11-24T23:59:59.999999+08:00",
-      "capturedAt": "2026-11-25T13:54:01.000099+08:00",
+      "capturedAt": "2026-11-25T14:17:38.706400+08:00",
       "methodology": "community_text_four_channel_grassroots_three_trading_day_v3",
       "tradingDay": true,
       "calendarMode": "official_sse",
@@ -45024,7 +45026,7 @@
   ],
   "historyMeta": {
     "schemaVersion": 5,
-    "updatedAt": "2026-11-25T13:54:01.000099+08:00",
+    "updatedAt": "2026-11-25T14:17:38.706400+08:00",
     "startDate": "2026-11-24",
     "endDate": "2026-11-24",
     "count": 1,

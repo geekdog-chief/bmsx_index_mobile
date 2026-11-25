@@ -303,7 +303,8 @@ def main():
         log(f"  拆包 {len(batch)} → {half}+{len(batch) - half}")
         return score_batch(batch[:half]) + score_batch(batch[half:])
 
-    B = 10  # 12B 输出预算紧，10条/包
+    B = 7  # 2026-11-25 用户授权解冻：10→7。12B 一次管10条经常漏id级联拆包，
+           # 烧的调用比直接喂7条还多；7条/包漏id率大降，总耗时反而回落。MAX=300 不动。
     for s in range(0, len(todo), B):
         failed.extend(score_batch(todo[s:s + B]))
         STORE.parent.mkdir(parents=True, exist_ok=True)
