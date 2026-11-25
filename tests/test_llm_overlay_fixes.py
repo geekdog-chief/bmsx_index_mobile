@@ -848,6 +848,34 @@ class TestStoreAtomicSave(unittest.TestCase):
             self._restore_store()
 
 
+class TestMonkeypatchContract(unittest.TestCase):
+    """猴补丁契约（治理要求§二）：替换范围与签名恒定，兼容测试防漂移。"""
+
+    def test_patched_scope_is_exactly_four(self):
+        """替换范围明确：恰为四个入口，多一个少一个都算破坏契约。"""
+        uil.apply_overlays()
+        self.assertIs(ui.sentiment_score, uil.llm_sentiment_score)
+        self.assertIs(ui.contains_nonnegated, uil.llm_contains)
+        self.assertIs(ui.load_forum_cache, uil.dedup_cache)
+        self.assertIs(ui.fetch_source, uil._fresh_fetch_source)
+        patched = {k for k, v in vars(ui).items() if callable(v) and getattr(v, "__module__", "") == "update_index_llm"}
+        self.assertEqual(len(patched), 4, f"猴补丁范围漂移：{patched}")
+
+    def test_signature_parity(self):
+        """接口稳定：被替换函数的参数签名与原函数兼容（冻结层升级时本测试报警）。"""
+        import inspect as _inspect
+        def compat(fn_new, fn_orig, skip_last=0):
+            a = _inspect.signature(fn_new).parameters
+            b = _inspect.signature(fn_orig).parameters
+            b_names = [n for n, p in b.items()][: len(b) - skip_last]
+            for n in b_names:
+                self.assertIn(n, a, f"原参数 {n} 在补丁中缺失")
+        compat(uil.llm_sentiment_score, ui.sentiment_score)
+        compat(uil.llm_contains, ui.contains_nonnegated)
+        compat(uil.dedup_cache, ui.load_forum_cache)
+        compat(uil._fresh_fetch_source, ui.fetch_source)  # as_of 有默认值，原默认冻结值跳过
+
+
 class TestP12FreshNow(unittest.TestCase):
     """apply_overlays 每轮刷新 ui.NOW；fetch_source 包装层显式传当前时间。"""
 
