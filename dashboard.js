@@ -51,8 +51,8 @@
       if (v <= 24) return "极度冷静"; if (v <= 44) return "偏冷";
       if (v <= 55) return "中性"; if (v <= 75) return "贪婪"; return "极度贪婪";
     }
-    if (v <= 24) return "极度恐惧"; if (v <= 44) return "恐惧";
-    if (v <= 55) return "中性"; if (v <= 75) return "贪婪"; return "极度贪婪";
+    if (v <= 24) return "平静"; if (v <= 44) return "轻度恐慌";
+    if (v <= 55) return "中度恐慌"; if (v <= 75) return "恐慌"; return "极度恐慌";
   }
   function renderGreedFear() {
     const sig = (DATA.signals) || {};
@@ -70,13 +70,15 @@
     $("gbar-i").style.width = greed.toFixed(1) + "%"; $("gval").textContent = greed.toFixed(1);
     $("fbar-i").style.width = fear.toFixed(1) + "%"; $("fval").textContent = fear.toFixed(1);
     const gt = $("gval-tier"), ft = $("fval-tier");
-    // 档位标签颜色跟强度走，不跟柱子走：低位冷静(灰)→中位(素)→高位贪/恐(橙)→极端(红)
-    const tierClass = (v) => v <= 44 ? "tag cold" : v <= 55 ? "tag" : v <= 75 ? "tag warm" : "tag hot";
-    if (gt) { gt.textContent = emotionTier(greed, "greed"); gt.className = tierClass(greed); gt.style.marginLeft = "6px"; }
-    if (ft) { ft.textContent = emotionTier(fear, "fear"); ft.className = tierClass(fear); ft.style.marginLeft = "6px"; }
+    // 双轴独立展示，不做单轴合成：贪婪与恐惧可同时高企（追高被套盘），一合成就被对冲掉
+    // 档位徽章：五级热力配色（冷灰→淡黄→素灰→橙→红），JS 直写内联色，不借 .tag 类
+    const chipColor = (v) => v <= 24 ? ["#eef2f6", "#64748b"] : v <= 44 ? ["#fdf3df", "#a16207"]
+      : v <= 55 ? ["#e8edf2", "#475569"] : v <= 75 ? ["#fdeede", "#c2410c"] : ["#fde2e2", "#b91c1c"];
+    if (gt) { gt.textContent = emotionTier(greed, "greed"); const c = chipColor(greed); gt.style.background = c[0]; gt.style.color = c[1]; }
+    if (ft) { ft.textContent = emotionTier(fear, "fear"); const c = chipColor(fear); ft.style.background = c[0]; ft.style.color = c[1]; }
     const note = $("gf-note");
     if (note) note.textContent = src === "llm"
-      ? "贪婪与恐惧由本地模型逐帖读取帖子情绪强度合成（0-3/帖，平台固定25%，营销文不计）。读数0-100，越高情绪越强。恐惧侧分档：≤24极度恐惧，25-44恐惧，45-55中性；贪婪侧：≤24极度冷静，56-75贪婪，≥76极度贪婪。"
+      ? "贪婪与恐惧是两个独立的情绪强度指标，读数0-100，越高该情绪越强，两者可同时高企、不互相抵消。贪婪侧分档：≤24极度冷静，25-44偏冷，45-55中性，56-75贪婪，≥76极度贪婪；恐惧侧分档：≤24平静，25-44轻度恐慌，45-55中度恐慌，56-75恐慌，≥76极度恐慌。由本地模型逐帖读取（0-3/帖，四平台固定25%，营销文不计）。"
       : "贪婪与恐惧由六项讨论信号合成（旧数据）。读数0-100，越高越强。";
   }
 

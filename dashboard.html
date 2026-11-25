@@ -50,13 +50,15 @@
       <div class="gfrow">
         <span class="gflabel">贪婪</span>
         <div class="bar gbar"><i id="gbar-i"></i></div>
-        <span class="num" id="gval">--</span> <span class="tag" id="gval-tier" style="margin-left:6px"></span>
+        <span class="num" id="gval">--</span>
       </div>
+      <div class="gfchiprow"><span class="gfchip" id="gval-tier"></span></div>
       <div class="gfrow" style="border-top:1px solid #f0f0ee">
         <span class="gflabel">恐惧</span>
         <div class="bar fbar"><i id="fbar-i"></i></div>
-        <span class="num" id="fval">--</span> <span class="tag" id="fval-tier" style="margin-left:6px"></span>
+        <span class="num" id="fval">--</span>
       </div>
+      <div class="gfchiprow"><span class="gfchip" id="fval-tier"></span></div>
       <div class="muted note" id="gf-note">贪婪=热度/方向/强度/追涨/新手/关注六项均值经Sigmoid放大（中心50、坡度4）：略高于中性的活跃市即显示60上下，80以上才是亢奋。恐惧=恐慌原始分。两者同量程0–100、0为基准。仅显示端合成，评分口径不变。</div>
     </div>
 
