@@ -279,6 +279,59 @@ def collect_llm_sample(snapshot, n_dir=8, n_emo=8, n_mkt=4, n_calm=4):
         snapshot["llmSample"] = picked
 
 
+def compute_llm_sector_emotion(snapshot, weight=0.2, min_n=3):
+    """羊驼情绪注入板块热度榜（2026-11-25 用户授权）。
+
+    - 帖子→板块：sector_catalog 主归类（一家公司只属一个板块），按 sourceCode 映射
+    - 板块情绪温度 = 50 +（贪婪−恐惧）÷2，0-100，低=恐慌高=贪婪；板块已打分样本 <3 记 null（不参与）
+    - 排名分 heat = (1-w)×原活动度 + w×板块情绪，然后对有名次板块重新排序、重编 heatRank
+    - 原值存 activityHeat 供追溯；情绪存 emotion/emotionN，前端以"情"字徽章展示
+    """
+    from sector_catalog import SECTORS
+    code2sector = {}
+    for _key, sec in SECTORS.items():
+        for code, _name in sec["sourceStocks"]:
+            code2sector[str(code)] = str(sec["name"])
+    cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
+    by_sector = {}
+    for src in cache.values():
+        if not isinstance(src, dict):
+            continue
+        for p0 in src.get("posts", []):
+            if not isinstance(p0, dict):
+                continue
+            e = LLM_BY_ID.get(str(p0.get("id") or ""))
+            if not e or e.get("ai_marketing") or "fear" not in e or "greed" not in e:
+                continue
+            sec_name = code2sector.get(str(p0.get("sourceCode") or ""))
+            if sec_name:
+                by_sector.setdefault(sec_name, []).append((int(e["fear"]), int(e["greed"])))
+    stats = {}
+    for name, vals in by_sector.items():
+        if len(vals) >= min_n:
+            f = sum(v[0] for v in vals) / len(vals) / 3 * 100
+            g = sum(v[1] for v in vals) / len(vals) / 3 * 100
+            stats[name] = (round(50 + (g - f) / 2, 1), len(vals))
+    sectors = snapshot.get("sectorIndices") or []
+    for sct in sectors:
+        if not isinstance(sct, dict):
+            continue
+        emo, n = stats.get(str(sct.get("name")), (None, 0))
+        orig = float(sct.get("heat") or 50)
+        sct["activityHeat"] = round(orig, 1)
+        sct["emotion"] = emo
+        sct["emotionN"] = n
+        if emo is not None:
+            sct["heat"] = round((1 - weight) * orig + weight * emo, 1)
+    elig = [x for x in sectors if isinstance(x, dict) and x.get("heatRank") is not None]
+    rest = [x for x in sectors if not (isinstance(x, dict) and x.get("heatRank") is not None)]
+    elig.sort(key=lambda x: -float(x.get("heat") or 0))
+    for i, x in enumerate(elig, 1):
+        x["heatRank"] = i
+    if elig or rest:
+        snapshot["sectorIndices"] = elig + rest
+
+
 def run_update(progress_callback=None):
     """CLI/GUI 统一入口：打补丁 → 构建快照 → 原子落盘（latest/history/meta/data.js）。
 
@@ -301,6 +354,7 @@ def run_update(progress_callback=None):
     snapshot = ui.build_snapshot(progress_callback=_cb)
     compute_llm_emotion(snapshot)  # 羊驼情绪接管（2026-11-25）
     collect_llm_sample(snapshot)   # 羊驼抽检样本
+    compute_llm_sector_emotion(snapshot)  # 羊驼情绪注入板块榜（用户授权）
     ui.save_json(ui.HISTORY_PATH, snapshot["history"])
     ui.save_json(ui.HISTORY_META_PATH, snapshot["historyMeta"])
     ui.save_json(ui.LATEST_PATH, snapshot)

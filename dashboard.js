@@ -96,10 +96,13 @@
       const v = num(s.heat);
       const w = max > min ? ((v - min) / (max - min) * 70 + 30).toFixed(1) : 50;
       const [txt, cls] = heatTier(v);
+      const emo = Number(s.emotion);  // 板块羊驼情绪温度（50=中性），无样本时不显示
+      const emoChip = Number.isFinite(emo)
+        ? `<span class="tag ${emo <= 44 ? "cold" : emo >= 56 ? "warm" : ""}" title="板块情绪温度（羊驼，样本${num(s.emotionN)}）：低=恐慌 高=贪婪">情${fmt1(emo)}</span>` : "";
       return `<div class="row"><span class="rank">${String(num(s.heatRank)).padStart(2, "0")}</span>` +
         `<span class="name" title="${esc(s.name)}">${esc(s.name)}</span>` +
         `<div class="bar"><i style="width:${w}%;background:#2563eb"></i></div>` +
-        `<span class="num2">${fmt1(v)}</span><span class="tag ${cls}">${txt}</span></div>`;
+        `<span class="num2">${fmt1(v)}</span><span class="tag ${cls}">${txt}</span>${emoChip}</div>`;
     }).join("");
   }
 

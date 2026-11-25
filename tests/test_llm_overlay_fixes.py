@@ -268,6 +268,53 @@ class TestLlmaudit(unittest.TestCase):
         self.assertNotIn("llmSample", snap)
 
 
+class TestSectorEmotion(unittest.TestCase):
+    """板块情绪注入：sourceCode 映射、最小样本门槛、混合权重、重排名。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_blend_and_rerank(self):
+        # 两个板块：券商保险(300059×3帖恐慌) vs 白酒(600519×3帖狂热)
+        posts = []
+        scores = []
+        for i in range(3):
+            posts.append({"id": f"zq{i}", "title": f"券{i}", "sourceCode": "300059", "source": "s"})
+            scores.append({"id": f"zq{i}", "direction": -3, "fear": 3, "greed": 0})
+        for i in range(3):
+            posts.append({"id": f"bj{i}", "title": f"酒{i}", "sourceCode": "600519", "source": "s"})
+            scores.append({"id": f"bj{i}", "direction": 3, "fear": 0, "greed": 3})
+        # 样本不足的板块（1 帖）：不参与情绪
+        posts.append({"id": "dc0", "title": "电池", "sourceCode": "300750", "source": "s"})
+        scores.append({"id": "dc0", "direction": 1, "fear": 3, "greed": 0})
+        make_env(self.tmp.name, posts, scores)
+        uil.load_llm_scores()
+        snap = {"sectorIndices": [
+            {"name": "白酒", "heat": 50.0, "heatRank": 1},
+            {"name": "券商保险", "heat": 60.0, "heatRank": 2},
+            {"name": "新能源整车", "heat": 55.0, "heatRank": None},
+        ]}
+        uil.compute_llm_sector_emotion(snap)
+        secs = {x["name"]: x for x in snap["sectorIndices"]}
+        # 券商保险：情绪 = 50+(0-100)/2 = 0 → heat = 0.8*60+0.2*0 = 48
+        self.assertEqual(secs["券商保险"]["emotion"], 0.0)
+        self.assertAlmostEqual(secs["券商保险"]["heat"], 48.0)
+        self.assertEqual(secs["券商保险"]["activityHeat"], 60.0)
+        # 白酒：情绪=100 → heat = 0.8*50+0.2*100 = 60，反超券商保险拿第 1
+        self.assertEqual(secs["白酒"]["emotion"], 100.0)
+        self.assertAlmostEqual(secs["白酒"]["heat"], 60.0)
+        self.assertEqual(secs["白酒"]["heatRank"], 1)
+        self.assertEqual(secs["券商保险"]["heatRank"], 2)
+        # 无名次板块不赋名次；样本不足板块 emotion 为 None 且 heat 不动
+        self.assertIsNone(secs["新能源整车"]["heatRank"])
+        self.assertIsNone(secs["新能源整车"]["emotion"])
+        self.assertEqual(secs["新能源整车"]["heat"], 55.0)
+        self.assertEqual(secs["新能源整车"]["heat"], 55.0)
+
+
 class TestP12FreshNow(unittest.TestCase):
     """apply_overlays 每轮刷新 ui.NOW；fetch_source 包装层显式传当前时间。"""
 
