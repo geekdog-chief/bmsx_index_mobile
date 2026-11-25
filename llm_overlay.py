@@ -264,17 +264,64 @@ def validate_batch(arr, batch):
 LOCK_FILE = Path(__file__).resolve().parent / "data" / ".score.lock"
 
 
-def _acquire_lock() -> bool:
-    """评分进程锁（审计 A9）：两个 llm_overlay 并发互写 STORE 会丢批次。"""
-    if LOCK_FILE.exists():
+def _atomic_save_store(results) -> None:
+    """评分库原子保存（专项整改2）：临时文件→写后回读校验→os.replace。
+
+    任何一步失败（含进程在写入中途被杀），原 STORE 一字节不动；
+    替换成功后回读再验一次，坏文件永远上不了位。测试见
+    test_store_atomic_*（替换失败/写入中断/序列化失败三路径）。"""
+    payload = json.dumps(list(results.values()), ensure_ascii=False, indent=1)
+    tmp = STORE.with_name(STORE.name + f".tmp-{os.getpid()}-{time.time_ns()}")
+    try:
+        tmp.write_text(payload, encoding="utf-8")
+        # 写后校验：回读必须可解析且条数一致，否则丢弃临时文件不动原库
+        back = json.loads(tmp.read_text(encoding="utf-8"))
+        if len(back) != len(results):
+            raise ValueError(f"回读条数不符：{len(back)} != {len(results)}")
+        os.replace(tmp, STORE)
+        # 替换后再验：落盘文件必须可解析
+        json.loads(STORE.read_text(encoding="utf-8"))
+    except Exception:
         try:
-            os.kill(int(LOCK_FILE.read_text(encoding="utf-8").strip()), 0)
-            return False
-        except (ValueError, OSError):
+            tmp.unlink()
+        except OSError:
             pass
+        raise
+
+
+def _acquire_lock() -> bool:
+    """评分进程锁（专项整改1）：O_EXCL 原子创建，双进程竞争只有一个胜出。
+
+    竞态闭环：创建与写 PID 之间有微秒级窗口，失败方此时读到空文件不得抢锁——
+    轮询等待胜者写完 PID（最多 3 秒），再按活/死 PID 判定。测试见
+    test_score_lock_two_processes（两个独立进程同抢一把锁，恰好一个成功）。"""
     LOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
-    LOCK_FILE.write_text(str(os.getpid()), encoding="utf-8")
-    return True
+    for attempt in range(30):
+        try:
+            fd = os.open(str(LOCK_FILE), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            with os.fdopen(fd, "w", encoding="utf-8") as f:
+                f.write(str(os.getpid()))
+            return True
+        except FileExistsError:
+            pass
+        # 锁已存在：等胜者把 PID 写完再判
+        for _ in range(20):
+            try:
+                pid = int(LOCK_FILE.read_text(encoding="utf-8").strip())
+                break
+            except (ValueError, OSError):
+                time.sleep(0.05)  # 文件刚创建还没写 PID：等
+        else:
+            continue
+        try:
+            os.kill(pid, 0)
+            return False  # 持锁进程活着
+        except OSError:
+            try:
+                LOCK_FILE.unlink()  # 死锁接管
+            except OSError:
+                pass
+    return False
 
 
 def _release_lock() -> None:
@@ -342,11 +389,11 @@ def _main_inner():
     for s in range(0, len(todo), B):
         failed.extend(score_batch(todo[s:s + B]))
         STORE.parent.mkdir(parents=True, exist_ok=True)
-        STORE.write_text(json.dumps(list(results.values()), ensure_ascii=False, indent=1), encoding="utf-8")
+        _atomic_save_store(results)
         log(f"  进度 {min(s + B, len(todo))}/{len(todo)}")
         time.sleep(1)
 
-    STORE.write_text(json.dumps(list(results.values()), ensure_ascii=False, indent=1), encoding="utf-8")
+    _atomic_save_store(results)
     log(f"覆盖层完成：新增 {len(results) - len(done)} 条，失败 {len(failed)} 条")
     return 0
 

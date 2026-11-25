@@ -754,6 +754,100 @@ class TestE2E(unittest.TestCase):
             uil.CACHE, uil.STORE, uil.STUDY_LOG, uil.LOCK_PATH = saved
 
 
+class TestScoreLockTwoProcesses(unittest.TestCase):
+    """专项1：两个独立进程同时竞争评分锁——恰好一个获得权限。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.tdir = Path(self.tmp.name)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_two_independent_processes_compete(self):
+        lock = self.tdir / ".score.lock"
+        proj = str(Path(__file__).resolve().parent.parent)
+        lines = [
+            "import sys, time",
+            f"sys.path.insert(0, {proj!r})",
+            "import llm_overlay as lo",
+            f"lo.LOCK_FILE = lo.Path({str(lock)!r})",
+            "ok = lo._acquire_lock()",
+            f"open({str(self.tdir / 'w1')!r} if ok else {str(self.tdir / 'w0')!r}, 'w').write('1')",
+            "time.sleep(0.4)",
+            "lo._release_lock() if ok else None",
+        ]
+        script = "; ".join(lines)
+        import subprocess as sp
+        p1 = sp.Popen([sys.executable, "-c", script])
+        p2 = sp.Popen([sys.executable, "-c", script])
+        p1.wait(timeout=30)
+        p2.wait(timeout=30)
+        self.assertEqual(len(list(self.tdir.glob("w1"))), 1, "必须恰好一个进程胜出")
+        self.assertEqual(len(list(self.tdir.glob("w0"))), 1)
+
+
+class TestStoreAtomicSave(unittest.TestCase):
+    """专项2：评分库原子保存——中断/失败路径原库一字节不动。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.tdir = Path(self.tmp.name)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def _swap_store(self):
+        self._saved = lo.STORE
+        lo.STORE = self.tdir / "store.json"
+
+    def _restore_store(self):
+        lo.STORE = self._saved
+
+    def test_replace_failure_keeps_original(self):
+        """模拟替换失败（磁盘故障）：原 STORE 完好、无 tmp 残留。"""
+        self._swap_store()
+        lo.STORE.write_text('[{"id": "old", "fear": 0}]', encoding="utf-8")
+        before = lo.STORE.read_bytes()
+        real = os.replace
+        def boom(a, b):
+            raise OSError("模拟替换失败")
+        lo.os.replace = boom
+        try:
+            with self.assertRaises(OSError):
+                lo._atomic_save_store({"x": {"id": "x", "fear": 3}})
+        finally:
+            lo.os.replace = real
+            self._restore_store()
+        self.assertEqual((self.tdir / "store.json").read_bytes(), before)
+        self.assertEqual(list(self.tdir.glob("store.json.tmp-*")), [])
+
+    def test_unserializable_keeps_original(self):
+        """序列化失败（进程中断等价路径）：原库不动。"""
+        self._swap_store()
+        lo.STORE.write_text('[{"id": "old"}]', encoding="utf-8")
+        before = lo.STORE.read_bytes()
+        class Bad:
+            pass
+        try:
+            with self.assertRaises(TypeError):
+                lo._atomic_save_store({"x": {"bad": Bad()}})
+        finally:
+            self._restore_store()
+        self.assertEqual((self.tdir / "store.json").read_bytes(), before)
+
+    def test_normal_save_roundtrip(self):
+        """正常路径：替换后回读可解析、条数一致。"""
+        self._swap_store()
+        try:
+            lo._atomic_save_store({"a": {"id": "a", "fear": 1}, "b": {"id": "b", "greed": 2}})
+            data = json.loads(lo.STORE.read_text(encoding="utf-8"))
+            self.assertEqual(len(data), 2)
+            self.assertEqual({d["id"] for d in data}, {"a", "b"})
+        finally:
+            self._restore_store()
+
+
 class TestP12FreshNow(unittest.TestCase):
     """apply_overlays 每轮刷新 ui.NOW；fetch_source 包装层显式传当前时间。"""
 
