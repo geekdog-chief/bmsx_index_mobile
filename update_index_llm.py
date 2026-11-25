@@ -227,9 +227,10 @@ def _recent_posts(cache, as_of=None):
                          for p in src.get("posts", []) if isinstance(p, dict)]
             continue
         cutoff = (base - timedelta(days=days)).isoformat()
+        upper = base.isoformat()  # 独立验收修订：窗口必须有上限，未来时间戳的帖子不得污染历史重跑
         out[days] = [p for src in cache.values() if isinstance(src, dict)
                      for p in src.get("posts", [])
-                     if isinstance(p, dict) and str(p.get("publishTime") or "")[:10] >= cutoff]
+                     if isinstance(p, dict) and cutoff <= str(p.get("publishTime") or "")[:10] <= upper]
     return out
 
 
@@ -480,9 +481,11 @@ def append_study_log(snapshot):
 
 
 def _publish_snapshot(snapshot, paths=None):
-    """四文件整体发布（审计修订 A5）：暂存目录先生成全部内容→完整性校验→依序原子替换。
+    """四文件暂存校验后依序发布（审计修订 A5；非事务，语义如实声明）。
 
-    data.js 最后替换（页面唯一读取点）；任一校验失败则整体不发布，线上保持上一份完整数据。
+    崩溃安全性来自顺序而非回滚：data.js 最后替换，任何时刻页面要么看旧完整版要么新完整版；
+    history/historyMeta/latest 若领先 data.js 一个版本，零用户影响且下轮自愈合（见测试
+    test_publish_midway_replace_failure_keeps_old 的崩溃点断言）。任一校验失败则整体不发布。
     paths 可注入供测试；默认 product 真实路径。"""
     import shutil
     import tempfile

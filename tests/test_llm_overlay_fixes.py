@@ -601,6 +601,31 @@ class TestAuditRound2(unittest.TestCase):
         finally:
             pass
 
+    def test_future_posts_excluded(self):
+        """独立验收修订：窗口必须有上限，未来日期帖子不得进入情绪计算。"""
+        cache = {"s": {"platform": "eastmoney", "posts": [
+            {"id": "f1", "title": "t", "sourceCode": "600519", "publishTime": "2026-11-20T10:00:00"},
+            {"id": "f2", "title": "t", "sourceCode": "600519", "publishTime": "2026-12-01T10:00:00"},  # 未来
+        ]}}
+        from datetime import date
+        w = uil._recent_posts(cache, date(2026, 11, 25))[15]
+        ids = {str(x.get("id")) for x in w}
+        self.assertIn("f1", ids)
+        self.assertNotIn("f2", ids)
+
+    def test_fetch_returns_bool_without_akshare(self):
+        """无 akshare 时 fetch_one 返回 False（成功率统计的依据是返回值，不是文件时间）。"""
+        import sys as _sys
+        _sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "study"))
+        import importlib
+        fp = importlib.import_module("fetch_price")
+        saved = fp.ak
+        fp.ak = None
+        try:
+            self.assertFalse(fp.fetch_one("000000", "dummy", "测试"))
+        finally:
+            fp.ak = saved
+
     def test_price_merge_dedup(self):
         """行情合并：重复日期去重（新优先）、排序。"""
         import sys as _sys

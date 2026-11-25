@@ -61,7 +61,7 @@ def fetch_one(code: str, fname: str, note: str) -> None:
     path = OUT / f"{fname}.csv"
     if ak is None:
         print(f"[FAIL] {code} {note}: akshare 未安装（pip install akshare）", flush=True)
-        return
+        return False
     start = _last_date(path)
     for attempt in (1, 2):  # 限流时等 60 秒重试一次
         try:
@@ -72,16 +72,16 @@ def fetch_one(code: str, fname: str, note: str) -> None:
                 df = merge_frames(old_df, df)
             df.to_csv(path, index=False, encoding="utf-8-sig")
             print(f"[OK] {code} {note} -> 累计 {len(df)} 行（本次起点 {start}）", flush=True)
-            return
+            return True
         except Exception as e:
             msg = str(e)
             print(f"[{'重试' if attempt == 1 else 'FAIL'}] {code} {note}: {msg[:100]}", flush=True)
             if "限流" in msg or "断开" in msg or "push2" in msg:
                 time.sleep(60)
             else:
-                return  # 非限流错误不重试
-    # 两次都失败：等久点让下个基金接力（整体节奏放慢）
+                return False  # 非限流错误不重试
     time.sleep(120)
+    return False  # 两次都失败：等久点让下个基金接力（整体节奏放慢）
 
 
 def write_status(ok: int, fail: int) -> None:
@@ -94,10 +94,7 @@ def write_status(ok: int, fail: int) -> None:
 if __name__ == "__main__":
     ok = fail = 0
     for code, (fname, note) in FUNDS.items():
-        path = OUT / f"{fname}.csv"
-        before = path.exists()
-        fetch_one(code, fname, note)
-        if path.exists() and (not before or path.stat().st_mtime > time.time() - 300):
+        if fetch_one(code, fname, note):  # 独立验收修订：成功按返回值统计，不用文件 mtime 推断
             ok += 1
         else:
             fail += 1
