@@ -325,8 +325,10 @@ def _acquire_lock() -> bool:
 
 
 def _release_lock() -> None:
+    """释放锁（独立验收修订）：只删自己 PID 的锁——锁被他人接管时不得误删。"""
     try:
-        LOCK_FILE.unlink()
+        if LOCK_FILE.read_text(encoding="utf-8").strip() == str(os.getpid()):
+            LOCK_FILE.unlink()
     except OSError:
         pass
 

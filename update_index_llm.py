@@ -553,10 +553,12 @@ def _acquire_lock(path=None):
 
 
 def _release_lock(path=None):
+    """释放锁（独立验收修订）：只删自己 PID 的锁——锁被他人接管时不得误删。"""
     if path is None:
         path = LOCK_PATH
     try:
-        path.unlink()
+        if path.read_text(encoding="utf-8").strip() == str(os.getpid()):
+            path.unlink()
     except OSError:
         pass
 

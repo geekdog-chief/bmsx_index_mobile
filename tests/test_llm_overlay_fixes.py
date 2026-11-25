@@ -836,6 +836,45 @@ class TestStoreAtomicSave(unittest.TestCase):
             self._restore_store()
         self.assertEqual((self.tdir / "store.json").read_bytes(), before)
 
+    def test_partial_write_interruption_keeps_original(self):
+        """写入中断专项（独立验收）：临时文件写一半进程死亡——原库不动、残留被清。"""
+        self._swap_store()
+        lo.STORE.write_text('[{"id": "old"}]', encoding="utf-8")
+        before = lo.STORE.read_bytes()
+        from pathlib import Path as _P
+        real_write = _P.write_text
+        def flaky(self, data, *a, **kw):
+            if ".tmp-" in self.name:  # 只劫持临时文件：写一半就死
+                real_write(self, data[: len(data) // 2], *a, **kw)
+                raise IOError("模拟写入中断")
+            return real_write(self, data, *a, **kw)
+        _P.write_text = flaky
+        try:
+            with self.assertRaises(IOError):
+                lo._atomic_save_store({"x": {"id": "x", "fear": 1}})
+        finally:
+            _P.write_text = real_write
+            self._restore_store()
+        self.assertEqual((self.tdir / "store.json").read_bytes(), before)
+        self.assertEqual(list(self.tdir.glob("*.tmp-*")), [], "临时文件必须被清理")
+
+    def test_release_only_own_lock(self):
+        """锁所有权（独立验收）：别人接管后的锁，本进程释放时不得误删。"""
+        lock = self.tdir / ".own.lock"
+        import llm_overlay as llo
+        saved = llo.LOCK_FILE
+        llo.LOCK_FILE = lock
+        try:
+            self.assertTrue(llo._acquire_lock())
+            lock.write_text("424242", encoding="utf-8")  # 模拟被他人接管
+            llo._release_lock()
+            self.assertTrue(lock.exists(), "他人之锁不得被误删")
+            lock.write_text(str(os.getpid()), encoding="utf-8")
+            llo._release_lock()
+            self.assertFalse(lock.exists(), "自己的锁应正常释放")
+        finally:
+            llo.LOCK_FILE = saved
+
     def test_normal_save_roundtrip(self):
         """正常路径：替换后回读可解析、条数一致。"""
         self._swap_store()

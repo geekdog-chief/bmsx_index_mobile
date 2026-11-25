@@ -15,3 +15,10 @@ llm_package_with_dict.json
 llm_scores_*.json
 data/sina_bid_cache.json
 data/ths_forum_cache.json
+# 锁文件与原子写临时文件（独立验收：不进 GitHub）
+data/.score.lock
+data/.update.lock
+data/.publish_*/
+data/*.tmp-*
+data/.study_*.csv
+data/study_emotion.csv.corrupt.csv
