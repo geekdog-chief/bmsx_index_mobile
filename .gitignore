@@ -8,3 +8,10 @@ data/archive.sqlite3
 data/llm_overlay.log
 data/llm_scores_ollama.json
 data/update.log
+
+# 2026-11-25 合规清理：实验产物含真实帖子文本/评分，不公开
+llm_package_*.json
+llm_package_with_dict.json
+llm_scores_*.json
+data/sina_bid_cache.json
+data/ths_forum_cache.json
