@@ -188,6 +188,51 @@ def apply_overlays():
     _refresh_now()
 
 
+PLATFORM_ORDER = ("eastmoney", "sina", "ths", "taoguba")
+
+
+def compute_llm_emotion(snapshot):
+    """聚合羊驼情绪强度 → snapshot.signals.llmFear / llmGreed（0-100）。
+
+    口径（2026-11-25 定稿，借鉴 CNN 恐惧贪婪指数分档）：
+    - 单帖 fear/greed 各 0-3，只收有这两个字段的条目（旧存档没有 → 跳过，不补零）
+    - 排除 ai_marketing；平台内取均值 → 四平台固定各 25%，无分平台按中性 1.5 占位（与主指数"缺平台留中性不转权"同纪律）
+    - 指标 = 四平台均值 ÷ 3 × 100；任一侧一天没有任何有效帖 → 不写该键，显示端回落旧合成
+    """
+    by_platform = {k: [] for k in PLATFORM_ORDER}
+    cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
+    for src in cache.values():
+        if not isinstance(src, dict):
+            continue
+        plat = str(src.get("platform") or "")
+        if plat not in by_platform:
+            continue
+        for p0 in src.get("posts", []):
+            if not isinstance(p0, dict):
+                continue
+            e = LLM_BY_ID.get(str(p0.get("id") or ""))
+            if not e or e.get("ai_marketing"):
+                continue
+            if "fear" in e and "greed" in e:
+                by_platform[plat].append((int(e["fear"]), int(e["greed"])))
+    fear_acc = greed_acc = used = 0
+    for plat in PLATFORM_ORDER:
+        vals = by_platform[plat]
+        if vals:
+            n = len(vals)
+            fear_acc += sum(v[0] for v in vals) / n
+            greed_acc += sum(v[1] for v in vals) / n
+            used += 1
+        else:
+            fear_acc += 1.5  # 中性占位
+            greed_acc += 1.5
+    if used == 0:
+        return  # 存量旧条目都没情绪字段，不写键，显示端回落
+    signals = snapshot.setdefault("signals", {})
+    signals["llmFear"] = round(fear_acc / 4 / 3 * 100, 1)
+    signals["llmGreed"] = round(greed_acc / 4 / 3 * 100, 1)
+
+
 def run_update(progress_callback=None):
     """CLI/GUI 统一入口：打补丁 → 构建快照 → 原子落盘（latest/history/meta/data.js）。
 
@@ -208,6 +253,7 @@ def run_update(progress_callback=None):
             progress_callback(event)
 
     snapshot = ui.build_snapshot(progress_callback=_cb)
+    compute_llm_emotion(snapshot)  # 羊驼情绪接管（2026-11-25）
     ui.save_json(ui.HISTORY_PATH, snapshot["history"])
     ui.save_json(ui.HISTORY_META_PATH, snapshot["historyMeta"])
     ui.save_json(ui.LATEST_PATH, snapshot)

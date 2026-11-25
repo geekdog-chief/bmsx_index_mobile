@@ -44,15 +44,34 @@
     if (DATA.updatedAt) timepill.textContent = "更新于 " + hhmm(DATA.updatedAt);
   }
 
-  /* ---------- 贪婪恐惧（显示端合成，评分口径不变） ---------- */
+  /* ---------- 宝妈情绪（贪婪/恐惧）：羊驼直读优先，旧合成兜底（2026-11-25 接管） ---------- */
   function sigmoid(x, c, s) { return 100 / (1 + Math.exp(-(x - c) / s)); }
+  function emotionTier(v) {  // 分档借 CNN 恐惧贪婪指数
+    if (v <= 24) return "极度恐惧"; if (v <= 44) return "恐惧";
+    if (v <= 55) return "中性"; if (v <= 75) return "贪婪"; return "极度贪婪";
+  }
   function renderGreedFear() {
     const sig = (DATA.signals) || {};
-    const mean6 = [sig.heat, sig.optimism, sig.intensity, sig.fomo, sig.newcomer, sig.attention].map((x) => num(x, 50));
-    const greed = sigmoid(mean6.reduce((a, b) => a + b, 0) / mean6.length, 50, 4);
-    const fear = Math.max(0, Math.min(100, num(sig.panic, 0)));
+    let greed, fear, src;
+    if (Number.isFinite(Number(sig.llmGreed)) && Number.isFinite(Number(sig.llmFear))) {
+      greed = Math.max(0, Math.min(100, num(sig.llmGreed)));
+      fear = Math.max(0, Math.min(100, num(sig.llmFear)));
+      src = "llm";
+    } else {  // 存量旧数据无情绪字段 → 回落词典合成
+      const mean6 = [sig.heat, sig.optimism, sig.intensity, sig.fomo, sig.newcomer, sig.attention].map((x) => num(x, 50));
+      greed = sigmoid(mean6.reduce((a, b) => a + b, 0) / mean6.length, 50, 4);
+      fear = Math.max(0, Math.min(100, num(sig.panic, 0)));
+      src = "dict";
+    }
     $("gbar-i").style.width = greed.toFixed(1) + "%"; $("gval").textContent = greed.toFixed(1);
     $("fbar-i").style.width = fear.toFixed(1) + "%"; $("fval").textContent = fear.toFixed(1);
+    const gt = $("gval-tier"), ft = $("fval-tier");
+    if (gt) gt.textContent = emotionTier(greed);
+    if (ft) ft.textContent = emotionTier(fear);
+    const note = $("gf-note");
+    if (note) note.textContent = src === "llm"
+      ? "恐惧/贪婪由本地羊驼模型逐帖读取情绪强度合成（0-3/帖，平台固定25%）。分档借鉴CNN恐惧贪婪指数：≤24极度恐惧，25-44恐惧，45-55中性，56-75贪婪，≥76极度贪婪。营销文不计。2026-11-25接管，此前为词典合成口径。"
+      : "贪婪=热度/方向/强度/追涨/新手/关注六项均值经Sigmoid放大（中心50、坡度4）；恐惧=恐慌原始分。旧合成口径（数据早于2026-11-25羊驼接管）。";
   }
 
   /* ---------- 宝妈热度（最热/最冷） ---------- */

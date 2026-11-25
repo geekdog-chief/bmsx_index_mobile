@@ -36,6 +36,21 @@ SYSTEM_PROMPT = """你是一名A股社区情绪标注员。接下来我会逐个
 注意识别反语和讽刺："呵呵，又要涨了"、"太厉害了，又创新高（指暴跌后）"这类表面夸奖实际看空，按真实意图给负分。
 注意识别 AI 生成或营销文：内容是车轱辘话、无真实观点、明显引流性质的，direction 给 0。
 
+**情绪强度 fear / greed（各自独立，0 到 3 的整数，极其重要）**：衡量帖子作者【本人】的情绪有多强。看情绪，不看观点强弱。
+
+- fear 恐惧：0=平静/无情绪；1=轻微担忧或谨慎（"有点慌""再拿拿看""别上头"）；2=明显害怕（"再跌要割肉""亏麻了""减仓保平安"）；3=恐慌绝望（"清仓离场""不玩了""彻底完了""天台见"）。
+- greed 贪婪：0=平静；1=轻度乐观期待（"感觉到底了""可以定投一点""长期看好"）；2=追涨冲动（"梭哈""满仓干""上车""回调就是机会""干就完了"）；3=狂热失去风险意识（"十倍起步""卖房上车""ALL IN""再不上车没了""砸锅卖铁买"）。
+
+判定纪律：
+- 判的是发帖人本人的情绪，不是帖子内容暗示的情绪。冷静转述利好/利空、客观提问 → 0/0。
+- 情绪与方向是两条独立轴："怕卖飞"是 fear 强但 direction 可以是正的；"坚定看多但心态平静"greed 最多 1。
+- 讽刺反语按真实意图："我不慌，真的不慌"配图一片绿 → 按慌给分。
+- 单纯后悔/抱怨（"早知道不买了""又被割了"）未表达怕继续跌 → 0/0；伴随怕再跌 → fear 1~2。
+- 骂庄家/骂监管/骂主力的愤怒本身既不是恐惧也不是贪婪；除非滑向清仓动作 → fear。
+- 一帖可以两项都非零："梭哈了心里好怕" → greed 2、fear 1。
+- 纯资讯搬运、闲聊、无情绪的中性帖 → 0/0。ai_marketing 的营销文情绪一律 0/0。
+- 强度锚点看【情绪词+行动倾向】：只说"担心"无行动=1，出现减仓/清仓/割肉动作=2~3；只说"看好"=1，出现梭哈/满仓/上车动作=2~3。
+
 **标记（0 或 1）**：
 - ai_marketing：AI生成或营销文。**最高优先级，先判断这条再判断其他标记。** 特征：①研报/资讯腔的编号列表、机械罗列利好；②模板化看多口号、空洞无具体股票操作的排比句；③水军短句、纯夸品牌；④诱导加群、看分析、点链接的引流话。以上任何一条命中就给1，宁可多判不可漏判。
 - fomo：追涨式表达（梭哈、满仓、上车、怕踏空、最后机会）
@@ -49,7 +64,7 @@ SYSTEM_PROMPT = """你是一名A股社区情绪标注员。接下来我会逐个
 
 **输出格式（极其重要）**：
 - 只输出一个 JSON 数组，不要输出任何其他文字、解释、markdown代码块标记
-- 每条元素格式：{"id": "原样复制", "direction": 整数, "fomo": 0, "panic": 0, "newcomer": 0, "sarcasm": 0, "ai_marketing": 0, "persona": "retail", "reason": "不超过15字"}
+- 每条元素格式：{"id": "原样复制", "direction": 整数, "fear": 0, "greed": 0, "fomo": 0, "panic": 0, "newcomer": 0, "sarcasm": 0, "ai_marketing": 0, "persona": "retail", "reason": "不超过15字"}
 - 每个 id 恰好出现一次，顺序不限，一个都不能少
 - 拿不准的一律 direction 给 0，宁可保守不可编造"""
 
@@ -179,6 +194,28 @@ def parse_scores(text):
 PERSONA_CHOICES = ("baoma", "novice", "retail", "none")
 
 
+def strict_int(v, lo, hi, name, pid):
+    """严格整数校验：只收 int 或整数字符串，拒绝 bool、float（1.8 不许偷偷变 1）。
+
+    fear/greed 等情绪强度字段专用——数据不能错，宁重试不截断。"""
+    if isinstance(v, bool):
+        raise ValueError(f"{name} 是布尔值: {pid}")
+    if isinstance(v, int):
+        n = v
+    elif isinstance(v, str) and re_full_int(v.strip()):
+        n = int(v.strip())
+    else:
+        raise ValueError(f"{name} 类型非法 {type(v).__name__}: {pid}")
+    if not lo <= n <= hi:
+        raise ValueError(f"{name} 越界 {n}: {pid}")
+    return n
+
+
+def re_full_int(t):
+    import re as _re
+    return _re.fullmatch(r"-?\d+", t) is not None
+
+
 def norm(it):
     """归一化单条评分并做硬校验：direction 必须 -3..3、persona 必须四选一。
 
@@ -194,7 +231,11 @@ def norm(it):
     persona = str(it.get("persona", "none")).strip().lower()
     if persona not in PERSONA_CHOICES:
         raise ValueError(f"persona 非法 {persona!r}: {it.get('id')}")
-    return {"id": str(it["id"]), "direction": d,
+    pid = str(it["id"])
+    # 旧存档条目没有 fear/greed 字段 → 缺省 0（聚合层会跳过这些条目，见 update_index_llm）
+    fear = strict_int(it.get("fear", 0), 0, 3, "fear", pid)
+    greed = strict_int(it.get("greed", 0), 0, 3, "greed", pid)
+    return {"id": pid, "direction": d, "fear": fear, "greed": greed,
             "fomo": int(bool(it.get("fomo", 0))), "panic": int(bool(it.get("panic", 0))),
             "newcomer": int(bool(it.get("newcomer", 0))), "sarcasm": int(bool(it.get("sarcasm", 0))),
             "ai_marketing": int(bool(it.get("ai_marketing", 0))),

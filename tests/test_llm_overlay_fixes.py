@@ -157,6 +157,79 @@ class TestP22Validation(unittest.TestCase):
             lo.validate_batch([self.base()], batch)
 
 
+class TestEmotionFields(unittest.TestCase):
+    """2026-11-25 羊驼情绪接管：fear/greed 严格校验 + 聚合口径。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def base(self, **kw):
+        it = {"id": "a1", "direction": 1, "fear": 0, "greed": 0, "persona": "retail"}
+        it.update(kw)
+        return it
+
+    def test_norm_accepts_valid(self):
+        for v in (0, 1, 2, 3):
+            e = lo.norm(self.base(fear=v, greed=3 - v))
+            self.assertEqual((e["fear"], e["greed"]), (v, 3 - v))
+
+    def test_norm_accepts_int_string(self):
+        e = lo.norm(self.base(fear="2"))
+        self.assertEqual(e["fear"], 2)
+
+    def test_norm_rejects_out_of_range(self):
+        for bad in (-1, 4, 99):
+            with self.assertRaises(ValueError):
+                lo.norm(self.base(fear=bad))
+
+    def test_norm_rejects_bool_and_float(self):
+        with self.assertRaises(ValueError):
+            lo.norm(self.base(fear=True))
+        with self.assertRaises(ValueError):
+            lo.norm(self.base(greed=1.8))  # 浮点不许偷偷截断成 1
+        with self.assertRaises(ValueError):
+            lo.norm(self.base(fear=None))
+        with self.assertRaises(ValueError):
+            lo.norm(self.base(greed="很贪婪"))
+
+    def test_old_entries_default_zero(self):
+        it = {"id": "old1", "direction": 1, "persona": "retail"}  # 无 fear/greed
+        e = lo.norm(it)
+        self.assertEqual((e["fear"], e["greed"]), (0, 0))
+
+    def test_aggregation_skips_old_and_marketing(self):
+        posts = [
+            {"id": "e1", "title": "t", "source": "s"},
+            {"id": "e2", "title": "t2", "source": "s2"},
+            {"id": "old", "title": "t3", "source": "s3"},
+        ]
+        scores = [
+            {"id": "e1", "direction": -1, "fear": 2, "greed": 0, "ai_marketing": 0},
+            {"id": "e2", "direction": 0, "fear": 3, "greed": 3, "ai_marketing": 1},
+            {"id": "old", "direction": 0},
+        ]
+        make_env(self.tmp.name, posts, scores)
+        uil.load_llm_emotion_dummy = None
+        uil.load_llm_scores()
+        snap = {"signals": {}}
+        uil.compute_llm_emotion(snap)
+        f, g = snap["signals"]["llmFear"], snap["signals"]["llmGreed"]
+        self.assertAlmostEqual(f, round(((2 + 1.5 * 3) / 4) / 3 * 100, 1))
+        self.assertAlmostEqual(g, round(((0 + 1.5 * 3) / 4) / 3 * 100, 1))
+
+    def test_aggregation_no_data_writes_nothing(self):
+        posts = [{"id": "o1", "title": "t", "source": "s"}]
+        scores = [{"id": "o1", "direction": 0}]
+        make_env(self.tmp.name, posts, scores)
+        uil.load_llm_scores()
+        snap = {"signals": {}}
+        uil.compute_llm_emotion(snap)
+        self.assertNotIn("llmFear", snap["signals"])
+
+
 class TestP12FreshNow(unittest.TestCase):
     """apply_overlays 每轮刷新 ui.NOW；fetch_source 包装层显式传当前时间。"""
 
