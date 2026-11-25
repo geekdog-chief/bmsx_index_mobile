@@ -444,11 +444,23 @@ def append_study_log(snapshot):
         try:
             with STUDY_LOG.open("r", encoding="utf-8", newline="") as f:
                 for r in csv.DictReader(f):
+                    if any(r.get(k) is None for k in ("date", "fear", "greed")):
+                        raise csv.Error(f"行缺关键列：{r}")
                     if r.get("date"):
                         rows[r["date"]] = r  # 按交易日 upsert，同日留最新
         except (OSError, csv.Error) as e:
-            print(f"研究日志读取失败（沿用空表重写，原文件未动）：{e}", flush=True)
-            rows = {}
+            # 二轮验收修订：读取失败禁止清空重写——保留原文件全部历史，只留损坏备份
+            import shutil as _sh
+            backup = STUDY_LOG.with_suffix(".corrupt.csv")
+            try:
+                _sh.copy2(STUDY_LOG, backup)
+            except OSError:
+                backup = None
+            raise RuntimeError(
+                f"研究日志读取失败，已保留原文件{'（备份 ' + str(backup) + '）' if backup else ''}，"
+                f"请人工检查后再写入：{e}")
+    if not rows and STUDY_LOG.exists() and STUDY_LOG.stat().st_size > 0:
+        raise RuntimeError("研究日志解析结果为空但文件非空，拒绝覆盖，请人工检查")
     rows[day] = {"date": day, "fear": sig["llmFear"], "greed": sig["llmGreed"],
                  "sectors_json": json.dumps(sectors, ensure_ascii=False, separators=(",", ":")),
                  "valid": sig.get("llmValidPostCount", ""), "platforms": sig.get("llmPlatformCount", ""),
@@ -509,15 +521,24 @@ LOCK_PATH = ROOT / "data" / ".update.lock"
 
 
 def _acquire_lock(path=LOCK_PATH):
-    """进程锁（审计修订 A9）：锁文件存 PID，活进程持锁则跳过，死 PID 自动接管。"""
-    if path.exists():
+    """进程锁（二轮验收修订）：O_EXCL 原子创建——检查+创建一步到位，杜绝双进程竞态同时拿锁。
+
+    锁文件存 PID；持有进程活着返回 False，死 PID / 损坏锁自动接管。"""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        fd = os.open(str(path), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    except FileExistsError:
         try:
             os.kill(int(path.read_text(encoding="utf-8").strip()), 0)
             return False  # 持锁进程还活着
         except (ValueError, OSError):
-            pass  # 锁损坏或进程已死：接管
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(str(os.getpid()), encoding="utf-8")
+            try:
+                path.unlink()  # 死锁/坏锁：删除后重试一次
+                fd = os.open(str(path), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            except OSError:
+                return False
+    with os.fdopen(fd, "w", encoding="utf-8") as f:
+        f.write(str(os.getpid()))
     return True
 
 
@@ -538,6 +559,13 @@ def run_update(progress_callback=None):
     if not _acquire_lock():
         print("LLM 覆盖层：已有更新任务在运行（锁存在），本轮跳过，防并发互写", flush=True)
         return None
+    try:
+        return _run_update_inner(progress_callback)
+    finally:
+        _release_lock()  # 任何异常路径都必须放锁（二轮验收修订）
+
+
+def _run_update_inner(progress_callback=None):
     apply_overlays()
     held_ok = {}
 
@@ -554,10 +582,7 @@ def run_update(progress_callback=None):
     compute_llm_emotion(snapshot)  # 羊驼情绪接管（2026-11-25）
     collect_llm_sample(snapshot)   # 羊驼抽检样本
     compute_llm_sector_emotion(snapshot)  # 羊驼情绪注入板块榜（用户授权）
-    try:
-        _publish_snapshot(snapshot)  # 四文件暂存校验后整体发布，data.js 最后（审计修订 A5）
-    finally:
-        _release_lock()  # 无论发布成败都放锁，防死锁
+    _publish_snapshot(snapshot)  # 四文件暂存校验后整体发布，data.js 最后（审计修订 A5）
     try:
         append_study_log(snapshot)  # 研究日志只在四份主文件全部落盘成功后写（审计修订）
     except Exception as e:  # 状态分离：研究日志失败只告警，产品已发布的事实不被推翻

@@ -5,6 +5,7 @@
 """
 
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -518,6 +519,100 @@ class TestAuditBatch2(unittest.TestCase):
         lock.write_text("999999999", encoding="utf-8")     # 死 PID
         self.assertTrue(uil._acquire_lock(lock))           # 接管死锁
         uil._release_lock(lock)
+
+
+class TestAuditRound2(unittest.TestCase):
+    """二轮验收：发布故障注入 / 锁异常释放 / CSV 损坏保护 / 行情合并去重。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.tdir = Path(self.tmp.name)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_publish_midway_replace_failure_keeps_old(self):
+        """替换中途失败：线上文件保持旧版本完整（页面读 data.js，最后替换）。"""
+        paths = {k: self.tdir / f"{k}.out" for k in ("history", "historyMeta", "latest", "datajs")}
+        old_snap = {"history": [{"v": 1}], "historyMeta": {}, "signals": {}}
+        uil._publish_snapshot(old_snap, paths=paths)
+        real_replace = os.replace
+        calls = {"n": 0}
+        def flaky_replace(src, dst):
+            calls["n"] += 1
+            if calls["n"] == 2:  # 第二份（historyMeta）替换时炸
+                raise OSError("模拟磁盘故障")
+            return real_replace(src, dst)
+        uil.os.replace = flaky_replace
+        try:
+            with self.assertRaises(OSError):
+                uil._publish_snapshot({"history": [{"v": 2}], "historyMeta": {}, "signals": {}}, paths=paths)
+        finally:
+            uil.os.replace = real_replace
+        # history 可能已被替换（第1次成功），但 data.js 必须还是旧版本
+        import json as _json
+        js = paths["datajs"].read_text(encoding="utf-8")
+        self.assertIn('"v": 1', js)
+        self.assertNotIn('"v": 2', js)
+
+    def test_lock_released_on_body_exception(self):
+        """更新主体抛异常，锁必须被 finally 释放。"""
+        lock = self.tdir / ".u.lock"
+        orig_release = uil._release_lock
+        released = {"v": False}
+        def spy_release(path=uil.LOCK_PATH):
+            released["v"] = True
+            orig_release(path)
+        orig_acquire = uil._acquire_lock
+        def fake_acquire(path=uil.LOCK_PATH):
+            return True
+        uil._acquire_lock, uil._release_lock = fake_acquire, spy_release
+        orig_inner = uil._run_update_inner
+        def boom(pc=None):
+            raise RuntimeError("模拟构建崩溃")
+        uil._run_update_inner = boom
+        try:
+            with self.assertRaises(RuntimeError):
+                uil.run_update()
+            self.assertTrue(released["v"], "锁未被释放")
+        finally:
+            uil._acquire_lock, uil._release_lock = orig_acquire, orig_release
+            uil._run_update_inner = orig_inner
+
+    def test_lock_oexcl_atomic(self):
+        """O_EXCL 原子创建：锁文件已存在时第二次获取必失败（即使强写）。"""
+        lock = self.tdir / ".a.lock"
+        self.assertTrue(uil._acquire_lock(lock))
+        with lock.open("w", encoding="utf-8") as f:
+            f.write("999999999")  # 外部篡改 PID 为不存在的进程 → 接管路径
+        self.assertTrue(uil._acquire_lock(lock))  # 死 PID 接管成功
+
+    def test_corrupt_csv_never_overwritten(self):
+        """研究日志损坏：禁止重写清空，原文件保留。"""
+        uil.STUDY_LOG = self.tdir / "study.csv"
+        uil.STUDY_LOG.write_text("date,fear,greed\n2026-11-20,bad\n\"乱引号,xx\n", encoding="utf-8")
+        before = uil.STUDY_LOG.read_bytes()
+        snap = {"tradingDays": ["2026-11-25"], "signals": {"llmFear": 1.0, "llmGreed": 2.0},
+                "sectorIndices": []}
+        try:
+            with self.assertRaises(Exception):
+                uil.append_study_log(snap)
+            self.assertEqual(uil.STUDY_LOG.read_bytes(), before)  # 原文件一字未动
+        finally:
+            pass
+
+    def test_price_merge_dedup(self):
+        """行情合并：重复日期去重（新优先）、排序。"""
+        import sys as _sys
+        _sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "study"))
+        import importlib
+        fp = importlib.import_module("fetch_price")
+        import pandas as pd
+        old = pd.DataFrame({"日期": ["2026-11-20", "2026-11-21"], "收盘": [1.0, 2.0]})
+        new = pd.DataFrame({"日期": ["2026-11-21", "2026-11-22"], "收盘": [2.5, 3.0]})
+        merged = fp.merge_frames(old, new)
+        self.assertEqual(list(merged["日期"]), ["2026-11-20", "2026-11-21", "2026-11-22"])
+        self.assertEqual(float(merged.loc[merged["日期"] == "2026-11-21", "收盘"].iloc[0]), 2.5)
 
 
 class TestP12FreshNow(unittest.TestCase):

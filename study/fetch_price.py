@@ -8,7 +8,10 @@ import os
 import time
 from pathlib import Path
 
-import akshare as ak
+try:
+    import akshare as ak
+except ImportError:
+    ak = None  # 惰性失败：仅抓取时需要，测试环境可导入本模块
 import pandas as pd
 
 OUT = Path(__file__).resolve().parent / "price"
@@ -32,16 +35,53 @@ FUNDS = {
 }
 
 
+def _last_date(path) -> str:
+    """已有 CSV 的最后日期 → 增量起点；无文件则从头抓。"""
+    if not path.exists():
+        return "20180101"
+    try:
+        import pandas as pd
+        df = pd.read_csv(path)
+        col = "日期" if "日期" in df.columns else df.columns[0]
+        last = str(df[col].iloc[-1])[:10].replace("-", "")
+        return last  # 从最后一条重拉一天，保证衔接
+    except Exception:
+        return "20180101"
+
+
+def merge_frames(old_df, new_df):
+    """合并新旧行情：按日期去重（新数据优先）、升序排序。纯函数，供测试。"""
+    col = "日期"
+    df = pd.concat([old_df, new_df], ignore_index=True)
+    df = df.drop_duplicates(subset=[col], keep="last")
+    return df.sort_values(col).reset_index(drop=True)
+
+
 def fetch_one(code: str, fname: str, note: str) -> None:
     path = OUT / f"{fname}.csv"
-    try:
-        df = ak.fund_etf_hist_em(symbol=code, period="daily",
-                                 start_date="20180101", end_date="20500101", adjust="hfq")
-        df.to_csv(path, index=False, encoding="utf-8-sig")
-        n = len(df)
-        print(f"[OK] {code} {note} -> {n} 行", flush=True)
-    except Exception as e:  # 单个失败不拖垮整批
-        print(f"[FAIL] {code} {note}: {e}", flush=True)
+    if ak is None:
+        print(f"[FAIL] {code} {note}: akshare 未安装（pip install akshare）", flush=True)
+        return
+    start = _last_date(path)
+    for attempt in (1, 2):  # 限流时等 60 秒重试一次
+        try:
+            df = ak.fund_etf_hist_em(symbol=code, period="daily",
+                                     start_date=start, end_date="20500101", adjust="hfq")
+            if path.exists() and start != "20180101":
+                old_df = pd.read_csv(path)
+                df = merge_frames(old_df, df)
+            df.to_csv(path, index=False, encoding="utf-8-sig")
+            print(f"[OK] {code} {note} -> 累计 {len(df)} 行（本次起点 {start}）", flush=True)
+            return
+        except Exception as e:
+            msg = str(e)
+            print(f"[{'重试' if attempt == 1 else 'FAIL'}] {code} {note}: {msg[:100]}", flush=True)
+            if "限流" in msg or "断开" in msg or "push2" in msg:
+                time.sleep(60)
+            else:
+                return  # 非限流错误不重试
+    # 两次都失败：等久点让下个基金接力（整体节奏放慢）
+    time.sleep(120)
 
 
 def write_status(ok: int, fail: int) -> None:
@@ -57,10 +97,10 @@ if __name__ == "__main__":
         path = OUT / f"{fname}.csv"
         before = path.exists()
         fetch_one(code, fname, note)
-        if path.exists() and (not before or path.stat().st_mtime > time.time() - 120):
+        if path.exists() and (not before or path.stat().st_mtime > time.time() - 300):
             ok += 1
         else:
             fail += 1
-        time.sleep(1.0)  # 别太猛，给源站留面子
+        time.sleep(6.0)  # 东财对高频请求限流（2026-11-25 实测1秒间隔4只后被封），放慢到6秒
     write_status(ok, fail)
     print(f"全部完成（成功 {ok}，失败 {fail}）。CSV 在 study/price/", flush=True)
