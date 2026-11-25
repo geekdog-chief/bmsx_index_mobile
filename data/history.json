@@ -7,9 +7,9 @@
     "retail": 51,
     "composite": 51,
     "heat": 51.4,
-    "direction": 50.3,
+    "direction": 50.2,
     "signals": {
-      "optimism": 50.3,
+      "optimism": 50.2,
       "fomo": 49.3,
       "panic": 6.3,
       "newcomer": 49.4,
@@ -727,107 +727,6 @@
         "catalogVersion": "3"
       },
       {
-        "key": "chip_design",
-        "name": "芯片设计",
-        "parentKey": "technology",
-        "parentName": "科技与数字经济",
-        "description": "观察CPU、AI芯片、存储器和MCU等芯片设计；不包含制造设备、材料与晶圆代工。",
-        "representativeCompanies": [
-          {
-            "code": "688041",
-            "name": "海光信息",
-            "role": "高端处理器设计"
-          },
-          {
-            "code": "688256",
-            "name": "寒武纪",
-            "role": "智能计算芯片"
-          },
-          {
-            "code": "603986",
-            "name": "兆易创新",
-            "role": "存储与MCU设计"
-          }
-        ],
-        "available": true,
-        "scores": {
-          "baoma": 52,
-          "novice": 52,
-          "retail": 54,
-          "composite": 53
-        },
-        "signals": {
-          "optimism": 50.1,
-          "fomo": 48.3,
-          "panic": 12.6,
-          "newcomer": 48.3,
-          "intensity": 53.1,
-          "attention": 54.7,
-          "heat": 51.4
-        },
-        "heat": 55.8,
-        "legacyHeat": 51.4,
-        "absoluteHeat": 53.9,
-        "relativeHeat": 56.3,
-        "heatRank": 5,
-        "heatTier": "市场中段",
-        "direction": 50.1,
-        "coverage": 100.0,
-        "confidence": 100,
-        "samplePosts": 334,
-        "platformCount": 4,
-        "sourceCount": 10,
-        "fairness": {
-          "modelVersion": "channel_equal_four_seats_v1",
-          "reliabilityPercent": 31.0,
-          "confidenceLabel": "中",
-          "weightedCompanyCoverage": 0.675,
-          "rankEligible": true,
-          "stabilityBand": {
-            "type": "leave_one_channel_out",
-            "low": 51.0,
-            "high": 54.0,
-            "maxDelta": 2.0,
-            "isStatisticalConfidenceInterval": false
-          },
-          "flags": [
-            "low_reliability",
-            "ths_attention_disabled"
-          ]
-        },
-        "heatModel": {
-          "version": "sector_community_heat_v4_company_equal",
-          "status": "applied",
-          "marketAnchor": 51.4,
-          "activityIndex": 54.7,
-          "volumeFactor": 54.7,
-          "relativeLatent": 54.2,
-          "heatTier": "市场中段",
-          "percentile": 87.5,
-          "robustZ": 1.099,
-          "reliability": 41.2,
-          "dispersionGate": 0.71,
-          "crossSectionMedian": 52.008,
-          "crossSectionMAD": 1.158,
-          "crossSectionP90P10": 3.575,
-          "noiseFloor": 1.732,
-          "weights": {
-            "absoluteAttention": 0.75,
-            "absoluteEmotion": 0.25,
-            "volumeActivity": 0.75,
-            "volumeAttention": 0.25,
-            "relativeVolume": 0.85,
-            "relativeEmotion": 0.15,
-            "finalRelative": 0.65,
-            "finalAbsolute": 0.35
-          },
-          "usesMarketPrice": false,
-          "formalPersonaScoresChanged": false,
-          "rankEligible": true
-        },
-        "catalogVersion": "3"
-      },
-      {
         "key": "industrial_metals",
         "name": "工业金属与稀土",
         "parentKey": "resources_utilities",
@@ -907,6 +806,107 @@
           "percentile": 80.4,
           "robustZ": 1.001,
           "reliability": 38.1,
+          "dispersionGate": 0.71,
+          "crossSectionMedian": 52.008,
+          "crossSectionMAD": 1.158,
+          "crossSectionP90P10": 3.575,
+          "noiseFloor": 1.732,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "chip_design",
+        "name": "芯片设计",
+        "parentKey": "technology",
+        "parentName": "科技与数字经济",
+        "description": "观察CPU、AI芯片、存储器和MCU等芯片设计；不包含制造设备、材料与晶圆代工。",
+        "representativeCompanies": [
+          {
+            "code": "688041",
+            "name": "海光信息",
+            "role": "高端处理器设计"
+          },
+          {
+            "code": "688256",
+            "name": "寒武纪",
+            "role": "智能计算芯片"
+          },
+          {
+            "code": "603986",
+            "name": "兆易创新",
+            "role": "存储与MCU设计"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 52,
+          "novice": 52,
+          "retail": 53,
+          "composite": 52
+        },
+        "signals": {
+          "optimism": 50.1,
+          "fomo": 48.3,
+          "panic": 12.6,
+          "newcomer": 48.3,
+          "intensity": 53.0,
+          "attention": 54.7,
+          "heat": 51.4
+        },
+        "heat": 55.8,
+        "legacyHeat": 51.4,
+        "absoluteHeat": 53.9,
+        "relativeHeat": 56.3,
+        "heatRank": 5,
+        "heatTier": "市场中段",
+        "direction": 50.1,
+        "coverage": 100.0,
+        "confidence": 100,
+        "samplePosts": 334,
+        "platformCount": 4,
+        "sourceCount": 10,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 31.0,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.675,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 51.0,
+            "high": 54.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 51.4,
+          "activityIndex": 54.7,
+          "volumeFactor": 54.7,
+          "relativeLatent": 54.2,
+          "heatTier": "市场中段",
+          "percentile": 87.5,
+          "robustZ": 1.099,
+          "reliability": 41.2,
           "dispersionGate": 0.71,
           "crossSectionMedian": 52.008,
           "crossSectionMAD": 1.158,
@@ -3086,7 +3086,7 @@
       "freshSourceRatio": 87.7
     },
     "asOf": "2026-11-24T23:59:59.999999+08:00",
-    "capturedAt": "2026-11-25T11:43:40.713989+08:00",
+    "capturedAt": "2026-11-25T12:07:23.690621+08:00",
     "methodology": "community_text_four_channel_grassroots_three_trading_day_v3",
     "tradingDay": true,
     "calendarMode": "official_sse",
