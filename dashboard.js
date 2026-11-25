@@ -46,7 +46,11 @@
 
   /* ---------- 宝妈情绪（贪婪/恐惧）：羊驼直读优先，旧合成兜底（2026-11-25 接管） ---------- */
   function sigmoid(x, c, s) { return 100 / (1 + Math.exp(-(x - c) / s)); }
-  function emotionTier(v) {  // 分档借 CNN 恐惧贪婪指数
+  function emotionTier(v, kind) {  // 分档借 CNN 恐惧贪婪指数的刻度，两侧各自命名
+    if (kind === "greed") {  // 贪婪条：低=市场冷淡，高=狂热（禁用恐惧字眼）
+      if (v <= 24) return "极度冷静"; if (v <= 44) return "偏冷";
+      if (v <= 55) return "中性"; if (v <= 75) return "贪婪"; return "极度贪婪";
+    }
     if (v <= 24) return "极度恐惧"; if (v <= 44) return "恐惧";
     if (v <= 55) return "中性"; if (v <= 75) return "贪婪"; return "极度贪婪";
   }
@@ -66,12 +70,12 @@
     $("gbar-i").style.width = greed.toFixed(1) + "%"; $("gval").textContent = greed.toFixed(1);
     $("fbar-i").style.width = fear.toFixed(1) + "%"; $("fval").textContent = fear.toFixed(1);
     const gt = $("gval-tier"), ft = $("fval-tier");
-    if (gt) gt.textContent = emotionTier(greed);
-    if (ft) ft.textContent = emotionTier(fear);
+    if (gt) gt.textContent = emotionTier(greed, "greed");
+    if (ft) ft.textContent = emotionTier(fear, "fear");
     const note = $("gf-note");
     if (note) note.textContent = src === "llm"
-      ? "恐惧/贪婪由本地羊驼模型逐帖读取情绪强度合成（0-3/帖，平台固定25%）。分档借鉴CNN恐惧贪婪指数：≤24极度恐惧，25-44恐惧，45-55中性，56-75贪婪，≥76极度贪婪。营销文不计。2026-11-25接管，此前为词典合成口径。"
-      : "贪婪=热度/方向/强度/追涨/新手/关注六项均值经Sigmoid放大（中心50、坡度4）；恐惧=恐慌原始分。旧合成口径（数据早于2026-11-25羊驼接管）。";
+      ? "贪婪与恐惧由本地模型逐帖读取帖子情绪强度合成（0-3/帖，平台固定25%，营销文不计）。读数0-100，越高情绪越强。恐惧侧分档：≤24极度恐惧，25-44恐惧，45-55中性；贪婪侧：≤24极度冷静，56-75贪婪，≥76极度贪婪。"
+      : "贪婪与恐惧由六项讨论信号合成（旧数据）。读数0-100，越高越强。";
   }
 
   /* ---------- 宝妈热度（最热/最冷） ---------- */
