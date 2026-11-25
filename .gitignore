@@ -23,3 +23,4 @@ data/*.tmp-*
 data/.study_*.csv
 data/study_emotion.csv.corrupt.csv
 study/price_sync.log
+data/backfill_last.log
