@@ -58,7 +58,8 @@
   /* ---------- 宝妈热度（最热/最冷） ---------- */
   function heatTier(v) { if (v >= 65) return ["高热", "hot"]; if (v >= 50) return ["活跃", "warm"]; return ["偏冷", "cold"]; }
   function renderRank(mode) {
-    const ranked = (DATA.sectorIndices || []).filter((s) => s && s.available && Number.isFinite(Number(s.heatRank)))
+    // heatRank 为 null（数据不足、暂不硬排名）的板块不参与榜单：Number(null)===0 会把它们顶到榜首
+    const ranked = (DATA.sectorIndices || []).filter((s) => s && s.available && s.heatRank !== null && s.heatRank !== undefined)
       .sort((a, b) => num(a.heatRank) - num(b.heatRank));
     const list = mode === "hot" ? ranked.slice(0, 12) : ranked.slice(-12).reverse();
     if (!list.length) { $("ranklist").innerHTML = `<div class="muted small">暂无可排名板块。</div>`; return; }
