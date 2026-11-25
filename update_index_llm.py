@@ -516,6 +516,7 @@ def _publish_snapshot(snapshot, paths=None):
                              ("latest.json", paths["latest"]),
                              ("data.js", paths["datajs"])):
             os.replace(tmpdir / name, target)
+        return snapshot  # 返回带 snapshotVersion 的版本对象，与盘上文件严格一致
     finally:
         shutil.rmtree(tmpdir, ignore_errors=True)
 
@@ -592,7 +593,7 @@ def _run_update_inner(progress_callback=None):
     compute_llm_emotion(snapshot)  # 羊驼情绪接管（2026-11-25）
     collect_llm_sample(snapshot)   # 羊驼抽检样本
     compute_llm_sector_emotion(snapshot)  # 羊驼情绪注入板块榜（用户授权）
-    _publish_snapshot(snapshot)  # 四文件暂存校验后整体发布，data.js 最后（审计修订 A5）
+    snapshot = _publish_snapshot(snapshot)  # 发布并取回带版本号的快照对象，与盘上四文件一致
     try:
         append_study_log(snapshot)  # 研究日志只在四份主文件全部落盘成功后写（审计修订）
     except Exception as e:  # 状态分离：研究日志失败只告警，产品已发布的事实不被推翻

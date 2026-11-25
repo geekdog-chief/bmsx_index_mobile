@@ -670,6 +670,90 @@ class TestP01ExitCode(unittest.TestCase):
             uil.LOCK_PATH = orig
 
 
+class TestE2E(unittest.TestCase):
+    """P1-3 端到端：模拟数据全链路 run_update —— 帖子→评分→四指标→四文件→研究日志。
+
+    不触网（缓存新鲜度设为本轮内）、不触 Ollama（评分来自注入 STORE）、
+    全部数据路径劫持到临时目录，真实产出物逐项断言。
+    """
+
+    def setUp(self):
+        import datetime as _dt
+        self.tmp = tempfile.TemporaryDirectory()
+        self.tdir = Path(self.tmp.name)
+        self.today = _dt.datetime.now().isoformat(timespec="seconds")
+        # 四平台×12帖，其中8帖已评分（含1营销），4帖未评分（词典兜底路径）
+        plats = [("eastmoney", "600519"), ("sina", "300059"), ("ths", "000858"), ("taoguba", "601899")]
+        posts, scores = [], []
+        n = 0
+        for plat, code in plats:
+            for i in range(12):
+                n += 1
+                posts.append({"id": f"{plat}-{n}", "title": f"第{n}帖，内容{'中' * (n % 50)}",
+                              "source": f"{plat}吧", "sourceCode": code,
+                              "sourceKey": f"{plat}:{code}", "publishTime": self.today})
+                if i < 8:
+                    scores.append({"id": f"{plat}-{n}", "direction": 3 if i % 2 else -3,
+                                   "fear": 0 if i % 2 else 2, "greed": 2 if i % 2 else 0,
+                                   "ai_marketing": 1 if i == 7 else 0, "persona": "retail"})
+        self.cache = {"src_" + k: {"platform": k, "fetchedAt": self.today, "posts": [q for q in posts if q["id"].startswith(k + "-")]}
+                      for k, _ in plats}
+        self.scores = scores
+        self.paths = {k: self.tdir / v for k, v in
+                      [("HISTORY_PATH", "history.json"), ("HISTORY_META_PATH", "history_meta.json"),
+                       ("LATEST_PATH", "latest.json"), ("DATA_JS_PATH", "data.js"),
+                       ("FORUM_CACHE_PATH", "forum_cache.json"), ("LOG_PATH", "update.log"),
+                       ("COMMUNITY_ARCHIVE_DIR", "archive"), ("SQLITE_ARCHIVE_PATH", "a.sqlite3")]}
+        self.saved = {}
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_full_pipeline_offline(self):
+        uil.CACHE.write_text  # noqa - 占位防误删
+        # 劫持全部数据路径
+        for attr, p in self.paths.items():
+            self.saved[attr] = getattr(uil.ui, attr)
+            setattr(uil.ui, attr, p)
+        saved = (uil.CACHE, uil.STORE, uil.STUDY_LOG, uil.LOCK_PATH)
+        uil.CACHE = self.tdir / "cache.json"
+        uil.STORE = self.tdir / "store.json"
+        uil.STUDY_LOG = self.tdir / "study.csv"
+        uil.LOCK_PATH = self.tdir / ".lock"
+        uil.CACHE.write_text(json.dumps(self.cache, ensure_ascii=False), encoding="utf-8")
+        uil.STORE.write_text(json.dumps(self.scores, ensure_ascii=False), encoding="utf-8")
+        try:
+            result = uil.run_update()
+            self.assertIsNotNone(result)  # 锁跳过会抛 UpdateSkipped，走到这=成功
+            snap = result
+            # ① 四文件齐备且版本号就位
+            for attr in ("HISTORY_PATH", "HISTORY_META_PATH", "LATEST_PATH", "DATA_JS_PATH"):
+                self.assertTrue(self.paths[attr].exists(), attr)
+            self.assertIn("snapshotVersion", snap)
+            # ② 情绪指标链路产物
+            sig = snap["signals"]
+            self.assertIn("llmFear", sig)
+            self.assertEqual(sig["llmPlatformCount"], 4)
+            # ③ 板块情绪与热度混合
+            secs = {x["name"]: x for x in snap["sectorIndices"]}
+            self.assertIn("白酒", secs)
+            self.assertIn("emotion", secs["白酒"])
+            self.assertIn("activityHeat", secs["白酒"])
+            # ④ data.js 可解析且含情绪字段
+            js = self.paths["DATA_JS_PATH"].read_text(encoding="utf-8")
+            payload = json.loads(js[len("window.INDEX_DATA = "):].rstrip().rstrip(";"))
+            self.assertIn("llmFear", payload["signals"])
+            # ⑤ 研究日志当日一行
+            text = uil.STUDY_LOG.read_text(encoding="utf-8").strip().splitlines()
+            self.assertEqual(len(text), 2)
+            # ⑥ 抽检样本存在
+            self.assertTrue(snap.get("llmSample"))
+        finally:
+            for attr, p in self.saved.items():
+                setattr(uil.ui, attr, p)
+            uil.CACHE, uil.STORE, uil.STUDY_LOG, uil.LOCK_PATH = saved
+
+
 class TestP12FreshNow(unittest.TestCase):
     """apply_overlays 每轮刷新 ui.NOW；fetch_source 包装层显式传当前时间。"""
 
