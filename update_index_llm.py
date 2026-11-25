@@ -189,32 +189,59 @@ def apply_overlays():
 
 
 PLATFORM_ORDER = ("eastmoney", "sina", "ths", "taoguba")
+EMOTION_WINDOW_DAYS = 15  # 情绪滑动窗口：只统计最近15个自然日的已打分帖（2026-11-25 用户定）
+EMOTION_FALLBACK_DAYS = (15, 30, 60, None)  # 窗口样本不足时逐级放宽兜底
+
+
+def _recent_posts(cache):
+    """按发布日期过滤缓存帖子。返回 {窗口天数 or None: [post,...]}，None=全期。"""
+    from datetime import timedelta
+    today = datetime.now(ui.CN_TZ).date()
+    out = {}
+    for days in EMOTION_FALLBACK_DAYS:
+        if days is None:
+            out[None] = [p for src in cache.values() if isinstance(src, dict)
+                         for p in src.get("posts", []) if isinstance(p, dict)]
+            continue
+        cutoff = (today - timedelta(days=days)).isoformat()
+        out[days] = [p for src in cache.values() if isinstance(src, dict)
+                     for p in src.get("posts", [])
+                     if isinstance(p, dict) and str(p.get("publishTime") or "")[:10] >= cutoff]
+    return out
 
 
 def compute_llm_emotion(snapshot):
     """聚合羊驼情绪强度 → snapshot.signals.llmFear / llmGreed（0-100）。
 
-    口径（2026-11-25 定稿，借鉴 CNN 恐惧贪婪指数分档）：
-    - 单帖 fear/greed 各 0-3，只收有这两个字段的条目（旧存档没有 → 跳过，不补零）
-    - 排除 ai_marketing；平台内取均值 → 四平台固定各 25%，无分平台按中性 1.5 占位（与主指数"缺平台留中性不转权"同纪律）
-    - 指标 = 四平台均值 ÷ 3 × 100；任一侧一天没有任何有效帖 → 不写该键，显示端回落旧合成
+    口径（2026-11-25 定稿）：
+    - 滑动窗口：只统计最近 15 个自然日发布的已打分帖（防历史 corpus 稀释读数）；
+      窗口总样本 <30 时按 15/30/60/全期逐级放宽兜底
+    - 单帖 fear/greed 各 0-3，只收带这两字段的条目；排除 ai_marketing
+    - 平台内均值 → 四平台固定各 25%，无分平台按中性 1.5 占位（缺平台留中性不转权）
+    - 指标 = 四平台均值 ÷ 3 × 100；全无有效帖 → 不写键，显示端回落旧合成
     """
-    by_platform = {k: [] for k in PLATFORM_ORDER}
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
+    post2plat = {}
     for src in cache.values():
         if not isinstance(src, dict):
             continue
         plat = str(src.get("platform") or "")
-        if plat not in by_platform:
-            continue
         for p0 in src.get("posts", []):
-            if not isinstance(p0, dict):
-                continue
+            if isinstance(p0, dict):
+                post2plat[str(p0.get("id") or "")] = plat
+    by_platform = {k: [] for k in PLATFORM_ORDER}
+    for days, posts in _recent_posts(cache).items():
+        bp = {k: [] for k in PLATFORM_ORDER}
+        for p0 in posts:
             e = LLM_BY_ID.get(str(p0.get("id") or ""))
-            if not e or e.get("ai_marketing"):
+            if not e or e.get("ai_marketing") or "fear" not in e or "greed" not in e:
                 continue
-            if "fear" in e and "greed" in e:
-                by_platform[plat].append((int(e["fear"]), int(e["greed"])))
+            plat = post2plat.get(str(p0.get("id") or ""))
+            if plat in bp:
+                bp[plat].append((int(e["fear"]), int(e["greed"])))
+        by_platform = bp
+        if sum(len(v) for v in bp.values()) >= 30:
+            break
     fear_acc = greed_acc = used = 0
     for plat in PLATFORM_ORDER:
         vals = by_platform[plat]
@@ -227,7 +254,7 @@ def compute_llm_emotion(snapshot):
             fear_acc += 1.5  # 中性占位
             greed_acc += 1.5
     if used == 0:
-        return  # 存量旧条目都没情绪字段，不写键，显示端回落
+        return  # 无有效帖，不写键，显示端回落
     signals = snapshot.setdefault("signals", {})
     signals["llmFear"] = round(fear_acc / 4 / 3 * 100, 1)
     signals["llmGreed"] = round(greed_acc / 4 / 3 * 100, 1)
@@ -283,7 +310,8 @@ def compute_llm_sector_emotion(snapshot, weight=0.2, min_n=3):
     """羊驼情绪注入板块热度榜（2026-11-25 用户授权）。
 
     - 帖子→板块：sector_catalog 主归类（一家公司只属一个板块），按 sourceCode 映射
-    - 板块情绪温度 = 50 +（贪婪−恐惧）÷2，0-100，低=恐慌高=贪婪；板块已打分样本 <3 记 null（不参与）
+    - 板块情绪温度 = 50 +（贪婪−恐惧）÷2，0-100，低=恐慌高=贪婪；15天窗口起算，
+      板块样本 <3 时按 15/30/60/全期 逐级向前追溯至够3条；全期都不够才记 null（不参与）
     - 排名分 heat = (1-w)×原活动度 + w×板块情绪，然后对有名次板块重新排序、重编 heatRank
     - 原值存 activityHeat 供追溯；情绪存 emotion/emotionN，前端以"情"字徽章展示
     """
@@ -293,19 +321,30 @@ def compute_llm_sector_emotion(snapshot, weight=0.2, min_n=3):
         for code, _name in sec["sourceStocks"]:
             code2sector[str(code)] = str(sec["name"])
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
-    by_sector = {}
+    code_of = {}
     for src in cache.values():
         if not isinstance(src, dict):
             continue
         for p0 in src.get("posts", []):
-            if not isinstance(p0, dict):
-                continue
+            if isinstance(p0, dict):
+                code_of[str(p0.get("id") or "")] = str(p0.get("sourceCode") or "")
+    by_sector = {}
+    per_window = {}
+    for days, posts in _recent_posts(cache).items():
+        acc = {}
+        for p0 in posts:
             e = LLM_BY_ID.get(str(p0.get("id") or ""))
             if not e or e.get("ai_marketing") or "fear" not in e or "greed" not in e:
                 continue
-            sec_name = code2sector.get(str(p0.get("sourceCode") or ""))
+            sec_name = code2sector.get(code_of.get(str(p0.get("id") or ""), ""))
             if sec_name:
-                by_sector.setdefault(sec_name, []).append((int(e["fear"]), int(e["greed"])))
+                acc.setdefault(sec_name, []).append((int(e["fear"]), int(e["greed"])))
+        per_window[days] = acc
+    # 每板块独立逐级追溯：15天不够3条→30→60→全期，够3条即用（保证冷门板块有读数）
+    for days in EMOTION_FALLBACK_DAYS:
+        for sec_name, vals in per_window[days].items():
+            if sec_name not in by_sector and len(vals) >= min_n:
+                by_sector[sec_name] = vals
     stats = {}
     for name, vals in by_sector.items():
         if len(vals) >= min_n:

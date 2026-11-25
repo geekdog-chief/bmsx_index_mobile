@@ -268,6 +268,53 @@ class TestLlmaudit(unittest.TestCase):
         self.assertNotIn("llmSample", snap)
 
 
+class TestEmotionWindow(unittest.TestCase):
+    """15天滑动窗口：窗口内统计、窗口外剔除、样本不足逐级兜底。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.today = __import__("datetime").date.today().isoformat()
+        self.old_day = "2020-01-01"
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_window_excludes_old_posts(self):
+        posts, scores = [], []
+        for i in range(3):  # 白酒：3条窗口内新帖，全贪婪
+            posts.append({"id": f"new{i}", "title": "新", "source": "s",
+                          "publishTime": f"{self.today}T10:00:00", "sourceCode": "600519"})
+            scores.append({"id": f"new{i}", "direction": 3, "fear": 0, "greed": 3})
+        posts.append({"id": "old1", "title": "旧", "source": "s",
+                      "publishTime": f"{self.old_day}T10:00:00", "sourceCode": "600519"})
+        scores.append({"id": "old1", "direction": -3, "fear": 3, "greed": 0})  # 老帖恐慌，不应进窗口
+        make_env(self.tmp.name, posts, scores)
+        uil.load_llm_scores()
+        # 窗口过滤本身：15天窗口只收新帖
+        cache = __import__("json").loads(uil.CACHE.read_text(encoding="utf-8"))
+        windowed = uil._recent_posts(cache)[uil.EMOTION_WINDOW_DAYS]
+        ids = {str(x.get("id")) for x in windowed}
+        self.assertIn("new0", ids)
+        self.assertNotIn("old1", ids)
+        # 板块函数15天窗口：老帖恐慌不进账，白酒应偏贪婪侧
+        snap = {"sectorIndices": [{"name": "白酒", "heat": 50.0, "heatRank": 1}]}
+        uil.compute_llm_sector_emotion(snap)
+        self.assertGreater(snap["sectorIndices"][0]["emotion"], 50.0)
+
+    def test_sector_fallback_to_old_posts(self):
+        """冷门板块兜底：15天窗口内无帖，向前追溯至老帖也要给出读数。"""
+        posts, scores = [], []
+        for i in range(3):  # 券商保险：只有2020年的老帖，恐慌
+            posts.append({"id": f"oldz{i}", "title": "旧券", "source": "s",
+                          "publishTime": f"{self.old_day}T10:00:00", "sourceCode": "300059"})
+            scores.append({"id": f"oldz{i}", "direction": -3, "fear": 3, "greed": 0})
+        make_env(self.tmp.name, posts, scores)
+        uil.load_llm_scores()
+        snap = {"sectorIndices": [{"name": "券商保险", "heat": 50.0, "heatRank": 1}]}
+        uil.compute_llm_sector_emotion(snap)
+        self.assertEqual(snap["sectorIndices"][0]["emotion"], 0.0)  # 追溯到老帖，全恐慌=0
+
+
 class TestSectorEmotion(unittest.TestCase):
     """板块情绪注入：sourceCode 映射、最小样本门槛、混合权重、重排名。"""
 
@@ -281,14 +328,19 @@ class TestSectorEmotion(unittest.TestCase):
         # 两个板块：券商保险(300059×3帖恐慌) vs 白酒(600519×3帖狂热)
         posts = []
         scores = []
+        import datetime as _dt
+        today = _dt.date.today().isoformat()
         for i in range(3):
-            posts.append({"id": f"zq{i}", "title": f"券{i}", "sourceCode": "300059", "source": "s"})
+            posts.append({"id": f"zq{i}", "title": f"券{i}", "sourceCode": "300059", "source": "s",
+                          "publishTime": f"{today}T10:00:00"})
             scores.append({"id": f"zq{i}", "direction": -3, "fear": 3, "greed": 0})
         for i in range(3):
-            posts.append({"id": f"bj{i}", "title": f"酒{i}", "sourceCode": "600519", "source": "s"})
+            posts.append({"id": f"bj{i}", "title": f"酒{i}", "sourceCode": "600519", "source": "s",
+                          "publishTime": f"{today}T10:00:00"})
             scores.append({"id": f"bj{i}", "direction": 3, "fear": 0, "greed": 3})
         # 样本不足的板块（1 帖）：不参与情绪
-        posts.append({"id": "dc0", "title": "电池", "sourceCode": "300750", "source": "s"})
+        posts.append({"id": "dc0", "title": "电池", "sourceCode": "300750", "source": "s",
+                      "publishTime": f"{today}T10:00:00"})
         scores.append({"id": "dc0", "direction": 1, "fear": 3, "greed": 0})
         make_env(self.tmp.name, posts, scores)
         uil.load_llm_scores()
