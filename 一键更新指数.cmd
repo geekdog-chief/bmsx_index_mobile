@@ -1,6 +1,9 @@
 @echo off
 cd /d "%~dp0"
 title 宝妈·小白·散户指数 - 一键更新
+rem 2026-11-27 整改：旧版词典入口（update_index.py）会生成无 LLM 的降级数据，
+rem 统一改走 LLM 叠加层 update_index_llm.py，与 15:40 生产链同口径。
+rem 返回码契约：0=成功发布；2=锁冲突跳过；其他=失败。
 
 rem ====== 探测真实可用的 Python（自动跳过微软商店占位符）======
 set "PYEXE="
@@ -45,8 +48,14 @@ echo   宝妈·小白·散户社区情绪指数 - 一键更新
 echo ============================================
 echo.
 
-%PYEXE% update_index.py
+%PYEXE% update_index_llm.py
 set "RC=%errorlevel%"
+if "%RC%"=="2" (
+    echo.
+    echo [跳过] 更新锁被占（15:40 定时任务可能正在跑），本次未改动，稍后或明天再试
+    pause
+    exit /b 0
+)
 if not "%RC%"=="0" (
     echo.
     echo [失败] 更新未完成（错误码 %RC%），已保留上一次结果。详见 data\update.log

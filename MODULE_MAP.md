@@ -28,6 +28,6 @@
 | backfill_all.py | 补跑循环（读 llm_overlay 输出行/BACKFILL_DONE 判完） |
 | study/fetch_price.py | 13 只 ETF 日线：增量（_last_date 续抓）+merge_frames 去重+限流重试+心跳 _last_run.txt |
 | sync_all.py | 双向同步脚本（用户已弃用自动推送，留档） |
-| tests/test_llm_overlay_fixes.py | 66 用例：键控/校验/窗口/聚合/发布/锁/CSV/合并全专项 |
+| tests/test_llm_overlay_fixes.py | 86 用例（2026-11-27 实跑 55.7s）：键控/校验/窗口/聚合/发布/锁/CSV/合并全专项 |
 | RESEARCH_PLAN.md | 研究宪法（含运行日志 §8） |
-| 各 .cmd | 任务计划安装/补跑/推送/启动 GUI；批处理只做薄壳，逻辑全在 .py |
+| 各 .cmd | 任务计划安装/补跑/推送/本地更新；批处理只做薄壳，逻辑全在 .py |
