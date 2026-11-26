@@ -325,19 +325,24 @@ def collect_llm_sample(snapshot, n_dir=8, n_emo=8, n_mkt=4, n_calm=4):
                 continue  # 30天窗口外：老帖不进抽检
             e = LLM_BY_ID.get(str(p0.get("id") or ""))
             if e and "fear" in e and "greed" in e:
-                cands.append((e, str(p0["title"])[:46], PLATFORM_NAMES.get(plat, plat)))
+                full = str(p0["title"])
+                if len(full) > 300:  # 全文进 data.js，仅超长截断（2026-11-26 用户定）
+                    full = full[:300] + "…"
+                cands.append((e, full, PLATFORM_NAMES.get(plat, plat),
+                              str(p0.get("publishTime") or "")[:10]))
     used, picked = set(), []
 
     def take(seq, k):
         got = 0
-        for e, t, pl in seq:
+        for e, t, pl, day in seq:
             if got >= k:
                 break
             if id(e) in used:
                 continue
             used.add(id(e))
             got += 1
-            picked.append({"title": t, "platform": pl, "direction": int(e["direction"]),
+            picked.append({"title": t, "platform": pl, "day": day,
+                           "direction": int(e["direction"]),
                            "fear": int(e["fear"]), "greed": int(e["greed"]),
                            "persona": str(e.get("persona", "none")),
                            "marketing": int(bool(e.get("ai_marketing"))),

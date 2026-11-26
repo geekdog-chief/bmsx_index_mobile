@@ -258,11 +258,35 @@ class TestLlmaudit(unittest.TestCase):
         rows = a["llmSample"]
         self.assertGreater(len(rows), 0)
         self.assertLessEqual(len(rows), 24)
-        for r in rows:  # 字段齐全
-            for k in ("title", "platform", "direction", "fear", "greed", "persona", "marketing"):
+        for r in rows:  # 字段齐全（2026-11-26 起含全文与日期）
+            for k in ("title", "platform", "direction", "fear", "greed", "persona", "marketing", "day"):
                 self.assertIn(k, r)
+            self.assertLessEqual(len(r["title"]), 301)  # 300字截断上限（含省略号）
         self.assertEqual(a["llmSample"], b["llmSample"])  # 确定性
         self.assertTrue(any(r["marketing"] for r in rows))  # 营销类别被覆盖
+
+    def test_fulltext_and_truncation(self):
+        """全文进样：长帖截断到 300+省略号，短帖原样，日期字段存在。"""
+        import datetime as _dt
+        today = _dt.date.today().isoformat()
+        long_title = "长" * 500
+        posts = [
+            {"id": "L1", "title": long_title, "source": "s", "publishTime": today + "T09:00:00"},
+            {"id": "S1", "title": "短帖", "source": "s", "publishTime": today + "T10:00:00"},
+        ]
+        scores = [{"id": "L1", "direction": 1, "fear": 0, "greed": 2},
+                  {"id": "S1", "direction": -1, "fear": 2, "greed": 0}]
+        make_env(self.tmp.name, posts, scores)
+        uil.load_llm_scores()
+        snap = {"sectorIndices": []}
+        uil.collect_llm_sample(snap)
+        by_id = {r["title"][:3]: r for r in snap["llmSample"]}
+        long_r = [r for r in snap["llmSample"] if r["title"].startswith("长长长")][0]
+        short_r = [r for r in snap["llmSample"] if r["title"] == "短帖"][0]
+        self.assertEqual(len(long_r["title"]), 301)
+        self.assertTrue(long_r["title"].endswith("…"))
+        self.assertEqual(short_r["title"], "短帖")
+        self.assertEqual(long_r["day"], today)
 
     def test_no_candidates_no_key(self):
         make_env(self.tmp.name, [], [])
