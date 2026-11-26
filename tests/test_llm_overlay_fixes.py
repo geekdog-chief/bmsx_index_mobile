@@ -932,10 +932,12 @@ class TestDualCursor(unittest.TestCase):
     def _log(self, rows):
         import csv as _csv
         with uil.STUDY_LOG.open("w", encoding="utf-8", newline="") as f:
-            w = _csv.DictWriter(f, fieldnames=["date", "fear", "greed", "sectors_json"])
+            w = _csv.DictWriter(f, fieldnames=["date", "fear", "greed", "sectors_json", "window"])
             w.writeheader()
-            for d, fe, gr in rows:
-                w.writerow({"date": d, "fear": fe, "greed": gr, "sectors_json": "{}"})
+            for row in rows:
+                d, fe, gr = row[0], row[1], row[2]
+                win = row[3] if len(row) > 3 else "15"
+                w.writerow({"date": d, "fear": fe, "greed": gr, "sectors_json": "{}", "window": win})
 
     def test_pct_mid_and_extreme(self):
         import datetime as _dt
@@ -943,7 +945,7 @@ class TestDualCursor(unittest.TestCase):
         rows = [( (base + _dt.timedelta(days=i)).isoformat(), 10 + i % 50, 20 + i % 40) for i in range(100)]
         self._log(rows)
         today = (base + _dt.timedelta(days=100)).isoformat()
-        snap = {"tradingDays": [today], "signals": {"llmFear": 99.0, "llmGreed": 99.0}}
+        snap = {"tradingDays": [today], "signals": {"llmFear": 99.0, "llmGreed": 99.0, "llmWindowDays": "15"}}
         uil.compute_history_percentiles(snap)
         pf, pg = snap["signals"]["llmFearPct"], snap["signals"]["llmGreedPct"]
         self.assertIsNotNone(pf)
@@ -957,7 +959,7 @@ class TestDualCursor(unittest.TestCase):
         rows = [((base + _dt.timedelta(days=i)).isoformat(), 10.0, 20.0) for i in range(45)]
         self._log(rows)
         today = (base + _dt.timedelta(days=45)).isoformat()
-        snap = {"tradingDays": [today], "signals": {"llmFear": 30.0, "llmGreed": 30.0}}
+        snap = {"tradingDays": [today], "signals": {"llmFear": 30.0, "llmGreed": 30.0, "llmWindowDays": "15"}}
         uil.compute_history_percentiles(snap)
         self.assertIsNone(snap["signals"]["llmFearPct"])
         self.assertEqual(snap["signals"]["llmHistoryDays"], 45)
@@ -970,7 +972,7 @@ class TestDualCursor(unittest.TestCase):
         rows = [((base + _dt.timedelta(days=i)).isoformat(), 10.0, 20.0) for i in range(100)]
         rows.append((today, 999.0, 999.0))  # 同日旧行，值离谱
         self._log(rows)
-        snap = {"tradingDays": [today], "signals": {"llmFear": 10.0, "llmGreed": 20.0}}
+        snap = {"tradingDays": [today], "signals": {"llmFear": 10.0, "llmGreed": 20.0, "llmWindowDays": "15"}}
         uil.compute_history_percentiles(snap)
         self.assertEqual(snap["signals"]["llmFearPct"], 50)  # 与历史全相同→中位 50，999 未污染
 
@@ -983,13 +985,70 @@ class TestDualCursor(unittest.TestCase):
         self.assertEqual(snap["signals"]["llmGreed"], 44.4)
         self.assertNotIn("llmFearPct", snap["signals"])
 
+    def test_same_window_filter(self):
+        """修正1：当前 15 天窗口只与历史 15 天行比，30/60 天行不得混入。"""
+        import datetime as _dt, csv as _csv
+        base = _dt.date(2026, 1, 1)
+        today = (base + _dt.timedelta(days=100)).isoformat()
+        with uil.STUDY_LOG.open("w", encoding="utf-8", newline="") as f:
+            w = _csv.DictWriter(f, fieldnames=["date", "fear", "greed", "sectors_json", "window"])
+            w.writeheader()
+            for i in range(70):  # 70 条 15 天行
+                w.writerow({"date": (base + _dt.timedelta(days=i)).isoformat(),
+                            "fear": 10.0, "greed": 20.0, "sectors_json": "{}", "window": "15"})
+            for i in range(70):  # 70 条 30 天行——不得计入
+                w.writerow({"date": (base + _dt.timedelta(days=i)).isoformat(),
+                            "fear": 99.0, "greed": 99.0, "sectors_json": "{}", "window": "30"})
+        snap = {"tradingDays": [today], "signals": {"llmFear": 10.0, "llmGreed": 20.0, "llmWindowDays": "15"}}
+        uil.compute_history_percentiles(snap)
+        self.assertEqual(snap["signals"]["llmHistoryDays"], 70)  # 只有 15 天行被统计
+        self.assertEqual(snap["signals"]["llmFearPct"], 50)
+
+    def test_filtered_below_60_shows_none(self):
+        """修正1：过滤后同窗口样本不足 60 天，即使总行数≥60 也不出百分位。"""
+        import datetime as _dt, csv as _csv
+        base = _dt.date(2026, 1, 1)
+        today = (base + _dt.timedelta(days=100)).isoformat()
+        with uil.STUDY_LOG.open("w", encoding="utf-8", newline="") as f:
+            w = _csv.DictWriter(f, fieldnames=["date", "fear", "greed", "sectors_json", "window"])
+            w.writeheader()
+            for i in range(45):
+                w.writerow({"date": (base + _dt.timedelta(days=i)).isoformat(),
+                            "fear": 10.0, "greed": 20.0, "sectors_json": "{}", "window": "15"})
+            for i in range(80):
+                w.writerow({"date": (base + _dt.timedelta(days=i)).isoformat(),
+                            "fear": 10.0, "greed": 20.0, "sectors_json": "{}", "window": "30"})
+        snap = {"tradingDays": [today], "signals": {"llmFear": 30.0, "llmGreed": 30.0, "llmWindowDays": "15"}}
+        uil.compute_history_percentiles(snap)
+        self.assertIsNone(snap["signals"]["llmFearPct"])
+        self.assertEqual(snap["signals"]["llmHistoryDays"], 45)
+
+    def test_bad_numeric_row_isolated(self):
+        """修正2：历史坏行（非法数字）被跳过+留诊断，快指针不动、不抛异常。"""
+        import datetime as _dt, csv as _csv
+        base = _dt.date(2026, 1, 1)
+        today = (base + _dt.timedelta(days=100)).isoformat()
+        with uil.STUDY_LOG.open("w", encoding="utf-8", newline="") as f:
+            w = _csv.DictWriter(f, fieldnames=["date", "fear", "greed", "sectors_json", "window"])
+            w.writeheader()
+            for i in range(100):
+                fe, gr = (10.0, 20.0)
+                if i == 50:
+                    fe, gr = "abc", "??"  # 坏行
+                w.writerow({"date": (base + _dt.timedelta(days=i)).isoformat(),
+                            "fear": fe, "greed": gr, "sectors_json": "{}", "window": "15"})
+        snap = {"tradingDays": [today], "signals": {"llmFear": 99.0, "llmGreed": 99.0, "llmWindowDays": "15"}}
+        uil.compute_history_percentiles(snap)
+        self.assertEqual(snap["signals"]["llmHistoryDays"], 99)  # 坏行未计入
+        self.assertGreaterEqual(snap["signals"]["llmFearPct"], 95)
+
     def test_cap_250(self):
         import datetime as _dt
         base = _dt.date(2025, 1, 1)
         rows = [((base + _dt.timedelta(days=i)).isoformat(), float(i % 60), 30.0) for i in range(300)]
         self._log(rows)
         today = (base + _dt.timedelta(days=300)).isoformat()
-        snap = {"tradingDays": [today], "signals": {"llmFear": 59.0, "llmGreed": 30.0}}
+        snap = {"tradingDays": [today], "signals": {"llmFear": 59.0, "llmGreed": 30.0, "llmWindowDays": "15"}}
         uil.compute_history_percentiles(snap)
         self.assertEqual(snap["signals"]["llmHistoryDays"], 250)  # 只取最近 250 条
 

@@ -435,20 +435,32 @@ def compute_history_percentiles(snapshot):
     if "llmFear" not in sig or "llmGreed" not in sig:
         return
     today = snapshot.get("tradingDays", [""])[0] if snapshot.get("tradingDays") else ""
+    cur_window = str(sig.get("llmWindowDays") or "all")  # 同窗口过滤（验收修正1）
     import csv as _csv
     hist_f, hist_g = [], []
     if STUDY_LOG.exists():
         try:
             with STUDY_LOG.open("r", encoding="utf-8", newline="") as f:
                 for r in _csv.DictReader(f):
-                    if r.get("date") and r["date"] < today and r.get("fear") and r.get("greed"):
-                        hist_f.append(float(r["fear"]))
-                        hist_g.append(float(r["greed"]))
-        except (OSError, _csv.Error):
-            return  # 日志不可读：慢指针静默缺席，不影响快指针
+                    if not (r.get("date") and r["date"] < today):
+                        continue
+                    # 同窗口才可比：当前 15 天只对历史 15 天；旧行无 window 列的按 15 处理
+                    # （第二阶段审计已证：window 列引入前，15 天档 60/60 天全触发）
+                    if str(r.get("window") or "15") != cur_window:
+                        continue
+                    try:
+                        fv, gv = float(r["fear"]), float(r["greed"])  # 坏行隔离（验收修正2）
+                    except (TypeError, ValueError):
+                        print(f"慢指针：跳过坏行 {r.get('date')}（fear={r.get('fear')!r} greed={r.get('greed')!r}）", flush=True)
+                        continue
+                    hist_f.append(fv)
+                    hist_g.append(gv)
+        except (OSError, _csv.Error) as e:
+            print(f"慢指针：历史日志读取失败，缺席本轮（快指针不受影响）：{e}", flush=True)
+            return
     hist_f = hist_f[-PCT_MAX_HISTORY:]
     hist_g = hist_g[-PCT_MAX_HISTORY:]
-    sig["llmHistoryDays"] = len(hist_f)
+    sig["llmHistoryDays"] = len(hist_f)  # 过滤后的同窗口有效交易日数
     if len(hist_f) < PCT_MIN_HISTORY:
         sig["llmFearPct"] = None
         sig["llmGreedPct"] = None
