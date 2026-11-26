@@ -1,7 +1,7 @@
 /* 宝妈指数 Service Worker：界面缓存优先秒开，data.js 网络优先保证指数永远最新 */
 // 纪律：改任何壳文件（html/js/css）必须升下面的版本号并推送，否则手机永远跑旧代码
 // 否则缓存优先策略下，用户手机永远跑旧 JS，修复推了也白推
-const CACHE = "bmsx-v21";
+const CACHE = "bmsx-v22";
 const SHELL = ["./dashboard.html", "styles.css", "dashboard.js", "manifest.webmanifest", "icon-192.png", "icon-512.png"];
 /* data.js 永不缓存：每次取网络，失败才回落本地缓存 */
 const NETWORK_FIRST = ["data.js"];

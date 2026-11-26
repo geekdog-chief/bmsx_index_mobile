@@ -291,37 +291,12 @@
     }));
   }
 
-  /* ---------- GUI 状态推送（gui.py → receiveGuiStatus） ---------- */
-  let updating = false;
-  window.receiveGuiStatus = function (payload) {
-    if (!payload || typeof payload !== "object") return;
-    if (payload.type === "progress" || (payload.done !== undefined && payload.total)) {
-      progwrap.style.display = "block";
-      const pct = payload.total ? Math.min(100, payload.done / payload.total * 100) : 0;
-      prog.style.width = pct + "%";
-      const plat = payload.platform ? `：${payload.platform}` : "";
-      setState("run", `正在读取${plat}（总计 ${payload.done}/${payload.total}）`);
-      return;
-    }
-    if (payload.state === "run") { updating = true; btnupd.disabled = true; progwrap.style.display = "block"; setState("run", "正在后台更新"); return; }
-    if (payload.state === "ok") {
-      updating = false; btnupd.disabled = false; progwrap.style.display = "none"; prog.style.width = "0";
-      setState("ok", "数据已更新");
-      if (payload.updatedAt) timepill.textContent = "更新于 " + hhmm(payload.updatedAt);
-      setTimeout(() => location.reload(), 400);
-      return;
-    }
-    if (payload.state === "bad") { updating = false; btnupd.disabled = false; progwrap.style.display = "none"; setState("bad", `更新失败，保留 ${payload.keptAt || "--:--"} 旧数据`); return; }
-  };
-
   /* ---------- 立即更新 ---------- */
+  // 2026-11-27 整改：删除 GUI 时代整块死代码（状态推送函数 + 桌面桥）。
+  // 浏览器静态页无法跑 Python，按钮保持禁用；悬浮提示说真话。
   function bindUpdate() {
-    if (window.pywebview && window.pywebview.api && window.pywebview.api.update_now) {
-      btnupd.addEventListener("click", () => { if (!updating) window.pywebview.api.update_now(); });
-    } else {
-      btnupd.disabled = true;
-      btnupd.title = "桌面版（启动民间温度计.cmd）可用自动更新";
-    }
+    btnupd.disabled = true;
+    btnupd.title = "已在每天 15:40 自动更新；手动请在电脑上运行 一键更新指数.cmd 后刷新页面";
   }
 
   /* ---------- 羊驼抽检：全文卡片，人工核对模型读数质量（2026-11-26 重排） ---------- */

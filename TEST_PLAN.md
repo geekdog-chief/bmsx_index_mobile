@@ -1,7 +1,7 @@
 # TEST_PLAN.md —— 测试分层与验收标准
 
 ## 运行命令
-`python -m unittest discover -s tests -p "test_*.py"` —— 当前 **69 用例**，验收线：全过且 ≤90s（含 E2E 全链 62s）。
+`python -m unittest discover -s tests -p "test_*.py"` —— 当前 **86 用例（2026-11-27 实跑 55.7s）**，验收线：全过且 ≤90s（含 E2E 全链 62s）。
 
 ## 四层结构（对应 RELEASE_PROCESS.md §四）
 | 层 | 覆盖 | 现状 |
