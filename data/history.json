@@ -6514,5 +6514,3428 @@
     "tradingDay": true,
     "calendarMode": "official_sse",
     "sectorCatalogVersion": "3"
+  },
+  {
+    "schemaVersion": 5,
+    "date": "2026-11-26",
+    "baoma": 55,
+    "novice": 56,
+    "retail": 56,
+    "composite": 56,
+    "heat": 54.6,
+    "direction": 50.9,
+    "signals": {
+      "optimism": 50.9,
+      "fomo": 47.9,
+      "panic": 9.7,
+      "newcomer": 52.2,
+      "intensity": 53.2,
+      "attention": 53.5,
+      "heat": 54.6,
+      "breadth": 81.2
+    },
+    "sectors": [
+      {
+        "key": "optical_interconnect",
+        "name": "CPO/光模块",
+        "parentKey": "technology",
+        "parentName": "科技与数字经济",
+        "description": "观察高速光模块、光器件及数据中心光互连；不包含普通通信设备、服务器和PCB。CPO是其中的产业主题子集，不代表三家公司全部收入均来自CPO。",
+        "representativeCompanies": [
+          {
+            "code": "300308",
+            "name": "中际旭创",
+            "role": "高速光模块龙头"
+          },
+          {
+            "code": "300502",
+            "name": "新易盛",
+            "role": "高性能光模块"
+          },
+          {
+            "code": "300394",
+            "name": "天孚通信",
+            "role": "光器件与光引擎平台"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 57,
+          "novice": 57,
+          "retail": 60,
+          "composite": 58
+        },
+        "signals": {
+          "optimism": 52.6,
+          "fomo": 54.0,
+          "panic": 13.6,
+          "newcomer": 53.2,
+          "intensity": 57.2,
+          "attention": 58.9,
+          "heat": 56.2
+        },
+        "heat": 67.1,
+        "legacyHeat": 56.2,
+        "absoluteHeat": 58.2,
+        "relativeHeat": 67.2,
+        "heatRank": 1,
+        "heatTier": "明显升温",
+        "direction": 52.6,
+        "coverage": 96.6,
+        "confidence": 97,
+        "samplePosts": 872,
+        "platformCount": 4,
+        "sourceCount": 9,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 52.1,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.833333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 55.0,
+            "high": 58.0,
+            "maxDelta": 3.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 58.9,
+          "volumeFactor": 58.9,
+          "relativeLatent": 58.5,
+          "heatTier": "明显升温",
+          "percentile": 98.3,
+          "robustZ": 2.434,
+          "reliability": 56.0,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 67.2,
+          "rawFinalHeat": 67.1,
+          "rawAbsoluteHeat": 58.2,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 66.6,
+          "previousFinalHeat": 65.6,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "pcb",
+        "name": "PCB",
+        "parentKey": "technology",
+        "parentName": "科技与数字经济",
+        "description": "观察高多层板、HDI和印制电路板制造；不包含芯片、服务器和普通电子零部件。",
+        "representativeCompanies": [
+          {
+            "code": "002463",
+            "name": "沪电股份",
+            "role": "高速通信与服务器PCB"
+          },
+          {
+            "code": "300476",
+            "name": "胜宏科技",
+            "role": "高多层板与HDI"
+          },
+          {
+            "code": "002916",
+            "name": "深南电路",
+            "role": "PCB与封装基板综合平台"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 57,
+          "novice": 56,
+          "retail": 59,
+          "composite": 57
+        },
+        "signals": {
+          "optimism": 53.3,
+          "fomo": 55.3,
+          "panic": 11.8,
+          "newcomer": 51.1,
+          "intensity": 57.2,
+          "attention": 55.4,
+          "heat": 55.2
+        },
+        "heat": 64.6,
+        "legacyHeat": 55.2,
+        "absoluteHeat": 55.3,
+        "relativeHeat": 64.2,
+        "heatRank": 4,
+        "heatTier": "明显升温",
+        "direction": 53.3,
+        "coverage": 100.0,
+        "confidence": 100,
+        "samplePosts": 786,
+        "platformCount": 4,
+        "sourceCount": 10,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 46.1,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.941666,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 55.0,
+            "high": 57.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 55.4,
+          "volumeFactor": 55.4,
+          "relativeLatent": 55.4,
+          "heatTier": "明显升温",
+          "percentile": 88.3,
+          "robustZ": 1.353,
+          "reliability": 59.3,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 64.2,
+          "rawFinalHeat": 64.6,
+          "rawAbsoluteHeat": 55.3,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 64.1,
+          "previousFinalHeat": 63.7,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "ai_compute",
+        "name": "AI算力",
+        "parentKey": "technology",
+        "parentName": "科技与数字经济",
+        "description": "观察AI服务器、高性能计算整机、智算中心和算力基础设施；不包含芯片、光模块及PCB。",
+        "representativeCompanies": [
+          {
+            "code": "000977",
+            "name": "浪潮信息",
+            "role": "AI服务器"
+          },
+          {
+            "code": "603019",
+            "name": "中科曙光",
+            "role": "高端计算与智算"
+          },
+          {
+            "code": "601138",
+            "name": "工业富联",
+            "role": "AI服务器综合制造"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 56,
+          "novice": 56,
+          "retail": 58,
+          "composite": 57
+        },
+        "signals": {
+          "optimism": 51.3,
+          "fomo": 50.7,
+          "panic": 15.7,
+          "newcomer": 54.7,
+          "intensity": 56.0,
+          "attention": 56.3,
+          "heat": 54.3
+        },
+        "heat": 65.3,
+        "legacyHeat": 54.3,
+        "absoluteHeat": 55.8,
+        "relativeHeat": 65.1,
+        "heatRank": 3,
+        "heatTier": "明显升温",
+        "direction": 51.3,
+        "coverage": 100.0,
+        "confidence": 100,
+        "samplePosts": 866,
+        "platformCount": 4,
+        "sourceCount": 10,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 48.3,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.958333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 54.0,
+            "high": 57.0,
+            "maxDelta": 3.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 56.3,
+          "volumeFactor": 56.3,
+          "relativeLatent": 56.0,
+          "heatTier": "明显升温",
+          "percentile": 91.7,
+          "robustZ": 1.571,
+          "reliability": 57.8,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 65.1,
+          "rawFinalHeat": 65.3,
+          "rawAbsoluteHeat": 55.8,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 65.5,
+          "previousFinalHeat": 64.6,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "chip_design",
+        "name": "芯片设计",
+        "parentKey": "technology",
+        "parentName": "科技与数字经济",
+        "description": "观察CPU、AI芯片、存储器和MCU等芯片设计；不包含制造设备、材料与晶圆代工。",
+        "representativeCompanies": [
+          {
+            "code": "688041",
+            "name": "海光信息",
+            "role": "高端处理器设计"
+          },
+          {
+            "code": "688256",
+            "name": "寒武纪",
+            "role": "智能计算芯片"
+          },
+          {
+            "code": "603986",
+            "name": "兆易创新",
+            "role": "存储与MCU设计"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 54,
+          "novice": 54,
+          "retail": 57,
+          "composite": 55
+        },
+        "signals": {
+          "optimism": 50.3,
+          "fomo": 50.1,
+          "panic": 16.5,
+          "newcomer": 50.8,
+          "intensity": 54.3,
+          "attention": 56.9,
+          "heat": 53.3
+        },
+        "heat": 65.6,
+        "legacyHeat": 53.3,
+        "absoluteHeat": 56.0,
+        "relativeHeat": 65.6,
+        "heatRank": 2,
+        "heatTier": "明显升温",
+        "direction": 50.3,
+        "coverage": 100.0,
+        "confidence": 100,
+        "samplePosts": 900,
+        "platformCount": 4,
+        "sourceCount": 10,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 45.4,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.791667,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 54.0,
+            "high": 55.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 56.9,
+          "volumeFactor": 56.9,
+          "relativeLatent": 56.4,
+          "heatTier": "明显升温",
+          "percentile": 95.0,
+          "robustZ": 1.696,
+          "reliability": 57.0,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 65.6,
+          "rawFinalHeat": 65.6,
+          "rawAbsoluteHeat": 56.0,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 65.8,
+          "previousFinalHeat": 64.8,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "semi_equipment_materials",
+        "name": "半导体设备材料",
+        "parentKey": "technology",
+        "parentName": "科技与数字经济",
+        "description": "观察晶圆制造设备、刻蚀沉积设备和半导体硅片等上游环节；不包含芯片设计。",
+        "representativeCompanies": [
+          {
+            "code": "002371",
+            "name": "北方华创",
+            "role": "半导体制造设备"
+          },
+          {
+            "code": "688012",
+            "name": "中微公司",
+            "role": "刻蚀与薄膜设备"
+          },
+          {
+            "code": "688126",
+            "name": "沪硅产业",
+            "role": "半导体硅片"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 54,
+          "novice": 54,
+          "retail": 57,
+          "composite": 55
+        },
+        "signals": {
+          "optimism": 49.8,
+          "fomo": 51.7,
+          "panic": 17.7,
+          "newcomer": 49.8,
+          "intensity": 56.0,
+          "attention": 54.7,
+          "heat": 53.4
+        },
+        "heat": 62.0,
+        "legacyHeat": 53.4,
+        "absoluteHeat": 54.4,
+        "relativeHeat": 60.5,
+        "heatRank": 6,
+        "heatTier": "明显升温",
+        "direction": 49.8,
+        "coverage": 100.0,
+        "confidence": 100,
+        "samplePosts": 750,
+        "platformCount": 4,
+        "sourceCount": 10,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 41.8,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.766667,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 54.0,
+            "high": 55.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 54.7,
+          "volumeFactor": 54.7,
+          "relativeLatent": 54.5,
+          "heatTier": "明显升温",
+          "percentile": 78.3,
+          "robustZ": 1.054,
+          "reliability": 53.8,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 60.5,
+          "rawFinalHeat": 62.0,
+          "rawAbsoluteHeat": 54.4,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 60.3,
+          "previousFinalHeat": 60.8,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "telecom_network",
+        "name": "通信设备与运营",
+        "parentKey": "technology",
+        "parentName": "科技与数字经济",
+        "description": "观察运营商、无线与有线网络设备及骨干传输；不包含数据中心光模块主题。",
+        "representativeCompanies": [
+          {
+            "code": "600941",
+            "name": "中国移动",
+            "role": "综合通信运营商"
+          },
+          {
+            "code": "000063",
+            "name": "中兴通讯",
+            "role": "通信网络设备"
+          },
+          {
+            "code": "600498",
+            "name": "烽火通信",
+            "role": "光通信系统设备"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 54,
+          "novice": 54,
+          "retail": 57,
+          "composite": 55
+        },
+        "signals": {
+          "optimism": 51.4,
+          "fomo": 51.0,
+          "panic": 14.4,
+          "newcomer": 50.2,
+          "intensity": 53.8,
+          "attention": 53.7,
+          "heat": 52.4
+        },
+        "heat": 60.2,
+        "legacyHeat": 52.4,
+        "absoluteHeat": 53.4,
+        "relativeHeat": 58.0,
+        "heatRank": 10,
+        "heatTier": "明显升温",
+        "direction": 51.4,
+        "coverage": 96.6,
+        "confidence": 97,
+        "samplePosts": 676,
+        "platformCount": 4,
+        "sourceCount": 9,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 41.8,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.9,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 54.0,
+            "high": 55.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 53.7,
+          "volumeFactor": 53.7,
+          "relativeLatent": 53.5,
+          "heatTier": "明显升温",
+          "percentile": 68.3,
+          "robustZ": 0.708,
+          "reliability": 58.3,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 58.0,
+          "rawFinalHeat": 60.2,
+          "rawAbsoluteHeat": 53.4,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 52.9,
+          "previousFinalHeat": 55.7,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "media_games",
+        "name": "传媒游戏",
+        "parentKey": "technology",
+        "parentName": "科技与数字经济",
+        "description": "观察游戏、长视频和数字内容平台；不包含办公软件和纯硬件公司。",
+        "representativeCompanies": [
+          {
+            "code": "002555",
+            "name": "三七互娱",
+            "role": "网络游戏发行运营"
+          },
+          {
+            "code": "002517",
+            "name": "恺英网络",
+            "role": "网络游戏研发运营"
+          },
+          {
+            "code": "300413",
+            "name": "芒果超媒",
+            "role": "长视频与数字内容"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 54,
+          "novice": 54,
+          "retail": 56,
+          "composite": 55
+        },
+        "signals": {
+          "optimism": 51.1,
+          "fomo": 49.2,
+          "panic": 12.0,
+          "newcomer": 51.7,
+          "intensity": 53.5,
+          "attention": 52.7,
+          "heat": 51.7
+        },
+        "heat": 57.6,
+        "legacyHeat": 51.7,
+        "absoluteHeat": 52.5,
+        "relativeHeat": 54.3,
+        "heatRank": 11,
+        "heatTier": "市场中段",
+        "direction": 51.1,
+        "coverage": 96.6,
+        "confidence": 97,
+        "samplePosts": 642,
+        "platformCount": 4,
+        "sourceCount": 9,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 36.8,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.9,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 53.0,
+            "high": 55.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 52.7,
+          "volumeFactor": 52.7,
+          "relativeLatent": 52.6,
+          "heatTier": "市场中段",
+          "percentile": 63.3,
+          "robustZ": 0.378,
+          "reliability": 51.8,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 54.3,
+          "rawFinalHeat": 57.6,
+          "rawAbsoluteHeat": 52.5,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 54.3,
+          "previousFinalHeat": 56.7,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "new_energy_vehicles",
+        "name": "新能源整车",
+        "parentKey": "new_energy_auto",
+        "parentName": "新能源与汽车",
+        "description": "观察新能源乘用车品牌和整车制造；不包含动力电池与零部件。",
+        "representativeCompanies": [
+          {
+            "code": "002594",
+            "name": "比亚迪",
+            "role": "新能源汽车整车"
+          },
+          {
+            "code": "601127",
+            "name": "赛力斯",
+            "role": "智能新能源汽车"
+          },
+          {
+            "code": "601633",
+            "name": "长城汽车",
+            "role": "综合汽车制造"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 54,
+          "novice": 54,
+          "retail": 56,
+          "composite": 55
+        },
+        "signals": {
+          "optimism": 50.4,
+          "fomo": 47.9,
+          "panic": 14.1,
+          "newcomer": 52.3,
+          "intensity": 52.8,
+          "attention": 55.6,
+          "heat": 52.1
+        },
+        "heat": 62.6,
+        "legacyHeat": 52.1,
+        "absoluteHeat": 54.7,
+        "relativeHeat": 61.4,
+        "heatRank": 5,
+        "heatTier": "明显升温",
+        "direction": 50.4,
+        "coverage": 96.6,
+        "confidence": 97,
+        "samplePosts": 890,
+        "platformCount": 4,
+        "sourceCount": 9,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 41.0,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.775,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 53.0,
+            "high": 55.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 55.6,
+          "volumeFactor": 55.6,
+          "relativeLatent": 55.1,
+          "heatTier": "明显升温",
+          "percentile": 85.0,
+          "robustZ": 1.251,
+          "reliability": 50.7,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 61.4,
+          "rawFinalHeat": 62.6,
+          "rawAbsoluteHeat": 54.7,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 58.7,
+          "previousFinalHeat": 59.7,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "industrial_metals",
+        "name": "工业金属与稀土",
+        "parentKey": "resources_utilities",
+        "parentName": "资源化工与公用",
+        "description": "观察铜、钼、钴及稀土等工业金属；不包含纯黄金和钢铁。",
+        "representativeCompanies": [
+          {
+            "code": "601899",
+            "name": "紫金矿业",
+            "role": "铜金等综合矿业，主归工业金属"
+          },
+          {
+            "code": "603993",
+            "name": "洛阳钼业",
+            "role": "铜钴钼综合矿业"
+          },
+          {
+            "code": "600111",
+            "name": "北方稀土",
+            "role": "稀土冶炼与材料"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 53,
+          "novice": 54,
+          "retail": 56,
+          "composite": 54
+        },
+        "signals": {
+          "optimism": 49.3,
+          "fomo": 48.6,
+          "panic": 14.2,
+          "newcomer": 52.4,
+          "intensity": 53.1,
+          "attention": 53.8,
+          "heat": 51.9
+        },
+        "heat": 60.4,
+        "legacyHeat": 51.9,
+        "absoluteHeat": 53.3,
+        "relativeHeat": 58.3,
+        "heatRank": 9,
+        "heatTier": "明显升温",
+        "direction": 49.3,
+        "coverage": 100.0,
+        "confidence": 100,
+        "samplePosts": 690,
+        "platformCount": 4,
+        "sourceCount": 11,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 39.4,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.933333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 53.0,
+            "high": 54.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 53.8,
+          "volumeFactor": 53.8,
+          "relativeLatent": 53.5,
+          "heatTier": "明显升温",
+          "percentile": 71.7,
+          "robustZ": 0.712,
+          "reliability": 57.6,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 58.3,
+          "rawFinalHeat": 60.4,
+          "rawAbsoluteHeat": 53.3,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 55.8,
+          "previousFinalHeat": 57.7,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "hog_farming",
+        "name": "生猪养殖",
+        "parentKey": "agriculture",
+        "parentName": "农业",
+        "description": "观察生猪育种、养殖和屠宰产业链；不包含种业和以禽类为主的企业。",
+        "representativeCompanies": [
+          {
+            "code": "002714",
+            "name": "牧原股份",
+            "role": "生猪养殖"
+          },
+          {
+            "code": "300498",
+            "name": "温氏股份",
+            "role": "畜禽养殖，主归生猪"
+          },
+          {
+            "code": "000876",
+            "name": "新希望",
+            "role": "饲料与养殖综合型"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 54,
+          "novice": 53,
+          "retail": 55,
+          "composite": 54
+        },
+        "signals": {
+          "optimism": 52.6,
+          "fomo": 55.0,
+          "panic": 11.2,
+          "newcomer": 49.8,
+          "intensity": 54.8,
+          "attention": 50.8,
+          "heat": 52.9
+        },
+        "heat": 53.5,
+        "legacyHeat": 52.9,
+        "absoluteHeat": 51.3,
+        "relativeHeat": 48.4,
+        "heatRank": 18,
+        "heatTier": "市场中段",
+        "direction": 52.6,
+        "coverage": 93.2,
+        "confidence": 93,
+        "samplePosts": 503,
+        "platformCount": 4,
+        "sourceCount": 8,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 37.6,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.833333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 51.0,
+            "high": 55.0,
+            "maxDelta": 3.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 50.8,
+          "volumeFactor": 50.8,
+          "relativeLatent": 51.1,
+          "heatTier": "市场中段",
+          "percentile": 41.7,
+          "robustZ": -0.118,
+          "reliability": 47.6,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 48.4,
+          "rawFinalHeat": 53.5,
+          "rawAbsoluteHeat": 51.3,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 46.4,
+          "previousFinalHeat": 51.2,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "battery_storage",
+        "name": "锂电池与储能",
+        "parentKey": "new_energy_auto",
+        "parentName": "新能源与汽车",
+        "description": "观察动力与储能电芯和电池系统；不包含锂矿、整车与光伏电站。",
+        "representativeCompanies": [
+          {
+            "code": "300750",
+            "name": "宁德时代",
+            "role": "动力与储能电池"
+          },
+          {
+            "code": "300014",
+            "name": "亿纬锂能",
+            "role": "动力与储能电芯"
+          },
+          {
+            "code": "002074",
+            "name": "国轩高科",
+            "role": "动力电池系统"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 52,
+          "novice": 53,
+          "retail": 53,
+          "composite": 53
+        },
+        "signals": {
+          "optimism": 48.2,
+          "fomo": 47.6,
+          "panic": 19.5,
+          "newcomer": 52.8,
+          "intensity": 54.8,
+          "attention": 55.4,
+          "heat": 52.5
+        },
+        "heat": 61.6,
+        "legacyHeat": 52.5,
+        "absoluteHeat": 54.7,
+        "relativeHeat": 60.0,
+        "heatRank": 7,
+        "heatTier": "明显升温",
+        "direction": 48.2,
+        "coverage": 89.8,
+        "confidence": 90,
+        "samplePosts": 892,
+        "platformCount": 4,
+        "sourceCount": 7,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 38.8,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.683334,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 51.0,
+            "high": 54.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 55.4,
+          "volumeFactor": 55.4,
+          "relativeLatent": 55.0,
+          "heatTier": "明显升温",
+          "percentile": 81.7,
+          "robustZ": 1.213,
+          "reliability": 46.3,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 60.0,
+          "rawFinalHeat": 61.6,
+          "rawAbsoluteHeat": 54.7,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 57.8,
+          "previousFinalHeat": 59.1,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "gold",
+        "name": "黄金",
+        "parentKey": "resources_utilities",
+        "parentName": "资源化工与公用",
+        "description": "观察以黄金采选冶炼为核心的企业；不包含仅有少量黄金副产品的综合矿企。",
+        "representativeCompanies": [
+          {
+            "code": "600547",
+            "name": "山东黄金",
+            "role": "黄金采选冶炼"
+          },
+          {
+            "code": "600988",
+            "name": "赤峰黄金",
+            "role": "黄金矿业"
+          },
+          {
+            "code": "600489",
+            "name": "中金黄金",
+            "role": "黄金采选冶炼"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 52,
+          "novice": 52,
+          "retail": 54,
+          "composite": 53
+        },
+        "signals": {
+          "optimism": 50.3,
+          "fomo": 52.3,
+          "panic": 12.1,
+          "newcomer": 49.6,
+          "intensity": 52.0,
+          "attention": 51.3,
+          "heat": 51.5
+        },
+        "heat": 54.3,
+        "legacyHeat": 51.5,
+        "absoluteHeat": 51.3,
+        "relativeHeat": 49.5,
+        "heatRank": 16,
+        "heatTier": "市场中段",
+        "direction": 50.3,
+        "coverage": 96.6,
+        "confidence": 97,
+        "samplePosts": 456,
+        "platformCount": 4,
+        "sourceCount": 9,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 32.7,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.783333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 51.0,
+            "high": 54.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 51.3,
+          "volumeFactor": 51.3,
+          "relativeLatent": 51.3,
+          "heatTier": "市场中段",
+          "percentile": 48.3,
+          "robustZ": -0.044,
+          "reliability": 45.6,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 49.5,
+          "rawFinalHeat": 54.3,
+          "rawAbsoluteHeat": 51.3,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 53.3,
+          "previousFinalHeat": 56.0,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "basic_chemicals",
+        "name": "基础化工",
+        "parentKey": "resources_utilities",
+        "parentName": "资源化工与公用",
+        "description": "观察聚氨酯、煤化工、烯烃及大宗化工材料；不包含锂电和半导体专用材料。",
+        "representativeCompanies": [
+          {
+            "code": "600309",
+            "name": "万华化学",
+            "role": "聚氨酯与新材料"
+          },
+          {
+            "code": "600426",
+            "name": "华鲁恒升",
+            "role": "煤化工与基础化工"
+          },
+          {
+            "code": "002648",
+            "name": "卫星化学",
+            "role": "烯烃与化工新材料"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 53,
+          "novice": 53,
+          "retail": 54,
+          "composite": 53
+        },
+        "signals": {
+          "optimism": 51.8,
+          "fomo": 51.3,
+          "panic": 12.2,
+          "newcomer": 52.0,
+          "intensity": 55.0,
+          "attention": 50.0,
+          "heat": 51.9
+        },
+        "heat": 51.9,
+        "legacyHeat": 51.9,
+        "absoluteHeat": 50.5,
+        "relativeHeat": 46.1,
+        "heatRank": 20,
+        "heatTier": "市场中段",
+        "direction": 51.8,
+        "coverage": 90.7,
+        "confidence": 91,
+        "samplePosts": 454,
+        "platformCount": 4,
+        "sourceCount": 8,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 33.3,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.616667,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 51.0,
+            "high": 54.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 50.0,
+          "volumeFactor": 50.0,
+          "relativeLatent": 50.3,
+          "heatTier": "市场中段",
+          "percentile": 31.7,
+          "robustZ": -0.406,
+          "reliability": 40.8,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 46.1,
+          "rawFinalHeat": 51.9,
+          "rawAbsoluteHeat": 50.5,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 45.2,
+          "previousFinalHeat": 50.4,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "power_operators",
+        "name": "电力运营",
+        "parentKey": "resources_utilities",
+        "parentName": "资源化工与公用",
+        "description": "观察水电、核电、火电及综合发电运营；不包含设备制造和光伏组件。",
+        "representativeCompanies": [
+          {
+            "code": "600900",
+            "name": "长江电力",
+            "role": "水电运营"
+          },
+          {
+            "code": "601985",
+            "name": "中国核电",
+            "role": "核电运营"
+          },
+          {
+            "code": "600795",
+            "name": "国电电力",
+            "role": "综合电力运营"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 52,
+          "novice": 53,
+          "retail": 53,
+          "composite": 53
+        },
+        "signals": {
+          "optimism": 51.1,
+          "fomo": 47.8,
+          "panic": 8.7,
+          "newcomer": 54.1,
+          "intensity": 52.9,
+          "attention": 50.1,
+          "heat": 50.7
+        },
+        "heat": 51.3,
+        "legacyHeat": 50.7,
+        "absoluteHeat": 50.2,
+        "relativeHeat": 45.2,
+        "heatRank": 22,
+        "heatTier": "市场中段",
+        "direction": 51.1,
+        "coverage": 93.2,
+        "confidence": 93,
+        "samplePosts": 406,
+        "platformCount": 4,
+        "sourceCount": 8,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 30.2,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.608333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 51.0,
+            "high": 53.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 50.1,
+          "volumeFactor": 50.1,
+          "relativeLatent": 50.2,
+          "heatTier": "市场中段",
+          "percentile": 18.3,
+          "robustZ": -0.438,
+          "reliability": 38.6,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 45.2,
+          "rawFinalHeat": 51.3,
+          "rawAbsoluteHeat": 50.2,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 47.6,
+          "previousFinalHeat": 52.0,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "aerospace_defense",
+        "name": "航空航天军工",
+        "parentKey": "advanced_manufacturing",
+        "parentName": "高端制造与军工",
+        "description": "观察军用飞机、航空发动机和核心航空装备；不包含只有少量军品业务的公司。",
+        "representativeCompanies": [
+          {
+            "code": "600760",
+            "name": "中航沈飞",
+            "role": "军用飞机制造"
+          },
+          {
+            "code": "000768",
+            "name": "中航西飞",
+            "role": "大中型军民用飞机"
+          },
+          {
+            "code": "600893",
+            "name": "航发动力",
+            "role": "航空发动机"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 52,
+          "novice": 52,
+          "retail": 53,
+          "composite": 52
+        },
+        "signals": {
+          "optimism": 49.6,
+          "fomo": 49.2,
+          "panic": 13.0,
+          "newcomer": 50.6,
+          "intensity": 54.7,
+          "attention": 51.6,
+          "heat": 51.5
+        },
+        "heat": 54.9,
+        "legacyHeat": 51.5,
+        "absoluteHeat": 51.6,
+        "relativeHeat": 50.4,
+        "heatRank": 15,
+        "heatTier": "市场中段",
+        "direction": 49.6,
+        "coverage": 93.2,
+        "confidence": 93,
+        "samplePosts": 579,
+        "platformCount": 4,
+        "sourceCount": 8,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 31.9,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.666667,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 50.0,
+            "high": 54.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 51.6,
+          "volumeFactor": 51.6,
+          "relativeLatent": 51.6,
+          "heatTier": "市场中段",
+          "percentile": 51.7,
+          "robustZ": 0.044,
+          "reliability": 41.5,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 50.4,
+          "rawFinalHeat": 54.9,
+          "rawAbsoluteHeat": 51.6,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 46.2,
+          "previousFinalHeat": 51.1,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "innovative_drugs",
+        "name": "创新药",
+        "parentKey": "healthcare",
+        "parentName": "医药医疗",
+        "description": "观察拥有自主新药研发和商业化管线的制药企业；不包含CXO及纯仿制药。",
+        "representativeCompanies": [
+          {
+            "code": "600276",
+            "name": "恒瑞医药",
+            "role": "创新药研发商业化"
+          },
+          {
+            "code": "688235",
+            "name": "百济神州",
+            "role": "全球化创新药"
+          },
+          {
+            "code": "002422",
+            "name": "科伦药业",
+            "role": "创新药与传统制药综合型"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 51,
+          "novice": 52,
+          "retail": 52,
+          "composite": 52
+        },
+        "signals": {
+          "optimism": 50.0,
+          "fomo": 48.4,
+          "panic": 7.5,
+          "newcomer": 52.1,
+          "intensity": 51.1,
+          "attention": 50.0,
+          "heat": 50.1
+        },
+        "heat": 49.9,
+        "legacyHeat": 50.1,
+        "absoluteHeat": 50.0,
+        "relativeHeat": 43.1,
+        "heatRank": 28,
+        "heatTier": "市场中段",
+        "direction": 50.0,
+        "coverage": 93.2,
+        "confidence": 93,
+        "samplePosts": 366,
+        "platformCount": 4,
+        "sourceCount": 8,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 32.7,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.833333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 51.0,
+            "high": 53.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 50.0,
+          "volumeFactor": 50.0,
+          "relativeLatent": 50.0,
+          "heatTier": "市场中段",
+          "percentile": 15.0,
+          "robustZ": -0.499,
+          "reliability": 49.6,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 43.1,
+          "rawFinalHeat": 49.9,
+          "rawAbsoluteHeat": 50.0,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 43.0,
+          "previousFinalHeat": 48.9,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "solar_pv",
+        "name": "光伏",
+        "parentKey": "new_energy_auto",
+        "parentName": "新能源与汽车",
+        "description": "观察硅片、电池片、组件和光伏逆变器；不包含电站运营和电网设备。",
+        "representativeCompanies": [
+          {
+            "code": "601012",
+            "name": "隆基绿能",
+            "role": "硅片与组件"
+          },
+          {
+            "code": "688223",
+            "name": "晶科能源",
+            "role": "光伏组件"
+          },
+          {
+            "code": "300274",
+            "name": "阳光电源",
+            "role": "逆变器与储能综合型"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 52,
+          "novice": 52,
+          "retail": 53,
+          "composite": 52
+        },
+        "signals": {
+          "optimism": 49.6,
+          "fomo": 48.2,
+          "panic": 18.5,
+          "newcomer": 51.9,
+          "intensity": 54.6,
+          "attention": 52.7,
+          "heat": 51.7
+        },
+        "heat": 57.1,
+        "legacyHeat": 51.7,
+        "absoluteHeat": 52.5,
+        "relativeHeat": 53.7,
+        "heatRank": 13,
+        "heatTier": "市场中段",
+        "direction": 49.6,
+        "coverage": 89.8,
+        "confidence": 90,
+        "samplePosts": 659,
+        "platformCount": 4,
+        "sourceCount": 7,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 37.0,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.658334,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 51.0,
+            "high": 54.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 52.7,
+          "volumeFactor": 52.7,
+          "relativeLatent": 52.6,
+          "heatTier": "市场中段",
+          "percentile": 63.3,
+          "robustZ": 0.378,
+          "reliability": 44.4,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 53.7,
+          "rawFinalHeat": 57.1,
+          "rawAbsoluteHeat": 52.5,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 51.3,
+          "previousFinalHeat": 54.6,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "banks",
+        "name": "银行",
+        "parentKey": "finance_infrastructure",
+        "parentName": "金融地产基建",
+        "description": "仅观察商业银行，不包含券商、保险和互联网金融平台。",
+        "representativeCompanies": [
+          {
+            "code": "600036",
+            "name": "招商银行",
+            "role": "股份制商业银行"
+          },
+          {
+            "code": "601398",
+            "name": "工商银行",
+            "role": "国有大型商业银行"
+          },
+          {
+            "code": "002142",
+            "name": "宁波银行",
+            "role": "区域性商业银行"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 52,
+          "novice": 52,
+          "retail": 53,
+          "composite": 52
+        },
+        "signals": {
+          "optimism": 50.2,
+          "fomo": 47.6,
+          "panic": 11.6,
+          "newcomer": 50.7,
+          "intensity": 52.5,
+          "attention": 52.4,
+          "heat": 50.7
+        },
+        "heat": 56.1,
+        "legacyHeat": 50.7,
+        "absoluteHeat": 52.0,
+        "relativeHeat": 52.1,
+        "heatRank": 14,
+        "heatTier": "市场中段",
+        "direction": 50.2,
+        "coverage": 96.6,
+        "confidence": 97,
+        "samplePosts": 487,
+        "platformCount": 4,
+        "sourceCount": 9,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 31.6,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.816667,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 51.0,
+            "high": 54.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 52.4,
+          "volumeFactor": 52.4,
+          "relativeLatent": 52.1,
+          "heatTier": "市场中段",
+          "percentile": 55.0,
+          "robustZ": 0.238,
+          "reliability": 45.7,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 52.1,
+          "rawFinalHeat": 56.1,
+          "rawAbsoluteHeat": 52.0,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 49.7,
+          "previousFinalHeat": 53.5,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "nonbank_finance",
+        "name": "券商保险",
+        "parentKey": "finance_infrastructure",
+        "parentName": "金融地产基建",
+        "description": "观察券商、保险和互联网证券服务；不包含商业银行。",
+        "representativeCompanies": [
+          {
+            "code": "600030",
+            "name": "中信证券",
+            "role": "综合证券公司"
+          },
+          {
+            "code": "300059",
+            "name": "东方财富",
+            "role": "互联网证券综合平台"
+          },
+          {
+            "code": "601318",
+            "name": "中国平安",
+            "role": "综合保险金融"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 51,
+          "novice": 51,
+          "retail": 52,
+          "composite": 51
+        },
+        "signals": {
+          "optimism": 48.0,
+          "fomo": 44.3,
+          "panic": 14.7,
+          "newcomer": 51.8,
+          "intensity": 52.0,
+          "attention": 55.0,
+          "heat": 50.6
+        },
+        "heat": 61.4,
+        "legacyHeat": 50.6,
+        "absoluteHeat": 53.9,
+        "relativeHeat": 59.8,
+        "heatRank": 8,
+        "heatTier": "明显升温",
+        "direction": 48.0,
+        "coverage": 100.0,
+        "confidence": 100,
+        "samplePosts": 777,
+        "platformCount": 4,
+        "sourceCount": 11,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 42.5,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.833333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 50.0,
+            "high": 53.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 55.0,
+          "volumeFactor": 55.0,
+          "relativeLatent": 54.3,
+          "heatTier": "明显升温",
+          "percentile": 75.0,
+          "robustZ": 0.997,
+          "reliability": 53.6,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 59.8,
+          "rawFinalHeat": 61.4,
+          "rawAbsoluteHeat": 53.9,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 62.8,
+          "previousFinalHeat": 62.6,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "property_developers",
+        "name": "房地产开发",
+        "parentKey": "finance_infrastructure",
+        "parentName": "金融地产基建",
+        "description": "观察住宅及商业地产开发；不包含建筑施工、建材和物业服务。",
+        "representativeCompanies": [
+          {
+            "code": "600048",
+            "name": "保利发展",
+            "role": "综合地产开发"
+          },
+          {
+            "code": "000002",
+            "name": "万科A",
+            "role": "住宅与综合开发"
+          },
+          {
+            "code": "001979",
+            "name": "招商蛇口",
+            "role": "园区与地产开发"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 51,
+          "novice": 51,
+          "retail": 51,
+          "composite": 51
+        },
+        "signals": {
+          "optimism": 49.7,
+          "fomo": 47.4,
+          "panic": 13.5,
+          "newcomer": 49.7,
+          "intensity": 53.5,
+          "attention": 51.3,
+          "heat": 50.4
+        },
+        "heat": 53.8,
+        "legacyHeat": 50.4,
+        "absoluteHeat": 51.1,
+        "relativeHeat": 48.9,
+        "heatRank": 17,
+        "heatTier": "市场中段",
+        "direction": 49.7,
+        "coverage": 89.8,
+        "confidence": 90,
+        "samplePosts": 566,
+        "platformCount": 3,
+        "sourceCount": 7,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 34.3,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.666667,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 50.0,
+            "high": 52.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "missing_channels_neutralised",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 51.3,
+          "volumeFactor": 51.3,
+          "relativeLatent": 51.2,
+          "heatTier": "市场中段",
+          "percentile": 45.0,
+          "robustZ": -0.101,
+          "reliability": 45.4,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 48.9,
+          "rawFinalHeat": 53.8,
+          "rawAbsoluteHeat": 51.1,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 44.8,
+          "previousFinalHeat": 50.1,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "infrastructure",
+        "name": "基建央企",
+        "parentKey": "finance_infrastructure",
+        "parentName": "金融地产基建",
+        "description": "观察房建、铁路、公路和大型工程承包；不包含地产开发及单一建材。",
+        "representativeCompanies": [
+          {
+            "code": "601668",
+            "name": "中国建筑",
+            "role": "房建与综合基建"
+          },
+          {
+            "code": "601390",
+            "name": "中国中铁",
+            "role": "铁路与综合工程"
+          },
+          {
+            "code": "601800",
+            "name": "中国交建",
+            "role": "交通基础设施"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 51,
+          "novice": 51,
+          "retail": 51,
+          "composite": 51
+        },
+        "signals": {
+          "optimism": 49.7,
+          "fomo": 47.8,
+          "panic": 13.8,
+          "newcomer": 51.7,
+          "intensity": 53.8,
+          "attention": 50.2,
+          "heat": 50.6
+        },
+        "heat": 51.2,
+        "legacyHeat": 50.6,
+        "absoluteHeat": 50.3,
+        "relativeHeat": 45.1,
+        "heatRank": 24,
+        "heatTier": "市场中段",
+        "direction": 49.7,
+        "coverage": 89.8,
+        "confidence": 90,
+        "samplePosts": 431,
+        "platformCount": 3,
+        "sourceCount": 7,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 34.3,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.725,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 50.0,
+            "high": 52.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "missing_channels_neutralised",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 50.2,
+          "volumeFactor": 50.2,
+          "relativeLatent": 50.3,
+          "heatTier": "市场中段",
+          "percentile": 28.3,
+          "robustZ": -0.414,
+          "reliability": 47.4,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 45.1,
+          "rawFinalHeat": 51.2,
+          "rawAbsoluteHeat": 50.3,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 44.1,
+          "previousFinalHeat": 49.6,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "seeds",
+        "name": "种业粮食",
+        "parentKey": "agriculture",
+        "parentName": "农业",
+        "description": "观察水稻、玉米等农作物种子研发和销售；不包含养殖、农机和普通农产品加工。",
+        "representativeCompanies": [
+          {
+            "code": "000998",
+            "name": "隆平高科",
+            "role": "水稻与玉米种业"
+          },
+          {
+            "code": "002041",
+            "name": "登海种业",
+            "role": "玉米种业"
+          },
+          {
+            "code": "300087",
+            "name": "荃银高科",
+            "role": "水稻等综合种业"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 51,
+          "novice": 51,
+          "retail": 50,
+          "composite": 51
+        },
+        "signals": {
+          "optimism": 51.0,
+          "fomo": 52.1,
+          "panic": 7.0,
+          "newcomer": 52.6,
+          "intensity": 52.4,
+          "attention": 48.4,
+          "heat": 51.1
+        },
+        "heat": 50.1,
+        "legacyHeat": 51.1,
+        "absoluteHeat": 49.1,
+        "relativeHeat": 43.5,
+        "heatRank": 26,
+        "heatTier": "市场中段",
+        "direction": 51.0,
+        "coverage": 87.6,
+        "confidence": 88,
+        "samplePosts": 238,
+        "platformCount": 3,
+        "sourceCount": 7,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 25.2,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.533333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 48.0,
+            "high": 51.0,
+            "maxDelta": 3.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "missing_channels_neutralised",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 48.4,
+          "volumeFactor": 48.4,
+          "relativeLatent": 48.8,
+          "heatTier": "市场中段",
+          "percentile": 5.0,
+          "robustZ": -0.917,
+          "reliability": 31.2,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 43.5,
+          "rawFinalHeat": 50.1,
+          "rawAbsoluteHeat": 49.1,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 42.1,
+          "previousFinalHeat": 48.3,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "industrial_robotics",
+        "name": "机器人与自动化",
+        "parentKey": "advanced_manufacturing",
+        "parentName": "高端制造与军工",
+        "description": "观察工业机器人、伺服运动控制和精密减速器；不包含仅因使用机器人而被贴概念的制造企业。",
+        "representativeCompanies": [
+          {
+            "code": "002747",
+            "name": "埃斯顿",
+            "role": "工业机器人本体"
+          },
+          {
+            "code": "300124",
+            "name": "汇川技术",
+            "role": "工业自动化与伺服"
+          },
+          {
+            "code": "688017",
+            "name": "绿的谐波",
+            "role": "精密减速器"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 50,
+          "novice": 50,
+          "retail": 50,
+          "composite": 50
+        },
+        "signals": {
+          "optimism": 50.2,
+          "fomo": 47.4,
+          "panic": 10.4,
+          "newcomer": 52.1,
+          "intensity": 51.1,
+          "attention": 51.0,
+          "heat": 50.1
+        },
+        "heat": 52.8,
+        "legacyHeat": 50.1,
+        "absoluteHeat": 50.8,
+        "relativeHeat": 47.4,
+        "heatRank": 19,
+        "heatTier": "市场中段",
+        "direction": 50.2,
+        "coverage": 100.0,
+        "confidence": 100,
+        "samplePosts": 454,
+        "platformCount": 4,
+        "sourceCount": 10,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 33.5,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.766667,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 49.0,
+            "high": 51.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 51.0,
+          "volumeFactor": 51.0,
+          "relativeLatent": 50.9,
+          "heatTier": "市场中段",
+          "percentile": 38.3,
+          "robustZ": -0.205,
+          "reliability": 48.1,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 47.4,
+          "rawFinalHeat": 52.8,
+          "rawAbsoluteHeat": 50.8,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 50.3,
+          "previousFinalHeat": 53.9,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "baijiu",
+        "name": "白酒",
+        "parentKey": "consumer",
+        "parentName": "消费",
+        "description": "仅观察白酒生产与品牌经营，不包含啤酒、乳制品和一般食品。",
+        "representativeCompanies": [
+          {
+            "code": "600519",
+            "name": "贵州茅台",
+            "role": "高端白酒"
+          },
+          {
+            "code": "000858",
+            "name": "五粮液",
+            "role": "浓香型白酒"
+          },
+          {
+            "code": "600809",
+            "name": "山西汾酒",
+            "role": "清香型白酒"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 50,
+          "novice": 50,
+          "retail": 50,
+          "composite": 50
+        },
+        "signals": {
+          "optimism": 50.5,
+          "fomo": 46.9,
+          "panic": 10.7,
+          "newcomer": 49.8,
+          "intensity": 51.4,
+          "attention": 52.9,
+          "heat": 50.3
+        },
+        "heat": 57.2,
+        "legacyHeat": 50.3,
+        "absoluteHeat": 52.2,
+        "relativeHeat": 53.8,
+        "heatRank": 12,
+        "heatTier": "市场中段",
+        "direction": 50.5,
+        "coverage": 93.2,
+        "confidence": 93,
+        "samplePosts": 585,
+        "platformCount": 4,
+        "sourceCount": 8,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 39.7,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.775,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 49.0,
+            "high": 51.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 52.9,
+          "volumeFactor": 52.9,
+          "relativeLatent": 52.5,
+          "heatTier": "市场中段",
+          "percentile": 58.3,
+          "robustZ": 0.364,
+          "reliability": 52.7,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 53.8,
+          "rawFinalHeat": 57.2,
+          "rawAbsoluteHeat": 52.2,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 54.8,
+          "previousFinalHeat": 57.0,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "food_beverage",
+        "name": "食品饮料",
+        "parentKey": "consumer",
+        "parentName": "消费",
+        "description": "观察乳制品、调味品、速冻食品等大众食品；不包含白酒和餐饮旅游。",
+        "representativeCompanies": [
+          {
+            "code": "600887",
+            "name": "伊利股份",
+            "role": "乳制品"
+          },
+          {
+            "code": "603288",
+            "name": "海天味业",
+            "role": "调味品"
+          },
+          {
+            "code": "603345",
+            "name": "安井食品",
+            "role": "速冻食品"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 50,
+          "novice": 50,
+          "retail": 50,
+          "composite": 50
+        },
+        "signals": {
+          "optimism": 52.3,
+          "fomo": 47.1,
+          "panic": 6.8,
+          "newcomer": 49.4,
+          "intensity": 51.7,
+          "attention": 49.5,
+          "heat": 49.3
+        },
+        "heat": 50.1,
+        "legacyHeat": 49.3,
+        "absoluteHeat": 49.5,
+        "relativeHeat": 43.5,
+        "heatRank": 27,
+        "heatTier": "市场中段",
+        "direction": 52.3,
+        "coverage": 89.8,
+        "confidence": 90,
+        "samplePosts": 377,
+        "platformCount": 4,
+        "sourceCount": 7,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 27.8,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.575,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 49.0,
+            "high": 51.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 49.5,
+          "volumeFactor": 49.5,
+          "relativeLatent": 49.5,
+          "heatTier": "市场中段",
+          "percentile": 11.7,
+          "robustZ": -0.687,
+          "reliability": 38.0,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 43.5,
+          "rawFinalHeat": 50.1,
+          "rawAbsoluteHeat": 49.5,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 43.3,
+          "previousFinalHeat": 49.1,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "medical_devices",
+        "name": "医疗器械",
+        "parentKey": "healthcare",
+        "parentName": "医药医疗",
+        "description": "观察诊断监护、医学影像和家用医疗器械；不包含医院、眼科等医疗服务。",
+        "representativeCompanies": [
+          {
+            "code": "300760",
+            "name": "迈瑞医疗",
+            "role": "诊断与监护设备"
+          },
+          {
+            "code": "688271",
+            "name": "联影医疗",
+            "role": "医学影像设备"
+          },
+          {
+            "code": "002223",
+            "name": "鱼跃医疗",
+            "role": "家用医疗器械"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 49,
+          "novice": 49,
+          "retail": 48,
+          "composite": 49
+        },
+        "signals": {
+          "optimism": 51.2,
+          "fomo": 49.8,
+          "panic": 7.9,
+          "newcomer": 50.0,
+          "intensity": 51.0,
+          "attention": 48.6,
+          "heat": 49.8
+        },
+        "heat": 48.8,
+        "legacyHeat": 49.8,
+        "absoluteHeat": 48.9,
+        "relativeHeat": 41.6,
+        "heatRank": 29,
+        "heatTier": "圈层偏窄",
+        "direction": 51.2,
+        "coverage": 89.8,
+        "confidence": 90,
+        "samplePosts": 205,
+        "platformCount": 4,
+        "sourceCount": 7,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 27.4,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.683334,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 47.0,
+            "high": 50.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 48.6,
+          "volumeFactor": 48.6,
+          "relativeLatent": 48.8,
+          "heatTier": "圈层偏窄",
+          "percentile": 1.7,
+          "robustZ": -0.926,
+          "reliability": 38.9,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 41.6,
+          "rawFinalHeat": 48.8,
+          "rawAbsoluteHeat": 48.9,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 40.0,
+          "previousFinalHeat": 46.8,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "auto_parts_smart_drive",
+        "name": "汽车零部件与智能驾驶",
+        "parentKey": "new_energy_auto",
+        "parentName": "新能源与汽车",
+        "description": "观察智能座舱、辅助驾驶、底盘和综合汽车零部件；不包含整车企业。",
+        "representativeCompanies": [
+          {
+            "code": "002920",
+            "name": "德赛西威",
+            "role": "智能座舱与辅助驾驶"
+          },
+          {
+            "code": "601689",
+            "name": "拓普集团",
+            "role": "底盘与汽车零部件"
+          },
+          {
+            "code": "600741",
+            "name": "华域汽车",
+            "role": "综合汽车零部件"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 49,
+          "novice": 49,
+          "retail": 50,
+          "composite": 49
+        },
+        "signals": {
+          "optimism": 49.1,
+          "fomo": 47.5,
+          "panic": 13.5,
+          "newcomer": 47.2,
+          "intensity": 53.5,
+          "attention": 50.3,
+          "heat": 49.8
+        },
+        "heat": 51.3,
+        "legacyHeat": 49.8,
+        "absoluteHeat": 50.2,
+        "relativeHeat": 45.2,
+        "heatRank": 23,
+        "heatTier": "市场中段",
+        "direction": 49.1,
+        "coverage": 93.2,
+        "confidence": 93,
+        "samplePosts": 403,
+        "platformCount": 4,
+        "sourceCount": 8,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 28.1,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.733333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 48.0,
+            "high": 50.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 50.3,
+          "volumeFactor": 50.3,
+          "relativeLatent": 50.2,
+          "heatTier": "市场中段",
+          "percentile": 25.0,
+          "robustZ": -0.426,
+          "reliability": 43.1,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 45.2,
+          "rawFinalHeat": 51.3,
+          "rawAbsoluteHeat": 50.2,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 43.3,
+          "previousFinalHeat": 49.1,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "grid_equipment",
+        "name": "电网设备",
+        "parentKey": "resources_utilities",
+        "parentName": "资源化工与公用",
+        "description": "观察电网自动化、继电保护、输变电和高压开关设备；不包含发电运营。",
+        "representativeCompanies": [
+          {
+            "code": "600406",
+            "name": "国电南瑞",
+            "role": "电网自动化"
+          },
+          {
+            "code": "000400",
+            "name": "许继电气",
+            "role": "继电保护与输变电"
+          },
+          {
+            "code": "600312",
+            "name": "平高电气",
+            "role": "高压开关设备"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 49,
+          "novice": 49,
+          "retail": 48,
+          "composite": 49
+        },
+        "signals": {
+          "optimism": 52.0,
+          "fomo": 48.4,
+          "panic": 7.5,
+          "newcomer": 51.2,
+          "intensity": 51.6,
+          "attention": 48.8,
+          "heat": 49.7
+        },
+        "heat": 48.4,
+        "legacyHeat": 49.7,
+        "absoluteHeat": 49.0,
+        "relativeHeat": 41.0,
+        "heatRank": 30,
+        "heatTier": "圈层偏窄",
+        "direction": 52.0,
+        "coverage": 96.6,
+        "confidence": 97,
+        "samplePosts": 293,
+        "platformCount": 4,
+        "sourceCount": 9,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 31.4,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.808333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 47.0,
+            "high": 50.0,
+            "maxDelta": 2.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 48.8,
+          "volumeFactor": 48.8,
+          "relativeLatent": 48.9,
+          "heatTier": "圈层偏窄",
+          "percentile": 8.3,
+          "robustZ": -0.873,
+          "reliability": 45.3,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 41.0,
+          "rawFinalHeat": 48.4,
+          "rawAbsoluteHeat": 49.0,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 39.7,
+          "previousFinalHeat": 46.6,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "ai_apps",
+        "name": "AI应用",
+        "parentKey": "technology",
+        "parentName": "科技与数字经济",
+        "description": "观察直接面向办公、教育和内容创作等场景的AI软件与产品；不包含底层硬件和算力出租。",
+        "representativeCompanies": [
+          {
+            "code": "002230",
+            "name": "科大讯飞",
+            "role": "语音与大模型应用"
+          },
+          {
+            "code": "688111",
+            "name": "金山办公",
+            "role": "AI办公软件"
+          },
+          {
+            "code": "300624",
+            "name": "万兴科技",
+            "role": "AIGC创意软件"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 48,
+          "novice": 49,
+          "retail": 47,
+          "composite": 48
+        },
+        "signals": {
+          "optimism": 49.7,
+          "fomo": 47.0,
+          "panic": 12.9,
+          "newcomer": 51.0,
+          "intensity": 51.3,
+          "attention": 50.3,
+          "heat": 49.7
+        },
+        "heat": 50.8,
+        "legacyHeat": 49.7,
+        "absoluteHeat": 50.1,
+        "relativeHeat": 44.5,
+        "heatRank": 25,
+        "heatTier": "市场中段",
+        "direction": 49.7,
+        "coverage": 93.2,
+        "confidence": 93,
+        "samplePosts": 459,
+        "platformCount": 4,
+        "sourceCount": 8,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 33.8,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.716667,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 47.0,
+            "high": 49.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 50.3,
+          "volumeFactor": 50.3,
+          "relativeLatent": 50.2,
+          "heatTier": "市场中段",
+          "percentile": 21.7,
+          "robustZ": -0.432,
+          "reliability": 46.8,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 44.5,
+          "rawFinalHeat": 50.8,
+          "rawAbsoluteHeat": 50.1,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 41.7,
+          "previousFinalHeat": 47.9,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      },
+      {
+        "key": "home_appliances",
+        "name": "家电",
+        "parentKey": "consumer",
+        "parentName": "消费",
+        "description": "观察白电、厨电及综合家电制造；不包含家居零售和地产后周期材料。",
+        "representativeCompanies": [
+          {
+            "code": "000333",
+            "name": "美的集团",
+            "role": "综合家电"
+          },
+          {
+            "code": "000651",
+            "name": "格力电器",
+            "role": "空调与白电"
+          },
+          {
+            "code": "600690",
+            "name": "海尔智家",
+            "role": "全球化白电"
+          }
+        ],
+        "available": true,
+        "scores": {
+          "baoma": 48,
+          "novice": 49,
+          "retail": 47,
+          "composite": 48
+        },
+        "signals": {
+          "optimism": 51.0,
+          "fomo": 45.3,
+          "panic": 8.2,
+          "newcomer": 52.1,
+          "intensity": 51.4,
+          "attention": 50.6,
+          "heat": 49.4
+        },
+        "heat": 51.7,
+        "legacyHeat": 49.4,
+        "absoluteHeat": 50.3,
+        "relativeHeat": 45.8,
+        "heatRank": 21,
+        "heatTier": "市场中段",
+        "direction": 51.0,
+        "coverage": 96.6,
+        "confidence": 97,
+        "samplePosts": 409,
+        "platformCount": 4,
+        "sourceCount": 9,
+        "fairness": {
+          "modelVersion": "channel_equal_four_seats_v1",
+          "reliabilityPercent": 32.8,
+          "confidenceLabel": "中",
+          "weightedCompanyCoverage": 0.858333,
+          "rankEligible": true,
+          "stabilityBand": {
+            "type": "leave_one_channel_out",
+            "low": 47.0,
+            "high": 49.0,
+            "maxDelta": 1.0,
+            "isStatisticalConfidenceInterval": false
+          },
+          "flags": [
+            "low_reliability",
+            "ths_attention_disabled"
+          ]
+        },
+        "heatModel": {
+          "version": "sector_community_heat_v4_company_equal",
+          "status": "applied",
+          "marketAnchor": 54.6,
+          "activityIndex": 50.6,
+          "volumeFactor": 50.6,
+          "relativeLatent": 50.4,
+          "heatTier": "市场中段",
+          "percentile": 35.0,
+          "robustZ": -0.359,
+          "reliability": 50.4,
+          "dispersionGate": 1.0,
+          "crossSectionMedian": 51.457,
+          "crossSectionMAD": 1.355,
+          "crossSectionP90P10": 6.017,
+          "noiseFloor": 1.785,
+          "rawRelativeHeat": 45.8,
+          "rawFinalHeat": 51.7,
+          "rawAbsoluteHeat": 50.3,
+          "temporalSmoothing": "three_trading_day_signal_with_safety_cap",
+          "temporalAlpha": 1.0,
+          "temporalGapDays": 1,
+          "temporalEffectiveAlpha": 1.0,
+          "relativeDailyCap": 20.0,
+          "finalDailyCap": 25.0,
+          "weights": {
+            "absoluteAttention": 0.75,
+            "absoluteEmotion": 0.25,
+            "volumeActivity": 0.75,
+            "volumeAttention": 0.25,
+            "relativeVolume": 0.85,
+            "relativeEmotion": 0.15,
+            "finalRelative": 0.65,
+            "finalAbsolute": 0.35
+          },
+          "previousRelativeHeat": 44.7,
+          "previousFinalHeat": 50.0,
+          "usesMarketPrice": false,
+          "formalPersonaScoresChanged": false,
+          "rankEligible": true
+        },
+        "catalogVersion": "3"
+      }
+    ],
+    "type": "measured",
+    "source": "daily_snapshot",
+    "mode": "daily",
+    "isEstimated": false,
+    "coverage": 95.4,
+    "confidence": 93,
+    "qualityStatus": "measured",
+    "qualityDetails": {
+      "passed": true,
+      "basis": "daily_measured_snapshot"
+    },
+    "samplePosts": 17814,
+    "platformCount": 4,
+    "sourceCount": 268,
+    "sectorCount": 30,
+    "coverageDetails": {
+      "score": 95.4,
+      "platformCount": 4,
+      "expectedPlatformCount": 4,
+      "platformRatio": 100.0,
+      "sourceCount": 268,
+      "expectedSourceCount": 310,
+      "sourceRatio": 86.5,
+      "sectorCount": 30,
+      "expectedSectorCount": 30,
+      "sectorRatio": 100.0,
+      "samplePosts": 17814,
+      "sampleTarget": 2480,
+      "sampleRatio": 100.0,
+      "freshSourceCount": 268,
+      "freshSourceRatio": 86.5
+    },
+    "asOf": "2026-11-26T23:59:59.999999+08:00",
+    "capturedAt": "2026-11-26T16:28:28.380168+08:00",
+    "methodology": "community_text_four_channel_grassroots_three_trading_day_v3",
+    "tradingDay": true,
+    "calendarMode": "official_sse",
+    "sectorCatalogVersion": "3"
   }
 ]

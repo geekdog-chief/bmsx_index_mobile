@@ -125,8 +125,9 @@
       const emoRaw = s.emotion;  // 板块羊驼情绪温度；null=无数据，Number(null)===0 会伪装成0.0，必须先判空
       const emoValid = emoRaw !== null && emoRaw !== undefined && emoRaw !== "";
       const emo = emoValid ? Number(emoRaw) : NaN;
+      // 2026-11-26 去色裁定：情徽章一律纯数字，无 cold/warm 配色（歧义+视觉污染）；档位口径不变
       const emoChip = emoValid && Number.isFinite(emo)
-        ? `<span class="tag ${emo <= 44 ? "cold" : emo >= 56 ? "warm" : ""}" title="板块情绪温度（羊驼，样本${num(s.emotionN)}）：低=恐慌 高=贪婪">情${fmt1(emo)}</span>`
+        ? `<span class="tag" title="板块情绪温度（羊驼，样本${num(s.emotionN)}）：低=恐慌 高=贪婪">情${fmt1(emo)}</span>`
         : `<span class="muted" style="font-size:12px;white-space:nowrap" title="板块情绪无数据（样本不足）">—</span>`;
       return `<div class="row"><span class="rank">${String(num(s.heatRank)).padStart(2, "0")}</span>` +
         `<span class="name" title="${esc(s.name)}">${esc(s.name)}</span>` +
