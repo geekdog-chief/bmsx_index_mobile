@@ -87,6 +87,21 @@
       : v <= 55 ? ["#e8edf2", "#475569"] : v <= 75 ? ["#fdeede", "#c2410c"] : ["#fde2e2", "#b91c1c"];
     if (gt) { gt.textContent = emotionTier(greed, "greed"); const c = chipColor(greed); gt.style.background = c[0]; gt.style.color = c[1]; }
     if (ft) { ft.textContent = emotionTier(fear, "fear"); const c = chipColor(fear); ft.style.background = c[0]; ft.style.color = c[1]; }
+    // 慢指针徽章（双指针 2026-11-26）：P=今日读数在自身历史中的分位；同统计量对比
+    const setPct = (id, pval) => {
+      const el = $(id); if (!el) return;
+      if (pval === null || pval === undefined || !Number.isFinite(Number(pval))) {
+        el.style.display = "none"; el.textContent = ""; return;
+      }
+      el.style.display = "inline-block";
+      const p = Math.round(Number(pval));
+      el.textContent = p >= 95 ? "P" + p + " 历史前" + (100 - p) + "%" : "P" + p;
+      if (p >= 95) { el.style.background = "rgba(220,38,38,.12)"; el.style.color = "#b91c1c"; }
+      else if (p >= 90) { el.style.background = "rgba(217,119,6,.14)"; el.style.color = "#b45309"; }
+      else { el.style.background = "rgba(100,116,139,.12)"; el.style.color = "#64748b"; }
+    };
+    setPct("gval-pct", sig.llmGreedPct);
+    setPct("fval-pct", sig.llmFearPct);
     const note = $("gf-note");
     if (note) note.textContent = src === "llm"
       ? ("贪婪与恐惧是两个独立的情绪强度指标，读数0-100，越高该情绪越强，两者可同时高企、不互相抵消。贪婪侧分档：≤24极度冷静，25-44偏冷，45-55中性，56-75贪婪，≥76极度贪婪；恐惧侧分档：≤24平静，25-44轻度恐慌，45-55中度恐慌，56-75恐慌，≥76极度恐慌。由本地模型逐帖读取（0-3/帖，四平台固定25%，营销文不计）。" + coverageNote(sig))

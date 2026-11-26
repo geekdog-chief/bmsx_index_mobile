@@ -916,6 +916,84 @@ class TestMonkeypatchContract(unittest.TestCase):
         compat(uil._fresh_fetch_source, uil._orig_fetch_source)
 
 
+class TestDualCursor(unittest.TestCase):
+    """双指针慢线（2026-11-26 已批）：历史分位的口径纪律。"""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.tdir = Path(self.tmp.name)
+        self.old_log = uil.STUDY_LOG
+        uil.STUDY_LOG = self.tdir / "study.csv"
+
+    def tearDown(self):
+        uil.STUDY_LOG = self.old_log
+        self.tmp.cleanup()
+
+    def _log(self, rows):
+        import csv as _csv
+        with uil.STUDY_LOG.open("w", encoding="utf-8", newline="") as f:
+            w = _csv.DictWriter(f, fieldnames=["date", "fear", "greed", "sectors_json"])
+            w.writeheader()
+            for d, fe, gr in rows:
+                w.writerow({"date": d, "fear": fe, "greed": gr, "sectors_json": "{}"})
+
+    def test_pct_mid_and_extreme(self):
+        import datetime as _dt
+        base = _dt.date(2026, 1, 1)
+        rows = [( (base + _dt.timedelta(days=i)).isoformat(), 10 + i % 50, 20 + i % 40) for i in range(100)]
+        self._log(rows)
+        today = (base + _dt.timedelta(days=100)).isoformat()
+        snap = {"tradingDays": [today], "signals": {"llmFear": 99.0, "llmGreed": 99.0}}
+        uil.compute_history_percentiles(snap)
+        pf, pg = snap["signals"]["llmFearPct"], snap["signals"]["llmGreedPct"]
+        self.assertIsNotNone(pf)
+        self.assertGreaterEqual(pf, 95)  # 99 高于历史全部 fear（10..59）
+        self.assertGreaterEqual(pg, 95)
+        self.assertEqual(snap["signals"]["llmHistoryDays"], 100)
+
+    def test_baseline_period_none(self):
+        import datetime as _dt
+        base = _dt.date(2026, 1, 1)
+        rows = [((base + _dt.timedelta(days=i)).isoformat(), 10.0, 20.0) for i in range(45)]
+        self._log(rows)
+        today = (base + _dt.timedelta(days=45)).isoformat()
+        snap = {"tradingDays": [today], "signals": {"llmFear": 30.0, "llmGreed": 30.0}}
+        uil.compute_history_percentiles(snap)
+        self.assertIsNone(snap["signals"]["llmFearPct"])
+        self.assertEqual(snap["signals"]["llmHistoryDays"], 45)
+
+    def test_today_excluded_from_reference(self):
+        """今日行已在日志里（重复更新场景）：不得进入自己的参照集。"""
+        import datetime as _dt
+        base = _dt.date(2026, 1, 1)
+        today = (base + _dt.timedelta(days=100)).isoformat()
+        rows = [((base + _dt.timedelta(days=i)).isoformat(), 10.0, 20.0) for i in range(100)]
+        rows.append((today, 999.0, 999.0))  # 同日旧行，值离谱
+        self._log(rows)
+        snap = {"tradingDays": [today], "signals": {"llmFear": 10.0, "llmGreed": 20.0}}
+        uil.compute_history_percentiles(snap)
+        self.assertEqual(snap["signals"]["llmFearPct"], 50)  # 与历史全相同→中位 50，999 未污染
+
+    def test_slow_failure_keeps_fast(self):
+        """慢指针异常隔离：日志损坏时快指针读数原封不动、不抛异常。"""
+        uil.STUDY_LOG.mkdir()  # 路径变成目录：open() 抛 OSError，走失败隔离路径
+        snap = {"tradingDays": ["2026-03-15"], "signals": {"llmFear": 33.3, "llmGreed": 44.4}}
+        uil.compute_history_percentiles(snap)  # 不得抛
+        self.assertEqual(snap["signals"]["llmFear"], 33.3)
+        self.assertEqual(snap["signals"]["llmGreed"], 44.4)
+        self.assertNotIn("llmFearPct", snap["signals"])
+
+    def test_cap_250(self):
+        import datetime as _dt
+        base = _dt.date(2025, 1, 1)
+        rows = [((base + _dt.timedelta(days=i)).isoformat(), float(i % 60), 30.0) for i in range(300)]
+        self._log(rows)
+        today = (base + _dt.timedelta(days=300)).isoformat()
+        snap = {"tradingDays": [today], "signals": {"llmFear": 59.0, "llmGreed": 30.0}}
+        uil.compute_history_percentiles(snap)
+        self.assertEqual(snap["signals"]["llmHistoryDays"], 250)  # 只取最近 250 条
+
+
 class TestP12FreshNow(unittest.TestCase):
     """apply_overlays 每轮刷新 ui.NOW；fetch_source 包装层显式传当前时间。"""
 

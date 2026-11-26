@@ -420,6 +420,45 @@ def compute_llm_sector_emotion(snapshot, weight=0.2, min_n=3):
 
 
 STUDY_LOG = ROOT / "data" / "study_emotion.csv"
+PCT_MIN_HISTORY = 60   # 基线期：不足 60 个交易日不分位，与宪法基线期一致
+PCT_MAX_HISTORY = 250  # 扩展窗口容量上限（约一年交易日）
+
+
+def compute_history_percentiles(snapshot):
+    """慢指针（双指针·已批 2026-11-26）：今日 15 天窗口读数 vs 历史窗口读数分布的分位。
+
+    口径纪律（独立审查确认）：同统计量对比——今日的"15天均值"只对历史上每天的
+    "15天均值"比，绝不拿窗口均值比单日原始分。扩展窗口（不含今日、无未来泄漏），
+    容量上限 250 个交易日；历史 <60 天写 None（前端显"—"）。
+    """
+    sig = snapshot.get("signals") or {}
+    if "llmFear" not in sig or "llmGreed" not in sig:
+        return
+    today = snapshot.get("tradingDays", [""])[0] if snapshot.get("tradingDays") else ""
+    import csv as _csv
+    hist_f, hist_g = [], []
+    if STUDY_LOG.exists():
+        try:
+            with STUDY_LOG.open("r", encoding="utf-8", newline="") as f:
+                for r in _csv.DictReader(f):
+                    if r.get("date") and r["date"] < today and r.get("fear") and r.get("greed"):
+                        hist_f.append(float(r["fear"]))
+                        hist_g.append(float(r["greed"]))
+        except (OSError, _csv.Error):
+            return  # 日志不可读：慢指针静默缺席，不影响快指针
+    hist_f = hist_f[-PCT_MAX_HISTORY:]
+    hist_g = hist_g[-PCT_MAX_HISTORY:]
+    sig["llmHistoryDays"] = len(hist_f)
+    if len(hist_f) < PCT_MIN_HISTORY:
+        sig["llmFearPct"] = None
+        sig["llmGreedPct"] = None
+        return
+    def pct(today_val, hist):
+        less = sum(1 for h in hist if h < today_val)
+        eq = sum(1 for h in hist if h == today_val)
+        return round((less + 0.5 * eq) / len(hist) * 100)
+    sig["llmFearPct"] = pct(float(sig["llmFear"]), hist_f)
+    sig["llmGreedPct"] = pct(float(sig["llmGreed"]), hist_g)
 
 
 def append_study_log(snapshot):
@@ -593,6 +632,7 @@ def _run_update_inner(progress_callback=None):
 
     snapshot = ui.build_snapshot(progress_callback=_cb)
     compute_llm_emotion(snapshot)  # 羊驼情绪接管（2026-11-25）
+    compute_history_percentiles(snapshot)  # 慢指针：历史分位（同统计量对比，扩展窗口）
     collect_llm_sample(snapshot)   # 羊驼抽检样本
     compute_llm_sector_emotion(snapshot)  # 羊驼情绪注入板块榜（用户授权）
     snapshot = _publish_snapshot(snapshot)  # 发布并取回带版本号的快照对象，与盘上四文件一致
