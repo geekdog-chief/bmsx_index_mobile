@@ -2,7 +2,7 @@
 
 | # | 问题 | 严重 | 状态 |
 |---|---|---|---|
-| K1 | collectors 质量字段（rawRows/coverageDays/capHit/coverageStatus）记了但 cache_is_usable 零消费——部分采集/反爬截断被当完整数据 | 高 | 开放（修复方案待用户批：叠加层质量门会改指数输入） |
+| K1 | collectors 质量字段（rawRows/coverageDays/capHit/coverageStatus）记了但 cache_is_usable 零消费——部分采集/反爬截断被当完整数据 | 高 | 修复待验收（2026-11-27：quality_gate.py 观测层落地，ChatGPT 架构审查批准稿实施；判定序 empty→hot_feed→partial→unknown→full，状态映射逐字核对 collectors.py；不踢出只打标，公式零改动；推送并确认线上 diagnostics.dataQuality 后关闭） |
 | K2 | 板块热度重复计权：原作者 heat 内嵌约 18% 老情绪 + 注入 20% 羊驼 ≈ 36% 总情绪；activityHeat 字段名不副实 | 中 | 已披露，接受现状（排名逻辑自洽） |
 | K3 | 跨平台内容重复：帖子 id 带平台前缀，同帖多平台转发拿不同 id，id 去重抓不到 | 低 | 开放（只披露不处理，防误删研究价值数据） |
 | K4 | 12B 模型服从性上限：漏 id 级联重试是设计内行为，长帖/特殊字符偶发 JSON 残缺 | 低 | 接受（校验层兜底，数据不会错只会慢） |

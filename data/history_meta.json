@@ -1,10 +1,10 @@
 {
   "schemaVersion": 5,
-  "updatedAt": "2026-11-27T01:53:47.808770+08:00",
+  "updatedAt": "2026-11-27T15:41:09.685330+08:00",
   "startDate": "2026-11-24",
-  "endDate": "2026-11-26",
-  "count": 3,
-  "measuredCount": 3,
+  "endDate": "2026-11-27",
+  "count": 4,
+  "measuredCount": 4,
   "estimatedCount": 0,
   "usableEstimatedCount": 0,
   "provisionalEstimatedCount": 0,
@@ -13,8 +13,8 @@
       "type": "measured",
       "methodology": "community_text_four_channel_grassroots_three_trading_day_v3",
       "startDate": "2026-11-24",
-      "endDate": "2026-11-26",
-      "count": 3
+      "endDate": "2026-11-27",
+      "count": 4
     }
   ],
   "calendar": "A股交易日；2025/2026按上交所官方休市安排，其他年份按工作日回退。",

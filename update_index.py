@@ -41,6 +41,7 @@ from collectors import (
     save_ths_config,
 )
 from community_archive import archive_results
+from quality_gate import build_quality_report, format_console_lines
 from history_engine import (
     ESTIMATED,
     MEASURED,
@@ -2597,6 +2598,13 @@ def _build_snapshot_core(
     save_sina_bids()
     save_ths_config()
 
+    try:
+        quality_report = build_quality_report(results)
+    except Exception as exc:  # K1：质量诊断故障不得拖垮主更新
+        quality_report = {"summary": {"error": str(exc)}, "sources": {}}
+    for _line in format_console_lines(quality_report):
+        print(_line, flush=True)
+
     scored = score_results_as_of(results, market_keys, sector_source_keys, as_of=NOW, record_type=MEASURED)
     market_scores = scored["scores"]
     market_signals = scored["signals"]
@@ -2672,6 +2680,7 @@ def _build_snapshot_core(
     diagnostics = {
         **broad["diagnostics"],
         "marketDate": date_key,
+        "dataQuality": quality_report,
         "scoringTradingDays": [day.isoformat() for day in scoring_trading_days(NOW)],
         "tradingDayWeights": list(TRADING_DAY_WEIGHTS),
         "calendarMode": calendar_mode(market_day),
