@@ -9,7 +9,7 @@
   const hhmm = (iso) => { try { const d = new Date(iso); return `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; } catch (e) { return "--:--"; } };
 
   /* ---------- 状态条 ---------- */
-  const lamp = $("lamp"), statxt = $("statxt"), progwrap = $("progwrap"), prog = $("prog"), timepill = $("timepill"), daypill = $("daypill"), btnupd = $("btnupd");
+  const lamp = $("lamp"), statxt = $("statxt"), timepill = $("timepill"), daypill = $("daypill");
   function setState(s, txt) { lamp.className = "lamp " + s; statxt.className = "statxt " + s; statxt.textContent = txt; }
 
   /* ---------- 宝妈指数 ---------- */
@@ -291,14 +291,6 @@
     }));
   }
 
-  /* ---------- 立即更新 ---------- */
-  // 2026-11-27 整改：删除 GUI 时代整块死代码（状态推送函数 + 桌面桥）。
-  // 浏览器静态页无法跑 Python，按钮保持禁用；悬浮提示说真话。
-  function bindUpdate() {
-    btnupd.disabled = true;
-    btnupd.title = "已在每天 15:40 自动更新；手动请在电脑上运行 一键更新指数.cmd 后刷新页面";
-  }
-
   /* ---------- 羊驼抽检：全文卡片，人工核对模型读数质量（2026-11-26 重排） ---------- */
   function renderLlmaudit() {
     const box = $("llmaudit"); if (!box) return;
@@ -324,6 +316,6 @@
 
   /* ---------- 启动 ---------- */
   renderGauge(); renderGreedFear(); renderRank("hot"); renderMap(); renderHistory(); renderTrio(); renderLlmaudit();
-  bindTabs(); bindUpdate();
+  bindTabs();
   if (DATA.updatedAt) setState("ok", "数据已更新");
 })();
